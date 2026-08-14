@@ -30,6 +30,9 @@ namespace WowPacketParser.Enums.Version.V3_8_0_69137
             { Opcode.SMSG_UPDATE_OBJECT,                      0x5C0000 },
             // 法术/光环（V5_5_3 的 0x510011 SMSG_AURA_UPDATE → 国服 0x660011，高频小包特征匹配）
             { Opcode.SMSG_AURA_UPDATE,                         0x660011 },
+            // 移动段（V5_5_3 的 0x4C00xx 移动段 → 国服 0x5E00xx，结构不同，自定义 handler 解析）
+            { Opcode.SMSG_MOVE_UPDATE,                          0x5E000E },
+            { Opcode.SMSG_ON_MONSTER_MOVE,                      0x5E0002 },
         };
 
         public static BiDictionary<Opcode, int> Opcodes(Direction direction)
@@ -40,14 +43,18 @@ namespace WowPacketParser.Enums.Version.V3_8_0_69137
             foreach (var baseEntry in Opcodes_5_5_3.Opcodes(direction))
             {
                 var newValue = baseEntry.Value + OpcodeOffset;
+                bool isOverridden = false;
 
                 // 若该 Opcode 有国服真实覆盖值，则用覆盖值替换派生值
                 if (overrides != null && overrides.TryGetValue(baseEntry.Key, out var realValue))
+                {
                     newValue = realValue;
+                    isOverridden = true;
+                }
 
                 // 跳过派生值落入国服不存在段的 opcode（VoidStorage 段 0x5E00xx 等在国服被重排，派生值无意义）
-                // 覆盖值（如 0x640012）不受此限制，因为覆盖值在 overrides 里已替换 newValue
-                if (direction == Direction.ServerToClient && newValue >= 0x5E0000 && newValue < 0x5F0000)
+                // 覆盖值（如 0x640012/0x5E0002 等）不受此限制
+                if (!isOverridden && direction == Direction.ServerToClient && newValue >= 0x5E0000 && newValue < 0x5F0000)
                     continue;
 
                 // 避免 BiDictionary 对同一数值重复

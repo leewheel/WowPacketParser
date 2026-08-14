@@ -1,3 +1,4 @@
+using System;
 using Google.Protobuf.WellKnownTypes;
 using System.Linq;
 using WowPacketParser.DBC;
@@ -1281,6 +1282,32 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.CMSG_WORLD_PORT_RESPONSE)]
         public static void HandleMovementZero(Packet packet)
         {
+        }
+    [Parser(Opcode.SMSG_MOVE_UPDATE)]
+        public static void HandleMoveUpdate3_8_0(Packet packet)
+        {
+            var moverGuid = packet.ReadPackedGuid128("MoverGUID");
+            var pos = packet.ReadVector3("Position");
+            packet.ReadInt32("Timestamp");
+            packet.ReadInt32("Flags");
+            packet.ReadSingle("Speed");
+var remaining = packet.ReadBytes((int)(packet.Length - packet.Position));
+            if (remaining.Length > 0)
+                packet.AddValue("UnkData", BitConverter.ToString(remaining));
+        }
+ 
+        [Parser(Opcode.SMSG_ON_MONSTER_MOVE)]
+        public static void HandleOnMonsterMove3_8_0(Packet packet)
+        {
+            var moverGuid = packet.ReadPackedGuid128("MoverGUID");
+            var pos = packet.ReadVector3("Position");
+            packet.ReadInt32("Timestamp");
+            packet.ReadInt32("Flags");
+            packet.ReadSingle("Speed");
+            packet.ReadInt32("UnkInt32");
+            var remaining = packet.ReadBytes((int)(packet.Length - packet.Position));
+            if (remaining.Length > 0)
+                packet.AddValue("UnkTail", BitConverter.ToString(remaining));
         }
     }
 }
