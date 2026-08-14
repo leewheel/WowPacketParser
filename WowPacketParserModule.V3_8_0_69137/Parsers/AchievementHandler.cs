@@ -121,5 +121,18 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         {
             packet.ReadPackedGuid128("Player");
         }
+
+        [Parser(Opcode.SMSG_CRITERIA_UNKNOWN)]
+        public static void HandleCriteriaUnknown(Packet packet)
+        {
+            packet.ReadInt32("CriteriaID");
+            packet.ReadInt32("Quantity");
+            packet.ReadInt64("Unk64");
+            packet.ReadPackedGuid128("PlayerGUID");
+            packet.ReadInt32("Flags");
+            var remaining = packet.ReadBytes((int)(packet.Length - packet.Position));
+            if (remaining.Length > 0)
+                packet.AddValue("UnkData", System.BitConverter.ToString(remaining));
+        }
     }
 }

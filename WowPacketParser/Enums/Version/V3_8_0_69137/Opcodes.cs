@@ -33,6 +33,8 @@ namespace WowPacketParser.Enums.Version.V3_8_0_69137
             // 移动段（V5_5_3 的 0x4C00xx 移动段 → 国服 0x5E00xx，结构不同，自定义 handler 解析）
             { Opcode.SMSG_MOVE_UPDATE,                          0x5E000E },
             { Opcode.SMSG_ON_MONSTER_MOVE,                      0x5E0002 },
+            // 国服新增包（V5_5_3 无对应枚举，使用 Opcode 主枚举中的预留值）
+            { Opcode.SMSG_CRITERIA_UNKNOWN,                     0x46018F },
         };
 
         public static BiDictionary<Opcode, int> Opcodes(Direction direction)
@@ -60,6 +62,18 @@ namespace WowPacketParser.Enums.Version.V3_8_0_69137
                 // 避免 BiDictionary 对同一数值重复
                 if (!result.ContainsValue(newValue))
                     result.Add(baseEntry.Key, newValue);
+            }
+
+            // 额外添加国服特有 opcode（V5_5_3 表里没有对应枚举，无法通过派生+覆盖处理）
+            if (direction == Direction.ServerToClient && overrides != null)
+            {
+                var extra = new Dictionary<Opcode, int>
+                {
+                    { Opcode.SMSG_CRITERIA_UNKNOWN, 0x46018F }
+                };
+                foreach (var e in extra)
+                    if (!result.ContainsValue(e.Value))
+                        result.Add(e.Key, e.Value);
             }
 
             return result;
