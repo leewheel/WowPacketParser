@@ -1286,6 +1286,7 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
     [Parser(Opcode.SMSG_MOVE_UPDATE)]
         public static void HandleMoveUpdate3_8_0(Packet packet)
         {
+            packet.WriteLine("MoveUpdate3_8_0 called for " + packet.Opcode);
             var moverGuid = packet.ReadPackedGuid128("MoverGUID");
             var pos = packet.ReadVector3("Position");
             packet.ReadInt32("Timestamp");
