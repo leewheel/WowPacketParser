@@ -1813,13 +1813,10 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V4_4_0_54481:
                     return ClientVersionBuild.V3_4_0_45166;
                 case ClientVersionBuild.V5_5_0_61735:
-                    // 国服 3.80.x 的 fallback 链到 V5_5_0 模块为止，不再下探 Cata/WotLK 模块
-                    return originalDefiningBuild == ClientVersionBuild.V3_8_0_69137
-                        ? ClientVersionBuild.Zero
-                        : ClientVersionBuild.V4_4_0_54481;
-                // 国服经典服 3.80.x — 主模块加载后 fallback 到 V5_5_0_61735 模块
+                    return ClientVersionBuild.V4_4_0_54481;
+                // 国服经典服 3.80.x — 完全独立模块，无 fallback（所有 handler 自带）
                 case ClientVersionBuild.V3_8_0_69137:
-                    return ClientVersionBuild.V5_5_0_61735;
+                    return ClientVersionBuild.Zero;
 
                 case ClientVersionBuild.V7_0_3_22248:
                     return ClientVersionBuild.V6_0_2_19033;
@@ -1841,10 +1838,9 @@ namespace WowPacketParser.Misc
         public static bool HasFallback(ClientVersionBuild definingBuild)
         {
             // 国服经典服 3.80.x 有独立模块，允许 fallback 到 V5_5_0_61735 模块；
-            // V5_5_0_61735 本身也必须返回 true，否则 Handler.Parse 的 fallback 链不会查它的 handler
-            if (definingBuild == ClientVersionBuild.V3_8_0_69078 ||
-                definingBuild == ClientVersionBuild.V3_8_0_69137 ||
-                definingBuild == ClientVersionBuild.V5_5_0_61735)
+            // 国服经典服 3.80.x — 完全独立模块，无 fallback（其全部 handler 自带）
+            // V5_5_0_61735 作为国际服 MoP 模块保留 fallback 能力
+            if (definingBuild == ClientVersionBuild.V5_5_0_61735)
                 return true;
 
             if (IsCataClientVersionBuild(definingBuild))

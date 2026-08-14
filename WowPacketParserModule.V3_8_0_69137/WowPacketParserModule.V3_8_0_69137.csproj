@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="../default.props" />
+
+    <PropertyGroup>
+        <!-- 加载器按 WowPacketParserModule.{VersionDefiningBuild}.dll 规则查找模块，
+             因此程序集名必须是 V3_8_0_69137（与 ClientVersionBuild 枚举名一致）。 -->
+        <AssemblyName>WowPacketParserModule.V3_8_0_69137</AssemblyName>
+        <OutputPath>../WowPacketParser/bin/$(Configuration)/Parsers/</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- 3.8.0 完全独立于 MoP 版本模块（V5_5_0/V5_5_3）：
+             仅依赖 WPP 通用基础设施 Substructures（ItemHandler 等）与高层 BattleNet proto（V10），
+             通过 V10->V9->...->Substructures 传递链获取。这是 WPP 官方现代单链结构（同 V5_5_0 引用 V10）。 -->
+        <ProjectReference Include="..\WowPacketParserModule.V10_0_0_46181\WowPacketParserModule.V10_0_0_46181.csproj" />
+    </ItemGroup>
+</Project>

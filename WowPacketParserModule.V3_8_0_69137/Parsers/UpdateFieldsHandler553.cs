@@ -9,7 +9,6 @@ using WowPacketParser.Enums;
 using WowPacketParser.Misc;
 using WowPacketParser.Parsing.Parsers;
 using WowPacketParser.Store.Objects.UpdateFields;
-using WowPacketParserModule.V5_5_0_61735.Parsers;
 
 namespace WowPacketParserModule.V3_8_0_69137.UpdateFields.V5_5_3_64802
 {
@@ -3364,7 +3363,7 @@ namespace WowPacketParserModule.V3_8_0_69137.UpdateFields.V5_5_3_64802
             data.AccountBankTabSettings.Resize(packet.ReadBits(3));
             data.ResearchHistory = ReadCreateResearchHistory(packet, indexes, "ResearchHistory");
             Substructures.PerksProgramHandler.ReadPerksVendorItem550(packet, indexes, "FrozenPerksVendorItem");
-            MythicPlusHandler.ReadDungeonScoreData(packet, indexes, "DungeonScore");
+            Substructures.MythicPlusHandler.ReadDungeonScoreData(packet, indexes, "DungeonScore");
             for (var i = 0; i < data.CharacterRestrictions.Count; ++i)
             {
                 data.CharacterRestrictions[i] = ReadCreateCharacterRestriction(packet, indexes, "CharacterRestrictions", i);
@@ -4225,7 +4224,7 @@ namespace WowPacketParserModule.V3_8_0_69137.UpdateFields.V5_5_3_64802
                 }
                 if (changesMask[128])
                 {
-                    MythicPlusHandler.ReadDungeonScoreData(packet, indexes, "DungeonScore");
+                    Substructures.MythicPlusHandler.ReadDungeonScoreData(packet, indexes, "DungeonScore");
                 }
                 if (changesMask[132])
                 {
