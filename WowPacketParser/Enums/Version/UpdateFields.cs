@@ -1536,6 +1536,10 @@ namespace WowPacketParser.Enums.Version
                 case ClientVersionBuild.V5_5_3_66839:
                 case ClientVersionBuild.V5_5_3_67158:
                 case ClientVersionBuild.V5_5_3_67509:
+                case ClientVersionBuild.V5_5_4_69155:
+                // 国服经典服 3.80.x — UpdateFields 结构与 V5_5_3 一致
+                case ClientVersionBuild.V3_8_0_69078:
+                case ClientVersionBuild.V3_8_0_69137:
                 {
                     return ClientVersionBuild.V5_5_3_64802;
                 }

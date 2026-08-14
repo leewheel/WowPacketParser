@@ -1756,6 +1756,7 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V5_5_3_66839:
                 case ClientVersionBuild.V5_5_3_67158:
                 case ClientVersionBuild.V5_5_3_67509:
+                case ClientVersionBuild.V5_5_4_69155:
                 case ClientVersionBuild.V1_15_8_63829:
                 case ClientVersionBuild.V1_15_8_64057:
                 case ClientVersionBuild.V1_15_8_64130:
@@ -1782,6 +1783,10 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V2_5_5_67852:
                 case ClientVersionBuild.V2_5_5_68101:
                     return ClientVersionBuild.V5_5_0_61735;
+                // 国服经典服 3.80.x — 使用独立模块 WowPacketParserModule.V3_8_0_69137.dll（fallback 到 V5_5_0_61735 模块）
+                case ClientVersionBuild.V3_8_0_69078:
+                case ClientVersionBuild.V3_8_0_69137:
+                    return ClientVersionBuild.V3_8_0_69137;
                 case ClientVersionBuild.BattleNetV37165:
                     return ClientVersionBuild.BattleNetV37165;
                 case ClientVersionBuild.Zero:
@@ -1808,7 +1813,13 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V4_4_0_54481:
                     return ClientVersionBuild.V3_4_0_45166;
                 case ClientVersionBuild.V5_5_0_61735:
-                    return ClientVersionBuild.V4_4_0_54481;
+                    // 国服 3.80.x 的 fallback 链到 V5_5_0 模块为止，不再下探 Cata/WotLK 模块
+                    return originalDefiningBuild == ClientVersionBuild.V3_8_0_69137
+                        ? ClientVersionBuild.Zero
+                        : ClientVersionBuild.V4_4_0_54481;
+                // 国服经典服 3.80.x — 主模块加载后 fallback 到 V5_5_0_61735 模块
+                case ClientVersionBuild.V3_8_0_69137:
+                    return ClientVersionBuild.V5_5_0_61735;
 
                 case ClientVersionBuild.V7_0_3_22248:
                     return ClientVersionBuild.V6_0_2_19033;
@@ -1829,6 +1840,13 @@ namespace WowPacketParser.Misc
 
         public static bool HasFallback(ClientVersionBuild definingBuild)
         {
+            // 国服经典服 3.80.x 有独立模块，允许 fallback 到 V5_5_0_61735 模块；
+            // V5_5_0_61735 本身也必须返回 true，否则 Handler.Parse 的 fallback 链不会查它的 handler
+            if (definingBuild == ClientVersionBuild.V3_8_0_69078 ||
+                definingBuild == ClientVersionBuild.V3_8_0_69137 ||
+                definingBuild == ClientVersionBuild.V5_5_0_61735)
+                return true;
+
             if (IsCataClientVersionBuild(definingBuild))
                 return false;
 
@@ -1843,7 +1861,14 @@ namespace WowPacketParser.Misc
 
         public static int BuildInt => (int) Build;
 
-        public static string VersionString => Build.ToString();
+        public static string VersionString =>
+    Build switch
+    {
+        ClientVersionBuild.V3_8_0_69078 => "3.80.1.69078",
+        ClientVersionBuild.V3_8_0_69137 => "3.80.2.69137",
+        ClientVersionBuild.V5_5_4_69155 => "5.5.4.69155",
+        _ => Build.ToString()
+    };
 
         public static ClientType Expansion => GetExpansion(Build);
 
@@ -1927,7 +1952,9 @@ namespace WowPacketParser.Misc
 
                 if (HasFallback(version))
                 {
-                    Handler.LoadDefaultHandlers();
+                    // 国服 3.80.x：Zero 键的通用默认 handler 对 MoP 引擎基本无效，只会把 NoStructure 包变成 WithErrors 噪音，跳过加载
+                    if (version != ClientVersionBuild.V3_8_0_69078 && version != ClientVersionBuild.V3_8_0_69137)
+                        Handler.LoadDefaultHandlers();
 
                     while (tmpFallback != ClientVersionBuild.Zero)
                     {
@@ -2510,6 +2537,10 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V5_5_3_66839:
                 case ClientVersionBuild.V5_5_3_67158:
                 case ClientVersionBuild.V5_5_3_67509:
+                case ClientVersionBuild.V5_5_4_69155:
+                // 国服经典服 3.80.x (MoP Classic China)
+                case ClientVersionBuild.V3_8_0_69078:
+                case ClientVersionBuild.V3_8_0_69137:
                     return true;
                 default:
                     return false;

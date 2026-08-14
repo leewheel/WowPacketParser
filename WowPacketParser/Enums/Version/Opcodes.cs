@@ -1281,7 +1281,12 @@ namespace WowPacketParser.Enums.Version
                 case ClientVersionBuild.V5_5_3_66839:
                 case ClientVersionBuild.V5_5_3_67158:
                 case ClientVersionBuild.V5_5_3_67509:
+                case ClientVersionBuild.V5_5_4_69155:
                     return ClientVersionBuild.V5_5_3_64802;
+                // 国服经典服 3.80.x — 独立的 opcode 表（V5_5_3 + 0x0C0000 偏移）
+                case ClientVersionBuild.V3_8_0_69078:
+                case ClientVersionBuild.V3_8_0_69137:
+                    return ClientVersionBuild.V3_8_0_69137;
                 case ClientVersionBuild.V2_5_5_64796:
                 case ClientVersionBuild.V2_5_5_64912:
                 case ClientVersionBuild.V2_5_5_65000:
@@ -1531,6 +1536,8 @@ namespace WowPacketParser.Enums.Version
                     return Opcodes_5_5_2.Opcodes(direction);
                 case ClientVersionBuild.V5_5_3_64802:
                     return Opcodes_5_5_3.Opcodes(direction);
+                case ClientVersionBuild.V3_8_0_69137:
+                    return V3_8_0_69137.Opcodes_3_8_0.Opcodes(direction);
                 default:
                     return Opcodes_3_3_5.Opcodes(direction);
             }

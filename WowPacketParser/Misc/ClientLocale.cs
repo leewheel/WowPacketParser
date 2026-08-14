@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.IO;
 using WowPacketParser.Enums;
 
@@ -15,8 +15,14 @@ namespace WowPacketParser.Misc
 
         public static void SetLocale(string locale)
         {
-            if (locale == string.Empty)
-                throw new InvalidDataException("No Locale in packet");
+            // By leewheel 2026-08-14: ymir 写全零 locale，默认为 enUS
+            if (locale == string.Empty || string.IsNullOrWhiteSpace(locale) || locale.Trim('\0') == string.Empty)
+            {
+                ClientLocaleString = "enUS";
+                PacketLocaleString = "enUS";
+                return;
+            }
+            // End By leewheel
 
             ClientLocaleString = locale;
 

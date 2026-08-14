@@ -1121,6 +1121,10 @@ namespace WowPacketParser.Enums
         V5_5_3_66839 = 66839, // live
         V5_5_3_67158 = 67158, // live
         V5_5_3_67509 = 67509, // live
+        V5_5_4_69155 = 69155, // live
+        // 国服经典服 3.80.x builds (包结构基于 V5_5_3，opcode 有 0x0C0000 偏移)
+        V3_8_0_69078 = 69078,
+        V3_8_0_69137 = 69137,
         // Battle.net - should probably not mix this but oh well
         BattleNetV37165 = 37165,
 
