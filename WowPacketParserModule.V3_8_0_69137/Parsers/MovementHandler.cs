@@ -755,6 +755,12 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         public static void HandlePlayerMove(Packet packet)
         {
             ReadMovementStats(packet, "MovementStats");
+            // 国服 3.80.2 尾部多 3-4 字节
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 4)
+                packet.ReadUInt32("UnkTail");
+            else if (remaining >= 1)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_MOVE_UPDATE_TELEPORT)]
@@ -1074,6 +1080,12 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         {
             var stats = ReadMovementStats(packet);
             packet.Holder.ClientMove = new() { Mover = stats.MoverGuid, Position = stats.PositionAsVector4 };
+            // 国服 3.80.2 尾部多 3-4 字节
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 4)
+                packet.ReadUInt32("UnkTail");
+            else if (remaining >= 1)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.CMSG_MOVE_TELEPORT_ACK)]
@@ -1107,7 +1119,9 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         {
             var stats = ReadMovementAck(packet);
             packet.Holder.ClientMove = new() { Mover = stats.MoverGuid, Position = stats.PositionAsVector4 };
-            packet.ReadSingle("Speed");
+            // 国服 3.80.2：Speed 字段可能不存在（ACK 包长度不含此字段）
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadSingle("Speed");
         }
 
         [Parser(Opcode.CMSG_MOVE_FORCE_ROOT_ACK)]
@@ -1133,6 +1147,12 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         {
             var stats = ReadMovementAck(packet);
             packet.Holder.ClientMove = new() { Mover = stats.MoverGuid, Position = stats.PositionAsVector4 };
+            // 国服 3.80.2 尾部可能有额外字节
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 4)
+                packet.ReadUInt32("UnkTail");
+            else if (remaining >= 1)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.CMSG_MOVE_KNOCK_BACK_ACK)]
@@ -1141,13 +1161,16 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
             var stats = ReadMovementAck(packet, "MovementAck");
             packet.Holder.ClientMove = new() { Mover = stats.MoverGuid, Position = stats.PositionAsVector4 };
 
-            packet.ResetBitReader();
-
-            var hasSpeeds = packet.ReadBit("HasSpeeds");
-            if (hasSpeeds)
+            // 国服 3.80.2：KnockBack ACK 可能没有额外的 speed 数据
+            if (packet.Length - packet.Position >= 1)
             {
-                packet.ReadSingle("HorzSpeed");
-                packet.ReadSingle("VertSpeed");
+                packet.ResetBitReader();
+                var hasSpeeds = packet.ReadBit("HasSpeeds");
+                if (hasSpeeds && packet.Length - packet.Position >= 8)
+                {
+                    packet.ReadSingle("HorzSpeed");
+                    packet.ReadSingle("VertSpeed");
+                }
             }
         }
 

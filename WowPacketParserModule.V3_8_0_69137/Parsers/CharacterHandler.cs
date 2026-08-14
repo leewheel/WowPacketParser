@@ -538,6 +538,11 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
             packet.ReadByte("Reason");
             packet.ReadInt32("Amount");
             packet.ReadSingle("GroupBonus");
+            // 国服 3.80.2 尾部多 8 字节
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadUInt32("Unk1");
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadUInt32("Unk2");
         }
 
         [Parser(Opcode.SMSG_LEVEL_UP_INFO)]
@@ -694,7 +699,9 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.CMSG_REQUEST_HONOR_STATS)]
         public static void HandleRequestHonorStats(Packet packet)
         {
-            packet.ReadPackedGuid128("TargetGUID");
+            // 国服 3.80.2：此包可能为空（无 TargetGUID）
+            if (packet.Length > 0)
+                packet.ReadPackedGuid128("TargetGUID");
         }
 
         [Parser(Opcode.CMSG_STAND_STATE_CHANGE)]

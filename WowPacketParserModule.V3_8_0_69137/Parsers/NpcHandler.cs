@@ -397,6 +397,9 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         public static void HandleNpcGossipSelectOption(Packet packet)
         {
             PacketGossipSelect packetGossip = packet.Holder.GossipSelect = new();
+            // 国服 3.80.2：此包可能为空
+            if (packet.Length == 0)
+                return;
             packetGossip.GossipUnit = packet.ReadPackedGuid128("GossipUnit");
 
             var menuID = packetGossip.MenuId = packet.ReadUInt32("MenuID");

@@ -1189,19 +1189,17 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.CMSG_QUERY_QUEST_COMPLETION_NPCS)]
         public static void HandleQueryQuestCompletionNpcs(Packet packet)
         {
-            var count = packet.ReadUInt32("Count");
-
-            for (var i = 0; i < count; i++)
-                packet.ReadInt32<QuestId>("QuestID", i);
+            // 国服 3.80.2：此包结构为单个 QuestID（int32），不含 Count + 数组
+            // V5_5_3 的 Count + N*QuestID 结构与国服实际包长度不匹配
+            packet.ReadInt32<QuestId>("QuestID");
         }
 
         [Parser(Opcode.CMSG_QUERY_QUEST_ITEM_USABILITY)]
         public static void QueryQuestItemUsability(Packet packet)
         {
-            packet.ReadPackedGuid128("CreatureGUID");
-            var itemGuidCount = packet.ReadUInt32("ItemGuidCount");
-            for (var i = 0; i < itemGuidCount; ++i)
-                packet.ReadPackedGuid128("ItemGUID", i);
+            // 国服 3.80.2：包结构为 QuestID(int32) + 可选 GUID
+            // V5_5_3 的 CreatureGUID + Count + N*ItemGUID 结构与国服包长度不匹配
+            packet.ReadInt32<QuestId>("QuestID");
         }
 
         [Parser(Opcode.CMSG_SPAWN_TRACKING_UPDATE)]

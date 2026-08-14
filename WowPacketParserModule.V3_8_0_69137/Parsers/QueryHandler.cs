@@ -532,7 +532,9 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         public static void HandleGameObjectQuery(Packet packet)
         {
             packet.ReadInt32("Entry");
-            packet.ReadPackedGuid128("GUID");
+            // 国服 3.80.2：部分查询包不含 GUID 字段（包长度不足时跳过）
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadPackedGuid128("GUID");
         }
 
         [Parser(Opcode.CMSG_QUERY_TREASURE_PICKER)]

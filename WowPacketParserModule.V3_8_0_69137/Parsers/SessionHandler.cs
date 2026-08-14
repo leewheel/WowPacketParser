@@ -145,6 +145,18 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         public static void HandleQueryTimeResponse(Packet packet)
         {
             packet.ReadTime64("CurrentTime");
+            // 国服 3.80.2 尾部多 9 字节
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 4)
+            {
+                packet.ReadUInt32("Unk1");
+                if (remaining >= 8)
+                {
+                    packet.ReadUInt32("Unk2");
+                    if (remaining >= 9)
+                        packet.ReadByte("Unk3");
+                }
+            }
         }
 
         [Parser(Opcode.SMSG_CHARACTER_LOGIN_FAILED)]
@@ -268,6 +280,9 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         public static void HandleSuspendToken(Packet packet)
         {
             packet.ReadUInt32("Sequence");
+            // 国服 3.80.2 尾部多 4 字节
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadUInt32("UnkTail");
         }
 
         [Parser(Opcode.CMSG_QUEUED_MESSAGES_END)]

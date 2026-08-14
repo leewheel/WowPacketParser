@@ -110,6 +110,9 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         public static void HandleClientSetPetSpecialization(Packet packet)
         {
             packet.ReadUInt32("SpecIndex");
+            // 国服 3.80.2 尾部多 1 字节
+            if (packet.Length - packet.Position >= 1)
+                packet.ReadByte("UnkByte");
         }
 
         [Parser(Opcode.CMSG_LEARN_PET_SPECIALIZATION_GROUP)]
