@@ -65,11 +65,28 @@ namespace WowPacketParser.Enums.Version.V3_8_0_69137
             }
 
             // 额外添加国服特有 opcode（V5_5_3 表里没有对应枚举，无法通过派生+覆盖处理）
-            if (direction == Direction.ServerToClient && overrides != null)
+            // 对所有方向生效（S2C + C2S）
             {
                 var extra = new Dictionary<Opcode, int>
                 {
-                    { Opcode.SMSG_CRITERIA_UNKNOWN, 0x46018F }
+                    { Opcode.SMSG_CRITERIA_UNKNOWN, 0x46018F },
+                    { Opcode.SMSG_UNKNOWN_3, 0x5E0000 },
+                    { Opcode.SMSG_UNKNOWN_8, 0x660021 },
+                    { Opcode.SMSG_UNKNOWN_13, 0x660024 },
+                    { Opcode.SMSG_UNKNOWN_19, 0x660029 },
+                    { Opcode.SMSG_UNKNOWN_22, 0x66002A },
+                    { Opcode.SMSG_UNKNOWN_23, 0x66002B },
+                    { Opcode.SMSG_UNKNOWN_24, 0x660048 },
+                    { Opcode.SMSG_UNKNOWN_28, 0x460321 },
+                    { Opcode.SMSG_UNKNOWN_48, 0x630027 },
+                    { Opcode.SMSG_UNKNOWN_54, 0x640011 },
+                    { Opcode.SMSG_UNKNOWN_56, 0x64001B },
+                    { Opcode.SMSG_CRITERIA_UPDATE, 0x4602BA },
+                    { Opcode.CMSG_QUERY_QUEST_INFO, 0x3E0114 },
+                    { Opcode.CMSG_QUERY_QUEST_COMPLETION_NPCS, 0x3E0160 },
+                    { Opcode.CMSG_QUERY_QUESTS_COMPLETED, 0x45000F },
+                    { Opcode.CMSG_QUERY_QUEST_ITEM_USABILITY, 0x450010 },
+                    { Opcode.CMSG_GOSSIP_SELECT_OPTION, 0x3E0115 },
                 };
                 foreach (var e in extra)
                     if (!result.ContainsValue(e.Value))
