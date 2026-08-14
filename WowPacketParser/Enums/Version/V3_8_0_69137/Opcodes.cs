@@ -45,7 +45,12 @@ namespace WowPacketParser.Enums.Version.V3_8_0_69137
                 if (overrides != null && overrides.TryGetValue(baseEntry.Key, out var realValue))
                     newValue = realValue;
 
-                // 避免 BiDictionary 对同一数值重复（国服实测才可能出现的值冲突，忽略重复键）
+                // 跳过派生值落入国服不存在段的 opcode（VoidStorage 段 0x5E00xx 等在国服被重排，派生值无意义）
+                // 覆盖值（如 0x640012）不受此限制，因为覆盖值在 overrides 里已替换 newValue
+                if (direction == Direction.ServerToClient && newValue >= 0x5E0000 && newValue < 0x5F0000)
+                    continue;
+
+                // 避免 BiDictionary 对同一数值重复
                 if (!result.ContainsValue(newValue))
                     result.Add(baseEntry.Key, newValue);
             }
