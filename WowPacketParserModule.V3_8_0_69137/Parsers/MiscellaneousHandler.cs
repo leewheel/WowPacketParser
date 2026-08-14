@@ -730,7 +730,7 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
             // 国服 3.80.2 尾部有额外数据
             var remaining = packet.Length - packet.Position;
             if (remaining > 0)
-                packet.ReadBytes(remaining, "UnkData");
+                packet.ReadBytes("UnkData", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_SET_VEHICLE_REC_ID)]

@@ -527,14 +527,21 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
 
         [Parser(Opcode.CMSG_QUERY_GAME_OBJECT)]
         [Parser(Opcode.CMSG_QUERY_NPC_TEXT)]
-        [Parser(Opcode.CMSG_QUERY_QUEST_INFO)]
         [Parser(Opcode.CMSG_QUERY_PAGE_TEXT)]
         public static void HandleGameObjectQuery(Packet packet)
         {
             packet.ReadInt32("Entry");
-            // 国服 3.80.2：部分查询包不含 GUID 字段（包长度不足时跳过）
-            if (packet.Length - packet.Position >= 4)
+            // 国服 3.80.2：部分查询包不含 GUID 字段
+            // PackedGuid128 需要至少 2 字节（mask + 最少1个分量），实际通常需要 9+
+            if (packet.Length - packet.Position >= 9)
                 packet.ReadPackedGuid128("GUID");
+        }
+
+        [Parser(Opcode.CMSG_QUERY_QUEST_INFO)]
+        public static void HandleQuestInfoQuery(Packet packet)
+        {
+            // 国服 3.80.2：此包只含 PackedGuid128（无 Entry int32）
+            packet.ReadPackedGuid128("GUID");
         }
 
         [Parser(Opcode.CMSG_QUERY_TREASURE_PICKER)]
