@@ -130,19 +130,26 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.SMSG_MASTER_LOOT_CANDIDATE_LIST)]
         public static void HandleMasterLootCandidateList(Packet packet)
         {
+            // 国服 3.80.2：此包结构不同于 V5_5_3，不是 LootObj + Count + Players
+            // 只读取 PackedGuid128，剩余字节作为未知数据
             packet.ReadPackedGuid128("LootObj");
-            var candidateCount = packet.ReadUInt32("CandidateCount");
-
-            for (var i = 0; i < candidateCount; ++i)
-                packet.ReadPackedGuid128("Player", i);
+            var remaining = packet.Length - packet.Position;
+            if (remaining > 0)
+                packet.ReadBytes("UnkData", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_LOOT_ROLLS_COMPLETE)]
         public static void HandleLootRollsComplete(Packet packet)
         {
             packet.ReadPackedGuid128("LootObj");
-            packet.ReadByte("LootListID");
-            packet.ReadInt32("DungeonEncounterID");
+            if (packet.Length - packet.Position >= 1)
+                packet.ReadByte("LootListID");
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadInt32("DungeonEncounterID");
+            // 国服 3.80.2 尾部可能有额外字节
+            var remaining = packet.Length - packet.Position;
+            if (remaining > 0)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_LOOT_ALL_PASSED)]
@@ -156,13 +163,19 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.SMSG_LOOT_ROLL_WON)]
         public static void HandleLootRollWon(Packet packet)
         {
+            // 国服 3.80.2：包可能不含全部字段
             packet.ReadPackedGuid128("LootObj");
-            packet.ReadPackedGuid128("Player");
-            packet.ReadInt32("Roll");
-            packet.ReadByte("RollType");
-            packet.ReadInt32("DungeonEncounterID");
-            ReadLootItem(packet, "LootItem");
-            packet.ReadBit("MainSpec");
+            if (packet.Length - packet.Position >= 9)
+                packet.ReadPackedGuid128("Player");
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadInt32("Roll");
+            if (packet.Length - packet.Position >= 1)
+                packet.ReadByte("RollType");
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadInt32("DungeonEncounterID");
+            var remaining = packet.Length - packet.Position;
+            if (remaining > 0)
+                packet.ReadBytes("UnkData", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_LOOT_LIST)]

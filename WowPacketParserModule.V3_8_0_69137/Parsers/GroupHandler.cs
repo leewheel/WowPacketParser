@@ -273,22 +273,22 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.SMSG_SEND_RAID_TARGET_UPDATE_ALL)]
         public static void HandleSendRaidTargetUpdateAll(Packet packet)
         {
+            // 国服 3.80.2：包结构不同于 V5_5_3
             packet.ReadByte("PartyIndex");
-            var raidTargetSymbolCount = packet.ReadInt32("RaidTargetSymbolCount");
-            for (int i = 0; i < raidTargetSymbolCount; i++)
-            {
-                packet.ReadPackedGuid128("Target", i);
-                packet.ReadByte("Symbol", i);
-            }
+            // 尾部剩余字节作为未知数据
+            var remaining = packet.Length - packet.Position;
+            if (remaining > 0)
+                packet.ReadBytes("UnkData", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_SEND_RAID_TARGET_UPDATE_SINGLE)]
         public static void HandleSendRaidTargetUpdateSingle(Packet packet)
         {
+            // 国服 3.80.2：包结构不同于 V5_5_3
             packet.ReadByte("PartyIndex");
-            packet.ReadByte("Symbol");
-            packet.ReadPackedGuid128("Target");
-            packet.ReadPackedGuid128("ChangedBy");
+            var remaining = packet.Length - packet.Position;
+            if (remaining > 0)
+                packet.ReadBytes("UnkData", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_MINIMAP_PING)]

@@ -215,14 +215,22 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.SMSG_AUCTION_COMMAND_RESULT)]
         public static void HandleAuctionCommandResult(Packet packet)
         {
+            // 国服 3.80.2：包可能不含全部字段
             packet.ReadUInt32("AuctionItemID");
-            packet.ReadUInt32E<AuctionHouseAction>("Command");
-            packet.ReadUInt32E<AuctionHouseError>("ErrorCode");
-            packet.ReadUInt32("BagResult");
-            packet.ReadPackedGuid128("Guid");
-            packet.ReadUInt64("MinIncrement");
-            packet.ReadUInt64("Money");
-            packet.ReadUInt32("DesiredDelay");
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadUInt32E<AuctionHouseAction>("Command");
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadUInt32E<AuctionHouseError>("ErrorCode");
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadUInt32("BagResult");
+            if (packet.Length - packet.Position >= 9)
+                packet.ReadPackedGuid128("Guid");
+            if (packet.Length - packet.Position >= 8)
+                packet.ReadUInt64("MinIncrement");
+            if (packet.Length - packet.Position >= 8)
+                packet.ReadUInt64("Money");
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadUInt32("DesiredDelay");
         }
 
         [Parser(Opcode.SMSG_AUCTION_WON_NOTIFICATION)]

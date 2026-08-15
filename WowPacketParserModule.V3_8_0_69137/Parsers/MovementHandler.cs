@@ -755,11 +755,9 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         public static void HandlePlayerMove(Packet packet)
         {
             ReadMovementStats(packet, "MovementStats");
-            // 国服 3.80.2 尾部多 3-4 字节
+            // 国服 3.80.2 尾部可能有额外字节，读取全部剩余
             var remaining = packet.Length - packet.Position;
-            if (remaining >= 4)
-                packet.ReadUInt32("UnkTail");
-            else if (remaining >= 1)
+            if (remaining >= 1)
                 packet.ReadBytes("UnkTail", (int)remaining);
         }
 
@@ -1080,11 +1078,9 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         {
             var stats = ReadMovementStats(packet);
             packet.Holder.ClientMove = new() { Mover = stats.MoverGuid, Position = stats.PositionAsVector4 };
-            // 国服 3.80.2 尾部多 3-4 字节
+            // 国服 3.80.2 尾部可能有额外字节，读取全部剩余
             var remaining = packet.Length - packet.Position;
-            if (remaining >= 4)
-                packet.ReadUInt32("UnkTail");
-            else if (remaining >= 1)
+            if (remaining >= 1)
                 packet.ReadBytes("UnkTail", (int)remaining);
         }
 
@@ -1122,6 +1118,10 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
             // 国服 3.80.2：Speed 字段可能不存在（ACK 包长度不含此字段）
             if (packet.Length - packet.Position >= 4)
                 packet.ReadSingle("Speed");
+            // 读取全部剩余字节
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 1)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.CMSG_MOVE_FORCE_ROOT_ACK)]
@@ -1147,11 +1147,9 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         {
             var stats = ReadMovementAck(packet);
             packet.Holder.ClientMove = new() { Mover = stats.MoverGuid, Position = stats.PositionAsVector4 };
-            // 国服 3.80.2 尾部可能有额外字节
+            // 国服 3.80.2 尾部可能有额外字节，读取全部剩余
             var remaining = packet.Length - packet.Position;
-            if (remaining >= 4)
-                packet.ReadUInt32("UnkTail");
-            else if (remaining >= 1)
+            if (remaining >= 1)
                 packet.ReadBytes("UnkTail", (int)remaining);
         }
 
@@ -1172,6 +1170,10 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
                     packet.ReadSingle("VertSpeed");
                 }
             }
+            // 读取全部剩余字节
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 1)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.CMSG_MOVE_SET_VEHICLE_REC_ID_ACK)]

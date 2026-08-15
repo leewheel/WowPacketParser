@@ -24,11 +24,10 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.SMSG_BLACK_MARKET_REQUEST_ITEMS_RESULT)]
         public static void HandleBlackMarketRequestItemsResult(Packet packet)
         {
-            packet.ReadTime64("LastUpdateID");
-            var count = packet.ReadInt32("ItemsCount");
-
-            for (var i = 0; i < count; ++i)
-                ReadBlackMarketItem(packet, "Items", i);
+            // 国服 3.80.2：包结构与 V5_5_3 可能不同
+            var remaining = packet.Length - packet.Position;
+            if (remaining > 0)
+                packet.ReadBytes("UnkData", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_BLACK_MARKET_BID_ON_ITEM_RESULT)]

@@ -93,15 +93,11 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.SMSG_GET_ACCOUNT_CHARACTER_LIST_RESULT)]
         public static void HandleGetAccountCharacterListResult(Packet packet)
         {
-            packet.ReadUInt32("Token");
-            uint count = packet.ReadUInt32("CharactersCount");
-
-            packet.ResetBitReader();
-
-            packet.ReadBit("ConsoleCommand");
-
-            for (var i = 0; i < count; ++i)
-                ReadAccountCharacterData(packet, "Characters", i);
+            // 国服 3.80.2：此包结构与 V5_5_3 不同
+            // 只读取剩余字节作为未知数据
+            var remaining = packet.Length - packet.Position;
+            if (remaining > 0)
+                packet.ReadBytes("UnkData", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_ACCOUNT_ITEM_COLLECTION_DATA)]

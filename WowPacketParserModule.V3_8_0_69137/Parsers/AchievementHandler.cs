@@ -96,12 +96,20 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         public static void HandleCriteriaPlayer(Packet packet)
         {
             ReadCriteriaProgress(packet);
+            // 国服 3.80.2 尾部可能有额外数据
+            var remaining = packet.Length - packet.Position;
+            if (remaining > 0)
+                packet.ReadBytes("UnkData", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_CRITERIA_DELETED)]
         public static void HandleDeleted(Packet packet)
         {
-            packet.ReadInt32("CriteriaID");
+            // 国服 3.80.2：此包可能是 PackedGuid 而非 int32
+            packet.ReadPackedGuid128("GUID");
+            var remaining = packet.Length - packet.Position;
+            if (remaining > 0)
+                packet.ReadBytes("UnkData", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_ACHIEVEMENT_DELETED)]

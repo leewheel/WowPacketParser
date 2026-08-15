@@ -495,8 +495,10 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.SMSG_AREA_SPIRIT_HEALER_TIME)]
         public static void HandleAreaSpiritHealerTime(Packet packet)
         {
+            // 国服 3.80.2：包可能不含 TimeLeft 字段
             packet.ReadPackedGuid128("HealerGuid");
-            packet.ReadUInt32("TimeLeft");
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadUInt32("TimeLeft");
         }
 
         [Parser(Opcode.CMSG_JOIN_RATED_BATTLEGROUND)]

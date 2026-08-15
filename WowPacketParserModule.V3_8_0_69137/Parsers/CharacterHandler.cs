@@ -548,17 +548,20 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.SMSG_LEVEL_UP_INFO)]
         public static void HandleLevelUpInfo(Packet packet)
         {
+            // 国服 3.80.2：包结构可能不含全部字段
             packet.ReadInt32("Level");
-            packet.ReadInt32("HealthDelta");
-
-            for (var i = 0; i < 10; i++)
-                packet.ReadInt32("PowerDelta", (PowerType)i);
-
-            for (var i = 0; i < 5; i++)
-                packet.ReadInt32("StatDelta", (StatType)i);
-
-            packet.ReadInt32("NumNewTalents");
-            packet.ReadInt32("NumNewPvpTalentSlots");
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadInt32("HealthDelta");
+            if (packet.Length - packet.Position >= 4)
+                for (var i = 0; i < 10 && packet.Length - packet.Position >= 4; i++)
+                    packet.ReadInt32("PowerDelta", (PowerType)i);
+            if (packet.Length - packet.Position >= 4)
+                for (var i = 0; i < 5 && packet.Length - packet.Position >= 4; i++)
+                    packet.ReadInt32("StatDelta", (StatType)i);
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadInt32("NumNewTalents");
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadInt32("NumNewPvpTalentSlots");
         }
 
         [Parser(Opcode.SMSG_CREATE_CHAR)]
@@ -874,7 +877,9 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.CMSG_CHAR_DELETE)]
         public static void HandleClientCharDelete(Packet packet)
         {
-            packet.ReadPackedGuid128("PlayerGUID");
+            // 国服 3.80.2：此包长度为0，不含 PlayerGUID
+            if (packet.Length - packet.Position >= 9)
+                packet.ReadPackedGuid128("PlayerGUID");
         }
 
         [Parser(Opcode.CMSG_INSPECT_PVP)]

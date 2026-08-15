@@ -572,13 +572,17 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         public static void HandlePetitionShowSignatures(Packet packet)
         {
             packet.ReadPackedGuid128("Item");
-            packet.ReadPackedGuid128("Owner");
-            packet.ReadPackedGuid128("OwnerWoWAccount");
-            packet.ReadInt32("PetitionID");
-
-            var signaturesCount = packet.ReadInt32("SignaturesCount");
-            for (int i = 0; i < signaturesCount; i++)
-                ReadPetitionSignature(packet, i, "PetitionSignature");
+            // 国服 3.80.2：后续字段可能不存在
+            if (packet.Length - packet.Position >= 9)
+            {
+                packet.ReadPackedGuid128("Owner");
+                if (packet.Length - packet.Position >= 9)
+                {
+                    packet.ReadPackedGuid128("OwnerWoWAccount");
+                    if (packet.Length - packet.Position >= 4)
+                        packet.ReadInt32("PetitionID");
+                }
+            }
         }
 
         [Parser(Opcode.SMSG_PETITION_SIGN_RESULTS)]
