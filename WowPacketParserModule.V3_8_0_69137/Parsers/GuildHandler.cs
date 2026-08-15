@@ -583,6 +583,10 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
                         packet.ReadInt32("PetitionID");
                 }
             }
+            // 读取尾部剩余字节
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 1)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_PETITION_SIGN_RESULTS)]

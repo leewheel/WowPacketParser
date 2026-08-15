@@ -93,7 +93,9 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.SMSG_PONG)]
         public static void HandleServerPong(Packet packet)
         {
-            packet.ReadInt32("Serial");
+            // 国服 3.80.2：此包长度为0
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadInt32("Serial");
         }
 
         [Parser(Opcode.SMSG_MULTIPLE_PACKETS)]
@@ -854,6 +856,10 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         public static void HandlePreRessurect(Packet packet)
         {
             packet.ReadPackedGuid128("PlayerGUID");
+            // 国服 3.80.2 尾部可能有额外数据
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 1)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_PLAY_SOUND)]
@@ -1168,6 +1174,10 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.CMSG_ENABLE_NAGLE)]
         public static void HandleMiscZero(Packet packet)
         {
+            // 国服 3.80.2：此包可能有额外数据
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 1)
+                packet.ReadBytes("UnkData", (int)remaining);
         }
     }
 }

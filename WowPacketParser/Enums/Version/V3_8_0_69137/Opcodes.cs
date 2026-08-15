@@ -83,9 +83,8 @@ namespace WowPacketParser.Enums.Version.V3_8_0_69137
                     { Opcode.SMSG_UNKNOWN_56, 0x64001B },
                     { Opcode.SMSG_CRITERIA_UPDATE, 0x4602BA },
                     { Opcode.CMSG_QUERY_QUEST_INFO, 0x3E0114 },
-                    { Opcode.CMSG_QUERY_QUEST_COMPLETION_NPCS, 0x3E0160 },
+                    { Opcode.CMSG_QUERY_QUEST_COMPLETION_NPCS, 0x3F0022 },
                     { Opcode.CMSG_QUERY_QUESTS_COMPLETED, 0x45000F },
-                    { Opcode.CMSG_QUERY_QUEST_ITEM_USABILITY, 0x450010 },
                     { Opcode.CMSG_GOSSIP_SELECT_OPTION, 0x3E0115 },
                 };
                 foreach (var e in extra)

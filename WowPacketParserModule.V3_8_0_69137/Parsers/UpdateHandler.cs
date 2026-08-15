@@ -208,7 +208,11 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
                                     handler.ReadUpdateVendorData(fieldsData, i);
 
                             if (fieldsData.Position != fieldsData.Length)
+                            {
                                 packet.WriteLine($"Updatefields not fully read! Current position: {fieldsData.Position} Length: {fieldsData.Length} Bytes remaining: {fieldsData.Length - fieldsData.Position}");
+                                // 国服 3.80.2：跳过剩余字段数据，避免级联错误
+                                fieldsData.ReadBytes("UnkFields", (int)(fieldsData.Length - fieldsData.Position));
+                            }
                         }
                         updateObject.Updated.Add(new UpdateObject { Guid = guid, Values = updateValues, TextStartOffset = partWriter.StartOffset, TextLength = partWriter.Length, Text = partWriter.Text });
                         break;
@@ -316,7 +320,11 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
                         handler.ReadCreateVendorData(fieldsData, flags, index);
 
                 if (fieldsData.Position != fieldsData.Length)
+                {
                     packet.WriteLine($"Updatefields not fully read! Current position: {fieldsData.Position} Length: {fieldsData.Length} Bytes remaining: {fieldsData.Length - fieldsData.Position}");
+                    // 国服 3.80.2：跳过剩余字段数据，避免级联错误
+                    fieldsData.ReadBytes("UnkFields", (int)(fieldsData.Length - fieldsData.Position));
+                }
             }
 
             if (obj is AreaTriggerCreateProperties createProperties)

@@ -562,6 +562,10 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
                 packet.ReadInt32("NumNewTalents");
             if (packet.Length - packet.Position >= 4)
                 packet.ReadInt32("NumNewPvpTalentSlots");
+            // 读取尾部剩余字节
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 1)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_CREATE_CHAR)]

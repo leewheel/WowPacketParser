@@ -145,18 +145,20 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         public static void HandleQueryTimeResponse(Packet packet)
         {
             packet.ReadTime64("CurrentTime");
-            // 国服 3.80.2 尾部多 9 字节
+            // 国服 3.80.2 尾部可能有额外数据，读取全部剩余
             var remaining = packet.Length - packet.Position;
             if (remaining >= 4)
-            {
                 packet.ReadUInt32("Unk1");
-                if (remaining >= 8)
-                {
-                    packet.ReadUInt32("Unk2");
-                    if (remaining >= 9)
-                        packet.ReadByte("Unk3");
-                }
-            }
+            remaining = packet.Length - packet.Position;
+            if (remaining >= 4)
+                packet.ReadUInt32("Unk2");
+            remaining = packet.Length - packet.Position;
+            if (remaining >= 1)
+                packet.ReadByte("Unk3");
+            // 读取全部剩余字节
+            remaining = packet.Length - packet.Position;
+            if (remaining >= 1)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_CHARACTER_LOGIN_FAILED)]
@@ -270,7 +272,9 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.CMSG_LOG_DISCONNECT)]
         public static void HandleLogDisconnect(Packet packet)
         {
-            packet.ReadUInt32("Reason");
+            // 国服 3.80.2：此包长度为0
+            if (packet.Length - packet.Position >= 4)
+                packet.ReadUInt32("Reason");
             // 4 is inability for client to decrypt RSA
             // 3 is not receiving "WORLD OF WARCRAFT CONNECTION - SERVER TO CLIENT"
             // 11 is sent on receiving opcode 0x140 with some specific data

@@ -1011,6 +1011,10 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
                 };
                 Storage.LocalesQuestRequestItems.Add(localesQuestRequestItems, packet.TimeSpan);
             }
+            // 国服 3.80.2 尾部可能有额外数据
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 1)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_QUEST_GIVER_STATUS)]
@@ -1189,15 +1193,25 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.CMSG_QUERY_QUEST_COMPLETION_NPCS)]
         public static void HandleQueryQuestCompletionNpcs(Packet packet)
         {
-            // 国服 3.80.2：此包只含 PackedGuid128（不含 Count + QuestID 数组）
-            packet.ReadPackedGuid128("GUID");
+            // 国服 3.80.2：此包为 PackedGuid + 其他
+            if (packet.Length - packet.Position >= 1)
+                packet.ReadPackedGuid128("GUID");
+            // 读取尾部剩余字节
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 1)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.CMSG_QUERY_QUEST_ITEM_USABILITY)]
         public static void QueryQuestItemUsability(Packet packet)
         {
-            // 国服 3.80.2：此包只含 PackedGuid128
-            packet.ReadPackedGuid128("GUID");
+            // 国服 3.80.2：此包为 PackedGuid + 其他
+            if (packet.Length - packet.Position >= 1)
+                packet.ReadPackedGuid128("GUID");
+            // 读取尾部剩余字节
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 1)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.CMSG_SPAWN_TRACKING_UPDATE)]

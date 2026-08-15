@@ -499,12 +499,20 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
             packet.ReadPackedGuid128("HealerGuid");
             if (packet.Length - packet.Position >= 4)
                 packet.ReadUInt32("TimeLeft");
+            // 读取尾部剩余字节
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 1)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.CMSG_JOIN_RATED_BATTLEGROUND)]
         public static void HandleJoinRatedBattleground(Packet packet)
         {
             packet.ReadByteE<LfgRoleFlag>("Roles");
+            // 国服 3.80.2 尾部可能有额外数据
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 1)
+                packet.ReadBytes("UnkData", (int)remaining);
         }
 
         [Parser(Opcode.CMSG_BATTLEFIELD_LIST)]

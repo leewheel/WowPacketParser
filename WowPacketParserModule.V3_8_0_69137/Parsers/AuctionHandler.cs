@@ -231,6 +231,10 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
                 packet.ReadUInt64("Money");
             if (packet.Length - packet.Position >= 4)
                 packet.ReadUInt32("DesiredDelay");
+            // 读取尾部剩余字节
+            var remaining = packet.Length - packet.Position;
+            if (remaining >= 1)
+                packet.ReadBytes("UnkTail", (int)remaining);
         }
 
         [Parser(Opcode.SMSG_AUCTION_WON_NOTIFICATION)]
