@@ -66,6 +66,7 @@
 - EntityFragmentID：1127 风格值域（不是 1100）
 - QUERY_RESPONSE HasData：1 字节（不是 bit）
 - DB_REPLY：V9 风格结构
+- **SMSG_LOG_XP_GAIN（第四轮 8d1c4e42 修复）**：guid 后 8 字节恒定前缀（18507488 + 140749825，全包恒定），真实 Amount 在其后（偏移 +13），最后 GroupBonus(float)。实测 144 个包全部同构。修正前 Amount 错位读到 18507488。
 
 ## 编译与测试
 ```powershell

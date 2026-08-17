@@ -83,7 +83,9 @@ namespace WowPacketParser.Enums.Version.V3_8_0_69137
                     { Opcode.SMSG_UNKNOWN_23, 0x66002B },
                     { Opcode.SMSG_UNKNOWN_24, 0x660048 },
                     { Opcode.SMSG_UNKNOWN_28, 0x460321 },
-                    { Opcode.SMSG_UNKNOWN_48, 0x630027 },
+                    // 实测 0x630027 载荷以 Count(UInt32)+Result+PlayerGuid 开头且含中文玩家名，
+                    // 与 V3_4 HandleNameQueryResponse/ReadNameCacheLookupResult 结构完全吻合 → 玩家名查询响应
+                    { Opcode.SMSG_QUERY_PLAYER_NAMES_RESPONSE, 0x630027 },
                     { Opcode.SMSG_UNKNOWN_54, 0x640011 },
                     { Opcode.SMSG_UNKNOWN_56, 0x64001B },
                     { Opcode.SMSG_CRITERIA_UPDATE, 0x4602BA },
