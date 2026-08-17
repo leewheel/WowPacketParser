@@ -22,10 +22,15 @@ namespace WowPacketParser.Enums.Version.V3_8_0_69137
         // 国服实测真实 opcode 覆盖（S2C 任务/对象/对话段），来源：大抓包实测
         private static readonly Dictionary<Opcode, int> ServerOverrides = new Dictionary<Opcode, int>
         {
-            // 任务/对话段（0x4F00xx 任务段 → 国服 0x6400xx，已实测验证结构兼容 V5_5_0 QuestHandler）
+            // 任务/对话段（0x4F00xx 任务段 → 国服 0x6400xx，末字节一一对应，已实测验证：
+            //   0x4F0012→0x640012 QUEST_DETAILS、0x4F0014→0x640014 OFFER_REWARD、
+            //   0x4F0013→0x640013 REQUEST_ITEMS、0x4F0016→0x640016 QUERY_QUEST_INFO_RESPONSE）
             { Opcode.SMSG_QUEST_GIVER_QUEST_DETAILS,        0x640012 },
             { Opcode.SMSG_QUEST_GIVER_OFFER_REWARD_MESSAGE,  0x640014 },
-            { Opcode.SMSG_QUEST_GIVER_REQUEST_ITEMS,         0x640016 },
+            { Opcode.SMSG_QUEST_GIVER_REQUEST_ITEMS,         0x640013 },
+            // 注意：0x640016 曾误映射为 REQUEST_ITEMS（结构不符，实测为 QUERY_QUEST_INFO_RESPONSE，
+            // 载荷以 QuestID 开头 + RewardChoiceItem + 目标数据 + 文本，与 0x3E0135 查询一一对应）
+            { Opcode.SMSG_QUERY_QUEST_INFO_RESPONSE,          0x640016 },
             // 对象更新（V5_5_3 的 0x4A0000 SMSG_UPDATE_OBJECT → 国服 0x5C0000，大包 40KB/高频率特征匹配）
             { Opcode.SMSG_UPDATE_OBJECT,                      0x5C0000 },
             // 法术/光环（V5_5_3 的 0x510011 SMSG_AURA_UPDATE → 国服 0x660011，高频小包特征匹配）

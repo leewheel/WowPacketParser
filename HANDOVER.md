@@ -12,50 +12,56 @@
   - 额外层 = 国服特有 opcode
 - **UpdateFields**: 映射到 V5_5_3_64802 的字段字典
 
-## 当前解析率
-- **新抓包** `dump_3.80.2.69137_2026-08-15_03-31-39.pkt`: **90.6%** (11036 包, 219 错误, 561 跳过)
-- **旧抓包** `dump_3.80.2.69137_2026-08-14_12-22-22.pkt`: **88.5%**
+## 当前解析率（2026-08-18 第三轮修复后）
+| 抓包文件 | 解析率 | 错误数 | 说明 |
+|----------|--------|--------|------|
+| 08-14_08-17-39 (24876 包) | **93.4%** | 554 (2.2%) | 主游戏段，修复前 88.6%/1553 错误 |
+| 08-15_03-31-39 (11036 包) | **92.0%** | 199 (1.8%) | 修复前 85.7%/762 |
+| 08-18_01-51-24 (8252 包) | **91.7%** | 147 (1.8%) | 新抓包，修复前 86.7%/313 |
+| 08-14_15-50-38 (6044 包) | **91.2%** | 128 (2.1%) | 修复前 84.1%/433 |
+| 08-14_12-22-22 (2106 包) | **83.6%** | 71 (3.4%) | 修复前 75.0%/128 |
 
-## 已完成的修复
-1. **Opcode 修正**: 移除错误映射 `CMSG_QUERY_QUEST_COMPLETION_NPCS 0x3E0160`（实际为不同包类型）
-2. **Opcode 修正**: 移除错误映射 `CMSG_QUERY_QUEST_ITEM_USABILITY 0x450010`（实际为不同包类型）
-3. **Packet 尾部字节吸收**: 为大量 handler 添加 `ReadBytes("UnkTail", remaining)` 吸收尾部数据
-4. **空包保护**: 为长度为0的包添加长度检查（CMSG_CHAR_DELETE, SMSG_PONG, CMSG_LOG_DISCONNECT）
-5. **条件字段读取**: 为字段可能不存在的包添加条件检查（SMSG_LEVEL_UP_INFO, SMSG_AUCTION_COMMAND_RESULT 等）
-6. **UpdateHandler 修复**: 在 `Updatefields not fully read` 警告后跳过剩余字段数据，避免级联错误
+## 第三轮修复（2026-08-18）— 本轮核心突破
+1. **【重大】UpdateFields handler 映射修正**: `GetUpdateFieldDictionaryBuild(V3_8_0_69137)` 从 V3_4_0_45166 改为 **V5_5_3_64802**
+   - 根因：handler (UpdateFieldsHandler553) 注册 key 为 V5_5_3_64802，但字典映射查 V3_4_0_45166 → GetHandler() 返回 null → Create 阶段 NullReferenceException
+   - 效果：消除 NRE，UPDATE_OBJECT 错误从 1446 → 459
+2. **【重大】EntityFragmentID 枚举修正**: `ReadEntityFragments` 从 `WowCSEntityFragments1100` 改为 **`WowCSEntityFragments1127`**
+   - 根因：国服 3.80.2 fragment 值域为 1127 风格（Tag_GameObject=206、Tag_Container=201、CGObject=2），旧代码用 1100 读取（Tag_Container=2）导致 206 触发 ArgumentOutOfRangeException，整个 UPDATE_OBJECT 包中断
+   - 效果：EntityFragmentID 输出从错误（Tag_Container/206）变为正确（CGObject/Tag_GameObject）
+3. **【重大】Opcode 映射修正**: 0x640016 从 `SMSG_QUEST_GIVER_REQUEST_ITEMS` 改为 **`SMSG_QUERY_QUEST_INFO_RESPONSE`**
+   - 根因：V5_5_3 任务段 0x4F00xx → 国服 0x6400xx 末字节一一对应（0x4F0016=QUERY_RESPONSE→0x640016），真正的 REQUEST_ITEMS 是 **0x640013**
+   - 证据：0x640016 载荷以 QuestID 开头 + RewardChoiceItem + 目标数据 + 文本，与 C2S 0x3E0135 一一对应（各 2 次）
+4. **SMSG_DB_REPLY handler 新增**: V3_8 模块 HotfixHandler 添加 DB_REPLY（TableHash+RecordID+Timestamp+Status(2bits)+Allow+Size+Data），185 个包从"无结构"转正
+5. **QUERY_QUEST_INFO_RESPONSE 结构修正**（0x640016）:
+   - HasData 从 1 bit 改为 **1 字节**（0x80=有数据）
+   - Artifact 字段顺序：XPDifficulty + **CategoryID** + XPMultiplier（标准为 XPDifficulty+XPMultiplier+CategoryID）
+   - ItemDropQuantity 从 4 组改为 **5 组**（RewardItems 段 68 字节）
+   - 效果：RewardChoiceItemID 从错位（0/3270/1）变为正确（3270/3273/3272），任务奖励数据完整可读
+6. **FormatFloat NaN 防御**: `Substring(0,20)` 对 NaN/Infinity 短字符串越界 → 加 Math.Min 防护
+7. **PlayerChoice 对齐上游**: `ForceDontShowChoicesAsList` 属性上游已重命名为 `HasPowerChoice`（commit 656c350eb 同步改 V5_5_0_61735/V9_0_1_36216），V3_8 对齐
 
-## 修改的文件列表
-- `WowPacketParser\Enums\Version\V3_8_0_69137\Opcodes.cs` - Opcode 表修正
-- `WowPacketParserModule.V3_8_0_69137\Parsers\GuildHandler.cs` - PetitionShowSignatures
-- `WowPacketParserModule.V3_8_0_69137\Parsers\CharacterHandler.cs` - LevelUpInfo, CharDelete
-- `WowPacketParserModule.V3_8_0_69137\Parsers\AuctionHandler.cs` - AuctionCommandResult
-- `WowPacketParserModule.V3_8_0_69137\Parsers\BattlegroundHandler.cs` - SpiritHealer, RatedBattleground
-- `WowPacketParserModule.V3_8_0_69137\Parsers\LootHandler.cs` - LootRollsComplete, LootRollWon, MasterLootCandidateList
-- `WowPacketParserModule.V3_8_0_69137\Parsers\GroupHandler.cs` - RaidTargetUpdate
-- `WowPacketParserModule.V3_8_0_69137\Parsers\AccountDataHandler.cs` - GetAccountCharacterListResult
-- `WowPacketParserModule.V3_8_0_69137\Parsers\AchievementHandler.cs` - CriteriaDeleted, CriteriaUpdate
-- `WowPacketParserModule.V3_8_0_69137\Parsers\BlackMarketHandler.cs` - BlackMarketRequestItemsResult
-- `WowPacketParserModule.V3_8_0_69137\Parsers\MiscellaneousHandler.cs` - PreRessurect, Pong, EnableNagle
-- `WowPacketParserModule.V3_8_0_69137\Parsers\SessionHandler.cs` - QueryTimeResponse, LogDisconnect
-- `WowPacketParserModule.V3_8_0_69137\Parsers\MovementHandler.cs` - 全部 ACK/heartbeat handler
-- `WowPacketParserModule.V3_8_0_69137\Parsers\QuestHandler.cs` - QuestCompletionNpcs, QuestItemUsability, QuestGiverRequestItems
-- `WowPacketParserModule.V3_8_0_69137\Parsers\UpdateHandler.cs` - UpdateFields 尾部吸收
+## 修改的文件列表（第三轮）
+- `WowPacketParser\Enums\Version\UpdateFields.cs` - V3_8 UpdateFields 字典映射 → V5_5_3_64802
+- `WowPacketParserModule.V3_8_0_69137\Parsers\UpdateHandler.cs` - ReadEntityFragments 用 1127 枚举
+- `WowPacketParser\Enums\Version\V3_8_0_69137\Opcodes.cs` - 0x640016 → QUERY_RESPONSE、0x640013 → REQUEST_ITEMS
+- `WowPacketParserModule.V3_8_0_69137\Parsers\HotfixHandler.cs` - 新增 SMSG_DB_REPLY
+- `WowPacketParserModule.V3_8_0_69137\Parsers\QuestHandler.cs` - QUERY_RESPONSE 结构修正（HasData 1B/Artifact 顺序/ItemDropQuantity 5 组）、PlayerChoice HasPowerChoice
+- `WowPacketParser\Misc\PacketReads.cs` - FormatFloat NaN 防御
 
-## 待解决问题
-### SMSG_UPDATE_OBJECT UpdateFields 结构差异（最大错误源）
-- **441 个 "Updatefields not fully read" 警告** + **68 个 EndOfStreamException**
-- 根因：3.80.2 的 UpdateField 字段结构与 V5_5_3_64802 存在差异
-- 具体表现：
-  - `HasFragmentUpdates: false` 时，fieldsData 仍有未读字段
-  - MovementForce 等字段读取后位置不匹配
-  - Entity Fragment 序列化方式可能不同
-- 修复方向：需要深入分析 `UpdateFieldsHandler553.cs`，对比 3.80.2 实际包结构与 V5_5_3 字段字典
+## 待解决问题（剩余错误 ~147-554/文件）
+1. **SMSG_UPDATE_OBJECT movement 块结构差异（最大头）**: MovementForceCount 读到 1078530011（=float 3.167 速度值），说明 movement 块内字段错位。疑点：
+   - MovementFlag3/StepUpStartElevation/AdvFlying 系列/MovementForce 系统可能是 5.5.0 PTR 实验字段，国服 3.80.2（正式 MoP 引擎）未必全部存在
+   - 已实验去掉 MovementFlags3 无效，需要进一步对比国服 movement 块实测字节（MoverGUID 后逐字段）
+   - 参考 V5_4_8_18291（正式 MoP）movement 结构：无 Flags3/AdvFlying/MovementForce
+2. **QUERY_QUEST_INFO_RESPONSE 目标段 1 字节偏移**: VisualEffects 循环读到中文文本字节（文本长度 bits 数与标准不同，目标段前偏移 1 字节）
+3. **CMSG_QUERY_QUESTS_COMPLETED (0x45000F) 等 C2S 包**: 结构差异
+4. **未识别 C2S opcode**: 0x450010、0x3E0060、0x3E0008、0x3F0068 等（国服 C2S 段重排，V5_5_3 无对应），可加吸收 handler 减少"无结构"计数
 
-### 其他小错误（~30个）
-- SMSG_QUEST_GIVER_REQUEST_ITEMS (4): 包结构差异较大
-- CMSG_ENTER_ENCRYPTED_MODE_ACK (2): 空包处理
-- CMSG_MOVE_WATER_WALK_ACK (2): 尾部字节
-- 其他各 1 个的小错误
+## 已验证的国服结构事实（重要参考）
+- 任务段 S2C：0x6400xx = V5_5_3 0x4F00xx 末字节一一对应
+- EntityFragmentID：1127 风格值域（不是 1100）
+- QUERY_RESPONSE HasData：1 字节（不是 bit）
+- DB_REPLY：V9 风格结构
 
 ## 编译与测试
 ```powershell
@@ -63,3 +69,4 @@ cd D:\WoWSourcedCode\Tools\WowPacketParser
 dotnet build -c Release
 & ".\WowPacketParser\bin\Release\WowPacketParser.exe" "path\to\file.pkt"
 ```
+- 启用错误日志：bin/Release/WowPacketParser.dll.config 中 LogPacketErrors=true

@@ -354,7 +354,7 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
             var hideWarboardHeader = packet.ReadBit("HideWarboardHeader");
             var keepOpenAfterChoice = packet.ReadBit("KeepOpenAfterChoice");
             var showChoicesAsList = packet.ReadBit("ShowChoicesAsList");
-            var forceDontShowChoicesAsList = packet.ReadBit("ForceDontShowChoicesAsList");
+            var hasPowerChoice = packet.ReadBit("HasPowerChoice");
 
             for (var i = 0u; i < responseCount; ++i)
                 ReadPlayerChoiceResponse(packet, choiceId, i, "PlayerChoiceResponse", i);
@@ -375,7 +375,10 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
                 HideWarboardHeader = hideWarboardHeader,
                 KeepOpenAfterChoice = keepOpenAfterChoice,
                 ShowChoicesAsList = showChoicesAsList,
-                ForceDontShowChoicesAsList = forceDontShowChoicesAsList
+                // 与上游 commit 656c350eb (12.0 初始化) 保持一致：
+                // ForceDontShowChoicesAsList 属性已重命名为 HasPowerChoice（DBFieldName 保留原名），
+                // 上游同步修改了 V5_5_0_61735 与 V9_0_1_36216，此处沿用上游命名
+                HasPowerChoice = hasPowerChoice
             }, packet.TimeSpan);
 
             if (ClientLocale.PacketLocale != LocaleConstant.enUS)
@@ -395,7 +398,9 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         {
             packet.ReadInt32("Entry");
 
-            Bit hasData = packet.ReadBit("Has Data");
+            // 国服 3.80.2 实测：HasData 是 1 字节标志（0x80=有数据），而非标准版本的 1 bit。
+            // 已验证：Entry(4B) + HasData(1B=0x80) + QuestID(4B) 对齐后 QuestID/QuestType/QuestLevel 全部正确。
+            var hasData = packet.ReadByte("Has Data") != 0;
             if (!hasData)
                 return; // nothing to do
 
@@ -445,9 +450,11 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
 
             quest.RewardKillHonor = packet.ReadSingle("RewardKillHonor");
 
+            // 国服 3.80.2 实测：Artifact 字段顺序为 XPDifficulty + CategoryID + XPMultiplier（标准 V5_5 为 XPDifficulty + XPMultiplier + CategoryID）。
+            // 已验证：按此顺序读取后 StartItem/Flags/RewardItems/RewardChoiceItem 全部对齐（0x69 处 1.0f 为 XPMultiplier 合理值）。
             quest.RewardArtifactXPDifficulty = (uint)packet.ReadInt32("RewardArtifactXPDifficulty");
-            quest.RewardArtifactXPMultiplier = packet.ReadSingle("RewardArtifactXPMultiplier");
             quest.RewardArtifactCategoryID = (uint)packet.ReadInt32("RewardArtifactCategoryID");
+            quest.RewardArtifactXPMultiplier = packet.ReadSingle("RewardArtifactXPMultiplier");
 
             quest.StartItem = (uint)packet.ReadInt32("StartItem");
             quest.Flags = packet.ReadInt32E<QuestFlags>("Flags");
@@ -458,7 +465,9 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
             quest.RewardItem = new uint?[4];
             quest.RewardAmount = new uint?[4];
             quest.ItemDrop = new uint?[4];
-            quest.ItemDropQuantity = new uint?[4];
+            quest.ItemDropQuantity = new uint?[5];
+            // 国服 3.80.2 实测：ItemDropQuantity 为 5 组（RewardItems 段 68 字节 = 3×4×4 + 5×4），
+            // 标准 V5_5 为 4 组（64 字节）。已验证：多读 1 组后 RewardChoiceItem 从 0xC5 正确对齐（3270/1/0）。
             for (int i = 0; i < 4; ++i)
             {
                 quest.RewardItem[i] = (uint)packet.ReadInt32("RewardItems", i);
@@ -466,6 +475,7 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
                 quest.ItemDrop[i] = (uint)packet.ReadInt32("ItemDrop", i);
                 quest.ItemDropQuantity[i] = (uint)packet.ReadInt32("ItemDropQuantity", i);
             }
+            quest.ItemDropQuantity[4] = (uint)packet.ReadInt32("ItemDropQuantity", 4);
 
             quest.RewardChoiceItemID = new uint?[6];
             quest.RewardChoiceItemQuantity = new uint?[6];

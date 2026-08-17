@@ -1544,11 +1544,13 @@ namespace WowPacketParser.Enums.Version
                 case ClientVersionBuild.V5_5_3_67158:
                 case ClientVersionBuild.V5_5_3_67509:
                 case ClientVersionBuild.V5_5_4_69155:
-                // 国服经典服 3.80.x — UpdateFields 结构与 V3_4_0 一致
+                // 国服经典服 3.80.x — UpdateFields 结构与 V5_5_3_64802 一致：
+                // handler (UpdateFieldsHandler553) 与字段字典 (UpdateFields/V5_5_3_64802) 均注册在该 build 下，
+                // 若映射到 V3_4_0_45166 会导致 GetHandler() 查不到 handler 返回 null → Create 阶段 NullReferenceException
                 case ClientVersionBuild.V3_8_0_69078:
                 case ClientVersionBuild.V3_8_0_69137:
                 {
-                    return ClientVersionBuild.V3_4_0_45166;
+                    return ClientVersionBuild.V5_5_3_64802;
                 }
                 default:
                 {

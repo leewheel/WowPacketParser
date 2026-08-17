@@ -236,8 +236,11 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         private static List<WowCSEntityFragment> ReadEntityFragments(Packet packet, string name, int idx)
         {
             var fragmentIds = new List<WowCSEntityFragment>();
-            WowCSEntityFragments1100 fragmentId;
-            while ((fragmentId = packet.ReadByteE<WowCSEntityFragments1100>()) != WowCSEntityFragments1100.End)
+            // 国服 3.80.2 实测：EntityFragmentID 值域为 1127 风格（Tag_GameObject=206、Tag_Container=201、CGObject=2），
+            // 而非 V5_5_3 的 1100 风格（Tag_Container=2）。旧代码用 1100 读取导致 206 等值触发
+            // ArgumentOutOfRangeException，整个 UPDATE_OBJECT 包解析中断（1446 个错误包的最大根源）。
+            WowCSEntityFragments1127 fragmentId;
+            while ((fragmentId = packet.ReadByteE<WowCSEntityFragments1127>()) != WowCSEntityFragments1127.End)
                 fragmentIds.Add(new WowCSEntityFragment(packet.AddValue(name, fragmentId, idx, fragmentIds.Count)));
 
             return fragmentIds;
