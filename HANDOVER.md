@@ -36,7 +36,11 @@
    - HasData 从 1 bit 改为 **1 字节**（0x80=有数据）
    - Artifact 字段顺序：XPDifficulty + **CategoryID** + XPMultiplier（标准为 XPDifficulty+XPMultiplier+CategoryID）
    - ItemDropQuantity 从 4 组改为 **5 组**（RewardItems 段 68 字节）
-   - 效果：RewardChoiceItemID 从错位（0/3270/1）变为正确（3270/3273/3272），任务奖励数据完整可读
+   - **Sound 字段顺序**：CompleteSoundKitID + AreaGroupID + AcceptedSoundKitID（标准为 Accepted+Complete+Area），实测 890/878/0 全部合理
+   - **目标前缀 +8 字节**：ConditionalQuestCompletionLogCount 后 2 个额外 int32（目标段前固定区 32B 而非 24B）
+   - **目标结构 +9 字节**：每个目标 43 字节 = V5_5 标准 33B + 2 个额外 int32(8B) + desc bits(1B) + 对齐(1B)
+   - 效果：RewardChoiceItemID(3270/3273/3272)、目标(380388/1504/8 与 380389/1505/5)、LogTitle/LogDescription/QuestDescription 全部正确解析
+   - 参照 3.4.4.61581 抓包（D:\WoWSourcedCode\Sniff\3.4.5\ymir_classic_wotlk_3.4.4.61581\dumps）验证标准结构差异
 6. **FormatFloat NaN 防御**: `Substring(0,20)` 对 NaN/Infinity 短字符串越界 → 加 Math.Min 防护
 7. **PlayerChoice 对齐上游**: `ForceDontShowChoicesAsList` 属性上游已重命名为 `HasPowerChoice`（commit 656c350eb 同步改 V5_5_0_61735/V9_0_1_36216），V3_8 对齐
 

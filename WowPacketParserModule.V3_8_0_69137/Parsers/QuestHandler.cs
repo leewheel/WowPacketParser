@@ -519,15 +519,19 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
 
             quest.RewardCurrencyID = new uint?[4];
             quest.RewardCurrencyCount = new uint?[4];
+            // 国服 3.80.2 实测验证（任务 380）：RewardFactionFlags@0x18D=1、CurrencyID@0x191=3406、CurrencyQty@0x195=1，
+            // 与标准 V5_5 顺序（ID + Qty）一致。此前的 ID/Qty 反相是 ItemDropQuantity 未修复时的连锁错位。
             for (int i = 0; i < 4; ++i)
             {
                 quest.RewardCurrencyID[i] = (uint)packet.ReadInt32("RewardCurrencyID", i);
                 quest.RewardCurrencyCount[i] = (uint)packet.ReadInt32("RewardCurrencyQty", i);
             }
 
-            quest.SoundAccept = (uint)packet.ReadInt32("AcceptedSoundKitID");
+            // 国服 3.80.2 实测：Sound 字段顺序为 CompleteSoundKitID + AreaGroupID + AcceptedSoundKitID
+            // （标准 V5_5 为 Accepted + Complete + Area）。已验证：任务 380 数据 0x1B1=890(交任务音效)/0x1B5=878(区域组)/0x1B9=0(接任务音效) 全部合理
             quest.SoundTurnIn = (uint)packet.ReadInt32("CompleteSoundKitID");
             quest.AreaGroupID = (uint)packet.ReadInt32("AreaGroupID");
+            quest.SoundAccept = (uint)packet.ReadInt32("AcceptedSoundKitID");
             quest.TimeAllowed = packet.ReadInt64("TimeAllowed");
             uint objectiveCount = packet.ReadUInt32("ObjectiveCount");
             quest.AllowableRacesWod = packet.ReadUInt64("AllowableRaces");
@@ -540,6 +544,12 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
 
             var conditionalQuestDescriptionCount = packet.ReadUInt32();
             var conditionalQuestCompletionLogCount = packet.ReadUInt32();
+
+            // 国服 3.80.2 实测：目标段前的固定字段区为 32 字节（标准 V5_5 为 24 字节），
+            // 在 ConditionalQuestCompletionLogCount 之后还有 2 个额外 int32（全 0）。
+            // 已验证：吸收 8 字节后 bits 从 0x1F1 开始，目标 Id=380388/ObjectID=1504/Amount=8/Flags=16 全部对齐。
+            packet.ReadInt32("UnkQuestField1");
+            packet.ReadInt32("UnkQuestField2");
 
             for (uint i = 0; i < treasurePickerCount; ++i)
             {
@@ -612,10 +622,19 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
                     Storage.QuestVisualEffects.Add(questVisualEffect, packet.TimeSpan);
                 }
 
+                // 国服 3.80.2 实测：目标固定 43 字节 = V5_5 标准 33 字节 + 2 个额外 int32（8 字节，全 0）。
+                // 已验证：吸收 8 字节后两个目标（380388/1504/8 与 380389/1505/5）及 Description bits 全部对齐。
+                packet.ReadInt32("UnkObjectiveField1", i);
+                packet.ReadInt32("UnkObjectiveField2", i);
+
                 packet.ResetBitReader();
 
                 uint descriptionLength = packet.ReadBits(8);
                 questInfoObjective.Description = packet.ReadWoWString("Description", descriptionLength, i);
+
+                // 国服 3.80.2 实测：目标固定 43 字节（V5_5 33 + 2 额外 int32 8 + desc bits 1 + 对齐 1）。
+                // desc bits 后还有 1 字节对齐，吸收后第二个目标与文本起点完全对齐
+                packet.ReadByte("UnkObjectivePadding", i);
 
                 if (ClientLocale.PacketLocale != LocaleConstant.enUS && questInfoObjective.Description != string.Empty)
                 {
