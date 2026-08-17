@@ -536,13 +536,15 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
             packet.ReadPackedGuid128("Victim");
             packet.ReadInt32("Original");
             packet.ReadByte("Reason");
+            // 国服 3.80.2 实测（144 个包全部同构）：Amount 前有 8 字节恒定前缀字段，
+            // 标准 V5_5/V3_4 结构为 Original(4B)+Reason(1B)+Amount(4B)+GroupBonus(4B)。
+            // 实测字节：guid后 [01 00 00 00 0f | e0 66 1a 01 | 01 ac 63 08 | <amount> | <groupBonus>]
+            // 其中 e0 66 1a 01 (18507488) 与 01 ac 63 08 (140749825) 在全部包中恒定，
+            // 真实经验值在偏移 +13 处（497/2131/568/1492 等合理值），故按以下顺序读取：
+            packet.ReadUInt32("Unk1");
+            packet.ReadUInt32("Unk2");
             packet.ReadInt32("Amount");
             packet.ReadSingle("GroupBonus");
-            // 国服 3.80.2 尾部多 8 字节
-            if (packet.Length - packet.Position >= 4)
-                packet.ReadUInt32("Unk1");
-            if (packet.Length - packet.Position >= 4)
-                packet.ReadUInt32("Unk2");
         }
 
         [Parser(Opcode.SMSG_LEVEL_UP_INFO)]
