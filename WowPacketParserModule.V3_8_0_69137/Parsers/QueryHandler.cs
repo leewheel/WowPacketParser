@@ -540,8 +540,11 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
         [Parser(Opcode.CMSG_QUERY_QUEST_INFO)]
         public static void HandleQuestInfoQuery(Packet packet)
         {
-            // 国服 3.80.2：此包只含 PackedGuid128（无 Entry int32）
-            packet.ReadPackedGuid128("GUID");
+            // 国服 3.80.2 实测（12 个实例验证）：0x3E0135 载荷 = QuestID(Int32) + 2 字节尾部(00 00)，共 6 字节
+            // （旧版本曾误将 0x3E0114 映射到此，其载荷为 packed128 guid，是另一类 guid 查询）
+            packet.ReadInt32<QuestId>("QuestID");
+            if (packet.Length - packet.Position >= 2)
+                packet.ReadBytes("UnkTail", (int)(packet.Length - packet.Position));
         }
 
         [Parser(Opcode.CMSG_QUERY_TREASURE_PICKER)]

@@ -21,8 +21,7 @@ namespace WowPacketParser.Enums.Version.V3_8_0_69137
 
         // 国服实测真实 opcode 覆盖（S2C 任务/对象/对话段），来源：大抓包实测
         private static readonly Dictionary<Opcode, int> ServerOverrides = new Dictionary<Opcode, int>
-        {
-            // 任务/对话段（0x4F00xx 任务段 → 国服 0x6400xx，末字节一一对应，已实测验证：
+        {            // 任务/对话段（0x4F00xx 任务段 → 国服 0x6400xx，末字节一一对应，已实测验证：
             //   0x4F0012→0x640012 QUEST_DETAILS、0x4F0014→0x640014 OFFER_REWARD、
             //   0x4F0013→0x640013 REQUEST_ITEMS、0x4F0016→0x640016 QUERY_QUEST_INFO_RESPONSE）
             { Opcode.SMSG_QUEST_GIVER_QUEST_DETAILS,        0x640012 },
@@ -42,10 +41,19 @@ namespace WowPacketParser.Enums.Version.V3_8_0_69137
             { Opcode.SMSG_CRITERIA_UNKNOWN,                     0x46018F },
         };
 
+        // 国服实测 C2S opcode 覆盖（V5_5_3 派生值在国服被重排，实测载荷验证）
+        private static readonly Dictionary<Opcode, int> ClientOverrides = new Dictionary<Opcode, int>
+        {
+            // 0x3F0026 实测 8 个实例载荷均为 QuestGiverGUID(packed128)+QuestID+bit，
+            // 与 CMSG_QUEST_GIVER_ACCEPT_QUEST 结构完全吻合（接取任务：783/5261/33/7/3102/18/15/93950）；
+            // V5_5_3 派生值 0x3F0026=CMSG_JOIN_RATED_BATTLEGROUND 错误
+            { Opcode.CMSG_QUEST_GIVER_ACCEPT_QUEST,              0x3F0026 },
+        };
+
         public static BiDictionary<Opcode, int> Opcodes(Direction direction)
         {
             var result = new BiDictionary<Opcode, int>();
-            var overrides = direction == Direction.ServerToClient ? ServerOverrides : null;
+            var overrides = direction == Direction.ServerToClient ? ServerOverrides : ClientOverrides;
 
             foreach (var baseEntry in Opcodes_5_5_3.Opcodes(direction))
             {
@@ -62,6 +70,11 @@ namespace WowPacketParser.Enums.Version.V3_8_0_69137
                 // 跳过派生值落入国服不存在段的 opcode（VoidStorage 段 0x5E00xx 等在国服被重排，派生值无意义）
                 // 覆盖值（如 0x640012/0x5E0002 等）不受此限制
                 if (!isOverridden && direction == Direction.ServerToClient && newValue >= 0x5E0000 && newValue < 0x5F0000)
+                    continue;
+
+                // 国服 C2S 重排：V5_5_3 的 CMSG_JOIN_RATED_BATTLEGROUND(0x330026) 派生值 0x3F0026
+                // 实测为 CMSG_QUEST_GIVER_ACCEPT_QUEST（8 个实例载荷=guid+QuestID），跳过派生避免占用冲突
+                if (!isOverridden && direction == Direction.ClientToServer && baseEntry.Key == Opcode.CMSG_JOIN_RATED_BATTLEGROUND)
                     continue;
 
                 // 避免 BiDictionary 对同一数值重复
@@ -89,7 +102,9 @@ namespace WowPacketParser.Enums.Version.V3_8_0_69137
                     { Opcode.SMSG_UNKNOWN_54, 0x640011 },
                     { Opcode.SMSG_UNKNOWN_56, 0x64001B },
                     { Opcode.SMSG_CRITERIA_UPDATE, 0x4602BA },
-                    { Opcode.CMSG_QUERY_QUEST_INFO, 0x3E0114 },
+                    // 实测 0x3E0135 载荷=QuestID(6B)，与 0x640016 查询响应一一对应 → CMSG_QUERY_QUEST_INFO
+                    // （0x3E0114 载荷实为 packed128 guid，是另一类 guid 查询，非任务查询）
+                    { Opcode.CMSG_QUERY_QUEST_INFO, 0x3E0135 },
                     { Opcode.CMSG_QUERY_QUEST_COMPLETION_NPCS, 0x3F0022 },
                     { Opcode.CMSG_QUERY_QUESTS_COMPLETED, 0x45000F },
                     { Opcode.CMSG_GOSSIP_SELECT_OPTION, 0x3E0115 },
