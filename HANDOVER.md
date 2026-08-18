@@ -67,6 +67,12 @@
 - QUERY_RESPONSE HasData：1 字节（不是 bit）
 - DB_REPLY：V9 风格结构
 - **SMSG_LOG_XP_GAIN（第四轮 8d1c4e42 修复）**：guid 后 8 字节恒定前缀（18507488 + 140749825，全包恒定），真实 Amount 在其后（偏移 +13），最后 GroupBonus(float)。实测 144 个包全部同构。修正前 Amount 错位读到 18507488。
+- **C2S 任务段（第五轮 17f0c3931 修复，实测验证）**：
+  - 0x3F0026 = CMSG_QUEST_GIVER_ACCEPT_QUEST（8 实例载荷=QuestGiverGUID+QuestID+bit；V5_5_3 派生值 JOIN_RATED_BG 错误，需跳过派生再覆盖）
+  - 0x3E0135 = CMSG_QUERY_QUEST_INFO（载荷=QuestID(4B)+2B 尾部共 6B；旧映射 0x3E0114 实为 guid 查询）
+  - 0x640011 = SMSG_QUEST_GIVER_STATUS_MULTIPLE（开头 Count 非 QuestID，勿误判）
+  - 0x630027 = SMSG_QUERY_PLAYER_NAMES_RESPONSE（玩家名+种族职业，Count+Result+PlayerGuid 结构）
+  - 任务查询请求在 ConnIdx 1、响应回包可能在 ConnIdx 0（跨连接回包），确认 QuestID 必须看 C2S 请求载荷
 
 ## 编译与测试
 ```powershell
