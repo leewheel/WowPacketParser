@@ -1636,6 +1636,8 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V3_4_5_62544:
                 case ClientVersionBuild.V3_4_5_62824:
                 case ClientVersionBuild.V3_4_5_63697:
+                    // 3.4.5 系列使用独立模块 WowPacketParserModule.V3_4_5_61815.dll（fallback 到 V3_4_0_45166）
+                    return ClientVersionBuild.V3_4_5_61815;
                 case ClientVersionBuild.V1_15_0_52146:
                 case ClientVersionBuild.V1_15_0_52186:
                 case ClientVersionBuild.V1_15_0_52212:
@@ -1821,6 +1823,9 @@ namespace WowPacketParser.Misc
                     return ClientVersionBuild.V9_0_1_36216;
                 case ClientVersionBuild.V3_4_0_45166:
                     return ClientVersionBuild.V2_5_1_38707;
+                // 3.4.5 系列独立模块，fallback 到 3.4.0 模块
+                case ClientVersionBuild.V3_4_5_61815:
+                    return ClientVersionBuild.V3_4_0_45166;
                 // Cata and MoP Classic itself has no Fallback (see below HasFallback function)
                 // just for completeness and future fallbacks
                 case ClientVersionBuild.V4_4_0_54481:
