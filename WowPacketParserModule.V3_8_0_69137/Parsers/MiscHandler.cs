@@ -13,7 +13,7 @@ namespace WowPacketParserModule.V3_8_0_69137.Parsers
     ///   2. 未命中则走主 exe 的默认 (Zero) handler。
     ///
     /// 本模块的全部解析能力来自 Parsers/ 下自带的业务 handler 与本模块自己的
-    /// UpdateFields 副本（UpdateFields/V5_5_3_64802，命名空间含 V5_5_3_64802 是
+    /// UpdateFields 副本（UpdateFields/V3_80_2_69137，命名空间含 V3_80_2_69137 是
     /// WPP 加载机制所需，与 GetUpdateFieldDictionaryBuild 返回值一致）。
     ///
     /// 【国服独有的 opcode 覆盖】
