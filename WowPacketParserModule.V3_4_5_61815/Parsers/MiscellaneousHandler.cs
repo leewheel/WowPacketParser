@@ -287,9 +287,30 @@ namespace WowPacketParserModule.V3_4_5_61815.Parsers
                 ReadDebugTimeInfo(packet, "DebugTimeEvent", i);
         }
 
+        // 3.4.5 (63697+)：TRIGGER_CINEMATIC 扩展为 CinematicID + ConversationGUID，尾部为变长 packed guid 序列 + 0 填充
         [Parser(Opcode.SMSG_TRIGGER_CINEMATIC)]
+        public static void HandleTriggerCinematic(Packet packet)
+        {
+            packet.ReadInt32("CinematicID");
+            packet.ReadPackedGuid128("ConversationGUID");
+            packet.ReadPackedGuid128("CameraGUID");
+            // 尾部残余（变长 guid / 0 填充），循环吃完
+            var extraIndex = 0;
+            while (packet.Position < packet.Length)
+            {
+                var remaining = packet.Length - packet.Position;
+                if (remaining >= 2)
+                    packet.ReadPackedGuid128("ExtraGUID", extraIndex++);
+                else
+                {
+                    packet.ReadBytes((int)remaining);
+                    break;
+                }
+            }
+        }
+
         [Parser(Opcode.SMSG_TRIGGER_MOVIE)]
-        public static void HandleTriggerSequence(Packet packet)
+        public static void HandleTriggerMovie(Packet packet)
         {
             packet.ReadInt32("CinematicID");
         }

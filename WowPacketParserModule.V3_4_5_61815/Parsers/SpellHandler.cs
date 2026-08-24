@@ -98,6 +98,9 @@ namespace WowPacketParserModule.V3_4_5_61815.Parsers
 
             var spellID = packetSpellData.Spell = packet.ReadUInt32<SpellId>("SpellID", idx);
             packet.ReadUInt32("SpellXSpellVisualID", idx);
+            // 3.4.5 (63697+)：SpellVisual 扩展为 SpellXSpellVisualID + ScriptVisualID（实测各 4 字节）
+            if (ClientVersion.AddedInVersion(ClientVersionBuild.V3_4_5_61815))
+                packet.ReadUInt32("ScriptVisualID", idx);
 
             packetSpellData.Flags = packet.ReadUInt32("CastFlags", idx);
             packetSpellData.Flags2 = packet.ReadUInt32("CastFlagsEx", idx);

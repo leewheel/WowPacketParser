@@ -9,11 +9,11 @@ namespace WowPacketParserModule.V3_4_5_61815.Parsers
 {
     public static class GameObjectHandler
     {
-        [Parser(Opcode.CMSG_QUERY_GAME_OBJECT, ClientVersionBuild.V3_4_4_59817)]
+        // 3.4.5 (build 63697+)：包结构变更，仅 Entry（实测 Length=4），无 GUID
+        [Parser(Opcode.CMSG_QUERY_GAME_OBJECT, ClientVersionBuild.V3_4_5_61815)]
         public static void HandleGameObjectQuery(Packet packet)
         {
             packet.ReadInt32("Entry");
-            packet.ReadPackedGuid128("GUID");
         }
 
         [Parser(Opcode.CMSG_GAME_OBJ_USE, ClientVersionBuild.V3_4_4_59817)]

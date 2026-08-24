@@ -42,9 +42,15 @@ namespace WowPacketParserModule.V3_4_5_61815.Parsers
             var hasSpellEffectExtraData = packet.ReadBit("HasSpellEffectExtraData", indexes);
             var hasJumpExtraData = packet.ReadBit("HasJumpExtraData", indexes);
             var hasAnimTier = packet.ReadBit("HasAnimTierTransition", indexes);
+            // 3.4.5 (63697+)：位域新增 HasTurnData 与 HasSpellVisualData 两个可选位（实测位域 42 bits）
+            var hasTurnData = packet.ReadBit("HasTurnData", indexes);
+            var hasSpellVisualData = packet.ReadBit("HasSpellVisualData", indexes);
 
             if (hasSplineFilter)
                 V8_0_1_27101.Parsers.MovementHandler.ReadMonsterSplineFilter(packet, indexes, "MonsterSplineFilter");
+
+            if (hasTurnData)
+                V8_0_1_27101.Parsers.MovementHandler.ReadMonsterSplineTurnData(packet, indexes, "MonsterSplineTurnData");
 
             switch (type)
             {

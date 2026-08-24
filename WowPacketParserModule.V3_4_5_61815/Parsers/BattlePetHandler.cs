@@ -169,7 +169,17 @@ namespace WowPacketParserModule.V3_4_5_61815.Parsers
         public static void HandleBattlePetQuery(Packet packet)
         {
             packet.ReadPackedGuid128("BattlePetID");
-            packet.ReadPackedGuid128("UnitGUID");
+            // 3.4.5 (63697+)：UnitGUID 结构变化（实测包长 12~21 字节不等），剩余按 packed guid 兜底读
+            while (packet.Position < packet.Length)
+            {
+                if (packet.Length - packet.Position >= 2)
+                    packet.ReadPackedGuid128("UnitGUID");
+                else
+                {
+                    packet.ReadBytes((int)(packet.Length - packet.Position));
+                    break;
+                }
+            }
         }
 
         [Parser(Opcode.SMSG_BATTLE_PET_JOURNAL_LOCK_ACQUIRED, ClientVersionBuild.V3_4_4_59817)]

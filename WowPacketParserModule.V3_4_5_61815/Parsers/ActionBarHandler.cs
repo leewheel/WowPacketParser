@@ -17,6 +17,8 @@ namespace WowPacketParserModule.V3_4_5_61815.Parsers
             packet.AddValue("Type", (ActionButtonType)((data & 0xFF000000) >> 24));
             packet.AddValue("ID", data & 0x00FFFFFF);
             packet.ReadByte("Button");
+            // 3.4.5 (63697+)：新增 4 字节字段（实测 Length=9）
+            packet.ReadInt32("Unknown");
         }
 
         [Parser(Opcode.SMSG_UPDATE_ACTION_BUTTONS, ClientVersionBuild.V3_4_4_59817)]
