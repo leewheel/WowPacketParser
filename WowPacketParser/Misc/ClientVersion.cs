@@ -1800,10 +1800,10 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V2_5_5_67852:
                 case ClientVersionBuild.V2_5_5_68101:
                     return ClientVersionBuild.V5_5_0_61735;
-                // 国服经典服 3.80.x — 使用独立模块 WowPacketParserModule.V3_8_0_69137.dll（fallback 到 V5_5_0_61735 模块）
+                // 国服经典服 3.80.x — 使用独立模块 WowPacketParserModule.V3_80_2_69137.dll（fallback 到 V5_5_0_61735 模块）
                 case ClientVersionBuild.V3_8_0_69078:
-                case ClientVersionBuild.V3_8_0_69137:
-                    return ClientVersionBuild.V3_8_0_69137;
+                case ClientVersionBuild.V3_80_2_69137:
+                    return ClientVersionBuild.V3_80_2_69137;
                 case ClientVersionBuild.BattleNetV37165:
                     return ClientVersionBuild.BattleNetV37165;
                 case ClientVersionBuild.Zero:
@@ -1835,7 +1835,7 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V5_5_0_61735:
                     return ClientVersionBuild.V4_4_0_54481;
                 // 国服经典服 3.80.x — 完全独立模块，无 fallback（所有 handler 自带）
-                case ClientVersionBuild.V3_8_0_69137:
+                case ClientVersionBuild.V3_80_2_69137:
                     return ClientVersionBuild.Zero;
 
                 case ClientVersionBuild.V7_0_3_22248:
@@ -1881,7 +1881,7 @@ namespace WowPacketParser.Misc
     Build switch
     {
         ClientVersionBuild.V3_8_0_69078 => "3.80.1.69078",
-        ClientVersionBuild.V3_8_0_69137 => "3.80.2.69137",
+        ClientVersionBuild.V3_80_2_69137 => "3.80.2.69137",
         ClientVersionBuild.V5_5_4_69155 => "5.5.4.69155",
         _ => Build.ToString()
     };
@@ -1969,7 +1969,7 @@ namespace WowPacketParser.Misc
                 if (HasFallback(version))
                 {
                     // 国服 3.80.x：Zero 键的通用默认 handler 对 MoP 引擎基本无效，只会把 NoStructure 包变成 WithErrors 噪音，跳过加载
-                    if (version != ClientVersionBuild.V3_8_0_69078 && version != ClientVersionBuild.V3_8_0_69137)
+                    if (version != ClientVersionBuild.V3_8_0_69078 && version != ClientVersionBuild.V3_80_2_69137)
                         Handler.LoadDefaultHandlers();
 
                     while (tmpFallback != ClientVersionBuild.Zero)
@@ -2558,7 +2558,7 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V5_5_4_69155:
                 // 国服经典服 3.80.x (MoP Classic China)
                 case ClientVersionBuild.V3_8_0_69078:
-                case ClientVersionBuild.V3_8_0_69137:
+                case ClientVersionBuild.V3_80_2_69137:
                     return true;
                 default:
                     return false;

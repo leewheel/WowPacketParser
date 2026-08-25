@@ -1552,7 +1552,7 @@ namespace WowPacketParser.Enums.Version
                 // handler (UpdateFieldsHandler553) 与字段字典 (UpdateFields/V3_80_2_69137) 均注册在 V3_80_2_69137 下，
                 // 若映射到 V3_4_0_45166 会导致 GetHandler() 查不到 handler 返回 null → Create 阶段 NullReferenceException
                 case ClientVersionBuild.V3_8_0_69078:
-                case ClientVersionBuild.V3_8_0_69137:
+                case ClientVersionBuild.V3_80_2_69137:
                 {
                     return ClientVersionBuild.V3_80_2_69137;
                 }

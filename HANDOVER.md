@@ -5,8 +5,8 @@
 
 ## 技术架构
 - **引擎识别**: 3.80.2 使用 MoP (5.5.x) 引擎
-- **独立模块**: `WowPacketParserModule.V3_8_0_69137` 完全独立的 handler 模块
-- **Opcode 表**: `WowPacketParser\Enums\Version\V3_8_0_69137\Opcodes.cs`
+- **独立模块**: `WowPacketParserModule.V3_80_2_69137` 完全独立的 handler 模块
+- **Opcode 表**: `WowPacketParser\Enums\Version\V3_80_2_69137\Opcodes.cs`
   - 基础层 = V5_5_3 全表 +0x0C0000 偏移
   - 覆盖层 = 实测确认的真实 opcode（S2C 任务/对象/对话段）
   - 额外层 = 国服特有 opcode
@@ -22,7 +22,7 @@
 | 08-14_12-22-22 (2106 包) | **83.6%** | 71 (3.4%) | 修复前 75.0%/128 |
 
 ## 第三轮修复（2026-08-18）— 本轮核心突破
-1. **【重大】UpdateFields handler 映射修正**: `GetUpdateFieldDictionaryBuild(V3_8_0_69137)` 从 V3_4_0_45166 改为 **V5_5_3_64802**
+1. **【重大】UpdateFields handler 映射修正**: `GetUpdateFieldDictionaryBuild(V3_80_2_69137)` 从 V3_4_0_45166 改为 **V5_5_3_64802**
    - 根因：handler (UpdateFieldsHandler553) 注册 key 为 V5_5_3_64802，但字典映射查 V3_4_0_45166 → GetHandler() 返回 null → Create 阶段 NullReferenceException
    - 效果：消除 NRE，UPDATE_OBJECT 错误从 1446 → 459
 2. **【重大】EntityFragmentID 枚举修正**: `ReadEntityFragments` 从 `WowCSEntityFragments1100` 改为 **`WowCSEntityFragments1127`**
@@ -46,10 +46,10 @@
 
 ## 修改的文件列表（第三轮）
 - `WowPacketParser\Enums\Version\UpdateFields.cs` - V3_8 UpdateFields 字典映射 → V5_5_3_64802
-- `WowPacketParserModule.V3_8_0_69137\Parsers\UpdateHandler.cs` - ReadEntityFragments 用 1127 枚举
-- `WowPacketParser\Enums\Version\V3_8_0_69137\Opcodes.cs` - 0x640016 → QUERY_RESPONSE、0x640013 → REQUEST_ITEMS
-- `WowPacketParserModule.V3_8_0_69137\Parsers\HotfixHandler.cs` - 新增 SMSG_DB_REPLY
-- `WowPacketParserModule.V3_8_0_69137\Parsers\QuestHandler.cs` - QUERY_RESPONSE 结构修正（HasData 1B/Artifact 顺序/ItemDropQuantity 5 组）、PlayerChoice HasPowerChoice
+- `WowPacketParserModule.V3_80_2_69137\Parsers\UpdateHandler.cs` - ReadEntityFragments 用 1127 枚举
+- `WowPacketParser\Enums\Version\V3_80_2_69137\Opcodes.cs` - 0x640016 → QUERY_RESPONSE、0x640013 → REQUEST_ITEMS
+- `WowPacketParserModule.V3_80_2_69137\Parsers\HotfixHandler.cs` - 新增 SMSG_DB_REPLY
+- `WowPacketParserModule.V3_80_2_69137\Parsers\QuestHandler.cs` - QUERY_RESPONSE 结构修正（HasData 1B/Artifact 顺序/ItemDropQuantity 5 组）、PlayerChoice HasPowerChoice
 - `WowPacketParser\Misc\PacketReads.cs` - FormatFloat NaN 防御
 
 ## 待解决问题（剩余错误 ~147-554/文件）

@@ -1133,9 +1133,8 @@ namespace WowPacketParser.Enums
         V5_5_4_69155 = 69155, // live
         // 国服经典服 3.80.x builds (包结构基于 V5_5_3，opcode 有 0x0C0000 偏移)
         V3_8_0_69078 = 69078,
-        V3_8_0_69137 = 69137,
-        // 3.80.2 独立 UpdateFields 注册名（值为 69137，仅供 LoadUFHandlers 的
-        // Enum.TryParse(namespace 末段) 解析用；与 V3_8_0_69137 同 build 不同名）
+        // 3.80.2（build 69137）唯一注册名：模块加载器按 WowPacketParserModule.V3_80_2_69137.dll
+        // 查找程序集；UpdateFields 命名空间末段也由 LoadUFHandlers 的 Enum.TryParse 按此名解析。
         V3_80_2_69137 = 69137,
         // Battle.net - should probably not mix this but oh well
         BattleNetV37165 = 37165,
