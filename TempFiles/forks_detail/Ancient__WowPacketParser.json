@@ -1,0 +1,182 @@
+﻿{
+    "full_name":  "Ancient/WowPacketParser",
+    "ahead_by":  34,
+    "behind_by":  5348,
+    "pushed_at":  "2014-04-23T08:37:26Z",
+    "description":  "World of Warcraft Packet Parser 5.4.7.18019",
+    "default_branch":  "master",
+    "branches":  "master",
+    "commit_count":  34,
+    "commits":  [
+                    {
+                        "sha":  "1760791d38",
+                        "date":  "2013-11-14T12:32:10Z",
+                        "msg":  "Update WPP - To Parse Version 5.4.1.17538 Sniffs"
+                    },
+                    {
+                        "sha":  "599131b63d",
+                        "date":  "2013-11-15T05:01:14Z",
+                        "msg":  "Added parsing of SMSG_GAMEOBJECT_QUERY_RESPONSE for 5.4.1"
+                    },
+                    {
+                        "sha":  "23195fddf4",
+                        "date":  "2013-11-15T06:30:43Z",
+                        "msg":  "Added parsing of SMSG_REALM_QUERY_RESPONSE for 5.4.1"
+                    },
+                    {
+                        "sha":  "e36b876aae",
+                        "date":  "2013-11-16T14:59:05Z",
+                        "msg":  "Added parsing of SMSG_AUTH_RESPONSE for 5.4.1"
+                    },
+                    {
+                        "sha":  "edfda9fbb1",
+                        "date":  "2013-12-02T01:34:39Z",
+                        "msg":  "Added parsing of SMSG_CREATURE_QUERY_RESPONSE for 5.4.1"
+                    },
+                    {
+                        "sha":  "dac8fe478f",
+                        "date":  "2013-12-04T06:44:27Z",
+                        "msg":  "Added parsing of CMSG_BANKER_ACTIVATE, CMSG_GOSSIP_HELLO, SMSG_SHOW_BANK for 5.4.1"
+                    },
+                    {
+                        "sha":  "d2e0af8e49",
+                        "date":  "2013-12-04T07:05:55Z",
+                        "msg":  "Added parsing of SMSG_LOGIN_VERIFY_WORLD For 5.4.1"
+                    },
+                    {
+                        "sha":  "57868241b4",
+                        "date":  "2013-12-04T09:07:19Z",
+                        "msg":  "Fixed Typo in CMSG_GOSSIP_HELLO StartBitStream"
+                    },
+                    {
+                        "sha":  "172910c872",
+                        "date":  "2013-12-09T15:41:27Z",
+                        "msg":  "Added parsing of SMSG_INITIAL_SPELLS"
+                    },
+                    {
+                        "sha":  "f72e7bd5cf",
+                        "date":  "2013-12-11T18:57:27Z",
+                        "msg":  "Update WPP - To Parse Version 5.4.2.17658 Sniffs"
+                    },
+                    {
+                        "sha":  "247824c87c",
+                        "date":  "2013-12-11T19:08:42Z",
+                        "msg":  "Added Opcodes and UpdateFields i forgot to add last commit"
+                    },
+                    {
+                        "sha":  "49f5478e80",
+                        "date":  "2013-12-11T19:34:07Z",
+                        "msg":  "Added Some CMSG Opcodes From 5.4.2 17658"
+                    },
+                    {
+                        "sha":  "1fb314aad8",
+                        "date":  "2013-12-21T13:26:04Z",
+                        "msg":  "Core/Build: Updated Build To 5.4.2 17688"
+                    },
+                    {
+                        "sha":  "9c2278c5c8",
+                        "date":  "2013-12-23T10:27:17Z",
+                        "msg":  "Added Some Opcodes and SMSG_LOGIN_VERIFY_WORLD Structure"
+                    },
+                    {
+                        "sha":  "99ee5493db",
+                        "date":  "2013-12-27T18:25:06Z",
+                        "msg":  "Added Parsing of SMSG_UPDATE_OBJECT"
+                    },
+                    {
+                        "sha":  "77e6cdce8b",
+                        "date":  "2013-12-28T03:53:02Z",
+                        "msg":  "Merge pull request #5 from TrinityCore/master"
+                    },
+                    {
+                        "sha":  "c7bcea2695",
+                        "date":  "2013-12-28T07:31:11Z",
+                        "msg":  "Updated SMSG_UPDATE_OBJECT, Added Parsing For hasAttackingTarget Block \u0026 hasGameObjectRotation Block"
+                    },
+                    {
+                        "sha":  "d54034e4ea",
+                        "date":  "2013-12-28T07:47:14Z",
+                        "msg":  "Added Parsing of hasGameObjectPosition Block in SMSG_UPDATE_OBJECT"
+                    },
+                    {
+                        "sha":  "d660c9aa2b",
+                        "date":  "2013-12-28T07:49:51Z",
+                        "msg":  "Fixed Compile From Last Commit"
+                    },
+                    {
+                        "sha":  "830bd9ecf1",
+                        "date":  "2013-12-28T10:54:10Z",
+                        "msg":  "Added Parsing Of SMSG_UPDATE_OBJECT Living Block, Creature Spawns Parsing Now Correctly :)"
+                    },
+                    {
+                        "sha":  "29b65bee9f",
+                        "date":  "2013-12-28T12:34:10Z",
+                        "msg":  "Added Parsing of SMSG_CREATURE_QUERY_RESPONSE and Added Opcodes"
+                    },
+                    {
+                        "sha":  "4f042d5c8a",
+                        "date":  "2013-12-28T12:56:58Z",
+                        "msg":  "Added Parsing SMSG_GAMEOBJECT_QUERY_RESPONSE 5.4.2"
+                    },
+                    {
+                        "sha":  "3fa99147e7",
+                        "date":  "2013-12-28T16:22:54Z",
+                        "msg":  "Added Parsing of SMSG_INITIAL_SPELLS For 5.4.2"
+                    },
+                    {
+                        "sha":  "a52213268a",
+                        "date":  "2013-12-30T10:49:57Z",
+                        "msg":  "Added parsing of SMSG_LIST_INVENTORY for 5.4.2."
+                    },
+                    {
+                        "sha":  "7c6900c392",
+                        "date":  "2013-12-30T20:01:58Z",
+                        "msg":  "Added Parsing of SMSG_NPC_TEXT_UPDATE"
+                    },
+                    {
+                        "sha":  "381bcdae16",
+                        "date":  "2014-01-06T08:36:23Z",
+                        "msg":  "Added Parsing of CMSG_NPC_TEXT_QUERY"
+                    },
+                    {
+                        "sha":  "0b118641a6",
+                        "date":  "2014-01-09T15:48:41Z",
+                        "msg":  "Core/Misc: Fixed Correct ClientBuild DateTimes"
+                    },
+                    {
+                        "sha":  "6e35b836fb",
+                        "date":  "2014-01-10T01:49:51Z",
+                        "msg":  "Small Change"
+                    },
+                    {
+                        "sha":  "003257775e",
+                        "date":  "2014-01-23T21:51:09Z",
+                        "msg":  "Core/Compile: Fixed Compile"
+                    },
+                    {
+                        "sha":  "2e0eb34b3d",
+                        "date":  "2014-01-23T21:52:06Z",
+                        "msg":  "Core/Enums: Added SplineFlags For 542 And Fixed SMSG_UPDATE_OBJECT Now the Friendly spawns are also parsed :P"
+                    },
+                    {
+                        "sha":  "e81ad8cc02",
+                        "date":  "2014-01-30T14:01:44Z",
+                        "msg":  "Merge pull request #7 from kraven5/master"
+                    },
+                    {
+                        "sha":  "45f9e1a3d0",
+                        "date":  "2014-04-01T17:46:55Z",
+                        "msg":  "Updating for V5_4_7_18019"
+                    },
+                    {
+                        "sha":  "1c68e798c3",
+                        "date":  "2014-04-01T18:07:17Z",
+                        "msg":  "Fix Build"
+                    },
+                    {
+                        "sha":  "32eda65678",
+                        "date":  "2014-04-23T08:37:14Z",
+                        "msg":  "Added Opcode for SMSG_QUEST_QUERY_RESPONSE"
+                    }
+                ]
+}

@@ -1,0 +1,35 @@
+﻿{
+    "full_name":  "ennioVisco/WowPacketParser",
+    "ahead_by":  3,
+    "behind_by":  2474,
+    "pushed_at":  "2017-03-11T19:33:30Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale",
+                     "vincent_beta",
+                     "xml-refactoring",
+                     "xml-refactoring-2"
+                 ],
+    "commit_count":  3,
+    "commits":  [
+                    {
+                        "sha":  "c69478382b",
+                        "date":  "2017-03-02T10:59:56Z",
+                        "msg":  "Update to abstract StringBuffer"
+                    },
+                    {
+                        "sha":  "89bf8e522c",
+                        "date":  "2017-03-02T21:56:32Z",
+                        "msg":  "Preparation Commit for XML Support"
+                    },
+                    {
+                        "sha":  "b0ae21788f",
+                        "date":  "2017-03-03T19:40:51Z",
+                        "msg":  "First XML implementation"
+                    }
+                ]
+}

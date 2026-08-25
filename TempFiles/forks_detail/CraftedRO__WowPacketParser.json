@@ -1,0 +1,17 @@
+﻿{
+    "full_name":  "CraftedRO/WowPacketParser",
+    "ahead_by":  1,
+    "behind_by":  968,
+    "pushed_at":  "2025-10-30T18:57:10Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  "master",
+    "commit_count":  1,
+    "commits":  [
+                    {
+                        "sha":  "b03613332f",
+                        "date":  "2023-12-13T17:47:31Z",
+                        "msg":  "update"
+                    }
+                ]
+}

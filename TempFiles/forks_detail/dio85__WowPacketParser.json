@@ -1,0 +1,367 @@
+﻿{
+    "full_name":  "dio85/WowPacketParser",
+    "ahead_by":  71,
+    "behind_by":  10,
+    "pushed_at":  "2026-08-11T13:38:47Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  "master",
+    "commit_count":  71,
+    "commits":  [
+                    {
+                        "sha":  "0e940d8bfe",
+                        "date":  "2023-01-28T17:31:31Z",
+                        "msg":  "add"
+                    },
+                    {
+                        "sha":  "b3eba885ab",
+                        "date":  "2023-01-28T17:31:52Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "6ccfb2e4c8",
+                        "date":  "2023-02-02T14:30:50Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "963ef869ca",
+                        "date":  "2023-03-17T12:16:49Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "a07e287a72",
+                        "date":  "2023-03-23T10:06:04Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "4887ff40dc",
+                        "date":  "2023-03-24T07:16:17Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "71ccb99a30",
+                        "date":  "2023-04-02T05:33:00Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "d9c101c088",
+                        "date":  "2023-04-05T05:57:07Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "4ee2f8bb0e",
+                        "date":  "2023-05-06T09:18:40Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "18c120c60d",
+                        "date":  "2023-05-09T11:27:55Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "0a5c9a08d5",
+                        "date":  "2023-05-15T14:36:22Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "169a9a1f1f",
+                        "date":  "2023-05-15T14:36:56Z",
+                        "msg":  "."
+                    },
+                    {
+                        "sha":  "5803f0d51d",
+                        "date":  "2023-05-21T04:01:01Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "0ebfa38a7f",
+                        "date":  "2023-08-02T06:21:52Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "2b5de7d669",
+                        "date":  "2023-08-08T10:09:26Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "f1df39cdc1",
+                        "date":  "2023-11-07T13:09:05Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "b1c976d994",
+                        "date":  "2023-11-08T06:58:20Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "739a4ab5be",
+                        "date":  "2023-11-08T06:58:51Z",
+                        "msg":  "PARSER/ADD"
+                    },
+                    {
+                        "sha":  "c763e6a0fb",
+                        "date":  "2023-11-09T06:55:32Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "bfd5423060",
+                        "date":  "2023-11-10T10:00:19Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "2860275bba",
+                        "date":  "2023-11-13T13:04:21Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "5e599a2c2f",
+                        "date":  "2023-11-14T06:36:46Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "25617371ba",
+                        "date":  "2023-11-16T11:03:55Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "b21515abb9",
+                        "date":  "2023-11-23T06:41:53Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "6e3e2c5b4a",
+                        "date":  "2023-11-27T07:50:59Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "d6fe2d8b30",
+                        "date":  "2023-11-28T14:03:36Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "d561e61929",
+                        "date":  "2023-12-03T10:18:57Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "7261754098",
+                        "date":  "2023-12-13T13:53:35Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "283cd1440c",
+                        "date":  "2024-08-29T06:05:52Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "3cd340bb4a",
+                        "date":  "2024-10-31T07:50:39Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "f291e9f03f",
+                        "date":  "2024-11-10T20:27:44Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "b0272aa261",
+                        "date":  "2024-11-14T16:00:48Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "e722ce643d",
+                        "date":  "2024-11-19T11:09:15Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "e0b73d74fb",
+                        "date":  "2024-11-25T18:17:07Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "81457698ae",
+                        "date":  "2024-12-05T07:28:39Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "a4ba7fdc63",
+                        "date":  "2024-12-06T08:24:41Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "1784a0a014",
+                        "date":  "2024-12-13T14:48:55Z",
+                        "msg":  "Update ChallengeModeHandler.cs"
+                    },
+                    {
+                        "sha":  "283d0c660b",
+                        "date":  "2024-12-25T06:52:19Z",
+                        "msg":  "fixed groupfinder and lfg for bfa"
+                    },
+                    {
+                        "sha":  "f708b547b9",
+                        "date":  "2025-01-11T17:53:24Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "e3924001d1",
+                        "date":  "2025-02-25T07:24:04Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "85b7ce72b0",
+                        "date":  "2025-03-04T10:45:21Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "e8ac4f8298",
+                        "date":  "2025-03-06T07:21:09Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "a7453af71e",
+                        "date":  "2025-03-11T18:31:31Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "cf93e3e3e3",
+                        "date":  "2025-07-21T21:27:36Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "6d2a48c265",
+                        "date":  "2025-08-05T11:36:23Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "fd01c3b69a",
+                        "date":  "2025-08-06T13:15:07Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "e2931033b3",
+                        "date":  "2025-08-07T06:32:14Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "628ab4f789",
+                        "date":  "2025-08-11T08:23:32Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "0a027f4509",
+                        "date":  "2025-08-20T06:28:29Z",
+                        "msg":  "Merge branch \u0027TrinityCore:master\u0027 into master"
+                    },
+                    {
+                        "sha":  "d880b2fa2d",
+                        "date":  "2025-08-21T09:28:40Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "b275eece4b",
+                        "date":  "2025-08-24T07:17:22Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "d3d2258e12",
+                        "date":  "2025-08-25T09:48:27Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "02c8c65c2f",
+                        "date":  "2025-08-27T13:57:00Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "71ff0ea7b5",
+                        "date":  "2025-09-06T09:21:27Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "1a3a28b55b",
+                        "date":  "2025-10-20T06:07:02Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "e66647cbdf",
+                        "date":  "2025-11-03T06:54:31Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "131d910de2",
+                        "date":  "2025-11-04T11:40:03Z",
+                        "msg":  "Add parser for CMSG_SETUP_WARBAND_GROUPS opcode"
+                    },
+                    {
+                        "sha":  "ca1fda8a36",
+                        "date":  "2025-11-06T10:40:24Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "9f997aee71",
+                        "date":  "2025-11-16T19:00:19Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "2e0f9ecd2f",
+                        "date":  "2025-11-19T07:58:28Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "edf5e99c2a",
+                        "date":  "2025-11-21T15:21:16Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "600c7b0369",
+                        "date":  "2025-12-15T06:26:27Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "4eb9ffc2b9",
+                        "date":  "2025-12-18T05:30:51Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "79f7149417",
+                        "date":  "2026-02-17T08:27:56Z",
+                        "msg":  "Add PerksProgram opcode and parsers"
+                    },
+                    {
+                        "sha":  "d931757f04",
+                        "date":  "2026-02-17T08:31:44Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "ba99f242a3",
+                        "date":  "2026-03-05T07:30:12Z",
+                        "msg":  "CraftingOrder"
+                    },
+                    {
+                        "sha":  "6ed8018bb0",
+                        "date":  "2026-03-05T07:30:26Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "8bc9eaaa3d",
+                        "date":  "2026-05-01T06:13:02Z",
+                        "msg":  "Merge branch \u0027TrinityCore:master\u0027 into master"
+                    },
+                    {
+                        "sha":  "c455e88081",
+                        "date":  "2026-05-03T07:22:50Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "296bca3b98",
+                        "date":  "2026-05-28T09:33:39Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "f6c87cfdda",
+                        "date":  "2026-08-11T13:38:43Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    }
+                ]
+}

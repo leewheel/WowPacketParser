@@ -1,0 +1,28 @@
+﻿{
+    "full_name":  "bozoweed/WowPacketParser",
+    "ahead_by":  2,
+    "behind_by":  2539,
+    "pushed_at":  "2016-09-23T23:16:29Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale",
+                     "vincent_beta"
+                 ],
+    "commit_count":  2,
+    "commits":  [
+                    {
+                        "sha":  "cb7afb6f44",
+                        "date":  "2016-09-21T18:08:16Z",
+                        "msg":  "Merge pull request #1 from TrinityCore/master"
+                    },
+                    {
+                        "sha":  "ccd344ee40",
+                        "date":  "2016-09-23T23:14:59Z",
+                        "msg":  "Merge pull request #2 from TrinityCore/master"
+                    }
+                ]
+}

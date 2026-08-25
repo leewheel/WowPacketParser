@@ -1,0 +1,29 @@
+﻿{
+    "full_name":  "AshamaneProject/WowPacketParser",
+    "ahead_by":  2,
+    "behind_by":  2311,
+    "pushed_at":  "2018-01-04T19:51:36Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "conversation",
+                     "handlers_refactor",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale"
+                 ],
+    "commit_count":  2,
+    "commits":  [
+                    {
+                        "sha":  "8d92f513cb",
+                        "date":  "2018-01-04T19:50:12Z",
+                        "msg":  "Temp Hackfixes"
+                    },
+                    {
+                        "sha":  "a35a5ba5bb",
+                        "date":  "2018-01-04T19:51:22Z",
+                        "msg":  "Merge github.com:AshamaneProject/WowPacketParser"
+                    }
+                ]
+}

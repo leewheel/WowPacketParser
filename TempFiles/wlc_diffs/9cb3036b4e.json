@@ -1,0 +1,113 @@
+{
+  "sha": "9cb3036b4edf1309bee77e12e809dd5abc402538",
+  "node_id": "MDY6Q29tbWl0MzA1OTgyMTQxOjljYjMwMzZiNGVkZjEzMDliZWU3N2UxMmU4MDlkZDVhYmM0MDI1Mzg=",
+  "commit": {
+    "author": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2021-07-31T11:42:43Z"
+    },
+    "committer": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2021-07-31T11:42:43Z"
+    },
+    "message": "Fix SMSG_QUERY_QUEST_INFO_RESPONSE and SMSG_SPELL_START",
+    "tree": {
+      "sha": "b9db5d1685d54bca3b5cdd740166dc23472d9ac5",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/trees/b9db5d1685d54bca3b5cdd740166dc23472d9ac5"
+    },
+    "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/commits/9cb3036b4edf1309bee77e12e809dd5abc402538",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/9cb3036b4edf1309bee77e12e809dd5abc402538",
+  "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/9cb3036b4edf1309bee77e12e809dd5abc402538",
+  "comments_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/9cb3036b4edf1309bee77e12e809dd5abc402538/comments",
+  "author": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "11fdafaaaf64c130e4a59faf5df88bb4bd2a551d",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/11fdafaaaf64c130e4a59faf5df88bb4bd2a551d",
+      "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/11fdafaaaf64c130e4a59faf5df88bb4bd2a551d"
+    }
+  ],
+  "stats": {
+    "total": 306,
+    "additions": 306,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "d6f369879cc7f269f3db7af140db0f9414926b0b",
+      "filename": "WowPacketParserModule.V2_5_1_38835/Parsers/QuestHandler.cs",
+      "status": "added",
+      "additions": 229,
+      "deletions": 0,
+      "changes": 229,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/9cb3036b4edf1309bee77e12e809dd5abc402538/WowPacketParserModule.V2_5_1_38835%2FParsers%2FQuestHandler.cs",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/9cb3036b4edf1309bee77e12e809dd5abc402538/WowPacketParserModule.V2_5_1_38835%2FParsers%2FQuestHandler.cs",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParserModule.V2_5_1_38835%2FParsers%2FQuestHandler.cs?ref=9cb3036b4edf1309bee77e12e809dd5abc402538",
+      "patch": "@@ -0,0 +1,229 @@\n+﻿using WowPacketParser.Enums;\n+using WowPacketParser.Misc;\n+using WowPacketParser.Parsing;\n+using WowPacketParser.Store;\n+using WowPacketParser.Store.Objects;\n+\n+namespace WowPacketParserModule.V2_5_1_38835.Parsers\n+{\n+    public static class QuestHandler\n+    {\n+        [HasSniffData]\n+        [Parser(Opcode.SMSG_QUERY_QUEST_INFO_RESPONSE)]\n+        public static void HandleQuestQueryResponse(Packet packet)\n+        {\n+            packet.ReadInt32(\"Entry\");\n+\n+            Bit hasData = packet.ReadBit(\"Has Data\");\n+            if (!hasData)\n+                return; // nothing to do\n+\n+            var id = packet.ReadEntry(\"Quest ID\");\n+\n+            QuestTemplate quest = new QuestTemplate\n+            {\n+                ID = (uint)id.Key\n+            };\n+\n+            quest.QuestType = packet.ReadInt32E<QuestType>(\"QuestType\");\n+            quest.QuestLevel = packet.ReadInt32(\"QuestLevel\");\n+            quest.QuestScalingFactionGroup = packet.ReadInt32(\"QuestScalingFactionGroup\");\n+            quest.QuestMaxScalingLevel = packet.ReadInt32(\"QuestMaxScalingLevel\");\n+            quest.QuestPackageID = (uint)packet.ReadInt32(\"QuestPackageID\");\n+            quest.MinLevel = packet.ReadInt32(\"QuestMinLevel\");\n+            quest.QuestSortID = (QuestSort)packet.ReadInt32(\"QuestSortID\");\n+            quest.QuestInfoID = packet.ReadInt32E<QuestInfo>(\"QuestInfoID\");\n+            quest.SuggestedGroupNum = (uint)packet.ReadInt32(\"SuggestedGroupNum\");\n+            quest.RewardNextQuest = (uint)packet.ReadInt32(\"RewardNextQuest\");\n+            quest.RewardXPDifficulty = (uint)packet.ReadInt32(\"RewardXPDifficulty\");\n+\n+            quest.RewardXPMultiplier = packet.ReadSingle(\"RewardXPMultiplier\");\n+\n+            quest.RewardMoney = packet.ReadInt32(\"RewardMoney\");\n+            quest.RewardMoneyDifficulty = (uint)packet.ReadInt32(\"RewardMoneyDifficulty\");\n+\n+            quest.RewardMoneyMultiplier = packet.ReadSingle(\"RewardMoneyMultiplier\");\n+\n+            quest.RewardBonusMoney = (uint)packet.ReadInt32(\"RewardBonusMoney\");\n+\n+            quest.RewardDisplaySpellLegion = new uint?[3];\n+            for (int i = 0; i < 3; ++i)\n+                quest.RewardDisplaySpellLegion[i] = (uint)packet.ReadInt32(\"RewardDisplaySpell\", i);\n+\n+            quest.RewardSpellWod = (uint)packet.ReadInt32(\"RewardSpell\");\n+            quest.RewardHonorWod = (uint)packet.ReadInt32(\"RewardHonor\");\n+\n+            quest.RewardKillHonor = packet.ReadSingle(\"RewardKillHonor\");\n+\n+            quest.RewardArtifactXPDifficulty = (uint)packet.ReadInt32(\"RewardArtifactXPDifficulty\");\n+            quest.RewardArtifactXPMultiplier = packet.ReadSingle(\"RewardArtifactXPMultiplier\");\n+            quest.RewardArtifactCategoryID = (uint)packet.ReadInt32(\"RewardArtifactCategoryID\");\n+\n+            quest.StartItem = (uint)packet.ReadInt32(\"StartItem\");\n+            quest.Flags = packet.ReadInt32E<QuestFlags>(\"Flags\");\n+            quest.FlagsEx = packet.ReadInt32E<QuestFlagsEx>(\"FlagsEx\");\n+            quest.FlagsEx2 = packet.ReadInt32E<QuestFlagsEx2>(\"FlagsEx2\");\n+\n+            quest.RewardItem = new uint?[4];\n+            quest.RewardAmount = new uint?[4];\n+            quest.ItemDrop = new uint?[4];\n+            quest.ItemDropQuantity = new uint?[4];\n+            for (int i = 0; i < 4; ++i)\n+            {\n+                quest.RewardItem[i] = (uint)packet.ReadInt32(\"RewardItems\", i);\n+                quest.RewardAmount[i] = (uint)packet.ReadInt32(\"RewardAmount\", i);\n+                quest.ItemDrop[i] = (uint)packet.ReadInt32(\"ItemDrop\", i);\n+                quest.ItemDropQuantity[i] = (uint)packet.ReadInt32(\"ItemDropQuantity\", i);\n+            }\n+\n+            quest.RewardChoiceItemID = new uint?[6];\n+            quest.RewardChoiceItemQuantity = new uint?[6];\n+            quest.RewardChoiceItemDisplayID = new uint?[6];\n+            for (int i = 0; i < 6; ++i) // CliQuestInfoChoiceItem\n+            {\n+                quest.RewardChoiceItemID[i] = (uint)packet.ReadInt32(\"RewardChoiceItemID\", i);\n+                quest.RewardChoiceItemQuantity[i] = (uint)packet.ReadInt32(\"RewardChoiceItemQuantity\", i);\n+                quest.RewardChoiceItemDisplayID[i] = (uint)packet.ReadInt32(\"RewardChoiceItemDisplayID\", i);\n+            }\n+\n+            quest.POIContinent = (uint)packet.ReadInt32(\"POIContinent\");\n+\n+            quest.POIx = packet.ReadSingle(\"POIx\");\n+            quest.POIy = packet.ReadSingle(\"POIy\");\n+\n+            quest.POIPriorityWod = packet.ReadInt32(\"POIPriority\");\n+            quest.RewardTitle = (uint)packet.ReadInt32(\"RewardTitle\");\n+            quest.RewardArenaPoints = (uint)packet.ReadInt32(\"RewardArenaPoints\");\n+            quest.RewardSkillLineID = (uint)packet.ReadInt32(\"RewardSkillLineID\");\n+            quest.RewardNumSkillUps = (uint)packet.ReadInt32(\"RewardNumSkillUps\");\n+            quest.QuestGiverPortrait = (uint)packet.ReadInt32(\"PortraitGiver\");\n+            quest.PortraitGiverMount = (uint)packet.ReadInt32(\"PortraitGiverMount\");\n+            quest.QuestTurnInPortrait = (uint)packet.ReadInt32(\"PortraitTurnIn\");\n+\n+            quest.RewardFactionID = new uint?[5];\n+            quest.RewardFactionOverride = new int?[5];\n+            quest.RewardFactionValue = new int?[5];\n+            quest.RewardFactionCapIn = new int?[5];\n+            for (int i = 0; i < 5; ++i)\n+            {\n+                quest.RewardFactionID[i] = (uint)packet.ReadInt32(\"RewardFactionID\", i);\n+                quest.RewardFactionValue[i] = packet.ReadInt32(\"RewardFactionValue\", i);\n+                quest.RewardFactionOverride[i] = packet.ReadInt32(\"RewardFactionOverride\", i);\n+                quest.RewardFactionCapIn[i] = packet.ReadInt32(\"RewardFactionCapIn\", i);\n+            }\n+\n+            quest.RewardFactionFlags = (uint)packet.ReadInt32(\"RewardFactionFlags\");\n+\n+            quest.RewardCurrencyID = new uint?[4];\n+            quest.RewardCurrencyCount = new uint?[4];\n+            for (int i = 0; i < 4; ++i)\n+            {\n+                quest.RewardCurrencyID[i] = (uint)packet.ReadInt32(\"RewardCurrencyID\", i);\n+                quest.RewardCurrencyCount[i] = (uint)packet.ReadInt32(\"RewardCurrencyQty\", i);\n+            }\n+\n+            quest.SoundAccept = (uint)packet.ReadInt32(\"AcceptedSoundKitID\");\n+            quest.SoundTurnIn = (uint)packet.ReadInt32(\"CompleteSoundKitID\");\n+            quest.AreaGroupID = (uint)packet.ReadInt32(\"AreaGroupID\");\n+            quest.TimeAllowed = (uint)packet.ReadInt32(\"TimeAllowed\");\n+            uint objectiveCount = packet.ReadUInt32(\"ObjectiveCount\");\n+            quest.AllowableRacesWod = packet.ReadUInt64(\"AllowableRaces\");\n+            quest.QuestRewardID = packet.ReadInt32(\"TreasurePickerID\");\n+            quest.Expansion = packet.ReadInt32(\"Expansion\");\n+\n+            packet.ResetBitReader();\n+            uint logTitleLen = packet.ReadBits(9);\n+            uint logDescriptionLen = packet.ReadBits(12);\n+            uint questDescriptionLen = packet.ReadBits(12);\n+            uint areaDescriptionLen = packet.ReadBits(9);\n+            uint questGiverTextWindowLen = packet.ReadBits(10);\n+            uint questGiverTargetNameLen = packet.ReadBits(8);\n+            uint questTurnTextWindowLen = packet.ReadBits(10);\n+            uint questTurnTargetNameLen = packet.ReadBits(8);\n+            uint questCompletionLogLen = packet.ReadBits(11);\n+\n+            for (uint i = 0; i < objectiveCount; ++i)\n+            {\n+                var objectiveId = packet.ReadEntry(\"Id\", i);\n+\n+                QuestObjective questInfoObjective = new QuestObjective\n+                {\n+                    ID = (uint)objectiveId.Key,\n+                    QuestID = (uint)id.Key\n+                };\n+                questInfoObjective.Type = packet.ReadByteE<QuestRequirementType>(\"Quest Requirement Type\", i);\n+                questInfoObjective.StorageIndex = packet.ReadSByte(\"StorageIndex\", i);\n+                questInfoObjective.Order = i;\n+                questInfoObjective.ObjectID = packet.ReadInt32(\"ObjectID\", i);\n+                questInfoObjective.Amount = packet.ReadInt32(\"Amount\", i);\n+                questInfoObjective.Flags = (uint)packet.ReadInt32(\"Flags\", i);\n+                questInfoObjective.Flags2 = packet.ReadUInt32(\"Flags2\", i);\n+                questInfoObjective.ProgressBarWeight = packet.ReadSingle(\"ProgressBarWeight\", i);\n+\n+                var visualEffectsCount = packet.ReadUInt32(\"VisualEffects\", i);\n+                for (var j = 0; j < visualEffectsCount; ++j)\n+                {\n+                    QuestVisualEffect questVisualEffect = new QuestVisualEffect\n+                    {\n+                        ID = questInfoObjective.ID,\n+                        Index = (uint)j,\n+                        VisualEffect = packet.ReadInt32(\"VisualEffectId\", i, j)\n+                    };\n+\n+                    Storage.QuestVisualEffects.Add(questVisualEffect, packet.TimeSpan);\n+                }\n+\n+                packet.ResetBitReader();\n+\n+                uint descriptionLength = packet.ReadBits(8);\n+                questInfoObjective.Description = packet.ReadWoWString(\"Description\", descriptionLength, i);\n+\n+                if (ClientLocale.PacketLocale != LocaleConstant.enUS && questInfoObjective.Description != string.Empty)\n+                {\n+                    QuestObjectivesLocale localesQuestObjectives = new QuestObjectivesLocale\n+                    {\n+                        ID = (uint)objectiveId.Key,\n+                        QuestId = (uint)id.Key,\n+                        StorageIndex = questInfoObjective.StorageIndex,\n+                        Description = questInfoObjective.Description\n+                    };\n+\n+                    Storage.LocalesQuestObjectives.Add(localesQuestObjectives, packet.TimeSpan);\n+                }\n+\n+                Storage.QuestObjectives.Add(questInfoObjective, packet.TimeSpan);\n+            }\n+\n+            quest.LogTitle = packet.ReadWoWString(\"LogTitle\", logTitleLen);\n+            quest.LogDescription = packet.ReadWoWString(\"LogDescription\", logDescriptionLen);\n+            quest.QuestDescription = packet.ReadWoWString(\"QuestDescription\", questDescriptionLen);\n+            quest.AreaDescription = packet.ReadWoWString(\"AreaDescription\", areaDescriptionLen);\n+            quest.QuestGiverTextWindow = packet.ReadWoWString(\"PortraitGiverText\", questGiverTextWindowLen);\n+            quest.QuestGiverTargetName = packet.ReadWoWString(\"PortraitGiverName\", questGiverTargetNameLen);\n+            quest.QuestTurnTextWindow = packet.ReadWoWString(\"PortraitTurnInText\", questTurnTextWindowLen);\n+            quest.QuestTurnTargetName = packet.ReadWoWString(\"PortraitTurnInName\", questTurnTargetNameLen);\n+            quest.QuestCompletionLog = packet.ReadWoWString(\"QuestCompletionLog\", questCompletionLogLen);\n+\n+            if (ClientLocale.PacketLocale != LocaleConstant.enUS)\n+            {\n+                LocalesQuest localesQuest = new LocalesQuest\n+                {\n+                    ID = (uint)id.Key,\n+                    LogTitle = quest.LogTitle,\n+                    LogDescription = quest.LogDescription,\n+                    QuestDescription = quest.QuestDescription,\n+                    AreaDescription = quest.AreaDescription,\n+                    PortraitGiverText = quest.QuestGiverTextWindow,\n+                    PortraitGiverName = quest.QuestGiverTargetName,\n+                    PortraitTurnInText = quest.QuestTurnTextWindow,\n+                    PortraitTurnInName = quest.QuestTurnTargetName,\n+                    QuestCompletionLog = quest.QuestCompletionLog\n+                };\n+\n+                Storage.LocalesQuests.Add(localesQuest, packet.TimeSpan);\n+            }\n+\n+            Storage.QuestTemplates.Add(quest, packet.TimeSpan);\n+        }\n+    }\n+}"
+    },
+    {
+      "sha": "4b2f9c89836bf8ca132c7ab7dfe542597a7b20f5",
+      "filename": "WowPacketParserModule.V2_5_1_38835/Parsers/SpellHandler.cs",
+      "status": "added",
+      "additions": 77,
+      "deletions": 0,
+      "changes": 77,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/9cb3036b4edf1309bee77e12e809dd5abc402538/WowPacketParserModule.V2_5_1_38835%2FParsers%2FSpellHandler.cs",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/9cb3036b4edf1309bee77e12e809dd5abc402538/WowPacketParserModule.V2_5_1_38835%2FParsers%2FSpellHandler.cs",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParserModule.V2_5_1_38835%2FParsers%2FSpellHandler.cs?ref=9cb3036b4edf1309bee77e12e809dd5abc402538",
+      "patch": "@@ -0,0 +1,77 @@\n+﻿using WowPacketParser.Enums;\n+using WowPacketParser.Misc;\n+using WowPacketParser.Parsing;\n+\n+namespace WowPacketParserModule.V2_5_1_38835.Parsers\n+{\n+    public static class SpellHandler\n+    {\n+        public static void ReadSpellCastData(Packet packet, params object[] idx)\n+        {\n+            packet.ReadPackedGuid128(\"CasterGUID\", idx);\n+            packet.ReadPackedGuid128(\"CasterUnit\", idx);\n+\n+            packet.ReadPackedGuid128(\"CastID\", idx);\n+            packet.ReadPackedGuid128(\"OriginalCastID\", idx);\n+\n+            var spellID = packet.ReadInt32<SpellId>(\"SpellID\", idx);\n+            packet.ReadInt32(\"SpellXSpellVisualID\", idx);\n+\n+            packet.ReadUInt32(\"CastFlags\", idx);\n+            packet.ReadUInt32(\"CastFlagsEx\", idx);\n+            packet.ReadUInt32(\"CastTime\", idx);\n+\n+            V6_0_2_19033.Parsers.SpellHandler.ReadMissileTrajectoryResult(packet, idx, \"MissileTrajectory\");\n+\n+            packet.ReadByte(\"DestLocSpellCastIndex\", idx);\n+\n+            V6_0_2_19033.Parsers.SpellHandler.ReadCreatureImmunities(packet, idx, \"Immunities\");\n+\n+            V6_0_2_19033.Parsers.SpellHandler.ReadSpellHealPrediction(packet, idx, \"Predict\");\n+\n+            packet.ResetBitReader();\n+\n+            var hitTargetsCount = packet.ReadBits(\"HitTargetsCount\", 16, idx);\n+            var missTargetsCount = packet.ReadBits(\"MissTargetsCount\", 16, idx);\n+            var missStatusCount = packet.ReadBits(\"MissStatusCount\", 16, idx);\n+            var remainingPowerCount = packet.ReadBits(\"RemainingPowerCount\", 9, idx);\n+\n+            var hasRuneData = packet.ReadBit(\"HasRuneData\", idx);\n+            var targetPointsCount = packet.ReadBits(\"TargetPointsCount\", 16, idx);\n+            var hasUnkBCC1 = packet.ReadBit(\"HasUnkBCC1\", idx);\n+            var hasUnkBCC2 = packet.ReadBit(\"HasUnkBCC2\", idx);\n+\n+            for (var i = 0; i < missStatusCount; ++i)\n+                V6_0_2_19033.Parsers.SpellHandler.ReadSpellMissStatus(packet, idx, \"MissStatus\", i);\n+\n+            V8_0_1_27101.Parsers.SpellHandler.ReadSpellTargetData(packet, (uint)spellID, idx, \"Target\");\n+\n+            for (var i = 0; i < hitTargetsCount; ++i)\n+                packet.ReadPackedGuid128(\"HitTarget\", idx, i);\n+\n+            for (var i = 0; i < missTargetsCount; ++i)\n+                packet.ReadPackedGuid128(\"MissTarget\", idx, i);\n+\n+            for (var i = 0; i < remainingPowerCount; ++i)\n+                V6_0_2_19033.Parsers.SpellHandler.ReadSpellPowerData(packet, idx, \"RemainingPower\", i);\n+\n+            if (hasRuneData)\n+                V7_0_3_22248.Parsers.SpellHandler.ReadRuneData(packet, idx, \"RemainingRunes\");\n+\n+            for (var i = 0; i < targetPointsCount; ++i)\n+                V6_0_2_19033.Parsers.SpellHandler.ReadLocation(packet, idx, \"TargetPoints\", i);\n+\n+            if (hasUnkBCC1)\n+                packet.ReadInt32(\"UnkBCC1\", idx);\n+\n+            if (hasUnkBCC2)\n+                packet.ReadInt32(\"UnkBCC2\", idx);\n+        }\n+\n+        [Parser(Opcode.SMSG_SPELL_START)]\n+        public static void HandleSpellStart(Packet packet)\n+        {\n+            ReadSpellCastData(packet, \"Cast\");\n+        }\n+    }\n+}"
+    }
+  ]
+}

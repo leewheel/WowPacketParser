@@ -1,0 +1,160 @@
+﻿{
+    "full_name":  "RioMcBoo/WowPacketParser",
+    "ahead_by":  28,
+    "behind_by":  323,
+    "pushed_at":  "2025-10-10T15:58:55Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "FractalCore",
+    "branches":  [
+                     "FractalCore",
+                     "WpAlpha",
+                     "handlers_refactor",
+                     "master",
+                     "multiple_sql",
+                     "sanitizing",
+                     "splitLocale"
+                 ],
+    "commit_count":  28,
+    "commits":  [
+                    {
+                        "sha":  "8d3f18a9da",
+                        "date":  "2024-05-06T13:26:40Z",
+                        "msg":  "Allow to create packet structures for a specific build version."
+                    },
+                    {
+                        "sha":  "8122b6bad9",
+                        "date":  "2024-05-06T13:51:19Z",
+                        "msg":  "Correction GuildBankRightsFlag enum"
+                    },
+                    {
+                        "sha":  "98c2fba328",
+                        "date":  "2024-05-07T20:25:41Z",
+                        "msg":  "Add some structures for 3.4.3.54261"
+                    },
+                    {
+                        "sha":  "654a6ad726",
+                        "date":  "2024-07-01T09:20:16Z",
+                        "msg":  "Fix SMSG_CALENDAR_SEND_CALENDAR (3.4.3.54261)"
+                    },
+                    {
+                        "sha":  "7345fbd8b1",
+                        "date":  "2024-07-02T09:56:23Z",
+                        "msg":  "Fix SMSG_CALENDAR_EVENT_UPDATED_ALERT (3.4.3.54261)"
+                    },
+                    {
+                        "sha":  "bdd4c94616",
+                        "date":  "2024-11-21T07:46:37Z",
+                        "msg":  "SMSG_GUILD_BANK_QUERY_RESULTS"
+                    },
+                    {
+                        "sha":  "f607b1b6cf",
+                        "date":  "2025-02-10T16:29:14Z",
+                        "msg":  "Fix SMSG_CONVERT_RUNE (for wotlk_classic)"
+                    },
+                    {
+                        "sha":  "78b62fad1e",
+                        "date":  "2025-03-21T02:12:28Z",
+                        "msg":  "Added SMSG_SHOW_TRADE_SKILL_RESPONSE for V3_4_1_48340"
+                    },
+                    {
+                        "sha":  "4511dd88ef",
+                        "date":  "2025-04-26T01:06:12Z",
+                        "msg":  "wotlk_classic updates"
+                    },
+                    {
+                        "sha":  "768cf95af9",
+                        "date":  "2025-06-28T21:53:18Z",
+                        "msg":  "Merging with master"
+                    },
+                    {
+                        "sha":  "df514cc6ca",
+                        "date":  "2025-06-29T01:54:57Z",
+                        "msg":  "Add build V3_4_4_61581"
+                    },
+                    {
+                        "sha":  "5ec98be55a",
+                        "date":  "2025-06-28T22:58:23Z",
+                        "msg":  "Update wotlk classic CMSG_DF_JOIN field names"
+                    },
+                    {
+                        "sha":  "1fe135d425",
+                        "date":  "2025-06-28T23:01:20Z",
+                        "msg":  "Add wotlk_classic CMSG_DISCARDED_TIME_SYNC_ACKS"
+                    },
+                    {
+                        "sha":  "c8499006eb",
+                        "date":  "2025-06-28T23:02:43Z",
+                        "msg":  "Add 3.4.4 CMSG_DO_COUNTDOWN"
+                    },
+                    {
+                        "sha":  "b8bc7b6073",
+                        "date":  "2025-06-28T23:30:39Z",
+                        "msg":  "Replace wrong ReadGuid call in wotlk classic"
+                    },
+                    {
+                        "sha":  "fbe7334116",
+                        "date":  "2025-06-28T23:48:36Z",
+                        "msg":  "Update 3.4.4 CMSG_GUILD_DECLINE_INVITATION"
+                    },
+                    {
+                        "sha":  "b0abed684c",
+                        "date":  "2025-06-29T00:00:12Z",
+                        "msg":  "remove duplicate handler"
+                    },
+                    {
+                        "sha":  "8a9d5bb97e",
+                        "date":  "2025-06-29T00:05:42Z",
+                        "msg":  "Update 3.4.4 CMSG_GUILD_SET_RANK_PERMISSIONS"
+                    },
+                    {
+                        "sha":  "542accc5c0",
+                        "date":  "2025-06-29T00:10:48Z",
+                        "msg":  "Add wotlk classic CMSG_LFG_LIST_APPLY_TO_GROUP"
+                    },
+                    {
+                        "sha":  "304d9a5166",
+                        "date":  "2025-06-29T00:13:22Z",
+                        "msg":  "Add 3.4.4 CMSG_LFG_LIST_INVITE_APPLICANT"
+                    },
+                    {
+                        "sha":  "526908eedb",
+                        "date":  "2025-06-29T00:13:58Z",
+                        "msg":  "Add wotlk classic CMSG_LFG_LIST_INVITE_RESPONSE"
+                    },
+                    {
+                        "sha":  "0c44b803ce",
+                        "date":  "2025-06-29T02:26:45Z",
+                        "msg":  "Add wotlk classic CMSG_LFG_LIST_LEAVE"
+                    },
+                    {
+                        "sha":  "80345f3fb0",
+                        "date":  "2025-06-29T03:22:01Z",
+                        "msg":  "Add wotlk classic CMSG_LOG_STREAMING_ERROR"
+                    },
+                    {
+                        "sha":  "e62c3294b6",
+                        "date":  "2025-06-29T03:35:25Z",
+                        "msg":  "Add 3.4.4 CMSG_MOVE_APPLY_INERTIA_ACK and update ReadMovementStats"
+                    },
+                    {
+                        "sha":  "df1f978554",
+                        "date":  "2025-06-29T03:48:19Z",
+                        "msg":  "Update 3.4.4 CMSG_USE_ITEM"
+                    },
+                    {
+                        "sha":  "902d59416b",
+                        "date":  "2025-06-29T03:50:27Z",
+                        "msg":  "Add wotlk classic CMSG_HOTFIX_REQUEST"
+                    },
+                    {
+                        "sha":  "a90af07663",
+                        "date":  "2025-06-29T03:56:36Z",
+                        "msg":  "Add 3.4.4 SMSG_ATTACK_SWING_LANDED_LOG"
+                    },
+                    {
+                        "sha":  "0bc27ae3dc",
+                        "date":  "2025-06-29T03:57:40Z",
+                        "msg":  "Use correct ReadAttackRoundInfo"
+                    }
+                ]
+}

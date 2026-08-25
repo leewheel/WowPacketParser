@@ -1,0 +1,113 @@
+{
+  "sha": "982525e458eedc882f804d15d9a966dda4a84db1",
+  "node_id": "MDY6Q29tbWl0MzA1OTgyMTQxOjk4MjUyNWU0NThlZWRjODgyZjgwNGQxNWQ5YTk2NmRkYTRhODRkYjE=",
+  "commit": {
+    "author": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2021-07-31T13:23:40Z"
+    },
+    "committer": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2021-07-31T13:23:40Z"
+    },
+    "message": "Add missing SMSG_ACCOUNT_HEIRLOOM_UPDATE",
+    "tree": {
+      "sha": "f3b518b886eea1d7e71087f0ac6e1e0ed04479cf",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/trees/f3b518b886eea1d7e71087f0ac6e1e0ed04479cf"
+    },
+    "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/commits/982525e458eedc882f804d15d9a966dda4a84db1",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/982525e458eedc882f804d15d9a966dda4a84db1",
+  "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/982525e458eedc882f804d15d9a966dda4a84db1",
+  "comments_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/982525e458eedc882f804d15d9a966dda4a84db1/comments",
+  "author": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ab6a61626bd70f385e0df30ee9956600be37be75",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/ab6a61626bd70f385e0df30ee9956600be37be75",
+      "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/ab6a61626bd70f385e0df30ee9956600be37be75"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "602308cf33577238a436fe9286dd5702b0c780b2",
+      "filename": "WowPacketParser/Enums/Version/V2_5_1_38835/Opcodes.cs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/982525e458eedc882f804d15d9a966dda4a84db1/WowPacketParser%2FEnums%2FVersion%2FV2_5_1_38835%2FOpcodes.cs",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/982525e458eedc882f804d15d9a966dda4a84db1/WowPacketParser%2FEnums%2FVersion%2FV2_5_1_38835%2FOpcodes.cs",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParser%2FEnums%2FVersion%2FV2_5_1_38835%2FOpcodes.cs?ref=982525e458eedc882f804d15d9a966dda4a84db1",
+      "patch": "@@ -763,6 +763,7 @@ public static BiDictionary<Opcode, int> Opcodes(Direction direction)\n             {Opcode.SMSG_SEND_ITEM_PASSIVES, 0x25AB},\n             {Opcode.SMSG_WORLD_SERVER_INFO, 0x25AC},\n             {Opcode.SMSG_ACCOUNT_TOY_UPDATE, 0x25AE},\n+            {Opcode.SMSG_ACCOUNT_HEIRLOOM_UPDATE, 0x25AF},\n             {Opcode.SMSG_RUNE_REGEN_DEBUG, 0x25B3},\n             {Opcode.SMSG_VENDOR_INVENTORY, 0x25B5},\n             {Opcode.SMSG_SET_PLAY_HOVER_ANIM, 0x25B7},"
+    },
+    {
+      "sha": "550890fe7933c256a8bf2e9fb225ed0d2fdf53d2",
+      "filename": "WowPacketParser/Enums/Version/V2_5_2_39570/Opcodes.cs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/982525e458eedc882f804d15d9a966dda4a84db1/WowPacketParser%2FEnums%2FVersion%2FV2_5_2_39570%2FOpcodes.cs",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/982525e458eedc882f804d15d9a966dda4a84db1/WowPacketParser%2FEnums%2FVersion%2FV2_5_2_39570%2FOpcodes.cs",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParser%2FEnums%2FVersion%2FV2_5_2_39570%2FOpcodes.cs?ref=982525e458eedc882f804d15d9a966dda4a84db1",
+      "patch": "@@ -762,6 +762,7 @@ public static BiDictionary<Opcode, int> Opcodes(Direction direction)\n             {Opcode.SMSG_SEND_ITEM_PASSIVES, 0x25AB},\n             {Opcode.SMSG_WORLD_SERVER_INFO, 0x25AC},\n             {Opcode.SMSG_ACCOUNT_TOY_UPDATE, 0x25AE},\n+            {Opcode.SMSG_ACCOUNT_HEIRLOOM_UPDATE, 0x25AF},\n             {Opcode.SMSG_RUNE_REGEN_DEBUG, 0x25B3},\n             {Opcode.SMSG_VENDOR_INVENTORY, 0x25B5},\n             {Opcode.SMSG_SET_PLAY_HOVER_ANIM, 0x25B7},"
+    }
+  ]
+}

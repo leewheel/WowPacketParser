@@ -1,0 +1,32 @@
+﻿{
+    "full_name":  "DrEhsan/WowPacketParser",
+    "ahead_by":  3,
+    "behind_by":  2700,
+    "pushed_at":  "2016-07-27T10:08:41Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale"
+                 ],
+    "commit_count":  3,
+    "commits":  [
+                    {
+                        "sha":  "e8126478ee",
+                        "date":  "2016-07-26T14:20:16Z",
+                        "msg":  "Update to 7.0.3"
+                    },
+                    {
+                        "sha":  "86a7fa2be8",
+                        "date":  "2016-07-27T09:53:51Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser"
+                    },
+                    {
+                        "sha":  "eb6b0bbbea",
+                        "date":  "2016-07-27T10:08:16Z",
+                        "msg":  "Port Remaining packets from TC and change base for 7.x packets to 6.x"
+                    }
+                ]
+}

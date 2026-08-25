@@ -1,0 +1,37 @@
+﻿{
+    "full_name":  "aedansilver/WowPacketParser_2",
+    "ahead_by":  5,
+    "behind_by":  5952,
+    "pushed_at":  "2012-07-27T23:20:52Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  "master",
+    "commit_count":  5,
+    "commits":  [
+                    {
+                        "sha":  "595d3b62ef",
+                        "date":  "2012-07-07T20:58:20Z",
+                        "msg":  "Added 5 new opcodes related to movement and corrected one"
+                    },
+                    {
+                        "sha":  "5f4ca228eb",
+                        "date":  "2012-07-07T21:56:26Z",
+                        "msg":  "Added 6 more opcodes."
+                    },
+                    {
+                        "sha":  "3def7d214b",
+                        "date":  "2012-07-08T00:58:11Z",
+                        "msg":  "Added a 5 more opcodes and correct 2."
+                    },
+                    {
+                        "sha":  "4a99bc9a54",
+                        "date":  "2012-07-08T14:36:10Z",
+                        "msg":  "Merge branch \u0027master\u0027 of git://github.com/TrinityCore/WowPacketParser"
+                    },
+                    {
+                        "sha":  "13cc6f6719",
+                        "date":  "2012-07-27T23:20:48Z",
+                        "msg":  "Merge branch \u0027master\u0027 of git://github.com/TrinityCore/WowPacketParser"
+                    }
+                ]
+}

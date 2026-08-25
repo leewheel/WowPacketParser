@@ -1,0 +1,22 @@
+﻿{
+    "full_name":  "maanuel/WowPacketParser",
+    "ahead_by":  2,
+    "behind_by":  6686,
+    "pushed_at":  "2012-01-19T01:08:58Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  "master",
+    "commit_count":  2,
+    "commits":  [
+                    {
+                        "sha":  "c6e3a13d39",
+                        "date":  "2012-01-18T23:01:16Z",
+                        "msg":  "Implemented changes to output the needed data for the Sniff Viewer."
+                    },
+                    {
+                        "sha":  "181e41b8f7",
+                        "date":  "2012-01-19T01:08:30Z",
+                        "msg":  "Corrected some errors while uploading the file."
+                    }
+                ]
+}

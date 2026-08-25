@@ -1,0 +1,17 @@
+﻿{
+    "full_name":  "horn/WowPacketParser",
+    "ahead_by":  1,
+    "behind_by":  2711,
+    "pushed_at":  "2016-04-07T11:44:59Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  "master",
+    "commit_count":  1,
+    "commits":  [
+                    {
+                        "sha":  "ebd1df4031",
+                        "date":  "2016-04-07T11:44:35Z",
+                        "msg":  "Update ReadPetBattleEffectTarget to 6.2.4 21355"
+                    }
+                ]
+}

@@ -1,0 +1,25 @@
+﻿{
+    "full_name":  "HelloKitty/WowPacketParser",
+    "ahead_by":  1,
+    "behind_by":  2287,
+    "pushed_at":  "2018-06-01T18:26:44Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "1_12_1_updatepacket",
+                     "WpAlpha",
+                     "conversation",
+                     "handlers_refactor",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale"
+                 ],
+    "commit_count":  1,
+    "commits":  [
+                    {
+                        "sha":  "78c35799b6",
+                        "date":  "2018-05-31T01:24:12Z",
+                        "msg":  "Added NUnitTestAdapter for NUnit2 Test Running in VS"
+                    }
+                ]
+}

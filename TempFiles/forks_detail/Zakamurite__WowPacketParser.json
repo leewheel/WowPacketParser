@@ -1,0 +1,22 @@
+﻿{
+    "full_name":  "Zakamurite/WowPacketParser",
+    "ahead_by":  1,
+    "behind_by":  6042,
+    "pushed_at":  "2012-08-05T11:03:52Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "attackingTargetGuid_fix",
+                     "auth",
+                     "master",
+                     "movement"
+                 ],
+    "commit_count":  1,
+    "commits":  [
+                    {
+                        "sha":  "4aabc011a7",
+                        "date":  "2012-07-25T07:34:30Z",
+                        "msg":  "CMSG_BATTLEFIELD_MGR_ENTRY_INVITE_RESPONSE"
+                    }
+                ]
+}

@@ -1,0 +1,142 @@
+﻿{
+    "full_name":  "leewheel/WowPacketParser",
+    "ahead_by":  26,
+    "behind_by":  0,
+    "pushed_at":  "2026-08-24T21:00:26Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  "master",
+    "commit_count":  26,
+    "commits":  [
+                    {
+                        "sha":  "1fb19eca32",
+                        "date":  "2026-08-14T05:11:42Z",
+                        "msg":  "Add V3_8_0_69137 module (MoP Classic China)"
+                    },
+                    {
+                        "sha":  "cfa282fc13",
+                        "date":  "2026-08-14T05:35:21Z",
+                        "msg":  "Refactor: V3_8_0_69137 完全独立现代模块（移除 V5_5_0/V5_5_3 依赖）"
+                    },
+                    {
+                        "sha":  "294c104c90",
+                        "date":  "2026-08-14T08:02:19Z",
+                        "msg":  "Feat: 跳过VoidStorage误判段 + opcode覆盖层优化"
+                    },
+                    {
+                        "sha":  "e0788369ea",
+                        "date":  "2026-08-14T08:21:58Z",
+                        "msg":  "Feat: 打通移动段(0x5E0002/0x5E000E): 解析率65.6%"
+                    },
+                    {
+                        "sha":  "a06d4e3593",
+                        "date":  "2026-08-14T08:52:29Z",
+                        "msg":  "Feat: 打通0x46018F(国服新增包), 解析率70.4%"
+                    },
+                    {
+                        "sha":  "43bdb49f84",
+                        "date":  "2026-08-14T10:35:39Z",
+                        "msg":  "Feat: 批量映射全部S2C+部分C2S未识别包, 解析率75.1%"
+                    },
+                    {
+                        "sha":  "31f1fb5a76",
+                        "date":  "2026-08-14T11:34:38Z",
+                        "msg":  "Feat: 映射全部S2C+部分C2S, 解析率75.1%, skipped 2.3%"
+                    },
+                    {
+                        "sha":  "4f62cb45b6",
+                        "date":  "2026-08-14T19:01:17Z",
+                        "msg":  "Handle CN 3.80.2 packet format variations"
+                    },
+                    {
+                        "sha":  "c2b1751dda",
+                        "date":  "2026-08-14T19:09:26Z",
+                        "msg":  "fix: 修复 Movement/Quest/Query 等handler尾部字节和包结构差异, 75.1% -\u003e 88.5%"
+                    },
+                    {
+                        "sha":  "664a941a0c",
+                        "date":  "2026-08-15T02:50:07Z",
+                        "msg":  "Adjust parsers for CN 3.80.2 packet differences"
+                    },
+                    {
+                        "sha":  "77b0fb5993",
+                        "date":  "2026-08-15T03:13:27Z",
+                        "msg":  "fix: 修复新抓包解析 86.7%-\u003e90.6%, 移除错误opcode映射, 修复Petition/LevelUp/Auction/Loot等handler"
+                    },
+                    {
+                        "sha":  "fb13ad20de",
+                        "date":  "2026-08-15T03:19:03Z",
+                        "msg":  "docs: 更新 HANDOVER.md, 记录 90.6% 解析率和待解决问题"
+                    },
+                    {
+                        "sha":  "ac6bd121c7",
+                        "date":  "2026-08-15T08:29:31Z",
+                        "msg":  "Update UpdateFields.cs"
+                    },
+                    {
+                        "sha":  "206ee22563",
+                        "date":  "2026-08-16T02:12:05Z",
+                        "msg":  "Merge branch \u0027TrinityCore:master\u0027 into master"
+                    },
+                    {
+                        "sha":  "376d90bfe0",
+                        "date":  "2026-08-17T18:24:23Z",
+                        "msg":  "Merge branch \u0027TrinityCore:master\u0027 into master"
+                    },
+                    {
+                        "sha":  "961bfc5bb0",
+                        "date":  "2026-08-17T19:20:10Z",
+                        "msg":  "fix: 第三轮国服 3.80.2 解析修复, 88.6%-\u003e93.4%"
+                    },
+                    {
+                        "sha":  "3e843663b9",
+                        "date":  "2026-08-17T19:35:28Z",
+                        "msg":  "fix: QUERY_QUEST_INFO_RESPONSE 目标段结构修正, 任务包 100% 解析"
+                    },
+                    {
+                        "sha":  "8d1c4e4202",
+                        "date":  "2026-08-17T20:10:12Z",
+                        "msg":  "fix: SMSG_LOG_XP_GAIN 国服结构修正, 经验值恢复正常"
+                    },
+                    {
+                        "sha":  "bc2d00c017",
+                        "date":  "2026-08-17T20:16:34Z",
+                        "msg":  "fix: 0x630027 确认为 SMSG_QUERY_PLAYER_NAMES_RESPONSE"
+                    },
+                    {
+                        "sha":  "17f0c39311",
+                        "date":  "2026-08-18T02:02:30Z",
+                        "msg":  "fix: 修正 C2S 任务 opcode 映射, 接取任务可识别"
+                    },
+                    {
+                        "sha":  "2b86bce0b8",
+                        "date":  "2026-08-18T02:07:40Z",
+                        "msg":  "Update HANDOVER.md"
+                    },
+                    {
+                        "sha":  "abd30b346e",
+                        "date":  "2026-08-20T01:15:14Z",
+                        "msg":  "Merge branch \u0027TrinityCore:master\u0027 into master"
+                    },
+                    {
+                        "sha":  "2905b91a57",
+                        "date":  "2026-08-20T01:51:39Z",
+                        "msg":  "All 3.8"
+                    },
+                    {
+                        "sha":  "02466f386b",
+                        "date":  "2026-08-20T02:04:40Z",
+                        "msg":  "3.4.5"
+                    },
+                    {
+                        "sha":  "ee84c71edc",
+                        "date":  "2026-08-24T19:35:50Z",
+                        "msg":  "Merge branch \u0027TrinityCore:master\u0027 into master"
+                    },
+                    {
+                        "sha":  "ef4c99cbbc",
+                        "date":  "2026-08-24T21:00:16Z",
+                        "msg":  "Update parsers for 3.4.5 (build 63697+)"
+                    }
+                ]
+}

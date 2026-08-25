@@ -1,0 +1,32 @@
+﻿{
+    "full_name":  "jtongzhi/WowPacketParser",
+    "ahead_by":  3,
+    "behind_by":  2706,
+    "pushed_at":  "2016-04-26T11:26:18Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale"
+                 ],
+    "commit_count":  3,
+    "commits":  [
+                    {
+                        "sha":  "defb271e14",
+                        "date":  "2016-04-07T13:12:16Z",
+                        "msg":  "Merge pull request #1 from TrinityCore/master"
+                    },
+                    {
+                        "sha":  "cc0b87e2da",
+                        "date":  "2016-04-17T11:10:48Z",
+                        "msg":  "Merge pull request #2 from TrinityCore/master"
+                    },
+                    {
+                        "sha":  "19f94b913a",
+                        "date":  "2016-04-26T11:26:18Z",
+                        "msg":  "Merge pull request #3 from TrinityCore/master"
+                    }
+                ]
+}

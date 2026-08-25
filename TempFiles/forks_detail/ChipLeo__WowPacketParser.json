@@ -1,0 +1,2512 @@
+﻿{
+    "full_name":  "ChipLeo/WowPacketParser",
+    "ahead_by":  839,
+    "behind_by":  199,
+    "pushed_at":  "2025-11-16T21:48:09Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  "master",
+    "commit_count":  500,
+    "commits":  [
+                    {
+                        "sha":  "97b12850f7",
+                        "date":  "2014-02-22T10:55:14Z",
+                        "msg":  "Some initial work on 5.4.7.17930"
+                    },
+                    {
+                        "sha":  "e8f112784e",
+                        "date":  "2014-02-22T13:28:38Z",
+                        "msg":  "Added known opcodes for 5.4.7.17930. Fixed a double define."
+                    },
+                    {
+                        "sha":  "9553acff70",
+                        "date":  "2014-02-23T12:11:47Z",
+                        "msg":  "Some Additions"
+                    },
+                    {
+                        "sha":  "d66cbf3113",
+                        "date":  "2014-02-23T12:12:30Z",
+                        "msg":  "Merge branch \u0027master\u0027 of github.com:netcho/WowPacketParser"
+                    },
+                    {
+                        "sha":  "61b3682dc0",
+                        "date":  "2014-02-23T18:15:58Z",
+                        "msg":  "More implementations"
+                    },
+                    {
+                        "sha":  "bb775f4940",
+                        "date":  "2014-02-23T18:45:50Z",
+                        "msg":  "Some more Opcodes.cs"
+                    },
+                    {
+                        "sha":  "b8b0c9ec23",
+                        "date":  "2014-02-23T19:03:45Z",
+                        "msg":  "More Opcodes.cs 17930"
+                    },
+                    {
+                        "sha":  "97a966aabe",
+                        "date":  "2014-02-24T13:27:56Z",
+                        "msg":  "Fix cmsg_player_login"
+                    },
+                    {
+                        "sha":  "92950293f2",
+                        "date":  "2014-02-24T13:28:06Z",
+                        "msg":  "Merge branch \u0027master\u0027 of github.com:netcho/WowPacketParser"
+                    },
+                    {
+                        "sha":  "e7f6911dd4",
+                        "date":  "2014-02-24T17:39:58Z",
+                        "msg":  "Added more Opcodes.cs 17930"
+                    },
+                    {
+                        "sha":  "00f9ee6248",
+                        "date":  "2014-02-26T00:50:14Z",
+                        "msg":  "More Opcodes.cs 17930"
+                    },
+                    {
+                        "sha":  "50eb71e728",
+                        "date":  "2014-02-28T01:25:34Z",
+                        "msg":  "Few more Opcodes.cs"
+                    },
+                    {
+                        "sha":  "3fa4eb01f9",
+                        "date":  "2014-02-28T14:48:01Z",
+                        "msg":  "More Opcodes.cs 17930"
+                    },
+                    {
+                        "sha":  "ae4e645429",
+                        "date":  "2014-02-28T16:14:41Z",
+                        "msg":  "First part of additions and fixes to builds - enums connections and ClientBuild Autodetect implementation for new ones."
+                    },
+                    {
+                        "sha":  "a3a8880bf8",
+                        "date":  "2014-02-28T16:42:36Z",
+                        "msg":  "Second part of fixes. The parser is now fixed and updated to 5.4.7 17956."
+                    },
+                    {
+                        "sha":  "d152f34371",
+                        "date":  "2014-03-02T17:06:14Z",
+                        "msg":  "Some more Opcodes.cs 17956"
+                    },
+                    {
+                        "sha":  "8418a84d80",
+                        "date":  "2014-03-02T17:49:57Z",
+                        "msg":  "Fixed a Derp."
+                    },
+                    {
+                        "sha":  "f51b498714",
+                        "date":  "2014-03-02T18:23:43Z",
+                        "msg":  "Updated implemented structures for 5.4.7 and added a few more. Fixes parsing for (so far) all client builds on the version."
+                    },
+                    {
+                        "sha":  "9753dc55c1",
+                        "date":  "2014-03-02T22:51:43Z",
+                        "msg":  "Implemented some more structures for 17956."
+                    },
+                    {
+                        "sha":  "6d6bab483a",
+                        "date":  "2014-03-02T23:41:46Z",
+                        "msg":  "Added a define to all implemented handlers to allow their \"usage\" on 17956 aswell. No more need to force the config ClientBuild option for it."
+                    },
+                    {
+                        "sha":  "8c3945e506",
+                        "date":  "2014-03-03T00:55:55Z",
+                        "msg":  "Implemented some more handlers."
+                    },
+                    {
+                        "sha":  "fe856f6dfd",
+                        "date":  "2014-03-03T01:29:51Z",
+                        "msg":  "Implemented a couple more structures and simplified the handlers where possible."
+                    },
+                    {
+                        "sha":  "caa404dd53",
+                        "date":  "2014-03-03T14:35:45Z",
+                        "msg":  "Added a few more handlers and opcodes."
+                    },
+                    {
+                        "sha":  "e8dfe144ac",
+                        "date":  "2014-03-03T14:39:17Z",
+                        "msg":  "Forgot something."
+                    },
+                    {
+                        "sha":  "fd8bf0f625",
+                        "date":  "2014-03-03T16:49:21Z",
+                        "msg":  "Implemented more handlers."
+                    },
+                    {
+                        "sha":  "3b69edb111",
+                        "date":  "2014-03-05T01:44:06Z",
+                        "msg":  "Implemented a few more handlers. Creature query parsing now working."
+                    },
+                    {
+                        "sha":  "8aebf50133",
+                        "date":  "2014-03-05T02:43:43Z",
+                        "msg":  "A couple more structs added. GameObject query parsing now working."
+                    },
+                    {
+                        "sha":  "baa18d538c",
+                        "date":  "2014-03-05T03:07:23Z",
+                        "msg":  "One more :)"
+                    },
+                    {
+                        "sha":  "05bbb655f8",
+                        "date":  "2014-03-05T19:59:44Z",
+                        "msg":  "Updated the 5.3.0 16981 Module to 5.4.7 17956. Now we can move the handlers to it and use it."
+                    },
+                    {
+                        "sha":  "f6649b87f9",
+                        "date":  "2014-03-05T23:37:47Z",
+                        "msg":  "Moved all implemented 5.4.7 structures to the specific module."
+                    },
+                    {
+                        "sha":  "003b6608aa",
+                        "date":  "2014-03-06T00:05:02Z",
+                        "msg":  "Fixed parsing errors on older 5.4.7 versions, everything ok now."
+                    },
+                    {
+                        "sha":  "dc30398594",
+                        "date":  "2014-03-06T01:53:01Z",
+                        "msg":  "Implemented parsing for SMSG_GOSSIP_MESSAGE."
+                    },
+                    {
+                        "sha":  "747b5603ec",
+                        "date":  "2014-03-06T02:35:48Z",
+                        "msg":  "Initial, partial implementation for SMSG_DB_REPLY. This is based on older versions, and several corrections / additions will need to be made before it\u0027s fully working as intended."
+                    },
+                    {
+                        "sha":  "33a962c772",
+                        "date":  "2014-03-06T03:52:21Z",
+                        "msg":  "Fixed a Derp."
+                    },
+                    {
+                        "sha":  "684e1c10e5",
+                        "date":  "2014-03-06T04:06:12Z",
+                        "msg":  "Implemented SMSG_LOGIN_VERIFY_WORLD structure."
+                    },
+                    {
+                        "sha":  "df375de044",
+                        "date":  "2014-03-10T11:19:33Z",
+                        "msg":  "Some stuff"
+                    },
+                    {
+                        "sha":  "410733988d",
+                        "date":  "2014-03-10T11:22:12Z",
+                        "msg":  "Merge branch \u0027master\u0027 of github.com:netcho/WowPacketParser"
+                    },
+                    {
+                        "sha":  "98683bf676",
+                        "date":  "2014-03-21T09:49:02Z",
+                        "msg":  "Some more shit"
+                    },
+                    {
+                        "sha":  "d9d6dfc9bf",
+                        "date":  "2014-03-22T19:06:57Z",
+                        "msg":  "More improvements"
+                    },
+                    {
+                        "sha":  "3d30769bcc",
+                        "date":  "2014-03-25T23:45:05Z",
+                        "msg":  "Corrected Dynamic Flags and added an enum for current Map Difficulties."
+                    },
+                    {
+                        "sha":  "6ce4b9f11b",
+                        "date":  "2014-03-25T23:46:51Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/netcho/WowPacketParser"
+                    },
+                    {
+                        "sha":  "8e8c677d25",
+                        "date":  "2014-03-26T00:49:37Z",
+                        "msg":  "Updated Opcodes.cs."
+                    },
+                    {
+                        "sha":  "fb9a5ab13e",
+                        "date":  "2014-03-29T17:45:02Z",
+                        "msg":  "Updates SMSG_QUEST_QUERY_RESPONSE"
+                    },
+                    {
+                        "sha":  "f52df0c29e",
+                        "date":  "2014-03-29T18:28:59Z",
+                        "msg":  "Updated the parser module for 17956 to 18019. Fixed the delegates for structs parsing on this version. Updated Opcodes.cs."
+                    },
+                    {
+                        "sha":  "36ca1e242b",
+                        "date":  "2014-03-29T18:31:02Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/netcho/WowPacketParser"
+                    },
+                    {
+                        "sha":  "8f9bba0823",
+                        "date":  "2014-03-29T18:43:53Z",
+                        "msg":  "Fixed Dynamic Fields definitions and a parsing."
+                    },
+                    {
+                        "sha":  "b641f3d092",
+                        "date":  "2014-04-01T07:49:15Z",
+                        "msg":  "More updates to SMSG_QUEST_QUERY_RESPONSE"
+                    },
+                    {
+                        "sha":  "11dda2428b",
+                        "date":  "2014-04-01T07:50:58Z",
+                        "msg":  "Merge branch \u0027master\u0027 of github.com:netcho/WowPacketParser"
+                    },
+                    {
+                        "sha":  "d31340ccf7",
+                        "date":  "2014-04-25T18:28:07Z",
+                        "msg":  "Fixed some duplicates / bad values, thanks ChipLeo for noticing."
+                    },
+                    {
+                        "sha":  "8d79d2622e",
+                        "date":  "2014-04-25T18:29:04Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/netcho/WowPacketParser"
+                    },
+                    {
+                        "sha":  "b82c1c5810",
+                        "date":  "2014-05-05T19:36:51Z",
+                        "msg":  "Fixed Build :P"
+                    },
+                    {
+                        "sha":  "23c00ac65c",
+                        "date":  "2014-05-24T21:51:08Z",
+                        "msg":  "Merge pull request #1 from netcho/master"
+                    },
+                    {
+                        "sha":  "bebeff785f",
+                        "date":  "2014-06-06T15:07:04Z",
+                        "msg":  "Updated to 5.4.8"
+                    },
+                    {
+                        "sha":  "0dc842c512",
+                        "date":  "2014-06-07T22:17:52Z",
+                        "msg":  "Updated CMSG_AUTH_SESSION, SMSG_AUTH_RESPONSE."
+                    },
+                    {
+                        "sha":  "7485037e68",
+                        "date":  "2014-06-08T01:47:14Z",
+                        "msg":  "Added SMSG_MOTD, CMSG_UNK_1A87, SMSG_UNK_001F, SMSG_UNK_069B,"
+                    },
+                    {
+                        "sha":  "6c6e751342",
+                        "date":  "2014-06-08T09:29:43Z",
+                        "msg":  "Added CMSG_CANCEL_TRADE, CMSG_LOAD_SCREEN, CMSG_LOGOUT_REQUEST,"
+                    },
+                    {
+                        "sha":  "41c5205872",
+                        "date":  "2014-06-08T11:00:27Z",
+                        "msg":  "Added CMSG_CREATURE_QUERY, CMSG_PLAYED_TIME"
+                    },
+                    {
+                        "sha":  "d73dc28352",
+                        "date":  "2014-06-08T13:18:14Z",
+                        "msg":  "Update opcodes for 5.4.7"
+                    },
+                    {
+                        "sha":  "f1b0ab2f18",
+                        "date":  "2014-06-09T13:37:30Z",
+                        "msg":  "Update 5.4.7"
+                    },
+                    {
+                        "sha":  "1522b864d4",
+                        "date":  "2014-06-11T12:12:44Z",
+                        "msg":  "Fix SMSG_AUCTION_HELLO."
+                    },
+                    {
+                        "sha":  "77d18d1a74",
+                        "date":  "2014-06-20T04:00:25Z",
+                        "msg":  "Update to V5_4_8_18414"
+                    },
+                    {
+                        "sha":  "98401e6f96",
+                        "date":  "2014-07-01T19:31:48Z",
+                        "msg":  "Partial Implementation of UpdateHandler"
+                    },
+                    {
+                        "sha":  "e13f048341",
+                        "date":  "2014-07-02T15:41:57Z",
+                        "msg":  "Merge pull request #3 from Epicurus4/master"
+                    },
+                    {
+                        "sha":  "19a4621275",
+                        "date":  "2014-07-02T16:44:15Z",
+                        "msg":  "Updated CMSG_CHAR_ENUM, SMSG_SET_TIMEZONE_INFORMATION,"
+                    },
+                    {
+                        "sha":  "245f602943",
+                        "date":  "2014-07-02T16:45:49Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/ChipLeo/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "b4143332ff",
+                        "date":  "2014-07-05T00:00:23Z",
+                        "msg":  "Added MSG_MOVE_FALL_LAND, MSG_MOVE_HEARTBEAT, MSG_MOVE_JUMP,"
+                    },
+                    {
+                        "sha":  "1dda817630",
+                        "date":  "2014-07-07T00:30:46Z",
+                        "msg":  "Update opcodes"
+                    },
+                    {
+                        "sha":  "24bacb6879",
+                        "date":  "2014-07-07T15:58:21Z",
+                        "msg":  "Update opcodes"
+                    },
+                    {
+                        "sha":  "0079f08687",
+                        "date":  "2014-07-09T21:54:08Z",
+                        "msg":  "Updated ReadMovementUpdate. Added movement opcodes."
+                    },
+                    {
+                        "sha":  "a2fbd0a30e",
+                        "date":  "2014-07-10T17:24:10Z",
+                        "msg":  "Fix Xcoord for UpdateHandler"
+                    },
+                    {
+                        "sha":  "dd7fde05e9",
+                        "date":  "2014-07-10T20:19:45Z",
+                        "msg":  "Added CMSG_UNK_0249, SMSG_UNK_0063, SMSG_UNK_01E1, SMSG_UNK_0728,"
+                    },
+                    {
+                        "sha":  "71f1bab4ef",
+                        "date":  "2014-07-10T21:53:34Z",
+                        "msg":  "Added SMSG_UNK_05F3, SMSG_UNK_08B2."
+                    },
+                    {
+                        "sha":  "9bdc5dd751",
+                        "date":  "2014-07-10T23:12:36Z",
+                        "msg":  "Added SMSG_UNK_16BF, SMSG_UNK_1D8E, SMSG_UNK_1DAB, SMSG_UNK_1F9F"
+                    },
+                    {
+                        "sha":  "c167ead58d",
+                        "date":  "2014-07-12T19:59:48Z",
+                        "msg":  "Added opcodes"
+                    },
+                    {
+                        "sha":  "2b8b286ea7",
+                        "date":  "2014-07-13T18:13:02Z",
+                        "msg":  "Update opcodes"
+                    },
+                    {
+                        "sha":  "0df2a5ea12",
+                        "date":  "2014-07-14T20:25:39Z",
+                        "msg":  "Added opcodes"
+                    },
+                    {
+                        "sha":  "df47d24e27",
+                        "date":  "2014-07-15T10:48:06Z",
+                        "msg":  "Fix for VS2010 Code Analysis bug"
+                    },
+                    {
+                        "sha":  "9684edf0c6",
+                        "date":  "2014-07-15T11:41:49Z",
+                        "msg":  "Merge pull request #4 from nelegalno/VS2010_Fix"
+                    },
+                    {
+                        "sha":  "97611359a2",
+                        "date":  "2014-07-15T23:46:58Z",
+                        "msg":  "Added CMSG_SETSHEATHED, CMSG_UNK_0068, SMSG_MESSAGECHAT,"
+                    },
+                    {
+                        "sha":  "cc7505e667",
+                        "date":  "2014-07-16T20:35:04Z",
+                        "msg":  "Added null opcodes. Updated CreateObject."
+                    },
+                    {
+                        "sha":  "b00e9fa778",
+                        "date":  "2014-07-18T20:58:24Z",
+                        "msg":  "Added some opcodes"
+                    },
+                    {
+                        "sha":  "35f259124a",
+                        "date":  "2014-07-20T11:42:11Z",
+                        "msg":  "Added SMSG_MONSTER_MOVE"
+                    },
+                    {
+                        "sha":  "9684f73c6c",
+                        "date":  "2014-07-21T09:17:13Z",
+                        "msg":  "Added some opcodes."
+                    },
+                    {
+                        "sha":  "6ea2e573a2",
+                        "date":  "2014-07-22T01:06:36Z",
+                        "msg":  "Added some movement opcodes."
+                    },
+                    {
+                        "sha":  "b22f4f1f48",
+                        "date":  "2014-07-24T05:53:30Z",
+                        "msg":  "Added CMSG_BATTLEMASTER_JOIN_ARENA, SMSG_AURA_UPDATE,"
+                    },
+                    {
+                        "sha":  "76a3e3500a",
+                        "date":  "2014-07-25T01:59:31Z",
+                        "msg":  "Added CMSG_PET_NAME_QUERY, CMSG_QUEST_POI_QUERY, SMSG_INIT_CURRENCY,"
+                    },
+                    {
+                        "sha":  "38ed5ee6ed",
+                        "date":  "2014-07-26T21:25:09Z",
+                        "msg":  "Added some opcodes."
+                    },
+                    {
+                        "sha":  "15652696f4",
+                        "date":  "2014-07-28T19:18:25Z",
+                        "msg":  "Added CMSG_SET_SELECTION, SMSG_SPELLNONMELEEDAMAGELOG"
+                    },
+                    {
+                        "sha":  "145a47a2a0",
+                        "date":  "2014-07-31T20:51:34Z",
+                        "msg":  "Added SMSG_MOVE_SET_SWIM_SPEED, SMSG_SEND_UNLEARN_SPELLS,"
+                    },
+                    {
+                        "sha":  "24c38ab3f5",
+                        "date":  "2014-08-01T03:01:53Z",
+                        "msg":  "Merged with ChipLeo\u0027s branch"
+                    },
+                    {
+                        "sha":  "c1778f3d43",
+                        "date":  "2014-08-01T03:08:02Z",
+                        "msg":  "Added CMSG_CAST_SPELL sequence"
+                    },
+                    {
+                        "sha":  "7e827c20a8",
+                        "date":  "2014-08-01T03:44:32Z",
+                        "msg":  "Revert \"Added CMSG_CAST_SPELL sequence\""
+                    },
+                    {
+                        "sha":  "40b20568dc",
+                        "date":  "2014-08-01T03:45:23Z",
+                        "msg":  "Merge pull request #1 from ChipLeo/master"
+                    },
+                    {
+                        "sha":  "f1b1f1627b",
+                        "date":  "2014-08-01T03:49:21Z",
+                        "msg":  "Added CMSG_CAST_SPELL sequence"
+                    },
+                    {
+                        "sha":  "883a47faf4",
+                        "date":  "2014-08-01T06:45:29Z",
+                        "msg":  "Merge pull request #5 from Epicurus4/master"
+                    },
+                    {
+                        "sha":  "4cbc4b766f",
+                        "date":  "2014-08-01T08:12:49Z",
+                        "msg":  "Fixed CMSG_CAST_SPELL, SMSG_BATTLEGROUND_PLAYER_LEFT"
+                    },
+                    {
+                        "sha":  "94c10a8e92",
+                        "date":  "2014-08-01T11:06:12Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "197d8627ac",
+                        "date":  "2014-08-01T11:08:36Z",
+                        "msg":  "Added CMSG_AUTOSTORE_LOOT_ITEM, CMSG_VOID_STORAGE_TRANSFER,"
+                    },
+                    {
+                        "sha":  "c30c7383fa",
+                        "date":  "2014-08-01T11:58:54Z",
+                        "msg":  "Added SMSG_UNK_102E"
+                    },
+                    {
+                        "sha":  "21ac64a299",
+                        "date":  "2014-08-02T08:00:14Z",
+                        "msg":  "Added SMSG_SPELL_START, SMSG_SPELL_GO"
+                    },
+                    {
+                        "sha":  "131d440558",
+                        "date":  "2014-08-02T08:01:50Z",
+                        "msg":  "Added SMSG_AI_REACTION"
+                    },
+                    {
+                        "sha":  "9fcf8cf6ea",
+                        "date":  "2014-08-02T08:08:41Z",
+                        "msg":  "Added CMSG_LOOT_RELEASE, SMSG_ITEM_PUSH_RESULT, SMSG_LOOT_REMOVED"
+                    },
+                    {
+                        "sha":  "1b5f283390",
+                        "date":  "2014-08-02T08:15:10Z",
+                        "msg":  "Added MSG_MOVE_START_SWIM, MSG_MOVE_START_TURN_RIGHT,"
+                    },
+                    {
+                        "sha":  "429f9cddc6",
+                        "date":  "2014-08-02T08:30:52Z",
+                        "msg":  "Added SMSG_UNK_0845, SMSG_UNK_0865"
+                    },
+                    {
+                        "sha":  "4fa84b8673",
+                        "date":  "2014-08-02T12:11:22Z",
+                        "msg":  "Added SMSG_SPELL_DELAYED, SMSG_SPELL_FAILED_OTHER,"
+                    },
+                    {
+                        "sha":  "24d0c78355",
+                        "date":  "2014-08-02T18:58:27Z",
+                        "msg":  "Cleanup 18019 code"
+                    },
+                    {
+                        "sha":  "e6bfb293c5",
+                        "date":  "2014-08-02T18:59:27Z",
+                        "msg":  "Fix opcode group counter"
+                    },
+                    {
+                        "sha":  "5b2fc7921a",
+                        "date":  "2014-08-02T19:02:09Z",
+                        "msg":  "Cleanup 18414 code"
+                    },
+                    {
+                        "sha":  "da5d738b59",
+                        "date":  "2014-08-02T19:40:13Z",
+                        "msg":  "Update MovementFlags."
+                    },
+                    {
+                        "sha":  "2fe8507a41",
+                        "date":  "2014-08-02T20:39:00Z",
+                        "msg":  "Update CMSG_AREATRIGGER, CMSG_ATTACKSTOP,"
+                    },
+                    {
+                        "sha":  "def42edcc2",
+                        "date":  "2014-08-03T00:23:13Z",
+                        "msg":  "Added CMSG_SAVE_CUF_PROFILES, CMSG_SET_PLAYER_DECLINED_NAMES,"
+                    },
+                    {
+                        "sha":  "47e357a272",
+                        "date":  "2014-08-03T13:04:10Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "261eecf65d",
+                        "date":  "2014-08-03T13:36:10Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "2f7aa67bc9",
+                        "date":  "2014-08-03T13:48:16Z",
+                        "msg":  "Fix CMSG_LEARN_TALENTS"
+                    },
+                    {
+                        "sha":  "bd53acdf63",
+                        "date":  "2014-08-04T06:51:39Z",
+                        "msg":  "Rebased 18291 -\u003e 18414"
+                    },
+                    {
+                        "sha":  "a89564a17e",
+                        "date":  "2014-08-04T19:54:15Z",
+                        "msg":  "18414 Added SMSG_DUEL_WINNER, CMSG_UNK_09DB, CMSG_UNK_11D8,"
+                    },
+                    {
+                        "sha":  "3fce0b6be6",
+                        "date":  "2014-08-05T08:30:11Z",
+                        "msg":  "Update SceneObject for SMSG_UPDATE_OBJECT, CMSG_UNK_0087,"
+                    },
+                    {
+                        "sha":  "b9713b41ad",
+                        "date":  "2014-08-05T23:22:03Z",
+                        "msg":  "Split opcodes."
+                    },
+                    {
+                        "sha":  "d4bb70ccbb",
+                        "date":  "2014-08-08T07:47:42Z",
+                        "msg":  "Added CMSG_GAME_SHOP_QUERY, CMSG_UNK_1D36, SMSG_UNK_1E1B,"
+                    },
+                    {
+                        "sha":  "bf5b07ef42",
+                        "date":  "2014-08-09T16:52:53Z",
+                        "msg":  "Added CMSG_MOVE_FORCE_FLIGHT_SPEED_CHANGE_ACK, CMSG_MOVE_FORCE_RUN_BACK_SPEED_CHANGE_ACK,"
+                    },
+                    {
+                        "sha":  "83fc1874f5",
+                        "date":  "2014-08-11T20:54:42Z",
+                        "msg":  "Add opcode CMSG_CORPSE_MAP_POSITION_QUERY"
+                    },
+                    {
+                        "sha":  "1f1fb5c037",
+                        "date":  "2014-08-11T21:07:23Z",
+                        "msg":  "Merge pull request #6 from projectcore/patch-1"
+                    },
+                    {
+                        "sha":  "cc671f49b5",
+                        "date":  "2014-08-11T21:19:09Z",
+                        "msg":  "Changed VerifiedBuild -\u003e WDBVerified"
+                    },
+                    {
+                        "sha":  "fdb1c4839c",
+                        "date":  "2014-08-11T21:20:24Z",
+                        "msg":  "Added CMSG_GROUP_DISBAND"
+                    },
+                    {
+                        "sha":  "9b4f565bc9",
+                        "date":  "2014-08-11T21:28:41Z",
+                        "msg":  "Added SMSG_BATTLEFIELD_STATUS, SMSG_BATTLEFIELD_STATUS_QUEUED,"
+                    },
+                    {
+                        "sha":  "faa38626db",
+                        "date":  "2014-08-11T21:49:55Z",
+                        "msg":  "Added CMSG_UNK_11DB, SMSG_UNK_000F, SMSG_UNK_0047, SMSG_UNK_00E1,"
+                    },
+                    {
+                        "sha":  "63fac9e609",
+                        "date":  "2014-08-12T00:58:08Z",
+                        "msg":  "Added CMSG_UNK_1886, SMSG_UNK_0612, SMSG_UNK_14E2"
+                    },
+                    {
+                        "sha":  "3f75e4d34e",
+                        "date":  "2014-08-12T01:03:23Z",
+                        "msg":  "Added CMSG_UNK_1052."
+                    },
+                    {
+                        "sha":  "cc64245a0b",
+                        "date":  "2014-08-16T08:08:51Z",
+                        "msg":  "Added CMSG_QUERY_INSPECT_ACHIEVEMENTS, SMSG_RESPOND_INSPECT_ACHIEVEMENTS."
+                    },
+                    {
+                        "sha":  "13a9de8ac3",
+                        "date":  "2014-08-16T08:14:28Z",
+                        "msg":  "Added SMSG_CHAR_CREATE, MSG_CHAT_PLAYER_NOT_FOUND."
+                    },
+                    {
+                        "sha":  "6f3bd95f5f",
+                        "date":  "2014-08-16T08:15:11Z",
+                        "msg":  "Added SMSG_PRE_RESURRECT"
+                    },
+                    {
+                        "sha":  "13db53bb3c",
+                        "date":  "2014-08-16T08:19:46Z",
+                        "msg":  "Added SMSG_MOVE_WATER_WALK, CMSG_MOVE_WATER_WALK_ACK, CMSG_UNK_01F1"
+                    },
+                    {
+                        "sha":  "9727aa0f56",
+                        "date":  "2014-08-16T08:22:38Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "dfdba60011",
+                        "date":  "2014-08-16T08:27:22Z",
+                        "msg":  "Added CMSG_ADDON_REGISTERED_PREFIXES, CMSG_MESSAGECHAT_ADDON_WHISPER,"
+                    },
+                    {
+                        "sha":  "77b562b1fe",
+                        "date":  "2014-08-16T08:33:03Z",
+                        "msg":  "Added CMSG_CHANNEL_ROSTER_INFO, CMSG_INSPECT, SMSG_INSPECT_TALENT,"
+                    },
+                    {
+                        "sha":  "c36025eda7",
+                        "date":  "2014-08-17T12:24:44Z",
+                        "msg":  "Update updateFields, Enums"
+                    },
+                    {
+                        "sha":  "15cf7da9c0",
+                        "date":  "2014-08-17T12:30:28Z",
+                        "msg":  "Added SMSG_LOOT_CLEAR_MONEY, SMSG_LOOT_MONEY_NOTIFY, SMSG_LOGOUT_RESPONSE,"
+                    },
+                    {
+                        "sha":  "58c90a6b31",
+                        "date":  "2014-08-17T12:55:47Z",
+                        "msg":  "Added CMSG_FORCE_MOVE_ROOT_ACK, CMSG_FORCE_MOVE_UNROOT_ACK,"
+                    },
+                    {
+                        "sha":  "c0a9e251e5",
+                        "date":  "2014-08-17T12:57:35Z",
+                        "msg":  "Added CMSG_UNK_19C3, SMSG_UNK_0354, SMSG_UNK_041F, SMSG_CORPSE_QUERY_RESPONSE"
+                    },
+                    {
+                        "sha":  "8c585169a1",
+                        "date":  "2014-08-18T17:00:25Z",
+                        "msg":  "Add config AllPackets"
+                    },
+                    {
+                        "sha":  "5db2f50eb3",
+                        "date":  "2014-08-18T17:07:30Z",
+                        "msg":  "Add settings AllPackets"
+                    },
+                    {
+                        "sha":  "3efd4a30c8",
+                        "date":  "2014-08-19T09:50:28Z",
+                        "msg":  "Added visible addon."
+                    },
+                    {
+                        "sha":  "8a43096313",
+                        "date":  "2014-08-19T09:51:41Z",
+                        "msg":  "Added SMSG_PET_GUIDS"
+                    },
+                    {
+                        "sha":  "4b0bb60f65",
+                        "date":  "2014-08-19T10:00:52Z",
+                        "msg":  "Added CMSG_MOVE_SET_CAN_FLY_ACK, CMSG_MOVE_SET_CAN_TRANSITION_BETWEEN_SWIM_AND_FLY_ACK,"
+                    },
+                    {
+                        "sha":  "42ab7447a1",
+                        "date":  "2014-08-20T20:51:00Z",
+                        "msg":  "Added CMSG_MOVE_FEATHER_FALL_ACK, SMSG_MOVE_FEATHER_FALL,"
+                    },
+                    {
+                        "sha":  "2f8744674f",
+                        "date":  "2014-08-20T21:29:45Z",
+                        "msg":  "Added CMSG_READ_ITEM, SMSG_READ_ITEM_OK"
+                    },
+                    {
+                        "sha":  "d00594990b",
+                        "date":  "2014-08-20T21:37:00Z",
+                        "msg":  "Added SMSG_UNK_0E1B"
+                    },
+                    {
+                        "sha":  "c15ed2e3b1",
+                        "date":  "2014-08-20T22:09:21Z",
+                        "msg":  "Added SMSG_UNK_0170"
+                    },
+                    {
+                        "sha":  "5a84e5c3cb",
+                        "date":  "2014-08-21T00:03:43Z",
+                        "msg":  "Added SMSG_UNK_0D52."
+                    },
+                    {
+                        "sha":  "7d8610d8c2",
+                        "date":  "2014-08-22T19:46:28Z",
+                        "msg":  "Added SMSG_LFG_PLAYER_INFO"
+                    },
+                    {
+                        "sha":  "450a55a011",
+                        "date":  "2014-08-22T19:55:41Z",
+                        "msg":  "Added CMSG_QUERY_TIME, CMSG_SET_ACTIVE_MOVER, SMSG_UNK_1C0E,"
+                    },
+                    {
+                        "sha":  "e9c20a3fdf",
+                        "date":  "2014-08-23T09:35:41Z",
+                        "msg":  "Added Taxi opcodes, CMSG_MESSAGECHAT_RAID_WARNING, CMSG_MESSAGECHAT_PARTY"
+                    },
+                    {
+                        "sha":  "4187598c0c",
+                        "date":  "2014-08-23T17:53:26Z",
+                        "msg":  "Added CMSG_MOVE_SPLINE_DONE, CMSG_UNK_12B3,"
+                    },
+                    {
+                        "sha":  "2f3ffb1555",
+                        "date":  "2014-08-24T00:21:33Z",
+                        "msg":  "Added CMSG_CORPSE_QUERY, CMSG_RECLAIM_CORPSE, CMSG_SPIRIT_HEALER_ACTIVATE,"
+                    },
+                    {
+                        "sha":  "64b146f3a9",
+                        "date":  "2014-08-27T21:19:13Z",
+                        "msg":  "Added SMSG_CRITERIA_DELETED"
+                    },
+                    {
+                        "sha":  "d05384134b",
+                        "date":  "2014-08-27T21:21:52Z",
+                        "msg":  "Added CMSG_ACCEPT_TRADE"
+                    },
+                    {
+                        "sha":  "93a9cf96fd",
+                        "date":  "2014-08-27T21:25:43Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "f353796986",
+                        "date":  "2014-08-28T21:58:42Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "726dca60ce",
+                        "date":  "2014-08-30T07:28:54Z",
+                        "msg":  "Added SMSG_COOLDOWN_EVENT"
+                    },
+                    {
+                        "sha":  "f6c8efd7e3",
+                        "date":  "2014-08-30T09:16:32Z",
+                        "msg":  "Added CMSG_MESSAGECHAT_AFK, CMSG_GET_MAIL_LIST."
+                    },
+                    {
+                        "sha":  "fa5b77a003",
+                        "date":  "2014-08-30T11:55:17Z",
+                        "msg":  "Added CMSG_TOTEM_DESTROYED, SMSG_HEALTH_UPDATE, SMSG_SPELLINTERRUPTLOG,"
+                    },
+                    {
+                        "sha":  "c42572fdbb",
+                        "date":  "2014-08-30T13:37:38Z",
+                        "msg":  "Added CMSG_UNK_02A3, CMSG_UNK_10D3, CMSG_UNK_15DB, SMSG_UNK_04D9, SMSG_UNK_182E"
+                    },
+                    {
+                        "sha":  "225a80c1a0",
+                        "date":  "2014-08-30T15:37:56Z",
+                        "msg":  "Added SMSG_CANCEL_AUTO_REPEAT, SMSG_LEVELUP_INFO, SMSG_THREAT_REMOVE"
+                    },
+                    {
+                        "sha":  "4391c10cfc",
+                        "date":  "2014-08-30T16:01:08Z",
+                        "msg":  "Added CMSG_SOCKET_GEMS"
+                    },
+                    {
+                        "sha":  "5cc9f85824",
+                        "date":  "2014-08-31T08:31:26Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "efa5d23bd9",
+                        "date":  "2014-08-31T09:53:02Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "cb1f549df3",
+                        "date":  "2014-08-31T22:32:24Z",
+                        "msg":  "Added SettingsUI.logPacketErrors"
+                    },
+                    {
+                        "sha":  "2949acc67b",
+                        "date":  "2014-08-31T22:55:31Z",
+                        "msg":  "Added CMSG_UNK_00D9, SMSG_UNK_0251"
+                    },
+                    {
+                        "sha":  "c63325588f",
+                        "date":  "2014-08-31T22:57:07Z",
+                        "msg":  "Fix compile"
+                    },
+                    {
+                        "sha":  "ce0496ce29",
+                        "date":  "2014-09-01T01:09:30Z",
+                        "msg":  "Added CMSG_UNK_06C9, CMSG_UNK_1341, CMSG_NULL_0360,"
+                    },
+                    {
+                        "sha":  "3d199e1c44",
+                        "date":  "2014-09-01T01:21:49Z",
+                        "msg":  "Added SMSG_ZONE_UNDER_ATTACK."
+                    },
+                    {
+                        "sha":  "892bbf5305",
+                        "date":  "2014-09-01T02:15:02Z",
+                        "msg":  "Added CMSG_ACCEPT_LEVEL_GRANT, CMSG_ATTACKSWING,"
+                    },
+                    {
+                        "sha":  "44f5fe1a79",
+                        "date":  "2014-09-01T02:28:18Z",
+                        "msg":  "Added CMSG_AUTOSTORE_BAG_ITEM"
+                    },
+                    {
+                        "sha":  "b13ef43676",
+                        "date":  "2014-09-01T10:15:08Z",
+                        "msg":  "Added CMSG_UNK_08D3, SMSG_UNK_1223, SMSG_UNK_1DBE"
+                    },
+                    {
+                        "sha":  "6f5aaeca4d",
+                        "date":  "2014-09-01T11:27:00Z",
+                        "msg":  "Added SMSG_GAMEOBJECT_QUERY_RESPONSE"
+                    },
+                    {
+                        "sha":  "b2104cf275",
+                        "date":  "2014-09-01T22:00:40Z",
+                        "msg":  "Update SettingsUI"
+                    },
+                    {
+                        "sha":  "45b64ddbd0",
+                        "date":  "2014-09-01T22:01:00Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "9a7151b9a5",
+                        "date":  "2014-09-02T18:57:36Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "042c413ae2",
+                        "date":  "2014-09-02T19:17:21Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "253a1fb9a1",
+                        "date":  "2014-09-02T19:24:11Z",
+                        "msg":  "Fix compile"
+                    },
+                    {
+                        "sha":  "97ed6edfae",
+                        "date":  "2014-09-03T21:45:09Z",
+                        "msg":  "add SMSG_REFORGE_RESULT , CMSG_REFORGE_ITEM"
+                    },
+                    {
+                        "sha":  "c478f8e432",
+                        "date":  "2014-09-03T21:45:28Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/ChipLeo/WowPacketParser"
+                    },
+                    {
+                        "sha":  "ce9c62fc10",
+                        "date":  "2014-09-03T21:48:54Z",
+                        "msg":  "Update opcodes"
+                    },
+                    {
+                        "sha":  "5da2e5eb14",
+                        "date":  "2014-09-03T21:49:48Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/ChipLeo/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "e8ee79eca4",
+                        "date":  "2014-09-03T22:07:34Z",
+                        "msg":  "Added SMSG_UNK_0222, SMSG_UNK_0E33"
+                    },
+                    {
+                        "sha":  "fd3da29134",
+                        "date":  "2014-09-03T22:21:02Z",
+                        "msg":  "Added CMSG_UNK_1042"
+                    },
+                    {
+                        "sha":  "93f7ef098d",
+                        "date":  "2014-09-03T22:30:56Z",
+                        "msg":  "update SMSG_UNK_0222 -\u003e SMSG_ITEM_UPGRADE_RESULT"
+                    },
+                    {
+                        "sha":  "2c5e97995b",
+                        "date":  "2014-09-04T09:32:56Z",
+                        "msg":  "add  SMSG_SEND_ITEM_UPGRADE , CMSG_UPGRADE_ITEM"
+                    },
+                    {
+                        "sha":  "3f4aa0dda0",
+                        "date":  "2014-09-04T12:09:40Z",
+                        "msg":  "add  CMSG_BLACK_MARKET_BID, CMSG_BLACK_MARKET_HELLO, CMSG_BLACK_MARKET_REQUEST_ITEMS, SMSG_BLACK_MARKET_HELLO, SMSG_BLACK_MARKET_REQUEST_ITEMS_RESULT"
+                    },
+                    {
+                        "sha":  "c6ff03ba38",
+                        "date":  "2014-09-04T19:12:24Z",
+                        "msg":  "Fix SqlOutput"
+                    },
+                    {
+                        "sha":  "ae8037a56e",
+                        "date":  "2014-09-04T19:13:04Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/ChipLeo/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "8cc7e0bc3b",
+                        "date":  "2014-09-04T23:42:36Z",
+                        "msg":  "Added CMSG_TRANSMOGRIFY_ITEMS"
+                    },
+                    {
+                        "sha":  "e48922bd62",
+                        "date":  "2014-09-07T18:15:17Z",
+                        "msg":  "Added opcode names"
+                    },
+                    {
+                        "sha":  "e698f4e1a0",
+                        "date":  "2014-09-07T19:44:46Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "2f441e9385",
+                        "date":  "2014-09-07T20:24:52Z",
+                        "msg":  "Added opcode names for 5_4_2_17658 from https://github.com/edi100/panda/"
+                    },
+                    {
+                        "sha":  "794cbeacac",
+                        "date":  "2014-09-08T06:44:35Z",
+                        "msg":  "CMSG_SET_LOOT_SPECIALIZATION"
+                    },
+                    {
+                        "sha":  "77f7629474",
+                        "date":  "2014-09-08T10:23:42Z",
+                        "msg":  "CMSG_SELECT_LOOT_SPEC Derp"
+                    },
+                    {
+                        "sha":  "e7d801abb1",
+                        "date":  "2014-09-08T19:40:58Z",
+                        "msg":  "Merge pull request #9 from Palabola/master"
+                    },
+                    {
+                        "sha":  "038ee52627",
+                        "date":  "2014-09-11T16:03:19Z",
+                        "msg":  "CMSG_PET_SET_ACTION"
+                    },
+                    {
+                        "sha":  "b2e111af72",
+                        "date":  "2014-09-12T15:14:33Z",
+                        "msg":  "Merge pull request #10 from Palabola/master"
+                    },
+                    {
+                        "sha":  "527a7170b0",
+                        "date":  "2014-09-12T15:24:17Z",
+                        "msg":  "Added CMSG_PET_SET_ACTION"
+                    },
+                    {
+                        "sha":  "a76f42a9a0",
+                        "date":  "2014-09-12T15:37:19Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "5fd2004f40",
+                        "date":  "2014-09-12T16:40:08Z",
+                        "msg":  "Fix 5.4.2"
+                    },
+                    {
+                        "sha":  "e2bf604486",
+                        "date":  "2014-09-12T16:40:47Z",
+                        "msg":  "Added CMSG_UNK_09FA"
+                    },
+                    {
+                        "sha":  "39698efe34",
+                        "date":  "2014-09-12T17:29:04Z",
+                        "msg":  "Added SMSG_UNK_080E"
+                    },
+                    {
+                        "sha":  "811a1b6626",
+                        "date":  "2014-09-12T17:29:29Z",
+                        "msg":  "Added SMSG_QUESTUPDATE_COMPLETE"
+                    },
+                    {
+                        "sha":  "26d00235b6",
+                        "date":  "2014-09-12T17:30:27Z",
+                        "msg":  "Added SMSG_UNK_07F5"
+                    },
+                    {
+                        "sha":  "edbad085dc",
+                        "date":  "2014-09-12T17:49:21Z",
+                        "msg":  "Added SMSG_UNK_1046"
+                    },
+                    {
+                        "sha":  "466d475651",
+                        "date":  "2014-09-12T18:01:19Z",
+                        "msg":  "Added SMSG_UNK_0CE1"
+                    },
+                    {
+                        "sha":  "f16252df00",
+                        "date":  "2014-09-12T18:29:41Z",
+                        "msg":  "Added SMSG_UNK_027D"
+                    },
+                    {
+                        "sha":  "180ee4bb19",
+                        "date":  "2014-09-12T18:30:20Z",
+                        "msg":  "Added SMSG_UNK_11C2"
+                    },
+                    {
+                        "sha":  "14423ea6ce",
+                        "date":  "2014-09-12T19:13:07Z",
+                        "msg":  "Added SMSG_UNK_1160"
+                    },
+                    {
+                        "sha":  "d8f2e806e6",
+                        "date":  "2014-09-12T20:51:36Z",
+                        "msg":  "Added CMSG_UNK_17BA, empty SMSG_UNK_0C1A"
+                    },
+                    {
+                        "sha":  "92fc1d8b98",
+                        "date":  "2014-09-12T20:55:23Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "92acd5d3f9",
+                        "date":  "2014-09-12T23:36:32Z",
+                        "msg":  "add opcode CMSG_SET_TRADE_GOLD, SMSG_TRADE_STATUS \u0026 SMSG_TRADE_UPDATED"
+                    },
+                    {
+                        "sha":  "65e552aac0",
+                        "date":  "2014-09-13T00:01:32Z",
+                        "msg":  "Merge pull request #12 from ProjectcoreDevs/patch-1"
+                    },
+                    {
+                        "sha":  "e9bec40d44",
+                        "date":  "2014-09-14T19:12:32Z",
+                        "msg":  "Added CMSG_WRAP_ITEM"
+                    },
+                    {
+                        "sha":  "1f5cb696d9",
+                        "date":  "2014-09-14T19:14:58Z",
+                        "msg":  "Added CMSG_USED_FOLLOW"
+                    },
+                    {
+                        "sha":  "cc3a92839b",
+                        "date":  "2014-09-14T19:16:00Z",
+                        "msg":  "Added empty CMSG_GROUP_ASSISTANT_LEADER"
+                    },
+                    {
+                        "sha":  "66ed1583dd",
+                        "date":  "2014-09-14T19:17:09Z",
+                        "msg":  "Added empty CMSG_SET_EVERYONE_IS_ASSISTANT"
+                    },
+                    {
+                        "sha":  "c576ae5c32",
+                        "date":  "2014-09-14T19:21:13Z",
+                        "msg":  "Added Trade"
+                    },
+                    {
+                        "sha":  "17a712969e",
+                        "date":  "2014-09-14T19:21:27Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "0379a16a55",
+                        "date":  "2014-09-16T00:21:54Z",
+                        "msg":  "Added CMSG_REQUEST_CEMETERY_LIST, SMSG_REQUEST_CEMETERY_LIST_RESPONSE"
+                    },
+                    {
+                        "sha":  "e5ab3feaaf",
+                        "date":  "2014-09-16T01:44:47Z",
+                        "msg":  "Update UpdateFields"
+                    },
+                    {
+                        "sha":  "d66b26b060",
+                        "date":  "2014-09-16T08:22:37Z",
+                        "msg":  "Update SMSG_PERIODICAURALOG parsing"
+                    },
+                    {
+                        "sha":  "63451306b6",
+                        "date":  "2014-09-16T08:30:30Z",
+                        "msg":  "Merge pull request #13 from Palabola/patch-2"
+                    },
+                    {
+                        "sha":  "7b64354c85",
+                        "date":  "2014-09-16T17:17:08Z",
+                        "msg":  "Update somes LFG opcodes"
+                    },
+                    {
+                        "sha":  "a7c16e03ab",
+                        "date":  "2014-09-16T17:20:21Z",
+                        "msg":  "add opcode CMSG_LFG_PLAYER_LOCK_INFO_REQUEST"
+                    },
+                    {
+                        "sha":  "729d938fa8",
+                        "date":  "2014-09-16T18:25:28Z",
+                        "msg":  "Merge pull request #15 from ProjectcoreDevs/patch-6"
+                    },
+                    {
+                        "sha":  "873dca5b53",
+                        "date":  "2014-09-16T18:25:40Z",
+                        "msg":  "Merge pull request #14 from ProjectcoreDevs/patch-5"
+                    },
+                    {
+                        "sha":  "4db3b9485a",
+                        "date":  "2014-09-19T23:48:54Z",
+                        "msg":  "Added CMSG_UNK_185B, SMSG_UNK_0861, SMSG_UNK_0A3A, SMSG_UNK_0EAA, SMSG_UNK_1840"
+                    },
+                    {
+                        "sha":  "1f64c8f168",
+                        "date":  "2014-09-19T23:50:03Z",
+                        "msg":  "Merge branch \u0027HEAD\u0027 of https://github.com/ChipLeo/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "63c54bd5aa",
+                        "date":  "2014-09-22T19:00:50Z",
+                        "msg":  "Fix SMSG_PERIODICAURALOG"
+                    },
+                    {
+                        "sha":  "587e1afb24",
+                        "date":  "2014-09-23T01:56:10Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "a0eb074e40",
+                        "date":  "2014-09-23T02:37:56Z",
+                        "msg":  "Added CMSG_MOVE_SET_COLLISION_HEIGHT_ACK, SMSG_MOVE_SET_COLLISION_HEIGHT"
+                    },
+                    {
+                        "sha":  "ee05f4f8b7",
+                        "date":  "2014-09-23T02:39:33Z",
+                        "msg":  "Added SMSG_CANCEL_COMBAT"
+                    },
+                    {
+                        "sha":  "8e65d4557b",
+                        "date":  "2014-09-23T02:40:21Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "852efaaefa",
+                        "date":  "2014-09-23T02:44:16Z",
+                        "msg":  "Added SMSG_PVP_OPTIONS_ENABLED, CMSG_REQUEST_PVP_OPTIONS_ENABLED"
+                    },
+                    {
+                        "sha":  "41b4cb25ee",
+                        "date":  "2014-09-23T02:45:43Z",
+                        "msg":  "Added CMSG_UNK_009A, SMSG_UNK_0A8A"
+                    },
+                    {
+                        "sha":  "090c9d25c7",
+                        "date":  "2014-09-23T02:49:50Z",
+                        "msg":  "Added quest opcodes"
+                    },
+                    {
+                        "sha":  "a665058e56",
+                        "date":  "2014-09-24T01:23:24Z",
+                        "msg":  "Added SMSG_GAMEOBJECT_CUSTOM_ANIM, SMSG_LOOT_RESPONSE_COUNT"
+                    },
+                    {
+                        "sha":  "d941512292",
+                        "date":  "2014-09-24T01:23:51Z",
+                        "msg":  "Added CMSG_LOOT"
+                    },
+                    {
+                        "sha":  "15b785a7c4",
+                        "date":  "2014-09-24T01:24:14Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "ee0ee93997",
+                        "date":  "2014-09-24T07:16:57Z",
+                        "msg":  "Added CMSG_GUILD_SET_ACHIEVEMENT_TRACKING, CMSG_REQUEST_CATEGORY_COOLDOWNS,"
+                    },
+                    {
+                        "sha":  "066def20b1",
+                        "date":  "2014-09-24T11:12:37Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "eac862a0b9",
+                        "date":  "2014-09-25T06:30:49Z",
+                        "msg":  "Added some opcodes"
+                    },
+                    {
+                        "sha":  "c989c28dbc",
+                        "date":  "2014-09-25T07:31:53Z",
+                        "msg":  "Added some opcodes 17898"
+                    },
+                    {
+                        "sha":  "992da8e4ad",
+                        "date":  "2014-09-25T07:32:30Z",
+                        "msg":  "Added some opcode names 18414"
+                    },
+                    {
+                        "sha":  "9330a67fef",
+                        "date":  "2014-09-25T12:33:19Z",
+                        "msg":  "Cleanup 17898"
+                    },
+                    {
+                        "sha":  "d9c2315dc9",
+                        "date":  "2014-09-25T12:33:48Z",
+                        "msg":  "Cleanup 18414"
+                    },
+                    {
+                        "sha":  "47372cfca6",
+                        "date":  "2014-09-25T12:47:19Z",
+                        "msg":  "Added SMSG_ROLE_POLL_BEGIN (thx Palabola)."
+                    },
+                    {
+                        "sha":  "c622967b1a",
+                        "date":  "2014-09-25T13:14:28Z",
+                        "msg":  "Added SMSG_LFG_ROLE_CHECK_UPDATE"
+                    },
+                    {
+                        "sha":  "c100668972",
+                        "date":  "2014-09-26T03:47:14Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "6d86800c96",
+                        "date":  "2014-09-27T22:25:20Z",
+                        "msg":  "Added CMSG_UNK_1370"
+                    },
+                    {
+                        "sha":  "c65bb27ac9",
+                        "date":  "2014-09-27T22:26:17Z",
+                        "msg":  "Added SMSG_UNK_0023"
+                    },
+                    {
+                        "sha":  "6ca80a63ac",
+                        "date":  "2014-09-27T22:29:53Z",
+                        "msg":  "Added SMSG_UNK_1CAF"
+                    },
+                    {
+                        "sha":  "33c1330374",
+                        "date":  "2014-09-27T22:32:01Z",
+                        "msg":  "Added SMSG_UNK_1A9F"
+                    },
+                    {
+                        "sha":  "71472b7cc8",
+                        "date":  "2014-09-27T22:34:00Z",
+                        "msg":  "Added SMSG_UNK_168A"
+                    },
+                    {
+                        "sha":  "45aa9aee59",
+                        "date":  "2014-09-27T22:35:10Z",
+                        "msg":  "Added SMSG_UNK_15E3"
+                    },
+                    {
+                        "sha":  "f30d680c53",
+                        "date":  "2014-09-27T22:37:55Z",
+                        "msg":  "Added SMSG_UNK_0F29"
+                    },
+                    {
+                        "sha":  "feb35b99ca",
+                        "date":  "2014-09-27T22:39:02Z",
+                        "msg":  "Added SMSG_UNK_0E70"
+                    },
+                    {
+                        "sha":  "7243bf6615",
+                        "date":  "2014-09-27T22:40:25Z",
+                        "msg":  "Added SMSG_REQUEST_PVP_REWARDS_RESPONSE"
+                    },
+                    {
+                        "sha":  "f4af0edebb",
+                        "date":  "2014-09-27T22:43:21Z",
+                        "msg":  "Added SMSG_LF_GUILD_APPLICATIONS_LIST_UPDATED"
+                    },
+                    {
+                        "sha":  "39b21d1887",
+                        "date":  "2014-09-27T22:45:02Z",
+                        "msg":  "Added CMSG_NULL_1362"
+                    },
+                    {
+                        "sha":  "6c29134569",
+                        "date":  "2014-09-27T22:53:20Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "7cd81aa701",
+                        "date":  "2014-09-28T04:55:23Z",
+                        "msg":  "Added SMSG_LOOT_MASTER_LIST opcode"
+                    },
+                    {
+                        "sha":  "a4156d9058",
+                        "date":  "2014-09-28T07:34:34Z",
+                        "msg":  "Added SMSG_GUILD_ROSTER"
+                    },
+                    {
+                        "sha":  "0f3fea7bfa",
+                        "date":  "2014-09-28T08:33:52Z",
+                        "msg":  "Added auction opcodes"
+                    },
+                    {
+                        "sha":  "14ba6cfeb3",
+                        "date":  "2014-09-28T08:56:58Z",
+                        "msg":  "Merge pull request #18 from Palabola/patch-1"
+                    },
+                    {
+                        "sha":  "abf16adf68",
+                        "date":  "2014-09-28T09:08:49Z",
+                        "msg":  "Added SMSG_LOOT_MASTER_LIST"
+                    },
+                    {
+                        "sha":  "7e397c4f31",
+                        "date":  "2014-09-28T23:46:30Z",
+                        "msg":  "Added SMSG_UNK_1E8E"
+                    },
+                    {
+                        "sha":  "104cb05566",
+                        "date":  "2014-09-28T23:47:39Z",
+                        "msg":  "Added CMSG_UNK_0E3B, CMSG_UNK_10C3"
+                    },
+                    {
+                        "sha":  "77a52783c3",
+                        "date":  "2014-09-28T23:48:14Z",
+                        "msg":  "Added SMSG_UNK_001B"
+                    },
+                    {
+                        "sha":  "5414bcb2a5",
+                        "date":  "2014-09-28T23:48:40Z",
+                        "msg":  "Added SMSG_UNK_0A78"
+                    },
+                    {
+                        "sha":  "67547d16ea",
+                        "date":  "2014-09-28T23:49:21Z",
+                        "msg":  "Added SMSG_UNK_0EF8, SMSG_UNK_1006"
+                    },
+                    {
+                        "sha":  "77e8f58ca5",
+                        "date":  "2014-09-28T23:49:48Z",
+                        "msg":  "Added SMSG_UNK_120E"
+                    },
+                    {
+                        "sha":  "6250d00cdc",
+                        "date":  "2014-09-28T23:50:17Z",
+                        "msg":  "Added SMSG_UNK_1843"
+                    },
+                    {
+                        "sha":  "35eaabc03f",
+                        "date":  "2014-09-28T23:51:09Z",
+                        "msg":  "Added SMSG_UNK_1C3A, SMSG_UNK_1C3F"
+                    },
+                    {
+                        "sha":  "3144ff408c",
+                        "date":  "2014-09-28T23:51:53Z",
+                        "msg":  "Added CMSG_LFG_JOIN"
+                    },
+                    {
+                        "sha":  "9ac0ffb48d",
+                        "date":  "2014-09-28T23:52:36Z",
+                        "msg":  "Added SMSG_LFG_JOIN_RESULT, SMSG_LFG_QUEUE_STATUS"
+                    },
+                    {
+                        "sha":  "c09e6226af",
+                        "date":  "2014-09-30T00:24:57Z",
+                        "msg":  "Added SMSG_GUILD_ACHIEVEMENT_DATA"
+                    },
+                    {
+                        "sha":  "6ed80674f2",
+                        "date":  "2014-09-30T01:16:07Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "7586e0d0b7",
+                        "date":  "2014-10-06T07:10:30Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "6e64126d58",
+                        "date":  "2014-10-06T07:22:39Z",
+                        "msg":  "Added movement opcodes"
+                    },
+                    {
+                        "sha":  "d8f6c3f164",
+                        "date":  "2014-10-07T06:07:10Z",
+                        "msg":  "Added SMSG_MOVE_KNOCK_BACK, CMSG_MOVE_KNOCK_BACK_ACK"
+                    },
+                    {
+                        "sha":  "e01df52ee0",
+                        "date":  "2014-10-07T06:45:01Z",
+                        "msg":  "Added movement opcodes"
+                    },
+                    {
+                        "sha":  "484f516209",
+                        "date":  "2014-10-08T04:39:19Z",
+                        "msg":  "Update README.md"
+                    },
+                    {
+                        "sha":  "cfd2417a9f",
+                        "date":  "2014-10-08T04:50:42Z",
+                        "msg":  "Update README.md"
+                    },
+                    {
+                        "sha":  "3cfc71934f",
+                        "date":  "2014-10-09T03:30:48Z",
+                        "msg":  "Added CMSG_LF_GUILD_ADD_APPLICATION, CMSG_LF_GUILD_BROWSE,"
+                    },
+                    {
+                        "sha":  "7e3ffd502b",
+                        "date":  "2014-10-09T03:32:00Z",
+                        "msg":  "Added SMSG_LF_GUILD_BROWSE_UPDATED"
+                    },
+                    {
+                        "sha":  "884199110b",
+                        "date":  "2014-10-09T03:33:07Z",
+                        "msg":  "Added SMSG_TABARDVENDOR_ACTIVATE"
+                    },
+                    {
+                        "sha":  "e9dbcb28ff",
+                        "date":  "2014-10-09T03:34:38Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/ChipLeo/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "1b40343f40",
+                        "date":  "2014-10-09T04:47:09Z",
+                        "msg":  "Added CMSG_CHAR_CREATE, CMSG_CHAR_CUSTOMIZE, CMSG_CHAR_FACTION_CHANGE,"
+                    },
+                    {
+                        "sha":  "f6d05b8523",
+                        "date":  "2014-10-09T04:47:39Z",
+                        "msg":  "Added CMSG_OBJECT_UPDATE_FAILED"
+                    },
+                    {
+                        "sha":  "a66b228abb",
+                        "date":  "2014-10-09T04:48:05Z",
+                        "msg":  "Added CMSG_TRAINER_BUY_SPELL"
+                    },
+                    {
+                        "sha":  "82d7d1fb5a",
+                        "date":  "2014-10-09T04:48:32Z",
+                        "msg":  "Added SMSG_BARBER_SHOP_RESULT"
+                    },
+                    {
+                        "sha":  "2dfcda244c",
+                        "date":  "2014-10-09T04:48:49Z",
+                        "msg":  "Added SMSG_EXPLORATION_EXPERIENCE"
+                    },
+                    {
+                        "sha":  "1a70940922",
+                        "date":  "2014-10-09T05:00:19Z",
+                        "msg":  "Added SMSG_CORPSE_NOT_IN_INSTANCE, SMSG_INSTANCE_RESET, SMSG_UPDATE_LAST_INSTANCE"
+                    },
+                    {
+                        "sha":  "da41aaa752",
+                        "date":  "2014-10-09T05:51:10Z",
+                        "msg":  "Added CMSG_DUEL_RESPONSE"
+                    },
+                    {
+                        "sha":  "86aa8d0c51",
+                        "date":  "2014-10-09T05:52:23Z",
+                        "msg":  "Added CMSG_BUY_ITEM, SMSG_BUY_FAILED, SMSG_BUY_ITEM"
+                    },
+                    {
+                        "sha":  "e0718ddf62",
+                        "date":  "2014-10-09T06:47:00Z",
+                        "msg":  "Update movement opcodes"
+                    },
+                    {
+                        "sha":  "6b91d2901b",
+                        "date":  "2014-10-09T06:49:56Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "259fa2c3f3",
+                        "date":  "2014-10-09T20:42:38Z",
+                        "msg":  "Update CMSG_CHANGE_SEATS_ON_CONTROLLED_VEHICLE opcode"
+                    },
+                    {
+                        "sha":  "68b3e4767c",
+                        "date":  "2014-10-10T05:22:02Z",
+                        "msg":  "Merge pull request #19 from Palabola/patch-2"
+                    },
+                    {
+                        "sha":  "668a4f4447",
+                        "date":  "2014-10-10T05:31:43Z",
+                        "msg":  "Repair"
+                    },
+                    {
+                        "sha":  "a5cfa53098",
+                        "date":  "2014-10-10T20:10:18Z",
+                        "msg":  "Added SMSG_RESET_RANGED_COMBAT_TIMER"
+                    },
+                    {
+                        "sha":  "128c419117",
+                        "date":  "2014-10-10T20:21:47Z",
+                        "msg":  "Added SMSG_PET_ACTION_FEEDBACK"
+                    },
+                    {
+                        "sha":  "9df3ab0445",
+                        "date":  "2014-10-10T20:30:55Z",
+                        "msg":  "Added SMSG_PET_CAST_FAILED"
+                    },
+                    {
+                        "sha":  "5629c7c082",
+                        "date":  "2014-10-10T21:35:01Z",
+                        "msg":  "Added CMSG_RESUME_TOKEN_ACK, SMSG_RESUME_TOKEN"
+                    },
+                    {
+                        "sha":  "a69c720c1a",
+                        "date":  "2014-10-10T21:39:50Z",
+                        "msg":  "Added SMSG_TRAINER_BUY_FAILED"
+                    },
+                    {
+                        "sha":  "d134beaf86",
+                        "date":  "2014-10-10T22:50:36Z",
+                        "msg":  "Added SMSG_XP_GAIN_ABORTED"
+                    },
+                    {
+                        "sha":  "5e7a5acbcc",
+                        "date":  "2014-10-11T06:35:41Z",
+                        "msg":  "Added SMSG_QUESTGIVER_QUEST_INVALID"
+                    },
+                    {
+                        "sha":  "9a4bbd13f6",
+                        "date":  "2014-10-11T07:14:21Z",
+                        "msg":  "Added CMSG_QUERY_NEXT_MAIL_TIME, SMSG_QUERY_NEXT_MAIL_TIME"
+                    },
+                    {
+                        "sha":  "aedc0883e1",
+                        "date":  "2014-10-11T07:58:37Z",
+                        "msg":  "Added SMSG_SET_FACTION_VISIBLE"
+                    },
+                    {
+                        "sha":  "149e4e20c2",
+                        "date":  "2014-10-11T08:11:06Z",
+                        "msg":  "Added SMSG_CUSTOM_LOAD_SCREEN"
+                    },
+                    {
+                        "sha":  "a7631faedb",
+                        "date":  "2014-10-11T08:19:41Z",
+                        "msg":  "Added SMSG_MODIFY_COOLDOWN"
+                    },
+                    {
+                        "sha":  "033dcd135f",
+                        "date":  "2014-10-11T08:34:55Z",
+                        "msg":  "Added SMSG_PLAY_SPELL_VISUAL"
+                    },
+                    {
+                        "sha":  "8f67292372",
+                        "date":  "2014-10-11T08:44:22Z",
+                        "msg":  "Added SMSG_SET_AI_ANIM_KIT"
+                    },
+                    {
+                        "sha":  "b5d0da7dee",
+                        "date":  "2014-10-11T08:49:55Z",
+                        "msg":  "Added SMSG_DURABILITY_DAMAGE_DEATH"
+                    },
+                    {
+                        "sha":  "833b8b808a",
+                        "date":  "2014-10-11T08:59:10Z",
+                        "msg":  "Added SMSG_DISMOUNT"
+                    },
+                    {
+                        "sha":  "5e1d94d5ac",
+                        "date":  "2014-10-11T09:15:31Z",
+                        "msg":  "Added SMSG_PET_ACTION_SOUND"
+                    },
+                    {
+                        "sha":  "c70e3a29bb",
+                        "date":  "2014-10-11T09:30:52Z",
+                        "msg":  "Added SMSG_GAMEOBJECT_DESPAWN_ANIM"
+                    },
+                    {
+                        "sha":  "1007e15436",
+                        "date":  "2014-10-11T09:38:19Z",
+                        "msg":  "Added SMSG_MISSILE_CANCEL"
+                    },
+                    {
+                        "sha":  "c9b414f69d",
+                        "date":  "2014-10-11T09:47:52Z",
+                        "msg":  "Added SMSG_PET_DISMISS_SOUND"
+                    },
+                    {
+                        "sha":  "ead325ca89",
+                        "date":  "2014-10-11T09:58:46Z",
+                        "msg":  "Added SMSG_ADJUST_SPLINE_DURATION"
+                    },
+                    {
+                        "sha":  "390e3db91b",
+                        "date":  "2014-10-11T10:05:23Z",
+                        "msg":  "Added SMSG_SET_ANIM_TIER"
+                    },
+                    {
+                        "sha":  "370acdad4a",
+                        "date":  "2014-10-11T10:09:17Z",
+                        "msg":  "Added SMSG_START_ELAPSED_TIMERS"
+                    },
+                    {
+                        "sha":  "f1a17a1c48",
+                        "date":  "2014-10-11T10:17:26Z",
+                        "msg":  "Added SMSG_SEND_SPELL_HISTORY"
+                    },
+                    {
+                        "sha":  "215fbb7ef0",
+                        "date":  "2014-10-11T10:40:36Z",
+                        "msg":  "Added SMSG_RESUME_CAST_BAR"
+                    },
+                    {
+                        "sha":  "6b88c769c6",
+                        "date":  "2014-10-11T10:47:57Z",
+                        "msg":  "Added SMSG_SPELLORDAMAGE_IMMUNE"
+                    },
+                    {
+                        "sha":  "ef7d030b7f",
+                        "date":  "2014-10-11T10:52:36Z",
+                        "msg":  "Added SMSG_SET_PLAY_HOVER_ANIM"
+                    },
+                    {
+                        "sha":  "9c4bfd7842",
+                        "date":  "2014-10-11T11:14:05Z",
+                        "msg":  "Added SMSG_FORCE_SET_VEHICLE_REC_ID"
+                    },
+                    {
+                        "sha":  "69b14170f7",
+                        "date":  "2014-10-11T11:27:16Z",
+                        "msg":  "Added SMSG_COMBAT_EVENT_FAILED"
+                    },
+                    {
+                        "sha":  "54571a450d",
+                        "date":  "2014-10-11T11:31:52Z",
+                        "msg":  "Added SMSG_FACTION_BONUS_INFO"
+                    },
+                    {
+                        "sha":  "fe12fe9572",
+                        "date":  "2014-10-11T11:34:36Z",
+                        "msg":  "Added SMSG_DISPLAY_PROMOTION"
+                    },
+                    {
+                        "sha":  "d7d54d84fe",
+                        "date":  "2014-10-11T11:42:25Z",
+                        "msg":  "Added SMSG_SPELLINSTAKILLLOG"
+                    },
+                    {
+                        "sha":  "004c6c0518",
+                        "date":  "2014-10-11T11:47:41Z",
+                        "msg":  "Added SMSG_TITLE_EARNED"
+                    },
+                    {
+                        "sha":  "b8aaf49a74",
+                        "date":  "2014-10-11T11:52:18Z",
+                        "msg":  "Added SMSG_AREA_TRIGGER_DENIED"
+                    },
+                    {
+                        "sha":  "a86dacb094",
+                        "date":  "2014-10-11T11:57:02Z",
+                        "msg":  "Added SMSG_STABLE_RESULT"
+                    },
+                    {
+                        "sha":  "c1b53ae68d",
+                        "date":  "2014-10-11T12:08:41Z",
+                        "msg":  "Added SMSG_GAMETIME_UPDATE"
+                    },
+                    {
+                        "sha":  "717b2153a8",
+                        "date":  "2014-10-11T12:18:02Z",
+                        "msg":  "Added SMSG_PROCRESIST"
+                    },
+                    {
+                        "sha":  "87c6a52ca3",
+                        "date":  "2014-10-11T12:30:32Z",
+                        "msg":  "Added SMSG_ENCHANTMENTLOG"
+                    },
+                    {
+                        "sha":  "f597914d46",
+                        "date":  "2014-10-11T13:05:34Z",
+                        "msg":  "Added CMSG_GET_MIRRORIMAGE_DATA, SMSG_MIRRORIMAGE_DATA"
+                    },
+                    {
+                        "sha":  "a932e2a2cf",
+                        "date":  "2014-10-11T13:09:42Z",
+                        "msg":  "Added SMSG_INVALIDATE_PLAYER"
+                    },
+                    {
+                        "sha":  "8705c6a20b",
+                        "date":  "2014-10-11T13:14:32Z",
+                        "msg":  "Added SMSG_LOSS_OF_CONTROL_AURA_UPDATE"
+                    },
+                    {
+                        "sha":  "703de9ef88",
+                        "date":  "2014-10-11T13:18:05Z",
+                        "msg":  "Added SMSG_ADD_LOSS_OF_CONTROL"
+                    },
+                    {
+                        "sha":  "8d42b8425e",
+                        "date":  "2014-10-11T13:36:21Z",
+                        "msg":  "Added SMSG_CHALLENGE_MODE_REWARDS"
+                    },
+                    {
+                        "sha":  "5e727b02a7",
+                        "date":  "2014-10-11T13:44:08Z",
+                        "msg":  "Added SMSG_GUILD_RENAMED"
+                    },
+                    {
+                        "sha":  "ee12a47403",
+                        "date":  "2014-10-11T13:50:02Z",
+                        "msg":  "Added SMSG_CHALLENGE_MODE_ALL_MAP_STATS"
+                    },
+                    {
+                        "sha":  "b706de8a0f",
+                        "date":  "2014-10-11T15:21:53Z",
+                        "msg":  "Added SMSG_AUCTION_OUTBID_NOTIFICATION"
+                    },
+                    {
+                        "sha":  "1236532dc0",
+                        "date":  "2014-10-11T15:41:19Z",
+                        "msg":  "Added SMSG_MOUNTSPECIAL_ANIM"
+                    },
+                    {
+                        "sha":  "f17ec519e5",
+                        "date":  "2014-10-11T15:55:17Z",
+                        "msg":  "Added SMSG_SPELLDAMAGESHIELD"
+                    },
+                    {
+                        "sha":  "719941b591",
+                        "date":  "2014-10-11T16:19:02Z",
+                        "msg":  "Added SMSG_WEEKLY_SPELL_USAGE"
+                    },
+                    {
+                        "sha":  "d25d42a0ae",
+                        "date":  "2014-10-11T16:22:02Z",
+                        "msg":  "Added SMSG_BREAK_TARGET"
+                    },
+                    {
+                        "sha":  "c71db885df",
+                        "date":  "2014-10-11T17:42:26Z",
+                        "msg":  "Added CMSG_INSPECT_HONOR_STATS, CMSG_REQUEST_INSPECT_RATED_BG_STATS,"
+                    },
+                    {
+                        "sha":  "9463cc1a8b",
+                        "date":  "2014-10-11T17:46:37Z",
+                        "msg":  "Added SMSG_PLAY_ONE_SHOT_ANIM_KIT"
+                    },
+                    {
+                        "sha":  "e544d169be",
+                        "date":  "2014-10-11T17:50:52Z",
+                        "msg":  "Added SMSG_TIME_ADJUSTMENT"
+                    },
+                    {
+                        "sha":  "321f33402d",
+                        "date":  "2014-10-11T18:00:49Z",
+                        "msg":  "Added SMSG_BATTLEGROUND_PLAYER_POSITIONS"
+                    },
+                    {
+                        "sha":  "936ce2ac0f",
+                        "date":  "2014-10-11T18:42:50Z",
+                        "msg":  "Added SMSG_ON_CANCEL_EXPECTED_RIDE_VEHICLE_AURA, SMSG_PLAYER_VEHICLE_DATA"
+                    },
+                    {
+                        "sha":  "e7513ae9ca",
+                        "date":  "2014-10-11T19:54:43Z",
+                        "msg":  "Added SMSG_LOOT_ROLL_WON"
+                    },
+                    {
+                        "sha":  "a14fdab62f",
+                        "date":  "2014-10-11T19:57:42Z",
+                        "msg":  "Added SMSG_SUPERCEDED_SPELL"
+                    },
+                    {
+                        "sha":  "0fb5dcfc70",
+                        "date":  "2014-10-11T20:02:01Z",
+                        "msg":  "Added SMSG_STREAMING_MOVIE"
+                    },
+                    {
+                        "sha":  "5cf4dd53bd",
+                        "date":  "2014-10-11T20:05:51Z",
+                        "msg":  "Added SMSG_UPDATE_CURRENCY"
+                    },
+                    {
+                        "sha":  "d29ab5957d",
+                        "date":  "2014-10-11T20:09:39Z",
+                        "msg":  "Added SMSG_UPDATE_CURRENCY_WEEK_LIMIT"
+                    },
+                    {
+                        "sha":  "6a2b4e1dd5",
+                        "date":  "2014-10-11T20:13:34Z",
+                        "msg":  "Added SMSG_WARGAME_REQUEST_SENT"
+                    },
+                    {
+                        "sha":  "cf0826e896",
+                        "date":  "2014-10-11T20:15:44Z",
+                        "msg":  "Added SMSG_CALENDAR_SEND_NUM_PENDING"
+                    },
+                    {
+                        "sha":  "3d95261626",
+                        "date":  "2014-10-11T20:20:23Z",
+                        "msg":  "Added SMSG_GUILD_PARTY_STATE_RESPONSE"
+                    },
+                    {
+                        "sha":  "effa69cc6e",
+                        "date":  "2014-10-11T20:23:17Z",
+                        "msg":  "Added SMSG_CHAT_NOT_IN_PARTY"
+                    },
+                    {
+                        "sha":  "62786cb7fc",
+                        "date":  "2014-10-11T20:28:16Z",
+                        "msg":  "Added SMSG_RAID_INSTANCE_MESSAGE"
+                    },
+                    {
+                        "sha":  "a44d2e6067",
+                        "date":  "2014-10-11T20:34:22Z",
+                        "msg":  "Added SMSG_SPELL_UPDATE_CHAIN_TARGETS"
+                    },
+                    {
+                        "sha":  "15d617cff8",
+                        "date":  "2014-10-11T20:37:59Z",
+                        "msg":  "Added SMSG_PROPOSE_LEVEL_GRANT"
+                    },
+                    {
+                        "sha":  "8c79bcf829",
+                        "date":  "2014-10-12T06:48:35Z",
+                        "msg":  "Added SMSG_FAILED_PLAYER_CONDITION"
+                    },
+                    {
+                        "sha":  "9853a64485",
+                        "date":  "2014-10-12T07:02:06Z",
+                        "msg":  "Added SMSG_PET_MODE"
+                    },
+                    {
+                        "sha":  "413543a1e2",
+                        "date":  "2014-10-12T07:05:27Z",
+                        "msg":  "Added SMSG_LOOT_ROLL"
+                    },
+                    {
+                        "sha":  "8193b27e0e",
+                        "date":  "2014-10-12T07:10:31Z",
+                        "msg":  "Added SMSG_RESYNC_RUNES"
+                    },
+                    {
+                        "sha":  "4bf2f42e63",
+                        "date":  "2014-10-12T07:16:16Z",
+                        "msg":  "Update SMSG_INSPECT_RATED_BG_STATS"
+                    },
+                    {
+                        "sha":  "21cff5949b",
+                        "date":  "2014-10-12T07:44:16Z",
+                        "msg":  "Added SMSG_UNK_162A"
+                    },
+                    {
+                        "sha":  "27df196a44",
+                        "date":  "2014-10-12T08:08:16Z",
+                        "msg":  "Added SMSG_UNK_1061"
+                    },
+                    {
+                        "sha":  "06d93c27f9",
+                        "date":  "2014-10-13T21:30:10Z",
+                        "msg":  "Update movement, HandleSInspectTalent"
+                    },
+                    {
+                        "sha":  "3182d8728a",
+                        "date":  "2014-10-14T17:29:28Z",
+                        "msg":  "Update SMSG_PET_MODE"
+                    },
+                    {
+                        "sha":  "7949059046",
+                        "date":  "2014-10-15T00:40:08Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "d300e8004f",
+                        "date":  "2014-10-17T19:38:38Z",
+                        "msg":  "Update SMSG_RESYNC_RUNES"
+                    },
+                    {
+                        "sha":  "339be18468",
+                        "date":  "2014-10-29T05:15:12Z",
+                        "msg":  "Added SMSG_CLEAR_TARGET"
+                    },
+                    {
+                        "sha":  "17bf7e638f",
+                        "date":  "2014-11-15T03:57:23Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "324d54838e",
+                        "date":  "2014-11-15T03:57:57Z",
+                        "msg":  "Update CMSG_PLAYER_LOGIN"
+                    },
+                    {
+                        "sha":  "96f4a07051",
+                        "date":  "2014-11-15T05:44:54Z",
+                        "msg":  "Added CMSG_VOID_STORAGE_QUERY, CMSG_VOID_STORAGE_UNLOCK"
+                    },
+                    {
+                        "sha":  "a75fa4a2ea",
+                        "date":  "2014-11-15T05:45:43Z",
+                        "msg":  "Added SMSG_QUEST_CONFIRM_ACCEPT"
+                    },
+                    {
+                        "sha":  "6a3a99a88d",
+                        "date":  "2014-11-15T05:46:52Z",
+                        "msg":  "Added SMSG_QUESTGIVER_QUEST_DETAILS"
+                    },
+                    {
+                        "sha":  "ed24ce125f",
+                        "date":  "2014-11-16T22:46:20Z",
+                        "msg":  "Update 17898"
+                    },
+                    {
+                        "sha":  "64bb1874e3",
+                        "date":  "2014-11-16T23:07:24Z",
+                        "msg":  "Delete 18019"
+                    },
+                    {
+                        "sha":  "404e830540",
+                        "date":  "2014-11-16T23:28:14Z",
+                        "msg":  "Update 18414"
+                    },
+                    {
+                        "sha":  "81d028c83a",
+                        "date":  "2014-11-17T00:06:24Z",
+                        "msg":  "Update 18414"
+                    },
+                    {
+                        "sha":  "1540efd694",
+                        "date":  "2014-11-17T09:24:57Z",
+                        "msg":  "Added SMSG_MINIMAP_PING for 18414"
+                    },
+                    {
+                        "sha":  "cb6357541d",
+                        "date":  "2014-11-17T09:25:53Z",
+                        "msg":  "Update CMSG_ADD_FRIEND, CMSG_ADD_IGNORE for 18414"
+                    },
+                    {
+                        "sha":  "a384521a6d",
+                        "date":  "2014-11-17T09:27:08Z",
+                        "msg":  "Added CMSG_OPENING_CINEMATIC for 18414"
+                    },
+                    {
+                        "sha":  "2ccd075a56",
+                        "date":  "2014-11-17T09:28:06Z",
+                        "msg":  "Added SMSG_PLAYERBOUND for 18414"
+                    },
+                    {
+                        "sha":  "b981b4bc9e",
+                        "date":  "2014-11-17T09:32:04Z",
+                        "msg":  "Added CMSG_RAID_READY_CHECK_CONFIRM, SMSG_RAID_READY_CHECK for 18414"
+                    },
+                    {
+                        "sha":  "ba3807b400",
+                        "date":  "2014-11-17T09:32:34Z",
+                        "msg":  "Added CMSG_RANDOM_ROLL for 18414"
+                    },
+                    {
+                        "sha":  "6e598ace5f",
+                        "date":  "2014-11-17T09:33:57Z",
+                        "msg":  "Added CMSG_SPELLCLICK for 18414"
+                    },
+                    {
+                        "sha":  "a5988d7618",
+                        "date":  "2014-11-17T09:53:35Z",
+                        "msg":  "Update opcodes for 18414"
+                    },
+                    {
+                        "sha":  "a17afb0c25",
+                        "date":  "2014-11-17T10:58:30Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser.git"
+                    },
+                    {
+                        "sha":  "d218ab2dfc",
+                        "date":  "2014-11-19T08:26:57Z",
+                        "msg":  "Fixed previous merge"
+                    },
+                    {
+                        "sha":  "948caa9cae",
+                        "date":  "2014-11-19T10:22:28Z",
+                        "msg":  "Added SMSG_ADDON_INFO"
+                    },
+                    {
+                        "sha":  "008b7e1e23",
+                        "date":  "2014-11-19T10:23:26Z",
+                        "msg":  "Added SMSG_TRIGGER_CINEMATIC, SMSG_TRIGGER_MOVIE"
+                    },
+                    {
+                        "sha":  "78dbcc97a1",
+                        "date":  "2014-11-19T10:24:01Z",
+                        "msg":  "Added SMSG_RANDOMIZE_CHAR_NAME"
+                    },
+                    {
+                        "sha":  "af24f974c8",
+                        "date":  "2014-11-19T10:25:07Z",
+                        "msg":  "Added SMSG_SET_FACTION_ATWAR, SMSG_SET_FACTION_STANDING"
+                    },
+                    {
+                        "sha":  "f335297b79",
+                        "date":  "2014-11-19T10:26:44Z",
+                        "msg":  "Added SMSG_RANDOM_ROLL"
+                    },
+                    {
+                        "sha":  "77940b62ee",
+                        "date":  "2014-11-19T10:27:30Z",
+                        "msg":  "Added SMSG_RAID_READY_CHECK_COMPLETED, SMSG_RAID_READY_CHECK_CONFIRM"
+                    },
+                    {
+                        "sha":  "445c77fd8b",
+                        "date":  "2014-11-19T10:38:59Z",
+                        "msg":  "Added CMSG_CHAT_IGNORED"
+                    },
+                    {
+                        "sha":  "109b78b79e",
+                        "date":  "2014-11-19T10:39:54Z",
+                        "msg":  "Added CMSG_MESSAGECHAT_OFFICER, CMSG_MESSAGECHAT_RAID"
+                    },
+                    {
+                        "sha":  "18600d1a68",
+                        "date":  "2014-11-19T12:24:02Z",
+                        "msg":  "Added CMSG_OPEN_ITEM"
+                    },
+                    {
+                        "sha":  "c2f5f7547d",
+                        "date":  "2014-11-19T12:24:27Z",
+                        "msg":  "Added CMSG_REPAIR_ITEM"
+                    },
+                    {
+                        "sha":  "17011fe654",
+                        "date":  "2014-11-19T12:24:54Z",
+                        "msg":  "Added CMSG_SELL_ITEM"
+                    },
+                    {
+                        "sha":  "d160c4ec71",
+                        "date":  "2014-11-19T12:25:28Z",
+                        "msg":  "Added CMSG_SPLIT_ITEM"
+                    },
+                    {
+                        "sha":  "693db434ec",
+                        "date":  "2014-11-19T12:26:04Z",
+                        "msg":  "Added CMSG_SWAP_INV_ITEM, CMSG_SWAP_ITEM"
+                    },
+                    {
+                        "sha":  "56dcaf9c08",
+                        "date":  "2014-11-19T12:26:28Z",
+                        "msg":  "Added SMSG_ITEM_TIME_UPDATE"
+                    },
+                    {
+                        "sha":  "fca0abc09c",
+                        "date":  "2014-11-19T12:26:46Z",
+                        "msg":  "Added SMSG_SELL_ITEM"
+                    },
+                    {
+                        "sha":  "8035b8fa5a",
+                        "date":  "2014-11-19T14:07:53Z",
+                        "msg":  "Added CMSG_PETITION_DECLINE"
+                    },
+                    {
+                        "sha":  "d905770531",
+                        "date":  "2014-11-19T14:08:59Z",
+                        "msg":  "Added CMSG_PETITION_QUERY"
+                    },
+                    {
+                        "sha":  "40fb4d144a",
+                        "date":  "2014-11-19T14:19:40Z",
+                        "msg":  "Added CMSG_PETITION_SIGN"
+                    },
+                    {
+                        "sha":  "0752282282",
+                        "date":  "2014-11-19T17:38:19Z",
+                        "msg":  "Merge pull request #20 from darkloveir/patch-1"
+                    },
+                    {
+                        "sha":  "15daa53e88",
+                        "date":  "2014-11-19T17:40:21Z",
+                        "msg":  "Merge pull request #21 from darkloveir/patch-2"
+                    },
+                    {
+                        "sha":  "ce2961deb8",
+                        "date":  "2014-11-19T17:43:28Z",
+                        "msg":  "Merge pull request #22 from darkloveir/patch-3"
+                    },
+                    {
+                        "sha":  "ddc097f95f",
+                        "date":  "2014-11-19T17:51:33Z",
+                        "msg":  "Fix CMSG_PETITION_QUERY, CMSG_PETITION_SIGN"
+                    },
+                    {
+                        "sha":  "d02b1a4485",
+                        "date":  "2014-11-19T17:59:41Z",
+                        "msg":  "Added CMSG_MAIL_TAKE_MONEY"
+                    },
+                    {
+                        "sha":  "dd702dac01",
+                        "date":  "2014-11-19T20:51:33Z",
+                        "msg":  "Merge pull request #23 from darkloveir/patch-4"
+                    },
+                    {
+                        "sha":  "fe118806fc",
+                        "date":  "2014-11-19T20:54:55Z",
+                        "msg":  "Fixed CMSG_MAIL_TAKE_MONEY"
+                    },
+                    {
+                        "sha":  "b53f4c6fe7",
+                        "date":  "2014-11-20T02:05:39Z",
+                        "msg":  "Added SMSG_INVENTORY_CHANGE_FAILURE"
+                    },
+                    {
+                        "sha":  "1db643f51d",
+                        "date":  "2014-11-20T20:58:12Z",
+                        "msg":  "Added SMSG_GROUP_SET_LEADER"
+                    },
+                    {
+                        "sha":  "909cd5fc72",
+                        "date":  "2014-11-20T21:19:12Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "ab6c0261cc",
+                        "date":  "2014-11-20T21:19:50Z",
+                        "msg":  "Added group opcodes"
+                    },
+                    {
+                        "sha":  "a1231e2c4c",
+                        "date":  "2014-11-21T06:53:25Z",
+                        "msg":  "Added SMSG_BATTLEGROUND_PLAYER_JOINED"
+                    },
+                    {
+                        "sha":  "4d8be09f2b",
+                        "date":  "2014-11-21T06:54:40Z",
+                        "msg":  "Added SMSG_RECEIVED_MAIL"
+                    },
+                    {
+                        "sha":  "0f605dc3e0",
+                        "date":  "2014-11-21T06:55:12Z",
+                        "msg":  "Added CMSG_SEND_MAIL"
+                    },
+                    {
+                        "sha":  "4db3e46a4f",
+                        "date":  "2014-11-21T06:55:52Z",
+                        "msg":  "Added CMSG_MAIL_CREATE_TEXT_ITEM"
+                    },
+                    {
+                        "sha":  "980381428a",
+                        "date":  "2014-11-21T06:56:34Z",
+                        "msg":  "Added CMSG_MAIL_MARK_AS_READ"
+                    },
+                    {
+                        "sha":  "f240adfac7",
+                        "date":  "2014-11-21T06:57:38Z",
+                        "msg":  "Update CMSG_MAIL_RETURN_TO_SENDER"
+                    },
+                    {
+                        "sha":  "182d3209e0",
+                        "date":  "2014-11-21T06:58:07Z",
+                        "msg":  "Added CMSG_MAIL_TAKE_ITEM"
+                    },
+                    {
+                        "sha":  "3de4f3dbf8",
+                        "date":  "2014-11-21T06:58:39Z",
+                        "msg":  "Update CMSG_MAIL_TAKE_MONEY"
+                    },
+                    {
+                        "sha":  "928da4d202",
+                        "date":  "2014-11-21T07:27:00Z",
+                        "msg":  "Added SMSG_LOOT_RELEASE_RESPONSE"
+                    },
+                    {
+                        "sha":  "6a0535e132",
+                        "date":  "2014-11-21T07:27:42Z",
+                        "msg":  "Added CMSG_LOOT_METHOD"
+                    },
+                    {
+                        "sha":  "c5ecf2ec53",
+                        "date":  "2014-11-21T07:28:31Z",
+                        "msg":  "Update CMSG_LOOT, CMSG_MESSAGECHAT_CHANNEL."
+                    },
+                    {
+                        "sha":  "a8b15dba2a",
+                        "date":  "2014-11-21T07:42:03Z",
+                        "msg":  "Added SMSG_FRIEND_STATUS"
+                    },
+                    {
+                        "sha":  "31d2beacd7",
+                        "date":  "2014-11-21T07:42:31Z",
+                        "msg":  "Added SMSG_GUILD_MEMBER_DAILY_RESET"
+                    },
+                    {
+                        "sha":  "5fc55fe7ef",
+                        "date":  "2014-11-21T07:53:02Z",
+                        "msg":  "Update spellog"
+                    },
+                    {
+                        "sha":  "bfe76041d9",
+                        "date":  "2014-11-21T09:19:50Z",
+                        "msg":  "Updated CMSG_GET_TIMEZONE_INFORMATION for 17898"
+                    },
+                    {
+                        "sha":  "835c0b99a1",
+                        "date":  "2014-11-21T13:41:24Z",
+                        "msg":  "Added CMSG_CANCEL_AUTO_REPEAT_SPELL"
+                    },
+                    {
+                        "sha":  "9b5056642c",
+                        "date":  "2014-11-21T13:42:42Z",
+                        "msg":  "Added CMSG_CALENDAR_ADD_EVENT"
+                    },
+                    {
+                        "sha":  "3e2163ddca",
+                        "date":  "2014-11-21T13:44:07Z",
+                        "msg":  "Added CMSG_CHANGE_SEATS_ON_CONTROLLED_VEHICLE"
+                    },
+                    {
+                        "sha":  "d682983f79",
+                        "date":  "2014-11-21T13:45:27Z",
+                        "msg":  "Added CMSG_BATTLEFIELD_MGR_ENTRY_INVITE_RESPONSE"
+                    },
+                    {
+                        "sha":  "49d7ebb98d",
+                        "date":  "2014-11-21T13:45:57Z",
+                        "msg":  "Added CMSG_BATTLEFIELD_MGR_EXIT_REQUEST"
+                    },
+                    {
+                        "sha":  "2ea494efb8",
+                        "date":  "2014-11-21T13:46:31Z",
+                        "msg":  "Added CMSG_BATTLEFIELD_MGR_QUEUE_INVITE_RESPONSE"
+                    },
+                    {
+                        "sha":  "e859ef1dc2",
+                        "date":  "2014-11-21T13:47:49Z",
+                        "msg":  "Added CMSG_CLEAR_RAID_MARKER"
+                    },
+                    {
+                        "sha":  "169aad4aa3",
+                        "date":  "2014-11-21T13:48:33Z",
+                        "msg":  "Update CMSG_AUTO_DECLINE_GUILD_INVITES"
+                    },
+                    {
+                        "sha":  "e77d2d6f00",
+                        "date":  "2014-11-21T13:51:01Z",
+                        "msg":  "Update CMSG_BATTLEFIELD_PORT, CMSG_BATTLEMASTER_JOIN"
+                    },
+                    {
+                        "sha":  "ece3a3b776",
+                        "date":  "2014-11-21T13:52:09Z",
+                        "msg":  "Updated some opcodes"
+                    },
+                    {
+                        "sha":  "a55b4dbc2d",
+                        "date":  "2014-11-21T13:53:56Z",
+                        "msg":  "Added CMSG_BATTLE_CHAR_BOOST"
+                    },
+                    {
+                        "sha":  "4f076ae7dd",
+                        "date":  "2014-11-21T17:16:42Z",
+                        "msg":  "Added CMSG_EQUIPMENT_SET_DELETE"
+                    },
+                    {
+                        "sha":  "b04b82bb6b",
+                        "date":  "2014-11-21T21:44:19Z",
+                        "msg":  "Update CMSG_LOGOUT_CANCEL"
+                    },
+                    {
+                        "sha":  "814cd13552",
+                        "date":  "2014-11-21T21:47:14Z",
+                        "msg":  "Updated CMSG_QUESTLOG_REMOVE_QUEST"
+                    },
+                    {
+                        "sha":  "99adcec4e1",
+                        "date":  "2014-11-21T21:48:29Z",
+                        "msg":  "Added CMSG_PET_RENAME"
+                    },
+                    {
+                        "sha":  "11c29f93c6",
+                        "date":  "2014-11-21T21:49:35Z",
+                        "msg":  "Added CMSG_PAGE_TEXT_QUERY"
+                    },
+                    {
+                        "sha":  "5b36fd8814",
+                        "date":  "2014-11-21T21:50:40Z",
+                        "msg":  "Added CMSG_LEAVE_CHANNEL"
+                    },
+                    {
+                        "sha":  "b500903388",
+                        "date":  "2014-11-21T21:52:04Z",
+                        "msg":  "Added CMSG_EQUIPMENT_SET_SAVE, CMSG_EQUIPMENT_SET_USE"
+                    },
+                    {
+                        "sha":  "19a188004b",
+                        "date":  "2014-11-21T21:52:56Z",
+                        "msg":  "Updated CMSG_PET_ACTION, CMSG_PET_CAST_SPELL"
+                    },
+                    {
+                        "sha":  "1b2f98bfe3",
+                        "date":  "2014-11-21T21:54:58Z",
+                        "msg":  "Added CMSG_PETITION_BUY, CMSG_PETITION_RENAME, CMSG_PETITION_SHOW_SIGNATURES"
+                    },
+                    {
+                        "sha":  "f933036653",
+                        "date":  "2014-11-21T21:56:43Z",
+                        "msg":  "Added CMSG_QUERY_GUILD_XP"
+                    },
+                    {
+                        "sha":  "46f1bff84a",
+                        "date":  "2014-11-22T15:33:45Z",
+                        "msg":  "Added CMSG_UNK_028E"
+                    },
+                    {
+                        "sha":  "5af2320572",
+                        "date":  "2014-11-22T15:35:40Z",
+                        "msg":  "Added SMSG_PET_ADDED"
+                    },
+                    {
+                        "sha":  "9f86423d5a",
+                        "date":  "2014-11-22T15:38:53Z",
+                        "msg":  "Added CMSG_GMTICKET_GETTICKET"
+                    },
+                    {
+                        "sha":  "d4d1d99dfb",
+                        "date":  "2014-11-22T15:40:52Z",
+                        "msg":  "Updated WowGuid"
+                    },
+                    {
+                        "sha":  "9bfc57d880",
+                        "date":  "2014-11-22T15:42:45Z",
+                        "msg":  "Added SMSG_REFRESH_SPELL_HISTORY"
+                    },
+                    {
+                        "sha":  "5de8b57abf",
+                        "date":  "2014-11-22T15:45:57Z",
+                        "msg":  "Added SMSG_SPELLLOGMISS"
+                    },
+                    {
+                        "sha":  "1f6e350a1d",
+                        "date":  "2014-11-22T15:47:13Z",
+                        "msg":  "Cleanup"
+                    },
+                    {
+                        "sha":  "fb6a0208b0",
+                        "date":  "2014-11-22T15:50:25Z",
+                        "msg":  "Added SMSG_QUEST_UPDATE_ADD_CREDIT_SIMPLE"
+                    },
+                    {
+                        "sha":  "00d7499892",
+                        "date":  "2014-11-22T16:59:52Z",
+                        "msg":  "Added SMSG_RAID_TARGET_UPDATE"
+                    },
+                    {
+                        "sha":  "ed815b5b11",
+                        "date":  "2014-11-22T17:06:40Z",
+                        "msg":  "Added SMSG_RAID_MARKERS_CHANGED"
+                    },
+                    {
+                        "sha":  "ef3437e5b7",
+                        "date":  "2014-11-22T17:07:52Z",
+                        "msg":  "Updated CMSG_NULL_15A8"
+                    },
+                    {
+                        "sha":  "f92d8d18de",
+                        "date":  "2014-11-22T17:09:55Z",
+                        "msg":  "Added SMSG_CALENDAR_SEND_CALENDAR"
+                    },
+                    {
+                        "sha":  "74596e2f87",
+                        "date":  "2014-11-22T17:11:08Z",
+                        "msg":  "Added SMSG_UNK_1904"
+                    },
+                    {
+                        "sha":  "4c1fd97362",
+                        "date":  "2014-11-22T17:14:03Z",
+                        "msg":  "Added SMSG_GMTICKET_SYSTEMSTATUS"
+                    },
+                    {
+                        "sha":  "39ea0201e6",
+                        "date":  "2014-11-22T17:15:32Z",
+                        "msg":  "Added SMSG_MIRRORIMAGE_CREATURE_DATA"
+                    },
+                    {
+                        "sha":  "9851c3a30c",
+                        "date":  "2014-11-22T17:17:05Z",
+                        "msg":  "Added CMSG_UNK_0377, CMSG_UNK_06C5"
+                    },
+                    {
+                        "sha":  "2eb3dcc982",
+                        "date":  "2014-11-22T17:19:11Z",
+                        "msg":  "Added CMSG_NULL_1063"
+                    },
+                    {
+                        "sha":  "284c754432",
+                        "date":  "2014-11-22T19:58:56Z",
+                        "msg":  "Added CMSG_SHOW_TRADESKILL, SMSG_SHOW_TRADESKILL_RESPONSE"
+                    },
+                    {
+                        "sha":  "12c446e6bf",
+                        "date":  "2014-11-22T20:00:44Z",
+                        "msg":  "Added SMSG_PVP_CREDIT"
+                    },
+                    {
+                        "sha":  "5d6b98100e",
+                        "date":  "2014-11-22T20:02:14Z",
+                        "msg":  "Added SMSG_CLEAR_ALL_SPELL_CHARGES"
+                    },
+                    {
+                        "sha":  "e9d92943ff",
+                        "date":  "2014-11-22T20:03:27Z",
+                        "msg":  "Added SMSG_TRANSFER_ABORTED"
+                    },
+                    {
+                        "sha":  "ed37820c61",
+                        "date":  "2014-11-22T20:05:45Z",
+                        "msg":  "Added CMSG_AREA_SPIRIT_HEALER_QUEUE, SMSG_AREA_SPIRIT_HEALER_TIME,"
+                    },
+                    {
+                        "sha":  "df25ccdc8f",
+                        "date":  "2014-11-22T20:07:12Z",
+                        "msg":  "Added CMSG_UNK_03F1, CMSG_UNK_08AF"
+                    },
+                    {
+                        "sha":  "2346c4c4f6",
+                        "date":  "2014-11-22T20:08:06Z",
+                        "msg":  "Added SMSG_NULL_1313"
+                    },
+                    {
+                        "sha":  "18d4f48b31",
+                        "date":  "2014-11-22T20:09:03Z",
+                        "msg":  "Added SMSG_PLAYER_SKINNED"
+                    },
+                    {
+                        "sha":  "4f4987e571",
+                        "date":  "2014-11-22T20:09:58Z",
+                        "msg":  "Updated 17BA"
+                    },
+                    {
+                        "sha":  "c17d75524a",
+                        "date":  "2014-11-22T20:15:55Z",
+                        "msg":  "Added battlepet opcodes"
+                    },
+                    {
+                        "sha":  "517614cee4",
+                        "date":  "2014-11-22T21:40:44Z",
+                        "msg":  "Added SMSG_ENCOUNTER_START, SMSG_ENCOUNTER_END"
+                    },
+                    {
+                        "sha":  "a677fe1bb5",
+                        "date":  "2014-11-22T21:41:30Z",
+                        "msg":  "Added SMSG_UNK_1EAE"
+                    },
+                    {
+                        "sha":  "5960c6fe58",
+                        "date":  "2014-11-22T21:42:36Z",
+                        "msg":  "Added SMSG_BATTLE_PET_SCENE_OBJECT_FINAL_ROUND"
+                    },
+                    {
+                        "sha":  "f6526da832",
+                        "date":  "2014-11-22T21:43:51Z",
+                        "msg":  "Added SMSG_CALENDAR_RAID_LOCKOUT_ADDED"
+                    },
+                    {
+                        "sha":  "8e322540d7",
+                        "date":  "2014-11-22T21:45:01Z",
+                        "msg":  "Updated CMSG_AUTH_CONTINUED_SESSION"
+                    },
+                    {
+                        "sha":  "bd6e26dda2",
+                        "date":  "2014-11-22T21:45:53Z",
+                        "msg":  "Added CMSG_TURN_IN_PETITION"
+                    }
+                ]
+}

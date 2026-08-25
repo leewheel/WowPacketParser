@@ -1,0 +1,22 @@
+﻿{
+    "full_name":  "AHigi/WowPacketParser",
+    "ahead_by":  2,
+    "behind_by":  502,
+    "pushed_at":  "2025-03-03T12:40:51Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  "master",
+    "commit_count":  2,
+    "commits":  [
+                    {
+                        "sha":  "e6771ebd3d",
+                        "date":  "2025-03-03T00:53:42Z",
+                        "msg":  "11.1.0: ReadMythicPlusMember Race variable type update"
+                    },
+                    {
+                        "sha":  "2a02dfb6ba",
+                        "date":  "2025-03-03T12:40:50Z",
+                        "msg":  "Update MythicPlusHandler.cs"
+                    }
+                ]
+}
