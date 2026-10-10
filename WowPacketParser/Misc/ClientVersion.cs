@@ -1828,6 +1828,10 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V1_60_1_70178:
                 case ClientVersionBuild.V1_60_1_70205:
                 case ClientVersionBuild.V1_60_1_70235:
+                case ClientVersionBuild.V1_60_1_70245:
+                case ClientVersionBuild.V1_60_1_70291:
+                case ClientVersionBuild.V1_60_1_70334:
+                case ClientVersionBuild.V1_60_1_70338:
                     return ClientVersionBuild.V1_60_1_69876;
                 case ClientVersionBuild.BattleNetV37165:
                     return ClientVersionBuild.BattleNetV37165;
@@ -1872,6 +1876,10 @@ namespace WowPacketParser.Misc
                 // Forever is based on 12.x, so lets fallback for now
                 // Do not add any version checks for Forever handlers in 12.x or before
                 case ClientVersionBuild.V1_60_1_69876:
+                case ClientVersionBuild.V1_60_1_70245:
+                case ClientVersionBuild.V1_60_1_70291:
+                case ClientVersionBuild.V1_60_1_70334:
+                case ClientVersionBuild.V1_60_1_70338:
                     return ClientVersionBuild.V12_0_0_65390;
                 default:
                     return ClientVersionBuild.Zero;
@@ -2595,6 +2603,10 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V1_60_1_70178:
                 case ClientVersionBuild.V1_60_1_70205:
                 case ClientVersionBuild.V1_60_1_70235:
+                case ClientVersionBuild.V1_60_1_70245:
+                case ClientVersionBuild.V1_60_1_70291:
+                case ClientVersionBuild.V1_60_1_70334:
+                case ClientVersionBuild.V1_60_1_70338:
                     return true;
                 default:
                     return false;

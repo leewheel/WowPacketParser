@@ -93,6 +93,13 @@ namespace WowPacketParser.Enums
     {
         FEntityPosition = 1,
         CGObject = 2,
+        // 3 and 4 are not in the reference 11.2.7 dumps this enum was written from, but the
+        // Forever 1.60.1 client does emit them right after FEntityPosition/CGObject and before
+        // FTransportLink (5), which matches the 11.0.0 ordering (FEntityPosition, then
+        // FEntityLocalMatrix, then FEntityWorldMatrix). Without them every create block of a
+        // unit aborts with ArgumentOutOfRangeException.
+        FEntityLocalMatrix = 3,
+        FEntityWorldMatrix = 4,
         FTransportLink = 5,
         FPlayerOwnershipLink = 13,
         CActor = 15,
@@ -250,6 +257,8 @@ namespace WowPacketParser.Enums
                 WowCSEntityFragments1127.End => WowCSEntityFragments.End,
                 WowCSEntityFragments1127.FEntityPosition => WowCSEntityFragments.FEntityPosition,
                 WowCSEntityFragments1127.CGObject => WowCSEntityFragments.CGObject,
+                WowCSEntityFragments1127.FEntityLocalMatrix => WowCSEntityFragments.FEntityLocalMatrix,
+                WowCSEntityFragments1127.FEntityWorldMatrix => WowCSEntityFragments.FEntityWorldMatrix,
                 WowCSEntityFragments1127.FTransportLink => WowCSEntityFragments.FTransportLink,
                 WowCSEntityFragments1127.FPlayerOwnershipLink => WowCSEntityFragments.FPlayerOwnershipLink,
                 WowCSEntityFragments1127.CActor => WowCSEntityFragments.CActor,

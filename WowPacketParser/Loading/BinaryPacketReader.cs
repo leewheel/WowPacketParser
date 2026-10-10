@@ -110,7 +110,7 @@ namespace WowPacketParser.Loading
                         if (_snifferVersion >= 0x0107)
                             _startTime = DateTime.FromFileTimeUtc(BitConverter.ToInt64(optionalData, 3));
                     }
-                    else if (_snifferId == 0x15 || _snifferId == 0x16) // ymir
+                    else if (_snifferId == 0x15 || _snifferId == 0x16 || _snifferId == 0x17) // ymir
                     {
                         if (additionalLength >= 2)
                             _snifferVersion = BitConverter.ToInt16(optionalData, 0);
@@ -239,7 +239,7 @@ namespace WowPacketParser.Loading
 
                             _reader.ReadBytes(additionalSize - 20);
                         }
-                        else if ((_snifferId == 0x15 || _snifferId == 0x16) && additionalSize > 0) // ymir
+                        else if ((_snifferId == 0x15 || _snifferId == 0x16 || _snifferId == 0x17) && additionalSize > 0) // ymir
                         {
                             var optionalStart = _reader.BaseStream.Position;
                             var unixMilliseconds = _reader.ReadDouble();
