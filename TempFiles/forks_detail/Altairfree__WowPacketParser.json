@@ -1,0 +1,34 @@
+﻿{
+    "full_name":  "Altairfree/WowPacketParser",
+    "ahead_by":  3,
+    "behind_by":  1606,
+    "pushed_at":  "2021-09-13T22:41:41Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "handlers_refactor",
+                     "master",
+                     "multiple_sql",
+                     "sanitizing",
+                     "splitLocale"
+                 ],
+    "commit_count":  3,
+    "commits":  [
+                    {
+                        "sha":  "ccc0092830",
+                        "date":  "2021-09-12T10:45:56Z",
+                        "msg":  "Update GarrisonHandler.cs"
+                    },
+                    {
+                        "sha":  "05a80f1afa",
+                        "date":  "2021-09-13T21:33:47Z",
+                        "msg":  "Update GarrisonHandler.cs"
+                    },
+                    {
+                        "sha":  "8e8877e2cf",
+                        "date":  "2021-09-13T22:41:41Z",
+                        "msg":  "Update GarrisonHandler.cs"
+                    }
+                ]
+}

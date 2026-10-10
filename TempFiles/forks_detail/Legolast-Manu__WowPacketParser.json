@@ -1,0 +1,24 @@
+﻿{
+    "full_name":  "Legolast-Manu/WowPacketParser",
+    "ahead_by":  1,
+    "behind_by":  1294,
+    "pushed_at":  "2022-09-10T00:57:08Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "handlers_refactor",
+                     "master",
+                     "multiple_sql",
+                     "sanitizing",
+                     "splitLocale"
+                 ],
+    "commit_count":  1,
+    "commits":  [
+                    {
+                        "sha":  "ecaa3c21e8",
+                        "date":  "2022-09-10T00:57:08Z",
+                        "msg":  "Merge pull request #1 from TrinityCore/master"
+                    }
+                ]
+}

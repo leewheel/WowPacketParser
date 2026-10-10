@@ -1,0 +1,42 @@
+﻿{
+    "full_name":  "The-Legion-Preservation-Project/WowPacketParser",
+    "ahead_by":  6,
+    "behind_by":  364,
+    "pushed_at":  "2025-06-06T15:19:02Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  "master",
+    "commit_count":  6,
+    "commits":  [
+                    {
+                        "sha":  "b34a5a0d02",
+                        "date":  "2025-06-05T15:38:05Z",
+                        "msg":  "fix legion dbc; use legion dbc"
+                    },
+                    {
+                        "sha":  "1a8fd83e56",
+                        "date":  "2025-06-05T15:48:18Z",
+                        "msg":  "fix loading sql"
+                    },
+                    {
+                        "sha":  "d65a603eca",
+                        "date":  "2025-06-05T16:23:01Z",
+                        "msg":  "fix writing creature_template"
+                    },
+                    {
+                        "sha":  "df96d9dabd",
+                        "date":  "2025-06-05T16:52:22Z",
+                        "msg":  "fix writing creature_template_addon"
+                    },
+                    {
+                        "sha":  "36ede8909b",
+                        "date":  "2025-06-05T19:19:23Z",
+                        "msg":  "fix creature_template_difficulty output"
+                    },
+                    {
+                        "sha":  "1c37bfa474",
+                        "date":  "2025-06-06T15:18:50Z",
+                        "msg":  "add project for 7.3.5.26972 specific fixes"
+                    }
+                ]
+}

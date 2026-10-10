@@ -1,0 +1,39 @@
+﻿{
+    "full_name":  "lorac2k14/WowPacketParser",
+    "ahead_by":  4,
+    "behind_by":  2506,
+    "pushed_at":  "2016-12-17T04:34:11Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "creature_txt_fix",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale",
+                     "vincent_beta"
+                 ],
+    "commit_count":  4,
+    "commits":  [
+                    {
+                        "sha":  "831fbd3061",
+                        "date":  "2016-12-11T22:03:15Z",
+                        "msg":  "Added support for build 7.1.0.23222"
+                    },
+                    {
+                        "sha":  "1bc271a937",
+                        "date":  "2016-12-11T22:08:11Z",
+                        "msg":  "Corrected code style"
+                    },
+                    {
+                        "sha":  "c8f62b9a8e",
+                        "date":  "2016-12-12T08:09:19Z",
+                        "msg":  "Applied suggestion for creature text issue #278"
+                    },
+                    {
+                        "sha":  "4f48076fd6",
+                        "date":  "2016-12-17T04:33:46Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser"
+                    }
+                ]
+}

@@ -1,0 +1,23 @@
+﻿{
+    "full_name":  "Fatliner/WowPacketParser",
+    "ahead_by":  1,
+    "behind_by":  2023,
+    "pushed_at":  "2019-08-13T15:14:50Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "handlers_refactor",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale"
+                 ],
+    "commit_count":  1,
+    "commits":  [
+                    {
+                        "sha":  "66e2d54e3b",
+                        "date":  "2019-08-13T15:14:49Z",
+                        "msg":  "Merge pull request #1 from TrinityCore/master"
+                    }
+                ]
+}

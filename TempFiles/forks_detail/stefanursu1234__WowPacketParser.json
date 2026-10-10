@@ -1,0 +1,25 @@
+﻿{
+    "full_name":  "stefanursu1234/WowPacketParser",
+    "ahead_by":  2,
+    "behind_by":  4091,
+    "pushed_at":  "2014-10-29T20:58:18Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "master"
+                 ],
+    "commit_count":  2,
+    "commits":  [
+                    {
+                        "sha":  "d52373d46c",
+                        "date":  "2014-10-29T18:47:06Z",
+                        "msg":  "Update README.md after fork"
+                    },
+                    {
+                        "sha":  "89a26f4a60",
+                        "date":  "2014-10-29T20:58:18Z",
+                        "msg":  "Small change on readme(cosmetic)"
+                    }
+                ]
+}

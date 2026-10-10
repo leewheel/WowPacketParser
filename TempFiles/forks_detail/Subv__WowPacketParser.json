@@ -1,0 +1,192 @@
+﻿{
+    "full_name":  "Subv/WowPacketParser",
+    "ahead_by":  36,
+    "behind_by":  6986,
+    "pushed_at":  "2011-12-02T21:07:06Z",
+    "description":  "A tool written in C# to parse sniffs from many wow versions, for supported versions check the code",
+    "default_branch":  "master",
+    "branches":  "master",
+    "commit_count":  36,
+    "commits":  [
+                    {
+                        "sha":  "364895f785",
+                        "date":  "2011-11-14T23:15:43Z",
+                        "msg":  "Enabled reading sniff files with spaces in the path"
+                    },
+                    {
+                        "sha":  "38061f9129",
+                        "date":  "2011-11-15T01:26:23Z",
+                        "msg":  "Partial support for parsing gossip_menu_options, the idea is to generate data for this table automatically from the sniff."
+                    },
+                    {
+                        "sha":  "2b89876418",
+                        "date":  "2011-11-15T23:07:27Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "c4daa3d1ba",
+                        "date":  "2011-11-16T01:09:40Z",
+                        "msg":  "Renamed Gossip to GossipMenu and added a new field \u0027MenuId\u0027"
+                    },
+                    {
+                        "sha":  "a7cc8dfbfb",
+                        "date":  "2011-11-16T23:41:55Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "77f83b2fcb",
+                        "date":  "2011-11-18T00:02:16Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "04ff33ea96",
+                        "date":  "2011-11-18T15:14:43Z",
+                        "msg":  "Automatically parse gossip_menu and gossip_menu_option, now it automatically binds the gossip option with the next menu id"
+                    },
+                    {
+                        "sha":  "809681c5c3",
+                        "date":  "2011-11-18T15:15:18Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "205c16a276",
+                        "date":  "2011-11-18T15:25:16Z",
+                        "msg":  "Update README.md"
+                    },
+                    {
+                        "sha":  "372a80a0bf",
+                        "date":  "2011-11-18T18:50:02Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "4fc58d82fd",
+                        "date":  "2011-11-18T18:55:07Z",
+                        "msg":  "Merge branch \u0027master\u0027 of github.com:subv2112/WowPacketParser"
+                    },
+                    {
+                        "sha":  "c1cd1d0e62",
+                        "date":  "2011-11-19T01:39:37Z",
+                        "msg":  "Added support for parsing Waypoints automatically, you still need to make a SAI script to trigger them."
+                    },
+                    {
+                        "sha":  "63abbecc43",
+                        "date":  "2011-11-19T03:02:48Z",
+                        "msg":  "Missed this change"
+                    },
+                    {
+                        "sha":  "f495834dfb",
+                        "date":  "2011-11-19T13:56:04Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "d43315694e",
+                        "date":  "2011-11-19T18:38:43Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "078d1d6023",
+                        "date":  "2011-11-19T19:57:47Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "6d2cf718aa",
+                        "date":  "2011-11-20T12:51:53Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "a7f03085a8",
+                        "date":  "2011-11-20T12:55:18Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "31bc7d93f4",
+                        "date":  "2011-11-20T17:22:57Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "e90ea9ff2a",
+                        "date":  "2011-11-20T17:24:11Z",
+                        "msg":  "Fixed SMSG_SET_PHASE_SHIFT for 4.2.2.14545 and 4.0.6.13623"
+                    },
+                    {
+                        "sha":  "50aad93c91",
+                        "date":  "2011-11-20T17:25:11Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "15326f3021",
+                        "date":  "2011-11-20T18:11:53Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "18f00fd1d7",
+                        "date":  "2011-11-20T22:50:00Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "de074f12cf",
+                        "date":  "2011-11-21T01:08:05Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "ee339df26f",
+                        "date":  "2011-11-21T02:34:49Z",
+                        "msg":  "Updated some names from \u0027UnknownFlags\u0027 enum, changed the way SMSG_SET_PHASE_SHIFT is handled"
+                    },
+                    {
+                        "sha":  "1e0ecff847",
+                        "date":  "2011-11-22T00:46:48Z",
+                        "msg":  "Merge, Changed the way we read bitstreamed GUIDs"
+                    },
+                    {
+                        "sha":  "19bf72c0f5",
+                        "date":  "2011-11-23T00:01:35Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "bc784b51ce",
+                        "date":  "2011-11-24T15:10:37Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "f870c0fa10",
+                        "date":  "2011-11-24T15:10:47Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "c9311246a5",
+                        "date":  "2011-11-26T13:51:49Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "754a500bfe",
+                        "date":  "2011-11-26T14:32:03Z",
+                        "msg":  "Fix build"
+                    },
+                    {
+                        "sha":  "e0f7c7fd5e",
+                        "date":  "2011-11-27T18:23:13Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "7f40b0af15",
+                        "date":  "2011-11-29T13:47:11Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "9cd8e2011f",
+                        "date":  "2011-11-30T13:15:02Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "7566999c56",
+                        "date":  "2011-12-02T21:05:31Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    },
+                    {
+                        "sha":  "966ebf17a9",
+                        "date":  "2011-12-02T21:05:58Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/kaelima/WowPacketParser"
+                    }
+                ]
+}

@@ -1649,6 +1649,9 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V3_4_5_62423:
                 case ClientVersionBuild.V3_4_5_62544:
                 case ClientVersionBuild.V3_4_5_62824:
+                case ClientVersionBuild.V3_4_5_63697:
+                    // 3.4.5 系列使用独立模块 WowPacketParserModule.V3_4_5_61815.dll（fallback 到 V3_4_0_45166）
+                    return ClientVersionBuild.V3_4_5_61815;
                 case ClientVersionBuild.V1_15_0_52146:
                 case ClientVersionBuild.V1_15_0_52186:
                 case ClientVersionBuild.V1_15_0_52212:
@@ -1782,6 +1785,7 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V5_5_3_66839:
                 case ClientVersionBuild.V5_5_3_67158:
                 case ClientVersionBuild.V5_5_3_67509:
+                case ClientVersionBuild.V5_5_4_69155:
                 case ClientVersionBuild.V1_15_8_63829:
                 case ClientVersionBuild.V1_15_8_64057:
                 case ClientVersionBuild.V1_15_8_64130:
@@ -1833,6 +1837,10 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V1_60_1_70334:
                 case ClientVersionBuild.V1_60_1_70338:
                     return ClientVersionBuild.V1_60_1_69876;
+                // 国服经典服 3.80.x — 使用独立模块 WowPacketParserModule.V3_80_2_69137.dll（fallback 到 V5_5_0_61735 模块）
+                case ClientVersionBuild.V3_8_0_69078:
+                case ClientVersionBuild.V3_80_2_69137:
+                    return ClientVersionBuild.V3_80_2_69137;
                 case ClientVersionBuild.BattleNetV37165:
                     return ClientVersionBuild.BattleNetV37165;
                 case ClientVersionBuild.Zero:
@@ -1854,12 +1862,18 @@ namespace WowPacketParser.Misc
                     return ClientVersionBuild.V9_0_1_36216;
                 case ClientVersionBuild.V3_4_0_45166:
                     return ClientVersionBuild.V2_5_1_38707;
+                // 3.4.5 系列独立模块，fallback 到 3.4.0 模块
+                case ClientVersionBuild.V3_4_5_61815:
+                    return ClientVersionBuild.V3_4_0_45166;
                 // Cata and MoP Classic itself has no Fallback (see below HasFallback function)
                 // just for completeness and future fallbacks
                 case ClientVersionBuild.V4_4_0_54481:
                     return ClientVersionBuild.V3_4_0_45166;
                 case ClientVersionBuild.V5_5_0_61735:
                     return ClientVersionBuild.V4_4_0_54481;
+                // 国服经典服 3.80.x — 完全独立模块，无 fallback（所有 handler 自带）
+                case ClientVersionBuild.V3_80_2_69137:
+                    return ClientVersionBuild.Zero;
 
                 case ClientVersionBuild.V7_0_3_22248:
                     return ClientVersionBuild.V6_0_2_19033;
@@ -1888,6 +1902,12 @@ namespace WowPacketParser.Misc
 
         public static bool HasFallback(ClientVersionBuild definingBuild)
         {
+            // 国服经典服 3.80.x 有独立模块，允许 fallback 到 V5_5_0_61735 模块；
+            // 国服经典服 3.80.x — 完全独立模块，无 fallback（其全部 handler 自带）
+            // V5_5_0_61735 作为国际服 MoP 模块保留 fallback 能力
+            if (definingBuild == ClientVersionBuild.V5_5_0_61735)
+                return true;
+
             if (IsCataClientVersionBuild(definingBuild))
                 return false;
 
@@ -1902,7 +1922,14 @@ namespace WowPacketParser.Misc
 
         public static int BuildInt => (int) Build;
 
-        public static string VersionString => Build.ToString();
+        public static string VersionString =>
+    Build switch
+    {
+        ClientVersionBuild.V3_8_0_69078 => "3.80.1.69078",
+        ClientVersionBuild.V3_80_2_69137 => "3.80.2.69137",
+        ClientVersionBuild.V5_5_4_69155 => "5.5.4.69155",
+        _ => Build.ToString()
+    };
 
         public static ClientType Expansion => GetExpansion(Build);
 
@@ -1990,7 +2017,9 @@ namespace WowPacketParser.Misc
 
                 if (HasFallback(version))
                 {
-                    Handler.LoadDefaultHandlers();
+                    // 国服 3.80.x：Zero 键的通用默认 handler 对 MoP 引擎基本无效，只会把 NoStructure 包变成 WithErrors 噪音，跳过加载
+                    if (version != ClientVersionBuild.V3_8_0_69078 && version != ClientVersionBuild.V3_80_2_69137)
+                        Handler.LoadDefaultHandlers();
 
                     while (tmpFallback != ClientVersionBuild.Zero)
                     {
@@ -2450,6 +2479,7 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V3_4_5_62423:
                 case ClientVersionBuild.V3_4_5_62544:
                 case ClientVersionBuild.V3_4_5_62824:
+                case ClientVersionBuild.V3_4_5_63697:
                     return true;
                 default:
                     return false;
@@ -2532,6 +2562,7 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V3_4_5_62423:
                 case ClientVersionBuild.V3_4_5_62544:
                 case ClientVersionBuild.V3_4_5_62824:
+                case ClientVersionBuild.V3_4_5_63697:
                     return true;
                 default:
                     return false;
@@ -2581,6 +2612,10 @@ namespace WowPacketParser.Misc
                 case ClientVersionBuild.V5_5_3_66839:
                 case ClientVersionBuild.V5_5_3_67158:
                 case ClientVersionBuild.V5_5_3_67509:
+                case ClientVersionBuild.V5_5_4_69155:
+                // 国服经典服 3.80.x (MoP Classic China)
+                case ClientVersionBuild.V3_8_0_69078:
+                case ClientVersionBuild.V3_80_2_69137:
                     return true;
                 default:
                     return false;

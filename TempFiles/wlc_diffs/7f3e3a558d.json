@@ -1,0 +1,113 @@
+{
+  "sha": "7f3e3a558d1f3be03fcb57ea592f32019aa3faf7",
+  "node_id": "MDY6Q29tbWl0MzA1OTgyMTQxOjdmM2UzYTU1OGQxZjNiZTAzZmNiNTdlYTU5MmYzMjAxOWFhM2ZhZjc=",
+  "commit": {
+    "author": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2021-08-04T13:48:34Z"
+    },
+    "committer": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2021-08-04T13:48:34Z"
+    },
+    "message": "Fix issues that originated from last merge commit",
+    "tree": {
+      "sha": "8d603f814a8c37b48c3505c4a11adbec2a403f44",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/trees/8d603f814a8c37b48c3505c4a11adbec2a403f44"
+    },
+    "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/commits/7f3e3a558d1f3be03fcb57ea592f32019aa3faf7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/7f3e3a558d1f3be03fcb57ea592f32019aa3faf7",
+  "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/7f3e3a558d1f3be03fcb57ea592f32019aa3faf7",
+  "comments_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/7f3e3a558d1f3be03fcb57ea592f32019aa3faf7/comments",
+  "author": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1c6315ecc88ec07c59d24c035a5ca2b9e8ae20e7",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/1c6315ecc88ec07c59d24c035a5ca2b9e8ae20e7",
+      "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/1c6315ecc88ec07c59d24c035a5ca2b9e8ae20e7"
+    }
+  ],
+  "stats": {
+    "total": 112,
+    "additions": 70,
+    "deletions": 42
+  },
+  "files": [
+    {
+      "sha": "fd9b5eaaa1a7105a3245de651461c0713ae01f0b",
+      "filename": "WowPacketParserModule.V2_5_1_38835/Parsers/SpellHandler.cs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/7f3e3a558d1f3be03fcb57ea592f32019aa3faf7/WowPacketParserModule.V2_5_1_38835%2FParsers%2FSpellHandler.cs",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/7f3e3a558d1f3be03fcb57ea592f32019aa3faf7/WowPacketParserModule.V2_5_1_38835%2FParsers%2FSpellHandler.cs",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParserModule.V2_5_1_38835%2FParsers%2FSpellHandler.cs?ref=7f3e3a558d1f3be03fcb57ea592f32019aa3faf7",
+      "patch": "@@ -47,7 +47,7 @@ public static void ReadSpellCastData(Packet packet, params object[] idx)\n             for (var i = 0; i < missStatusCount; ++i)\n                 V6_0_2_19033.Parsers.SpellHandler.ReadSpellMissStatus(packet, idx, \"MissStatus\", i);\n \n-            V8_0_1_27101.Parsers.SpellHandler.ReadSpellTargetData(packet, (uint)spellID, idx, \"Target\");\n+            V8_0_1_27101.Parsers.SpellHandler.ReadSpellTargetData(packet, null, (uint)spellID, idx, \"Target\");\n \n             for (var i = 0; i < hitTargetsCount; ++i)\n                 packet.ReadPackedGuid128(\"HitTarget\", idx, i);"
+    },
+    {
+      "sha": "86d8d4baacd2d855fb9e1602bb5c512f984873e7",
+      "filename": "WowPacketParserModule.V2_5_1_38835/Parsers/UpdateHandler.cs",
+      "status": "modified",
+      "additions": 69,
+      "deletions": 41,
+      "changes": 110,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/7f3e3a558d1f3be03fcb57ea592f32019aa3faf7/WowPacketParserModule.V2_5_1_38835%2FParsers%2FUpdateHandler.cs",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/7f3e3a558d1f3be03fcb57ea592f32019aa3faf7/WowPacketParserModule.V2_5_1_38835%2FParsers%2FUpdateHandler.cs",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParserModule.V2_5_1_38835%2FParsers%2FUpdateHandler.cs?ref=7f3e3a558d1f3be03fcb57ea592f32019aa3faf7",
+      "patch": "@@ -1,9 +1,11 @@\n ﻿using System.Collections.Generic;\n using WowPacketParser.Enums;\n using WowPacketParser.Misc;\n+using WowPacketParser.PacketStructures;\n using WowPacketParser.Parsing;\n using WowPacketParser.Store;\n using WowPacketParser.Store.Objects;\n+using WoWPacketParser.Proto;\n using CoreParsers = WowPacketParser.Parsing.Parsers;\n \n namespace WowPacketParserModule.V2_5_1_38835.Parsers\n@@ -14,6 +16,7 @@ public static class UpdateHandler\n         [Parser(Opcode.SMSG_UPDATE_OBJECT)]\n         public static void HandleUpdateObject(Packet packet)\n         {\n+            var updateObject = packet.Holder.UpdateObject = new();\n             var count = packet.ReadUInt32(\"NumObjUpdates\");\n             var map = packet.ReadUInt16<MapId>(\"MapID\");\n \n@@ -26,30 +29,45 @@ public static void HandleUpdateObject(Packet packet)\n                 var outOfRangeObjCount = removedObjCount - destroyedObjCount;\n \n                 for (var i = 0; i < destroyedObjCount; i++)\n-                    packet.ReadPackedGuid128(\"ObjectGUID\", \"Destroyed\", i);\n+                {\n+                    var partWriter = new StringBuilderProtoPart(packet.Writer);\n+                    var guid = packet.ReadPackedGuid128(\"ObjectGUID\", \"Destroyed\", i);\n+                    updateObject.Destroyed.Add(new DestroyedObject() { Guid = guid, Text = partWriter.Text });\n+                }\n                 for (var i = 0; i < outOfRangeObjCount; i++)\n-                    packet.ReadPackedGuid128(\"ObjectGUID\", \"OutOfRange\", i);\n+                {\n+                    var partWriter = new StringBuilderProtoPart(packet.Writer);\n+                    var guid = packet.ReadPackedGuid128(\"ObjectGUID\", \"OutOfRange\", i);\n+                    updateObject.OutOfRange.Add(new DestroyedObject() { Guid = guid, Text = partWriter.Text });\n+                }\n             }\n \n             packet.ReadUInt32(\"DataSize\");\n             for (var i = 0; i < count; ++i)\n             {\n                 var type = packet.ReadByteE<UpdateTypeCataclysm>(\"UpdateType\", i);\n                 var guid = packet.ReadPackedGuid128(\"ObjectGuid\", i);\n+\n+                var partWriter = new StringBuilderProtoPart(packet.Writer);\n                 switch (type)\n                 {\n                     case UpdateTypeCataclysm.Values:\n-                        CoreParsers.UpdateHandler.ReadValuesUpdateBlock(packet, guid, i);\n+                        var updateValues = new UpdateValues();\n+                        CoreParsers.UpdateHandler.ReadValuesUpdateBlock(packet, updateValues, guid, i);\n+                        updateObject.Updated.Add(new UpdateObject() { Guid = guid, Values = updateValues, Text = partWriter.Text });\n                         break;\n                     case UpdateTypeCataclysm.CreateObject1:\n                     case UpdateTypeCataclysm.CreateObject2:\n-                        ReadCreateObjectBlock(packet, guid, map, i);\n+                        var createObject = new CreateObject() { Guid = guid, Values = new() };\n+                        ReadCreateObjectBlock(packet, createObject,  guid, map, i);\n+                        createObject.Text = partWriter.Text;\n+                        updateObject.Created.Add(createObject);\n                         break;\n                 }\n             }\n         }\n \n-        private static void ReadCreateObjectBlock(Packet packet, WowGuid guid, uint map, object index)\n+        private static void ReadCreateObjectBlock(Packet packet, CreateObject createObject,  WowGuid guid, uint map, object index)\n         {\n             var objType = ObjectTypeConverter.Convert(packet.ReadByteE<ObjectType251>(\"ObjectType\", index));\n             var obj = objType switch\n@@ -64,9 +82,9 @@ private static void ReadCreateObjectBlock(Packet packet, WowGuid guid, uint map,\n \n             packet.ReadInt32(\"HeirFlags\", index);\n \n-            var moves = ReadMovementUpdateBlock(packet, guid, obj, index);\n+            var moves = ReadMovementUpdateBlock(packet, createObject, guid, obj, index);\n \n-            var updates = CoreParsers.UpdateHandler.ReadValuesUpdateBlockOnCreate(packet, objType, index);\n+            var updates = CoreParsers.UpdateHandler.ReadValuesUpdateBlockOnCreate(packet, createObject.Values, objType, index);\n             var dynamicUpdates = CoreParsers.UpdateHandler.ReadDynamicValuesUpdateBlockOnCreate(packet, objType, index);\n             obj.UpdateFields = updates;\n             obj.DynamicUpdateFields = dynamicUpdates;\n@@ -94,7 +112,7 @@ private static void ReadCreateObjectBlock(Packet packet, WowGuid guid, uint map,\n                 packet.AddSniffData(Utilities.ObjectTypeToStore(objType), (int)guid.GetEntry(), \"SPAWN\");\n         }\n \n-        private static MovementInfo ReadMovementUpdateBlock(Packet packet, WowGuid guid, WoWObject obj, object index)\n+        private static MovementInfo ReadMovementUpdateBlock(Packet packet, CreateObject createObject, WowGuid guid, WoWObject obj, object index)\n         {\n             var moveInfo = new MovementInfo();\n \n@@ -124,18 +142,19 @@ private static MovementInfo ReadMovementUpdateBlock(Packet packet, WowGuid guid,\n \n             if (hasMovementUpdate)\n             {\n+                var movementUpdate = createObject.Movement = new();\n                 packet.ResetBitReader();\n-                packet.ReadPackedGuid128(\"MoverGUID\", index);\n+                movementUpdate.Mover = packet.ReadPackedGuid128(\"MoverGUID\", index);\n \n-                packet.ReadUInt32(\"MoveTime\", index);\n-                moveInfo.Position = packet.ReadVector3(\"Position\", index);\n-                moveInfo.Orientation = packet.ReadSingle(\"Orientation\", index);\n+                movementUpdate.MoveTime = packet.ReadUInt32(\"MoveTime\", index);\n+                movementUpdate.Position = moveInfo.Position = packet.ReadVector3(\"Position\", index);\n+                movementUpdate.Orientation = moveInfo.Orientation = packet.ReadSingle(\"Orientation\", index);\n \n-                packet.ReadSingle(\"Pitch\", index);\n-                packet.ReadSingle(\"StepUpStartElevation\", index);\n+                movementUpdate.Pitch = packet.ReadSingle(\"Pitch\", index);\n+                movementUpdate.StepUpStartElevation = packet.ReadSingle(\"StepUpStartElevation\", index);\n \n                 var removeForcesIDsCount = packet.ReadInt32();\n-                packet.ReadInt32(\"MoveIndex\", index);\n+                movementUpdate.MoveIndex = packet.ReadInt32(\"MoveIndex\", index);\n \n                 for (var i = 0; i < removeForcesIDsCount; i++)\n                     packet.ReadPackedGuid128(\"RemoveForcesIDs\", index, i);\n@@ -150,13 +169,13 @@ private static MovementInfo ReadMovementUpdateBlock(Packet packet, WowGuid guid,\n                 packet.ReadBit(\"RemoteTimeValid\", index);\n \n                 if (hasTransport)\n-                    ReadTransportData(moveInfo, guid, packet, index);\n+                    movementUpdate.Transport = ReadTransportData(moveInfo, guid, packet, index);\n \n                 if (hasFall)\n                 {\n                     packet.ResetBitReader();\n-                    packet.ReadUInt32(\"Fall Time\", index);\n-                    packet.ReadSingle(\"JumpVelocity\", index);\n+                    movementUpdate.FallTime = packet.ReadUInt32(\"Fall Time\", index);\n+                    movementUpdate.JumpVelocity = packet.ReadSingle(\"JumpVelocity\", index);\n \n                     var hasFallDirection = packet.ReadBit(\"Has Fall Direction\", index);\n                     if (hasFallDirection)\n@@ -166,8 +185,8 @@ private static MovementInfo ReadMovementUpdateBlock(Packet packet, WowGuid guid,\n                     }\n                 }\n \n-                moveInfo.WalkSpeed = packet.ReadSingle(\"WalkSpeed\", index) / 2.5f;\n-                moveInfo.RunSpeed = packet.ReadSingle(\"RunSpeed\", index) / 7.0f;\n+                movementUpdate.WalkSpeed = moveInfo.WalkSpeed = packet.ReadSingle(\"WalkSpeed\", index) / 2.5f;\n+                movementUpdate.RunSpeed = moveInfo.RunSpeed = packet.ReadSingle(\"RunSpeed\", index) / 7.0f;\n                 packet.ReadSingle(\"RunBackSpeed\", index);\n                 packet.ReadSingle(\"SwimSpeed\", index);\n                 packet.ReadSingle(\"SwimBackSpeed\", index);\n@@ -196,20 +215,22 @@ private static MovementInfo ReadMovementUpdateBlock(Packet packet, WowGuid guid,\n \n                 if (moveInfo.HasSplineData)\n                 {\n+                    var splineData = movementUpdate.SplineData = new();\n                     packet.ResetBitReader();\n-                    packet.ReadInt32(\"ID\", index);\n-                    packet.ReadVector3(\"Destination\", index);\n+                    splineData.Id = packet.ReadInt32(\"ID\", index);\n+                    splineData.Destination = packet.ReadVector3(\"Destination\", index);\n \n                     var hasMovementSplineMove = packet.ReadBit(\"MovementSplineMove\", index);\n                     if (hasMovementSplineMove)\n                     {\n+                        var moveData = splineData.MoveData = new();\n                         packet.ResetBitReader();\n \n-                        packet.ReadUInt32E<SplineFlag>(\"SplineFlags\", index);\n-                        packet.ReadInt32(\"Elapsed\", index);\n-                        packet.ReadUInt32(\"Duration\", index);\n-                        packet.ReadSingle(\"DurationModifier\", index);\n-                        packet.ReadSingle(\"NextDurationModifier\", index);\n+                        moveData.Flags = packet.ReadUInt32E<SplineFlag>(\"SplineFlags\", index).ToUniversal();\n+                        moveData.Elapsed = packet.ReadInt32(\"Elapsed\", index);\n+                        moveData.Duration = packet.ReadUInt32(\"Duration\", index);\n+                        moveData.DurationModifier = packet.ReadSingle(\"DurationModifier\", index);\n+                        moveData.NextDurationModifier = packet.ReadSingle(\"NextDurationModifier\", index);\n \n                         var face = packet.ReadBits(\"Face\", 2, index);\n                         var hasSpecialTime = packet.ReadBit(\"HasSpecialTime\", index);\n@@ -237,13 +258,13 @@ private static MovementInfo ReadMovementUpdateBlock(Packet packet, WowGuid guid,\n                         switch (face)\n                         {\n                             case 1:\n-                                packet.ReadVector3(\"FaceSpot\", index);\n+                                moveData.LookPosition = packet.ReadVector3(\"FaceSpot\", index);\n                                 break;\n                             case 2:\n-                                packet.ReadPackedGuid128(\"FaceGUID\", index);\n+                                moveData.LookTarget = new() { Target = packet.ReadPackedGuid128(\"FaceGUID\", index) };\n                                 break;\n                             case 3:\n-                                packet.ReadSingle(\"FaceDirection\", index);\n+                                moveData.LookOrientation = packet.ReadSingle(\"FaceDirection\", index);\n                                 break;\n                             default:\n                                 break;\n@@ -253,13 +274,13 @@ private static MovementInfo ReadMovementUpdateBlock(Packet packet, WowGuid guid,\n                             packet.ReadUInt32(\"SpecialTime\", index);\n \n                         for (var i = 0; i < pointsCount; ++i)\n-                            packet.ReadVector3(\"Points\", index, i);\n+                            moveData.Points.Add(packet.ReadVector3(\"Points\", index, i));\n \n                         if (hasSpellEffectExtraData)\n                             V8_0_1_27101.Parsers.MovementHandler.ReadMonsterSplineSpellEffectExtraData(packet, index);\n \n                         if (hasJumpExtraData)\n-                            V8_0_1_27101.Parsers.MovementHandler.ReadMonsterSplineJumpExtraData(packet, index);\n+                            moveData.Jump = V8_0_1_27101.Parsers.MovementHandler.ReadMonsterSplineJumpExtraData(packet, index);\n \n                         if (hasAnimationTierTransition)\n                         {\n@@ -281,6 +302,7 @@ private static MovementInfo ReadMovementUpdateBlock(Packet packet, WowGuid guid,\n \n                 packet.AddValue(\"Stationary Position\", moveInfo.Position, index);\n                 packet.AddValue(\"Stationary Orientation\", moveInfo.Orientation, index);\n+                createObject.Stationary = new() { Position = moveInfo.Position, Orientation = moveInfo.Orientation };\n             }\n \n             if (hasCombatVictim)\n@@ -291,8 +313,10 @@ private static MovementInfo ReadMovementUpdateBlock(Packet packet, WowGuid guid,\n \n             if (hasVehicleCreate)\n             {\n+                var vehicle = createObject.Vehicle = new();\n                 moveInfo.VehicleId = (uint)packet.ReadInt32(\"RecID\", index);\n-                packet.ReadSingle(\"InitialRawFacing\", index);\n+                vehicle.VehicleId = (int)moveInfo.VehicleId;\n+                vehicle.InitialRawFacing = packet.ReadSingle(\"InitialRawFacing\", index);\n             }\n \n             if (hasAnimKitCreate)\n@@ -313,13 +337,13 @@ private static MovementInfo ReadMovementUpdateBlock(Packet packet, WowGuid guid,\n             }\n \n             if (hasRotation)\n-                moveInfo.Rotation = packet.ReadPackedQuaternion(\"GameObject Rotation\", index);\n+                createObject.Rotation = moveInfo.Rotation = packet.ReadPackedQuaternion(\"GameObject Rotation\", index);\n \n             for (var i = 0; i < pauseTimesCount; ++i)\n                 packet.ReadUInt32(\"PauseTimes\", index, i);\n \n             if (hasMovementTransport)\n-                ReadTransportData(moveInfo, guid, packet, index);\n+                createObject.Transport = ReadTransportData(moveInfo, guid, packet, index);\n \n             if (hasAreaTrigger && obj is SpellAreaTrigger)\n             {\n@@ -610,22 +634,24 @@ private static MovementInfo ReadMovementUpdateBlock(Packet packet, WowGuid guid,\n             return moveInfo;\n         }\n \n-        public static void ReadTransportData(MovementInfo moveInfo, WowGuid guid, Packet packet, object index)\n+        public static MovementUpdateTransport ReadTransportData(MovementInfo moveInfo, WowGuid guid, Packet packet, object index)\n         {\n+            MovementUpdateTransport transport = new();\n             packet.ResetBitReader();\n-            moveInfo.TransportGuid = packet.ReadPackedGuid128(\"TransportGUID\", index);\n-            moveInfo.TransportOffset = packet.ReadVector4(\"TransportPosition\", index);\n+            transport.TransportGuid = moveInfo.TransportGuid = packet.ReadPackedGuid128(\"TransportGUID\", index);\n+            transport.Position = moveInfo.TransportOffset = packet.ReadVector4(\"TransportPosition\", index);\n             var seat = packet.ReadByte(\"VehicleSeatIndex\", index);\n-            packet.ReadUInt32(\"MoveTime\", index);\n+            transport.Seat = seat;\n+            transport.MoveTime = packet.ReadUInt32(\"MoveTime\", index);\n \n             var hasPrevMoveTime = packet.ReadBit(\"HasPrevMoveTime\", index);\n             var hasVehicleRecID = packet.ReadBit(\"HasVehicleRecID\", index);\n \n             if (hasPrevMoveTime)\n-                packet.ReadUInt32(\"PrevMoveTime\", index);\n+                transport.PrevMoveTime = packet.ReadUInt32(\"PrevMoveTime\", index);\n \n             if (hasVehicleRecID)\n-                packet.ReadInt32(\"VehicleRecID\", index);\n+                transport.VehicleId = packet.ReadInt32(\"VehicleRecID\", index);\n \n             if (moveInfo.TransportGuid.HasEntry() && moveInfo.TransportGuid.GetHighType() == HighGuidType.Vehicle &&\n                 guid.HasEntry() && guid.GetHighType() == HighGuidType.Creature)\n@@ -638,6 +664,8 @@ public static void ReadTransportData(MovementInfo moveInfo, WowGuid guid, Packet\n                 };\n                 Storage.VehicleTemplateAccessories.Add(vehicleAccessory, packet.TimeSpan);\n             }\n+\n+            return transport;\n         }\n     }\n }"
+    }
+  ]
+}

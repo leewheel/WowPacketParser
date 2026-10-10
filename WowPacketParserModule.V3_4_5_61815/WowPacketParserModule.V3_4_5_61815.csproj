@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="../default.props" />
+
+    <PropertyGroup>
+        <AssemblyName>WowPacketParserModule.V3_4_5_61815</AssemblyName>
+        <OutputPath>../WowPacketParser/bin/$(Configuration)/Parsers/</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\WowPacketParserModule.V10_0_0_46181\WowPacketParserModule.V10_0_0_46181.csproj" />
+        <ProjectReference Include="..\WowPacketParserModule.V2_5_1_38707\WowPacketParserModule.V2_5_1_38707.csproj" />
+    </ItemGroup>
+</Project>

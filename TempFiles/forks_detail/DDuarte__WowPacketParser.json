@@ -1,0 +1,39 @@
+﻿{
+    "full_name":  "DDuarte/WowPacketParser",
+    "ahead_by":  4,
+    "behind_by":  2468,
+    "pushed_at":  "2017-03-26T23:59:09Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "handlers_refactor",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale",
+                     "vincent_beta"
+                 ],
+    "commit_count":  4,
+    "commits":  [
+                    {
+                        "sha":  "3c6294eeef",
+                        "date":  "2017-03-26T23:34:56Z",
+                        "msg":  "Test coverity_scan"
+                    },
+                    {
+                        "sha":  "9a194adb48",
+                        "date":  "2017-03-26T23:38:53Z",
+                        "msg":  "Permissions"
+                    },
+                    {
+                        "sha":  "54923577fd",
+                        "date":  "2017-03-26T23:44:54Z",
+                        "msg":  "Update travis.yml"
+                    },
+                    {
+                        "sha":  "6b618d3f6f",
+                        "date":  "2017-03-26T23:59:13Z",
+                        "msg":  "Update travis.yml"
+                    }
+                ]
+}

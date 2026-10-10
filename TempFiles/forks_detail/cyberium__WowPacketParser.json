@@ -1,0 +1,25 @@
+﻿{
+    "full_name":  "cyberium/WowPacketParser",
+    "ahead_by":  1,
+    "behind_by":  1509,
+    "pushed_at":  "2026-05-24T07:08:35Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "handlers_refactor",
+                     "latest",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale",
+                     "tobi"
+                 ],
+    "commit_count":  1,
+    "commits":  [
+                    {
+                        "sha":  "0139d21659",
+                        "date":  "2021-12-28T14:48:23Z",
+                        "msg":  "Tobi reclaimed change"
+                    }
+                ]
+}

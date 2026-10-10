@@ -1,0 +1,50 @@
+﻿{
+    "full_name":  "Tremolo4/WowPacketParser",
+    "ahead_by":  6,
+    "behind_by":  2317,
+    "pushed_at":  "2018-01-02T21:52:27Z",
+    "description":  "World of Warcraft Packet Parser with rudimentary TBC 2.4.3 support",
+    "default_branch":  "tbc",
+    "branches":  [
+                     "WpAlpha",
+                     "conversation",
+                     "handlers_refactor",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale",
+                     "tbc"
+                 ],
+    "commit_count":  6,
+    "commits":  [
+                    {
+                        "sha":  "159c1102eb",
+                        "date":  "2017-06-17T22:29:34Z",
+                        "msg":  "Add Opcode and UpdateField defines from cmangos-tbc for parsing TBC 2.4.3 sniffs"
+                    },
+                    {
+                        "sha":  "30a4bc14eb",
+                        "date":  "2017-06-17T22:31:21Z",
+                        "msg":  "WIP: Module for TBC. Nothing in it yet - Parsers will be there I guess .."
+                    },
+                    {
+                        "sha":  "3c29e82399",
+                        "date":  "2017-11-01T23:44:38Z",
+                        "msg":  "2.4.3 module: Fix output paths, add 2.4.3 SplineFlag and copy \"default\" MovementHandler"
+                    },
+                    {
+                        "sha":  "912be90b68",
+                        "date":  "2017-11-01T23:50:22Z",
+                        "msg":  "2.4.3 module: Make MovementHandler work"
+                    },
+                    {
+                        "sha":  "f1af768130",
+                        "date":  "2017-11-02T00:10:54Z",
+                        "msg":  "2.4.3 module: Make WowPacketParser reference \"private\" and sync some other things with 7.0.3 module"
+                    },
+                    {
+                        "sha":  "9f34a263f8",
+                        "date":  "2017-12-21T16:02:19Z",
+                        "msg":  "Restore SMSG_UPDATE_OBJECT parsing + wip"
+                    }
+                ]
+}

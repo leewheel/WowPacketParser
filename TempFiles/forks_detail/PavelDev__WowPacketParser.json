@@ -1,0 +1,177 @@
+﻿{
+    "full_name":  "PavelDev/WowPacketParser",
+    "ahead_by":  33,
+    "behind_by":  5348,
+    "pushed_at":  "2014-03-06T04:06:28Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  "master",
+    "commit_count":  33,
+    "commits":  [
+                    {
+                        "sha":  "97b12850f7",
+                        "date":  "2014-02-22T10:55:14Z",
+                        "msg":  "Some initial work on 5.4.7.17930"
+                    },
+                    {
+                        "sha":  "e8f112784e",
+                        "date":  "2014-02-22T13:28:38Z",
+                        "msg":  "Added known opcodes for 5.4.7.17930. Fixed a double define."
+                    },
+                    {
+                        "sha":  "9553acff70",
+                        "date":  "2014-02-23T12:11:47Z",
+                        "msg":  "Some Additions"
+                    },
+                    {
+                        "sha":  "d66cbf3113",
+                        "date":  "2014-02-23T12:12:30Z",
+                        "msg":  "Merge branch \u0027master\u0027 of github.com:netcho/WowPacketParser"
+                    },
+                    {
+                        "sha":  "61b3682dc0",
+                        "date":  "2014-02-23T18:15:58Z",
+                        "msg":  "More implementations"
+                    },
+                    {
+                        "sha":  "bb775f4940",
+                        "date":  "2014-02-23T18:45:50Z",
+                        "msg":  "Some more Opcodes.cs"
+                    },
+                    {
+                        "sha":  "b8b0c9ec23",
+                        "date":  "2014-02-23T19:03:45Z",
+                        "msg":  "More Opcodes.cs 17930"
+                    },
+                    {
+                        "sha":  "e7f6911dd4",
+                        "date":  "2014-02-24T17:39:58Z",
+                        "msg":  "Added more Opcodes.cs 17930"
+                    },
+                    {
+                        "sha":  "00f9ee6248",
+                        "date":  "2014-02-26T00:50:14Z",
+                        "msg":  "More Opcodes.cs 17930"
+                    },
+                    {
+                        "sha":  "50eb71e728",
+                        "date":  "2014-02-28T01:25:34Z",
+                        "msg":  "Few more Opcodes.cs"
+                    },
+                    {
+                        "sha":  "3fa4eb01f9",
+                        "date":  "2014-02-28T14:48:01Z",
+                        "msg":  "More Opcodes.cs 17930"
+                    },
+                    {
+                        "sha":  "ae4e645429",
+                        "date":  "2014-02-28T16:14:41Z",
+                        "msg":  "First part of additions and fixes to builds - enums connections and ClientBuild Autodetect implementation for new ones."
+                    },
+                    {
+                        "sha":  "a3a8880bf8",
+                        "date":  "2014-02-28T16:42:36Z",
+                        "msg":  "Second part of fixes. The parser is now fixed and updated to 5.4.7 17956."
+                    },
+                    {
+                        "sha":  "d152f34371",
+                        "date":  "2014-03-02T17:06:14Z",
+                        "msg":  "Some more Opcodes.cs 17956"
+                    },
+                    {
+                        "sha":  "8418a84d80",
+                        "date":  "2014-03-02T17:49:57Z",
+                        "msg":  "Fixed a Derp."
+                    },
+                    {
+                        "sha":  "f51b498714",
+                        "date":  "2014-03-02T18:23:43Z",
+                        "msg":  "Updated implemented structures for 5.4.7 and added a few more. Fixes parsing for (so far) all client builds on the version."
+                    },
+                    {
+                        "sha":  "9753dc55c1",
+                        "date":  "2014-03-02T22:51:43Z",
+                        "msg":  "Implemented some more structures for 17956."
+                    },
+                    {
+                        "sha":  "6d6bab483a",
+                        "date":  "2014-03-02T23:41:46Z",
+                        "msg":  "Added a define to all implemented handlers to allow their \"usage\" on 17956 aswell. No more need to force the config ClientBuild option for it."
+                    },
+                    {
+                        "sha":  "8c3945e506",
+                        "date":  "2014-03-03T00:55:55Z",
+                        "msg":  "Implemented some more handlers."
+                    },
+                    {
+                        "sha":  "fe856f6dfd",
+                        "date":  "2014-03-03T01:29:51Z",
+                        "msg":  "Implemented a couple more structures and simplified the handlers where possible."
+                    },
+                    {
+                        "sha":  "caa404dd53",
+                        "date":  "2014-03-03T14:35:45Z",
+                        "msg":  "Added a few more handlers and opcodes."
+                    },
+                    {
+                        "sha":  "e8dfe144ac",
+                        "date":  "2014-03-03T14:39:17Z",
+                        "msg":  "Forgot something."
+                    },
+                    {
+                        "sha":  "fd8bf0f625",
+                        "date":  "2014-03-03T16:49:21Z",
+                        "msg":  "Implemented more handlers."
+                    },
+                    {
+                        "sha":  "3b69edb111",
+                        "date":  "2014-03-05T01:44:06Z",
+                        "msg":  "Implemented a few more handlers. Creature query parsing now working."
+                    },
+                    {
+                        "sha":  "8aebf50133",
+                        "date":  "2014-03-05T02:43:43Z",
+                        "msg":  "A couple more structs added. GameObject query parsing now working."
+                    },
+                    {
+                        "sha":  "baa18d538c",
+                        "date":  "2014-03-05T03:07:23Z",
+                        "msg":  "One more :)"
+                    },
+                    {
+                        "sha":  "05bbb655f8",
+                        "date":  "2014-03-05T19:59:44Z",
+                        "msg":  "Updated the 5.3.0 16981 Module to 5.4.7 17956. Now we can move the handlers to it and use it."
+                    },
+                    {
+                        "sha":  "f6649b87f9",
+                        "date":  "2014-03-05T23:37:47Z",
+                        "msg":  "Moved all implemented 5.4.7 structures to the specific module."
+                    },
+                    {
+                        "sha":  "003b6608aa",
+                        "date":  "2014-03-06T00:05:02Z",
+                        "msg":  "Fixed parsing errors on older 5.4.7 versions, everything ok now."
+                    },
+                    {
+                        "sha":  "dc30398594",
+                        "date":  "2014-03-06T01:53:01Z",
+                        "msg":  "Implemented parsing for SMSG_GOSSIP_MESSAGE."
+                    },
+                    {
+                        "sha":  "747b5603ec",
+                        "date":  "2014-03-06T02:35:48Z",
+                        "msg":  "Initial, partial implementation for SMSG_DB_REPLY. This is based on older versions, and several corrections / additions will need to be made before it\u0027s fully working as intended."
+                    },
+                    {
+                        "sha":  "33a962c772",
+                        "date":  "2014-03-06T03:52:21Z",
+                        "msg":  "Fixed a Derp."
+                    },
+                    {
+                        "sha":  "684e1c10e5",
+                        "date":  "2014-03-06T04:06:12Z",
+                        "msg":  "Implemented SMSG_LOGIN_VERIFY_WORLD structure."
+                    }
+                ]
+}

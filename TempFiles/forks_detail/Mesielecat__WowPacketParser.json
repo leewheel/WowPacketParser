@@ -1,0 +1,76 @@
+﻿{
+    "full_name":  "Mesielecat/WowPacketParser",
+    "ahead_by":  9,
+    "behind_by":  1964,
+    "pushed_at":  "2023-04-04T14:41:21Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "AzeriteItem",
+                     "BattlegroundPackets",
+                     "Brawl",
+                     "CMSG_SET_ACHIEVEMENTS_HIDDEN",
+                     "Client_Type",
+                     "Crow_Control_Packet",
+                     "GarrisonPackets",
+                     "Island_Packets",
+                     "Player_Choice",
+                     "Recovery_Speed",
+                     "SMSG_GET_SHIPMENT_INFO_RESPONSE",
+                     "Trophy_Packet",
+                     "WpAlpha",
+                     "handlers_refactor",
+                     "lfg_list",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale"
+                 ],
+    "commit_count":  9,
+    "commits":  [
+                    {
+                        "sha":  "7307ef7c13",
+                        "date":  "2020-01-31T05:06:30Z",
+                        "msg":  "Implement Playerchoice sql generation"
+                    },
+                    {
+                        "sha":  "b3e964f38c",
+                        "date":  "2020-01-31T05:14:27Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser into Player_Choice"
+                    },
+                    {
+                        "sha":  "12229581f8",
+                        "date":  "2020-01-31T19:13:36Z",
+                        "msg":  "Fix player choice locale extraction"
+                    },
+                    {
+                        "sha":  "98ae847311",
+                        "date":  "2020-01-31T19:31:31Z",
+                        "msg":  "Use Attribute of DBFieldName for extract correct data"
+                    },
+                    {
+                        "sha":  "2a158303d4",
+                        "date":  "2020-02-04T18:00:29Z",
+                        "msg":  "clean tabs"
+                    },
+                    {
+                        "sha":  "30a2447bdb",
+                        "date":  "2020-02-04T18:56:07Z",
+                        "msg":  "Update structure until today"
+                    },
+                    {
+                        "sha":  "226463177f",
+                        "date":  "2020-02-04T22:18:56Z",
+                        "msg":  "Added index as primary key"
+                    },
+                    {
+                        "sha":  "c74d7f0b6a",
+                        "date":  "2020-02-05T05:24:06Z",
+                        "msg":  "Fix tabs, add index as key, change flag for locale, split locale and template of playerchoice"
+                    },
+                    {
+                        "sha":  "83861fb088",
+                        "date":  "2020-02-05T15:02:56Z",
+                        "msg":  "Fix wrong fieldname"
+                    }
+                ]
+}

@@ -1,0 +1,42 @@
+﻿{
+    "full_name":  "Gooyeth/WowPacketParser",
+    "ahead_by":  5,
+    "behind_by":  2790,
+    "pushed_at":  "2015-10-20T03:51:43Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale"
+                 ],
+    "commit_count":  5,
+    "commits":  [
+                    {
+                        "sha":  "efa38db9fb",
+                        "date":  "2015-10-05T04:07:46Z",
+                        "msg":  "Merge pull request #1 from TrinityCore/master"
+                    },
+                    {
+                        "sha":  "de84fd52d2",
+                        "date":  "2015-10-07T22:07:13Z",
+                        "msg":  "Merge pull request #2 from TrinityCore/master"
+                    },
+                    {
+                        "sha":  "09d65facac",
+                        "date":  "2015-10-12T20:26:29Z",
+                        "msg":  "Merge pull request #3 from TrinityCore/master"
+                    },
+                    {
+                        "sha":  "b2dcc43c61",
+                        "date":  "2015-10-12T21:51:32Z",
+                        "msg":  "Resolve compilation in VS 2013"
+                    },
+                    {
+                        "sha":  "a307b400e4",
+                        "date":  "2015-10-20T03:51:43Z",
+                        "msg":  "Merge pull request #4 from TrinityCore/master"
+                    }
+                ]
+}

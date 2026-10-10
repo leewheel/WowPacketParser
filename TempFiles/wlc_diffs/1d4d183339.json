@@ -1,0 +1,101 @@
+{
+  "sha": "1d4d183339045ca99a41ebde150292d170354065",
+  "node_id": "C_kwDOEjzqvdoAKDFkNGQxODMzMzkwNDVjYTk5YTQxZWJkZTE1MDI5MmQxNzAzNTQwNjU",
+  "commit": {
+    "author": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2022-03-15T21:01:47Z"
+    },
+    "committer": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2022-03-15T21:01:47Z"
+    },
+    "message": "Use Switch Expression for BCC and Classic check method",
+    "tree": {
+      "sha": "f65f1ae5c35835ff5516a4f233588898b68c0d2a",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/trees/f65f1ae5c35835ff5516a4f233588898b68c0d2a"
+    },
+    "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/commits/1d4d183339045ca99a41ebde150292d170354065",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/1d4d183339045ca99a41ebde150292d170354065",
+  "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/1d4d183339045ca99a41ebde150292d170354065",
+  "comments_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/1d4d183339045ca99a41ebde150292d170354065/comments",
+  "author": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2fb51fc03796f3173952e463896b5f03e4d26bdb",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/2fb51fc03796f3173952e463896b5f03e4d26bdb",
+      "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/2fb51fc03796f3173952e463896b5f03e4d26bdb"
+    }
+  ],
+  "stats": {
+    "total": 168,
+    "additions": 80,
+    "deletions": 88
+  },
+  "files": [
+    {
+      "sha": "52c45b1eabbb9eabbdc0503b341d01ad154ffb10",
+      "filename": "WowPacketParser/Misc/ClientVersion.cs",
+      "status": "modified",
+      "additions": 80,
+      "deletions": 88,
+      "changes": 168,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/1d4d183339045ca99a41ebde150292d170354065/WowPacketParser%2FMisc%2FClientVersion.cs",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/1d4d183339045ca99a41ebde150292d170354065/WowPacketParser%2FMisc%2FClientVersion.cs",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParser%2FMisc%2FClientVersion.cs?ref=1d4d183339045ca99a41ebde150292d170354065",
+      "patch": "@@ -1049,100 +1049,92 @@ public static bool IsClassicClientVersionBuild(ClientVersionBuild build)\n \n         public static bool IsClassicVanillaClientVersionBuild(ClientVersionBuild build)\n         {\n-            switch (build)\n+            return build switch\n             {\n-                case ClientVersionBuild.V1_13_2_31446:\n-                case ClientVersionBuild.V1_13_2_31650:\n-                case ClientVersionBuild.V1_13_2_31687:\n-                case ClientVersionBuild.V1_13_2_31727:\n-                case ClientVersionBuild.V1_13_2_31830:\n-                case ClientVersionBuild.V1_13_2_31882:\n-                case ClientVersionBuild.V1_13_2_32089:\n-                case ClientVersionBuild.V1_13_2_32421:\n-                case ClientVersionBuild.V1_13_2_32600:\n-                case ClientVersionBuild.V1_13_3_32790:\n-                case ClientVersionBuild.V1_13_3_32836:\n-                case ClientVersionBuild.V1_13_3_32887:\n-                case ClientVersionBuild.V1_13_3_33155:\n-                case ClientVersionBuild.V1_13_3_33302:\n-                case ClientVersionBuild.V1_13_3_33526:\n-                case ClientVersionBuild.V1_13_4_33598:\n-                case ClientVersionBuild.V1_13_4_33645:\n-                case ClientVersionBuild.V1_13_4_33728:\n-                case ClientVersionBuild.V1_13_4_33920:\n-                case ClientVersionBuild.v1_13_4_34219:\n-                case ClientVersionBuild.v1_13_4_34266:\n-                case ClientVersionBuild.v1_13_4_34600:\n-                case ClientVersionBuild.v1_13_5_34713:\n-                case ClientVersionBuild.v1_13_5_34911:\n-                case ClientVersionBuild.V1_13_5_35100:\n-                case ClientVersionBuild.V1_13_5_35186:\n-                case ClientVersionBuild.V1_13_5_35753:\n-                case ClientVersionBuild.V1_13_5_36035:\n-                case ClientVersionBuild.V1_13_5_36325:\n-                case ClientVersionBuild.v1_13_6_36231:\n-                case ClientVersionBuild.V1_13_6_36324:\n-                case ClientVersionBuild.V1_13_6_36497:\n-                case ClientVersionBuild.V1_13_6_36524:\n-                case ClientVersionBuild.V1_13_6_36611:\n-                case ClientVersionBuild.V1_13_6_36714:\n-                case ClientVersionBuild.V1_13_6_36935:\n-                case ClientVersionBuild.V1_13_6_37497:\n-                case ClientVersionBuild.V1_13_7_38363:\n-                case ClientVersionBuild.V1_13_7_38386:\n-                case ClientVersionBuild.V1_13_7_38475:\n-                case ClientVersionBuild.V1_13_7_38631:\n-                case ClientVersionBuild.V1_13_7_38704:\n-                case ClientVersionBuild.V1_13_7_39605:\n-                case ClientVersionBuild.V1_13_7_39692:\n-                {\n-                    return true;\n-                }\n-                default:\n-                    return false;\n-            }\n+                ClientVersionBuild.V1_13_2_31446 => true,\n+                ClientVersionBuild.V1_13_2_31650 => true,\n+                ClientVersionBuild.V1_13_2_31687 => true,\n+                ClientVersionBuild.V1_13_2_31727 => true,\n+                ClientVersionBuild.V1_13_2_31830 => true,\n+                ClientVersionBuild.V1_13_2_31882 => true,\n+                ClientVersionBuild.V1_13_2_32089 => true,\n+                ClientVersionBuild.V1_13_2_32421 => true,\n+                ClientVersionBuild.V1_13_2_32600 => true,\n+                ClientVersionBuild.V1_13_3_32790 => true,\n+                ClientVersionBuild.V1_13_3_32836 => true,\n+                ClientVersionBuild.V1_13_3_32887 => true,\n+                ClientVersionBuild.V1_13_3_33155 => true,\n+                ClientVersionBuild.V1_13_3_33302 => true,\n+                ClientVersionBuild.V1_13_3_33526 => true,\n+                ClientVersionBuild.V1_13_4_33598 => true,\n+                ClientVersionBuild.V1_13_4_33645 => true,\n+                ClientVersionBuild.V1_13_4_33728 => true,\n+                ClientVersionBuild.V1_13_4_33920 => true,\n+                ClientVersionBuild.v1_13_4_34219 => true,\n+                ClientVersionBuild.v1_13_4_34266 => true,\n+                ClientVersionBuild.v1_13_4_34600 => true,\n+                ClientVersionBuild.v1_13_5_34713 => true,\n+                ClientVersionBuild.v1_13_5_34911 => true,\n+                ClientVersionBuild.V1_13_5_35100 => true,\n+                ClientVersionBuild.V1_13_5_35186 => true,\n+                ClientVersionBuild.V1_13_5_35753 => true,\n+                ClientVersionBuild.V1_13_5_36035 => true,\n+                ClientVersionBuild.V1_13_5_36325 => true,\n+                ClientVersionBuild.v1_13_6_36231 => true,\n+                ClientVersionBuild.V1_13_6_36324 => true,\n+                ClientVersionBuild.V1_13_6_36497 => true,\n+                ClientVersionBuild.V1_13_6_36524 => true,\n+                ClientVersionBuild.V1_13_6_36611 => true,\n+                ClientVersionBuild.V1_13_6_36714 => true,\n+                ClientVersionBuild.V1_13_6_36935 => true,\n+                ClientVersionBuild.V1_13_6_37497 => true,\n+                ClientVersionBuild.V1_13_7_38363 => true,\n+                ClientVersionBuild.V1_13_7_38386 => true,\n+                ClientVersionBuild.V1_13_7_38475 => true,\n+                ClientVersionBuild.V1_13_7_38631 => true,\n+                ClientVersionBuild.V1_13_7_38704 => true,\n+                ClientVersionBuild.V1_13_7_39605 => true,\n+                ClientVersionBuild.V1_13_7_39692 => true,\n+                _ => false\n+            };\n         }\n \n         public static bool IsBurningCrusadeClassicClientVersionBuild(ClientVersionBuild build)\n         {\n-            switch (build)\n+            return build switch\n             {\n-                case ClientVersionBuild.V2_5_1_38598:\n-                case ClientVersionBuild.V2_5_1_38644:\n-                case ClientVersionBuild.V2_5_1_38707:\n-                case ClientVersionBuild.V2_5_1_38741:\n-                case ClientVersionBuild.V2_5_1_38757:\n-                case ClientVersionBuild.V2_5_1_38835:\n-                case ClientVersionBuild.V2_5_1_38892:\n-                case ClientVersionBuild.V2_5_1_38921:\n-                case ClientVersionBuild.V2_5_1_38988:\n-                case ClientVersionBuild.V2_5_1_39170:\n-                case ClientVersionBuild.V2_5_1_39475:\n-                case ClientVersionBuild.V2_5_1_39603:\n-                case ClientVersionBuild.V2_5_1_39640:\n-                case ClientVersionBuild.V2_5_2_39570:\n-                case ClientVersionBuild.V2_5_2_39618:\n-                case ClientVersionBuild.V2_5_2_39926:\n-                case ClientVersionBuild.V2_5_2_40011:\n-                case ClientVersionBuild.V2_5_2_40045:\n-                case ClientVersionBuild.V2_5_2_40203:\n-                case ClientVersionBuild.V2_5_2_40260:\n-                case ClientVersionBuild.V2_5_2_40422:\n-                case ClientVersionBuild.V2_5_2_40488:\n-                case ClientVersionBuild.V2_5_2_40617:\n-                case ClientVersionBuild.V2_5_2_40892:\n-                case ClientVersionBuild.V2_5_2_41446:\n-                case ClientVersionBuild.V2_5_2_41510:\n-                case ClientVersionBuild.V2_5_3_41812:\n-                case ClientVersionBuild.V2_5_3_42083:\n-                case ClientVersionBuild.V2_5_3_42328:\n-                case ClientVersionBuild.V2_5_3_42598:\n-                {\n-                    return true;\n-                }\n-                default:\n-                    return false;\n-            }\n+                ClientVersionBuild.V2_5_1_38598 => true,\n+                ClientVersionBuild.V2_5_1_38644 => true,\n+                ClientVersionBuild.V2_5_1_38707 => true,\n+                ClientVersionBuild.V2_5_1_38741 => true,\n+                ClientVersionBuild.V2_5_1_38757 => true,\n+                ClientVersionBuild.V2_5_1_38835 => true,\n+                ClientVersionBuild.V2_5_1_38892 => true,\n+                ClientVersionBuild.V2_5_1_38921 => true,\n+                ClientVersionBuild.V2_5_1_38988 => true,\n+                ClientVersionBuild.V2_5_1_39170 => true,\n+                ClientVersionBuild.V2_5_1_39475 => true,\n+                ClientVersionBuild.V2_5_1_39603 => true,\n+                ClientVersionBuild.V2_5_1_39640 => true,\n+                ClientVersionBuild.V2_5_2_39570 => true,\n+                ClientVersionBuild.V2_5_2_39618 => true,\n+                ClientVersionBuild.V2_5_2_39926 => true,\n+                ClientVersionBuild.V2_5_2_40011 => true,\n+                ClientVersionBuild.V2_5_2_40045 => true,\n+                ClientVersionBuild.V2_5_2_40203 => true,\n+                ClientVersionBuild.V2_5_2_40260 => true,\n+                ClientVersionBuild.V2_5_2_40422 => true,\n+                ClientVersionBuild.V2_5_2_40488 => true,\n+                ClientVersionBuild.V2_5_2_40617 => true,\n+                ClientVersionBuild.V2_5_2_40892 => true,\n+                ClientVersionBuild.V2_5_2_41446 => true,\n+                ClientVersionBuild.V2_5_2_41510 => true,\n+                ClientVersionBuild.V2_5_3_41812 => true,\n+                ClientVersionBuild.V2_5_3_42083 => true,\n+                ClientVersionBuild.V2_5_3_42328 => true,\n+                ClientVersionBuild.V2_5_3_42598 => true,\n+                _ => false\n+            };\n         }\n     }\n }"
+    }
+  ]
+}

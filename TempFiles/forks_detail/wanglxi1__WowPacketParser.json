@@ -1,0 +1,22 @@
+﻿{
+    "full_name":  "wanglxi1/WowPacketParser",
+    "ahead_by":  1,
+    "behind_by":  2782,
+    "pushed_at":  "2015-11-30T06:06:44Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale"
+                 ],
+    "commit_count":  1,
+    "commits":  [
+                    {
+                        "sha":  "8ecdcff6fc",
+                        "date":  "2015-11-30T05:47:51Z",
+                        "msg":  "Merge remote-tracking branch \u0027refs/remotes/TrinityCore/master\u0027"
+                    }
+                ]
+}

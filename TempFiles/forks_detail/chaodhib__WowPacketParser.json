@@ -1,0 +1,35 @@
+﻿{
+    "full_name":  "chaodhib/WowPacketParser",
+    "ahead_by":  3,
+    "behind_by":  2504,
+    "pushed_at":  "2016-12-22T22:43:16Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "fix_bidirectional",
+                     "fix_move_tele",
+                     "master",
+                     "minor_change",
+                     "multiple_sql",
+                     "splitLocale"
+                 ],
+    "commit_count":  3,
+    "commits":  [
+                    {
+                        "sha":  "0728cd616e",
+                        "date":  "2016-12-20T20:31:42Z",
+                        "msg":  "add white lines between each individual packets contained in a SMSG_COMPRESSED_MOVES to facilitate external parsing tools"
+                    },
+                    {
+                        "sha":  "39bf0b2d2b",
+                        "date":  "2016-12-20T20:44:37Z",
+                        "msg":  "Rename GUID to Guid to stay coherent across versions and help external parsing tools"
+                    },
+                    {
+                        "sha":  "8b46f63154",
+                        "date":  "2016-12-22T21:58:54Z",
+                        "msg":  "fix the parsing of MSG_MOVE_SET_COLLISION_HGT and MSG_MOVE_KNOCK_BACK"
+                    }
+                ]
+}

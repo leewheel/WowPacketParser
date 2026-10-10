@@ -1,0 +1,21 @@
+﻿{
+    "full_name":  "dufernst/WowPacketParser",
+    "ahead_by":  1,
+    "behind_by":  2955,
+    "pushed_at":  "2015-05-14T13:13:32Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "master",
+                     "multiple_sql"
+                 ],
+    "commit_count":  1,
+    "commits":  [
+                    {
+                        "sha":  "c896cee6c4",
+                        "date":  "2015-05-14T13:13:25Z",
+                        "msg":  "Add packet count information to analysis (and improve its memory usage."
+                    }
+                ]
+}

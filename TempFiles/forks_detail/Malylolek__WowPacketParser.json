@@ -1,0 +1,32 @@
+﻿{
+    "full_name":  "Malylolek/WowPacketParser",
+    "ahead_by":  3,
+    "behind_by":  2598,
+    "pushed_at":  "2016-08-19T23:52:28Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale"
+                 ],
+    "commit_count":  3,
+    "commits":  [
+                    {
+                        "sha":  "fd21e177c9",
+                        "date":  "2016-08-17T16:51:17Z",
+                        "msg":  "Added parsing build 7.0.3.22445"
+                    },
+                    {
+                        "sha":  "d4e236c8a0",
+                        "date":  "2016-08-18T19:33:31Z",
+                        "msg":  "Added parsing build 7.0.3.22451"
+                    },
+                    {
+                        "sha":  "b4fa23da82",
+                        "date":  "2016-08-19T23:52:23Z",
+                        "msg":  "Added parsing build 7.0.3.22472"
+                    }
+                ]
+}

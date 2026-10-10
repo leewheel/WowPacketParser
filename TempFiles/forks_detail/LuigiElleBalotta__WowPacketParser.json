@@ -1,0 +1,23 @@
+﻿{
+    "full_name":  "LuigiElleBalotta/WowPacketParser",
+    "ahead_by":  1,
+    "behind_by":  2489,
+    "pushed_at":  "2017-11-09T10:12:06Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale",
+                     "vincent_beta"
+                 ],
+    "commit_count":  1,
+    "commits":  [
+                    {
+                        "sha":  "3454424985",
+                        "date":  "2017-11-09T10:12:05Z",
+                        "msg":  "update super merge (#1)"
+                    }
+                ]
+}

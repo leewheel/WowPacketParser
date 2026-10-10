@@ -1,0 +1,101 @@
+{
+  "sha": "4f701066c9555a35131f86643df6756d1d0c9b4d",
+  "node_id": "C_kwDOEjzqvdoAKDRmNzAxMDY2Yzk1NTVhMzUxMzFmODY2NDNkZjY3NTZkMWQwYzliNGQ",
+  "commit": {
+    "author": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2022-03-23T17:49:29Z"
+    },
+    "committer": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2022-03-23T17:49:29Z"
+    },
+    "message": "Fix parse for SMSG_AUCTION_OWNER_BID_NOTIFICATION for 2.5.3",
+    "tree": {
+      "sha": "81d9c78f94837194d11cdc82dce50cc8437818c7",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/trees/81d9c78f94837194d11cdc82dce50cc8437818c7"
+    },
+    "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/commits/4f701066c9555a35131f86643df6756d1d0c9b4d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/4f701066c9555a35131f86643df6756d1d0c9b4d",
+  "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/4f701066c9555a35131f86643df6756d1d0c9b4d",
+  "comments_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/4f701066c9555a35131f86643df6756d1d0c9b4d/comments",
+  "author": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "861520a8fade8de98a1f40b29c3707a376291765",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/861520a8fade8de98a1f40b29c3707a376291765",
+      "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/861520a8fade8de98a1f40b29c3707a376291765"
+    }
+  ],
+  "stats": {
+    "total": 19,
+    "additions": 19,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "04cbb603f871bf4d5f674f444bbaeb7153c86246",
+      "filename": "WowPacketParserModule.V2_5_1_38707/Parsers/AuctionHouseHandler.cs",
+      "status": "added",
+      "additions": 19,
+      "deletions": 0,
+      "changes": 19,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/4f701066c9555a35131f86643df6756d1d0c9b4d/WowPacketParserModule.V2_5_1_38707%2FParsers%2FAuctionHouseHandler.cs",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/4f701066c9555a35131f86643df6756d1d0c9b4d/WowPacketParserModule.V2_5_1_38707%2FParsers%2FAuctionHouseHandler.cs",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParserModule.V2_5_1_38707%2FParsers%2FAuctionHouseHandler.cs?ref=4f701066c9555a35131f86643df6756d1d0c9b4d",
+      "patch": "@@ -0,0 +1,19 @@\n+﻿using WowPacketParser.Enums;\n+using WowPacketParser.Misc;\n+using WowPacketParser.Parsing;\n+\n+namespace WowPacketParserModule.V2_5_1_38707.Parsers\n+{\n+    public static class AuctionHouseHandler\n+    {\n+        [Parser(Opcode.SMSG_AUCTION_OWNER_BID_NOTIFICATION)]\n+        public static void HandleAuctionOwnerBidNotification(Packet packet)\n+        {\n+            var mailListCount = packet.ReadUInt32(\"MailListCount\");\n+            packet.ReadInt32(\"Field_04\");\n+\n+            for (var i = 0; i < mailListCount; i++)\n+                V7_0_3_22248.Parsers.MailHandler.ReadMailListEntry(packet, \"MailListEntry\", i);\n+        }\n+    }\n+}"
+    }
+  ]
+}

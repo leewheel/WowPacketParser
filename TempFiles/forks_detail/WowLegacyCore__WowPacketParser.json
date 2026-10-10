@@ -1,0 +1,115 @@
+﻿{
+    "full_name":  "WowLegacyCore/WowPacketParser",
+    "ahead_by":  19,
+    "behind_by":  1420,
+    "pushed_at":  "2022-03-23T17:49:33Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "classic",
+                     "handlers_refactor",
+                     "master",
+                     "multiple_sql",
+                     "sanitizing",
+                     "splitLocale"
+                 ],
+    "commit_count":  19,
+    "commits":  [
+                    {
+                        "sha":  "6f7423dfeb",
+                        "date":  "2021-06-06T13:35:13Z",
+                        "msg":  "Prepare BCC Build 2.5.1.38835"
+                    },
+                    {
+                        "sha":  "937fb06888",
+                        "date":  "2021-07-24T18:27:06Z",
+                        "msg":  "Merge branch \u0027master-original\u0027 into master-legacy"
+                    },
+                    {
+                        "sha":  "1922624a3a",
+                        "date":  "2021-07-24T18:47:07Z",
+                        "msg":  "Added 2.5.1.39399 CMSG Opcodes"
+                    },
+                    {
+                        "sha":  "caa388d480",
+                        "date":  "2021-07-27T11:46:36Z",
+                        "msg":  "Add BurningCrusadeClassic for database output"
+                    },
+                    {
+                        "sha":  "11fdafaaaf",
+                        "date":  "2021-07-29T06:30:34Z",
+                        "msg":  "2.5.1 builds and fix some packets"
+                    },
+                    {
+                        "sha":  "9cb3036b4e",
+                        "date":  "2021-07-31T11:42:43Z",
+                        "msg":  "Fix SMSG_QUERY_QUEST_INFO_RESPONSE and SMSG_SPELL_START"
+                    },
+                    {
+                        "sha":  "e72310e83e",
+                        "date":  "2021-07-31T11:45:21Z",
+                        "msg":  "Merge branch \u0027master-original\u0027 into master-legacy"
+                    },
+                    {
+                        "sha":  "278f243640",
+                        "date":  "2021-07-31T12:47:40Z",
+                        "msg":  "Added 2.5.2 builds"
+                    },
+                    {
+                        "sha":  "3e08b14f77",
+                        "date":  "2021-07-31T12:48:28Z",
+                        "msg":  "Added 2.5.2 opcodes"
+                    },
+                    {
+                        "sha":  "ab6a61626b",
+                        "date":  "2021-07-31T13:06:27Z",
+                        "msg":  "Added 2.5.2 updatefields"
+                    },
+                    {
+                        "sha":  "982525e458",
+                        "date":  "2021-07-31T13:23:40Z",
+                        "msg":  "Add missing SMSG_ACCOUNT_HEIRLOOM_UPDATE"
+                    },
+                    {
+                        "sha":  "2d9349c855",
+                        "date":  "2021-08-02T10:05:57Z",
+                        "msg":  "Correct a lot of packets for 2.5.2"
+                    },
+                    {
+                        "sha":  "4522427952",
+                        "date":  "2021-08-04T13:31:09Z",
+                        "msg":  "Fix SMSG_INSPECT_RESULT for 252"
+                    },
+                    {
+                        "sha":  "1c6315ecc8",
+                        "date":  "2021-08-04T13:31:51Z",
+                        "msg":  "Merge branch \u0027master-original\u0027 into master-legacy"
+                    },
+                    {
+                        "sha":  "7f3e3a558d",
+                        "date":  "2021-08-04T13:48:34Z",
+                        "msg":  "Fix issues that originated from last merge commit"
+                    },
+                    {
+                        "sha":  "2fb51fc037",
+                        "date":  "2022-03-15T20:59:19Z",
+                        "msg":  "Merge branch \u0027master-original\u0027 into master-legacy"
+                    },
+                    {
+                        "sha":  "1d4d183339",
+                        "date":  "2022-03-15T21:01:47Z",
+                        "msg":  "Use Switch Expression for BCC and Classic check method"
+                    },
+                    {
+                        "sha":  "861520a8fa",
+                        "date":  "2022-03-15T21:13:48Z",
+                        "msg":  "Add V2_5_4_42581 SMSG opcodes"
+                    },
+                    {
+                        "sha":  "4f701066c9",
+                        "date":  "2022-03-23T17:49:29Z",
+                        "msg":  "Fix parse for SMSG_AUCTION_OWNER_BID_NOTIFICATION for 2.5.3"
+                    }
+                ]
+}

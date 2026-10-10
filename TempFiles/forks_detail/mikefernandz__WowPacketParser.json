@@ -1,0 +1,24 @@
+﻿{
+    "full_name":  "mikefernandz/WowPacketParser",
+    "ahead_by":  1,
+    "behind_by":  1629,
+    "pushed_at":  "2021-08-05T03:49:01Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "handlers_refactor",
+                     "master",
+                     "multiple_sql",
+                     "sanitizing",
+                     "splitLocale"
+                 ],
+    "commit_count":  1,
+    "commits":  [
+                    {
+                        "sha":  "34b2e4a7c6",
+                        "date":  "2021-08-05T03:48:09Z",
+                        "msg":  "* Supports Build 39653"
+                    }
+                ]
+}

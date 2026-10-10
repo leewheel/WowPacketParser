@@ -1,0 +1,113 @@
+{
+  "sha": "caa388d4802bccb619a0060c7fd7def8bc94e229",
+  "node_id": "MDY6Q29tbWl0MzA1OTgyMTQxOmNhYTM4OGQ0ODAyYmNjYjYxOWEwMDYwYzdmZDdkZWY4YmM5NGUyMjk=",
+  "commit": {
+    "author": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2021-07-27T11:46:36Z"
+    },
+    "committer": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2021-07-27T11:46:36Z"
+    },
+    "message": "Add BurningCrusadeClassic for database output",
+    "tree": {
+      "sha": "06322dea8094a17478abda62f2a9de1b8560c5df",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/trees/06322dea8094a17478abda62f2a9de1b8560c5df"
+    },
+    "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/commits/caa388d4802bccb619a0060c7fd7def8bc94e229",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/caa388d4802bccb619a0060c7fd7def8bc94e229",
+  "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/caa388d4802bccb619a0060c7fd7def8bc94e229",
+  "comments_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/caa388d4802bccb619a0060c7fd7def8bc94e229/comments",
+  "author": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1922624a3ad86cfb715e99636fd4b059d168a9ad",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/1922624a3ad86cfb715e99636fd4b059d168a9ad",
+      "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/1922624a3ad86cfb715e99636fd4b059d168a9ad"
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "additions": 5,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "b9d8c68b2edfc28f53a97d4019a0b92ed33bfb8f",
+      "filename": "WowPacketParser/App.config",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/caa388d4802bccb619a0060c7fd7def8bc94e229/WowPacketParser%2FApp.config",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/caa388d4802bccb619a0060c7fd7def8bc94e229/WowPacketParser%2FApp.config",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParser%2FApp.config?ref=caa388d4802bccb619a0060c7fd7def8bc94e229",
+      "patch": "@@ -72,8 +72,9 @@\n                           5: Legion\n                           6: Battle for Azeroth\n                           7: Shadowlands\n-                          \n+\n                           -1: Classic\n+                          -2: Burning Crusade Classic\n         -->\n         <add key=\"TargetedDatabase\" value=\"2\"/>\n \n@@ -173,7 +174,7 @@\n                Default:     \"false\"\n         -->\n         <add key=\"IgnoreZeroValues\" value=\"false\"/>\n-      \n+\n         <!--\n                Option:      ForceInsertQueries\n                Description: Won't generate UPDATE queries, but DELETE and INSERT queries."
+    },
+    {
+      "sha": "b202e8ca22accb1bb0d94c54b137b2b7c3d7c6f4",
+      "filename": "WowPacketParser/Enums/TargetedDatabase.cs",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/caa388d4802bccb619a0060c7fd7def8bc94e229/WowPacketParser%2FEnums%2FTargetedDatabase.cs",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/caa388d4802bccb619a0060c7fd7def8bc94e229/WowPacketParser%2FEnums%2FTargetedDatabase.cs",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParser%2FEnums%2FTargetedDatabase.cs?ref=caa388d4802bccb619a0060c7fd7def8bc94e229",
+      "patch": "@@ -12,6 +12,7 @@ public enum TargetedDatabase\n         BattleForAzeroth    = 6,\n         Shadowlands         = 7,\n \n-        Classic             = -1\n+        Classic             = -1,\n+        BurningCrusadeClassic = -2,\n     }\n }"
+    }
+  ]
+}

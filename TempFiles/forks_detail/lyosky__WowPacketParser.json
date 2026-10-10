@@ -1,0 +1,1379 @@
+﻿{
+    "full_name":  "lyosky/WowPacketParser",
+    "ahead_by":  272,
+    "behind_by":  2031,
+    "pushed_at":  "2019-08-06T05:00:30Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "conversation",
+                     "handlers_refactor",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale"
+                 ],
+    "commit_count":  272,
+    "commits":  [
+                    {
+                        "sha":  "c9abb3426e",
+                        "date":  "2018-07-25T05:10:37Z",
+                        "msg":  "Initial BfA Support"
+                    },
+                    {
+                        "sha":  "938b3e87af",
+                        "date":  "2018-07-25T22:50:15Z",
+                        "msg":  "Enable double Fallback"
+                    },
+                    {
+                        "sha":  "a9df603246",
+                        "date":  "2018-07-27T01:13:36Z",
+                        "msg":  "Make Fallback dynamic"
+                    },
+                    {
+                        "sha":  "a81112a3d1",
+                        "date":  "2018-07-27T05:00:59Z",
+                        "msg":  "Add first handler"
+                    },
+                    {
+                        "sha":  "25a5e39efa",
+                        "date":  "2018-07-27T05:22:22Z",
+                        "msg":  "Add V8_0_1_27178 Support"
+                    },
+                    {
+                        "sha":  "cb2bc33dac",
+                        "date":  "2018-08-04T22:30:14Z",
+                        "msg":  "Added build 8.0.1.27219"
+                    },
+                    {
+                        "sha":  "8dee892e08",
+                        "date":  "2018-08-05T17:18:55Z",
+                        "msg":  "Fixed structure for SMSG_ENUM_CHARACTERS_RESULT"
+                    },
+                    {
+                        "sha":  "ec1a145a5a",
+                        "date":  "2018-08-06T01:09:26Z",
+                        "msg":  "Fixed structure for SMSG_SPELL_GO"
+                    },
+                    {
+                        "sha":  "426c65c254",
+                        "date":  "2018-08-06T01:18:07Z",
+                        "msg":  "Fixed structure for SMSG_SPELL_START"
+                    },
+                    {
+                        "sha":  "410fb53fad",
+                        "date":  "2018-08-06T14:06:30Z",
+                        "msg":  "fix signedness"
+                    },
+                    {
+                        "sha":  "8d9e614945",
+                        "date":  "2018-08-06T16:47:16Z",
+                        "msg":  "using signedness of client now"
+                    },
+                    {
+                        "sha":  "9d1de8649a",
+                        "date":  "2018-08-06T19:19:27Z",
+                        "msg":  "Fixed structure for SMSG_AURA_UPDATE"
+                    },
+                    {
+                        "sha":  "34f0a6d827",
+                        "date":  "2018-08-06T19:34:15Z",
+                        "msg":  "Fixed structure for SMSG_SPELL_PERIODIC_AURA_LOG"
+                    },
+                    {
+                        "sha":  "5695e27419",
+                        "date":  "2018-08-06T20:16:27Z",
+                        "msg":  "Fixed structure for SMSG_SPELL_NON_MELEE_DAMAGE_LOG"
+                    },
+                    {
+                        "sha":  "2ab544e657",
+                        "date":  "2018-08-06T22:13:40Z",
+                        "msg":  "Fixed structure of SMSG_QUERY_QUEST_INFO_RESPONSE"
+                    },
+                    {
+                        "sha":  "60788e2c9f",
+                        "date":  "2018-08-06T22:34:45Z",
+                        "msg":  "Fixed structure of SMSG_QUERY_QUEST_REWARD_RESPONSE"
+                    },
+                    {
+                        "sha":  "0754273c51",
+                        "date":  "2018-08-06T23:48:28Z",
+                        "msg":  "Fixed structure for SMSG_QUERY_CREATURE_RESPONSE"
+                    },
+                    {
+                        "sha":  "679e0d1405",
+                        "date":  "2018-08-07T23:43:29Z",
+                        "msg":  "Fixed structure of CMSG_QUEST_POI_QUERY"
+                    },
+                    {
+                        "sha":  "02c1e495df",
+                        "date":  "2018-08-08T00:43:52Z",
+                        "msg":  "Fixed structure of SMSG_QUEST_POI_QUERY_RESPONSE"
+                    },
+                    {
+                        "sha":  "306ab6734e",
+                        "date":  "2018-08-11T17:21:28Z",
+                        "msg":  "Added builds V8_0_1_27291, V8_0_1_27326"
+                    },
+                    {
+                        "sha":  "176adfaad1",
+                        "date":  "2018-08-15T05:22:16Z",
+                        "msg":  "Added builds: V8_0_1_27355, V8_0_1_27356, V8_0_1_27366"
+                    },
+                    {
+                        "sha":  "5ab099725b",
+                        "date":  "2018-08-19T20:27:20Z",
+                        "msg":  "Added build V8_0_1_27377"
+                    },
+                    {
+                        "sha":  "5d30c292c0",
+                        "date":  "2018-08-19T22:43:31Z",
+                        "msg":  "fixed SMSG_ON_MONSTER_MOVE"
+                    },
+                    {
+                        "sha":  "9b1dabd3a0",
+                        "date":  "2018-08-19T23:51:39Z",
+                        "msg":  "fixed SMSG_CHAT"
+                    },
+                    {
+                        "sha":  "96078021f9",
+                        "date":  "2018-08-20T00:29:13Z",
+                        "msg":  "Update SMSG_QUEST_GIVER_QUEST_DETAILS Parsing"
+                    },
+                    {
+                        "sha":  "d5b6c5865b",
+                        "date":  "2018-08-20T01:51:37Z",
+                        "msg":  "fixed SMSG_PARTY_UPDATE"
+                    },
+                    {
+                        "sha":  "1b2e80bb68",
+                        "date":  "2018-08-20T02:25:53Z",
+                        "msg":  "More ReadQuestReward Namings"
+                    },
+                    {
+                        "sha":  "28e5360292",
+                        "date":  "2018-08-20T02:56:54Z",
+                        "msg":  "fixed SMSG_SPELL_HEAL_LOG"
+                    },
+                    {
+                        "sha":  "53b0a035b2",
+                        "date":  "2018-08-20T03:47:58Z",
+                        "msg":  "Update SMSG_QUEST_SPAWN_TRACKING_UPDATE"
+                    },
+                    {
+                        "sha":  "8cd02c494f",
+                        "date":  "2018-08-20T05:31:36Z",
+                        "msg":  "Update SMSG_QUEST_GIVER_OFFER_REWARD_MESSAGE"
+                    },
+                    {
+                        "sha":  "0cd51a0278",
+                        "date":  "2018-08-20T07:53:06Z",
+                        "msg":  "Update SMSG_GET_ACCOUNT_CHARACTER_LIST_RESULT"
+                    },
+                    {
+                        "sha":  "31ebbbd3aa",
+                        "date":  "2018-08-20T22:48:00Z",
+                        "msg":  "fix minor fail @ spellhandler"
+                    },
+                    {
+                        "sha":  "1c0a8ddfa7",
+                        "date":  "2018-08-21T00:44:06Z",
+                        "msg":  "Update SMSG_SPELL_ABSORB_LOG"
+                    },
+                    {
+                        "sha":  "bedf314709",
+                        "date":  "2018-08-21T01:57:11Z",
+                        "msg":  "Update SMSG_ATTACKER_STATE_UPDATE"
+                    },
+                    {
+                        "sha":  "b5268f649f",
+                        "date":  "2018-08-21T02:08:55Z",
+                        "msg":  "Update SMSG_PLAY_SPELL_VISUAL"
+                    },
+                    {
+                        "sha":  "8dcb16338e",
+                        "date":  "2018-08-21T03:17:36Z",
+                        "msg":  "Update SMSG_PLAY_ORPHAN_SPELL_VISUAL"
+                    },
+                    {
+                        "sha":  "ecd6861458",
+                        "date":  "2018-08-21T06:27:30Z",
+                        "msg":  "fixed SMSG_UPDATE_OBJECT"
+                    },
+                    {
+                        "sha":  "3721b4b9e0",
+                        "date":  "2018-08-21T06:36:14Z",
+                        "msg":  "fixed SMSG_QUERY_GAME_OBJECT_RESPONSE"
+                    },
+                    {
+                        "sha":  "df0669fc64",
+                        "date":  "2018-08-22T00:35:06Z",
+                        "msg":  "added backwards compatibility to objecttypes \u0026 updated them"
+                    },
+                    {
+                        "sha":  "3fd9323710",
+                        "date":  "2018-08-22T12:52:45Z",
+                        "msg":  "added new updatefields to SMSG_UPDATE_OBJECT"
+                    },
+                    {
+                        "sha":  "bdeed364de",
+                        "date":  "2018-08-22T13:22:47Z",
+                        "msg":  "added build V8_0_1_27377:"
+                    },
+                    {
+                        "sha":  "8d49b863e4",
+                        "date":  "2018-08-22T13:39:30Z",
+                        "msg":  "implemented CMSG_TOGGLE_WARMODE"
+                    },
+                    {
+                        "sha":  "777dadc4bf",
+                        "date":  "2018-08-22T14:19:39Z",
+                        "msg":  "fixed SMSG_FEATURE_SYSTEM_STATUS_GLUE_SCREEN"
+                    },
+                    {
+                        "sha":  "de0ca25af9",
+                        "date":  "2018-08-23T02:22:01Z",
+                        "msg":  "implement SMSG_LIGHTNING_STORM_START, SMSG_LIGHTNING_STORM_CHANGE"
+                    },
+                    {
+                        "sha":  "434b5da5a4",
+                        "date":  "2018-08-23T06:07:11Z",
+                        "msg":  "fixed SMSG_INSPECT_RESULT"
+                    },
+                    {
+                        "sha":  "9e2a6d43e1",
+                        "date":  "2018-08-23T06:53:52Z",
+                        "msg":  "fixed SMSG_SOCKET_GEMS"
+                    },
+                    {
+                        "sha":  "b2799302cd",
+                        "date":  "2018-08-23T06:13:52Z",
+                        "msg":  "Updated SMSG_INSPECT_RESULT to current structure defined in TC"
+                    },
+                    {
+                        "sha":  "083059590b",
+                        "date":  "2018-08-23T06:28:48Z",
+                        "msg":  "Updated SMSG_GUILD_REWARD_LIST to current structure defined in TC"
+                    },
+                    {
+                        "sha":  "1cdd42c8d1",
+                        "date":  "2018-08-23T06:39:44Z",
+                        "msg":  "Updated SMSG_SCENARIO_STATE struct to current structure defined in TC"
+                    },
+                    {
+                        "sha":  "c4bb64d868",
+                        "date":  "2018-08-23T07:33:47Z",
+                        "msg":  "updated AchievementPackets"
+                    },
+                    {
+                        "sha":  "3f84e47f67",
+                        "date":  "2018-08-23T07:55:26Z",
+                        "msg":  "updated WhoPackets"
+                    },
+                    {
+                        "sha":  "a0fbe90795",
+                        "date":  "2018-08-23T08:01:25Z",
+                        "msg":  "Updated VoidStoragePackets"
+                    },
+                    {
+                        "sha":  "d09645f1c8",
+                        "date":  "2018-08-23T08:05:32Z",
+                        "msg":  "updated VehiclePackets"
+                    },
+                    {
+                        "sha":  "08e35fd2fe",
+                        "date":  "2018-08-23T08:12:07Z",
+                        "msg":  "update TransmogrificationPackets"
+                    },
+                    {
+                        "sha":  "5433b1a5f2",
+                        "date":  "2018-08-23T08:31:50Z",
+                        "msg":  "update TradePackets"
+                    },
+                    {
+                        "sha":  "1661a14bbd",
+                        "date":  "2018-08-23T09:09:16Z",
+                        "msg":  "update AreaTriggerPackets"
+                    },
+                    {
+                        "sha":  "e585610162",
+                        "date":  "2018-08-23T09:17:51Z",
+                        "msg":  "update ArtifactPackets"
+                    },
+                    {
+                        "sha":  "35f72718a7",
+                        "date":  "2018-08-23T09:31:00Z",
+                        "msg":  "update TokenPackets"
+                    },
+                    {
+                        "sha":  "75f751b653",
+                        "date":  "2018-08-23T09:44:45Z",
+                        "msg":  "update TalentPackets"
+                    },
+                    {
+                        "sha":  "24054730de",
+                        "date":  "2018-08-23T10:49:38Z",
+                        "msg":  "update BattlefieldPackets"
+                    },
+                    {
+                        "sha":  "a15dd2ffc6",
+                        "date":  "2018-08-23T11:02:42Z",
+                        "msg":  "update BattlegroundPackets"
+                    },
+                    {
+                        "sha":  "96f4fedf3b",
+                        "date":  "2018-08-23T11:09:03Z",
+                        "msg":  "update BattlenetPackets"
+                    },
+                    {
+                        "sha":  "3528e26271",
+                        "date":  "2018-08-23T11:19:11Z",
+                        "msg":  "fixed CollectionPackets"
+                    },
+                    {
+                        "sha":  "dcff696fe1",
+                        "date":  "2018-08-23T11:22:54Z",
+                        "msg":  "update ReferAFriendPackets"
+                    },
+                    {
+                        "sha":  "f8344cc748",
+                        "date":  "2018-08-23T11:24:24Z",
+                        "msg":  "update ReputationPackets"
+                    },
+                    {
+                        "sha":  "525d9a826b",
+                        "date":  "2018-08-23T11:31:25Z",
+                        "msg":  "buildfix"
+                    },
+                    {
+                        "sha":  "31782d613a",
+                        "date":  "2018-08-23T22:02:16Z",
+                        "msg":  "Merge pull request #1 from funjoker/bfa"
+                    },
+                    {
+                        "sha":  "e50b7aeab4",
+                        "date":  "2018-08-23T22:12:02Z",
+                        "msg":  "Merge pull request #2 from mdX7/update_to_current_tc"
+                    },
+                    {
+                        "sha":  "aabf305ddb",
+                        "date":  "2018-08-23T22:22:31Z",
+                        "msg":  "Handle CMSG_START_CHALLENGE_MODE"
+                    },
+                    {
+                        "sha":  "dd7b45e420",
+                        "date":  "2018-08-23T22:23:32Z",
+                        "msg":  "update SystemPackets"
+                    },
+                    {
+                        "sha":  "fecae9547f",
+                        "date":  "2018-08-23T22:27:45Z",
+                        "msg":  "update SocialPackets"
+                    },
+                    {
+                        "sha":  "97b44ed920",
+                        "date":  "2018-08-23T22:28:04Z",
+                        "msg":  "update SMSG_GARRISON_ADD_MISSION_RESULT"
+                    },
+                    {
+                        "sha":  "fd3ec78dad",
+                        "date":  "2018-08-23T22:31:59Z",
+                        "msg":  "Fixed SMSG_INSTANCE_ENCOUNTER_START, SMSG_INSTANCE_ENCOUNTER_SET_SUPPRESSING_RELEASE, SMSG_INSTANCE_ENCOUNTER_SET_ALLOWING_RELEASE"
+                    },
+                    {
+                        "sha":  "165df74b13",
+                        "date":  "2018-08-23T22:37:52Z",
+                        "msg":  "Fixed SMSG_AREA_POI_UPDATE"
+                    },
+                    {
+                        "sha":  "13fa05455c",
+                        "date":  "2018-08-23T22:38:36Z",
+                        "msg":  "Fixed SMSG_PET_MODE"
+                    },
+                    {
+                        "sha":  "e0c78425d7",
+                        "date":  "2018-08-23T22:40:02Z",
+                        "msg":  "Update SMSG_SCENARIO_BOOT"
+                    },
+                    {
+                        "sha":  "12403d8387",
+                        "date":  "2018-08-23T23:25:16Z",
+                        "msg":  "updated CalendarPackets"
+                    },
+                    {
+                        "sha":  "8737b11f90",
+                        "date":  "2018-08-23T23:30:55Z",
+                        "msg":  "updated ChannelPackets"
+                    },
+                    {
+                        "sha":  "30fe6b1bd0",
+                        "date":  "2018-08-24T00:49:44Z",
+                        "msg":  "add parsing BroadcastText 8 0 1 27101"
+                    },
+                    {
+                        "sha":  "ae166b3efb",
+                        "date":  "2018-08-24T04:46:11Z",
+                        "msg":  "CONVERSATION 可能的改动"
+                    },
+                    {
+                        "sha":  "56f5579ede",
+                        "date":  "2018-08-24T05:09:44Z",
+                        "msg":  "读取多个语言的broadcast_text"
+                    },
+                    {
+                        "sha":  "baac1e7018",
+                        "date":  "2018-08-24T09:43:26Z",
+                        "msg":  "update CharacterPackets"
+                    },
+                    {
+                        "sha":  "3a6abdc4ad",
+                        "date":  "2018-08-24T09:48:07Z",
+                        "msg":  "update CombatPackets"
+                    },
+                    {
+                        "sha":  "4d3ae1afb5",
+                        "date":  "2018-08-24T09:54:23Z",
+                        "msg":  "update CombatLogPackets"
+                    },
+                    {
+                        "sha":  "5981122df3",
+                        "date":  "2018-08-24T10:02:29Z",
+                        "msg":  "update EquipmentSetPackets"
+                    },
+                    {
+                        "sha":  "665f84aac7",
+                        "date":  "2018-08-24T10:06:56Z",
+                        "msg":  "update InstancePackets"
+                    },
+                    {
+                        "sha":  "11c7cc4716",
+                        "date":  "2018-08-24T10:14:26Z",
+                        "msg":  "update GuildFinderPackets"
+                    },
+                    {
+                        "sha":  "680bf5de91",
+                        "date":  "2018-08-24T10:19:24Z",
+                        "msg":  "update LootPackets"
+                    },
+                    {
+                        "sha":  "f5aa72f479",
+                        "date":  "2018-08-24T10:24:19Z",
+                        "msg":  "update ChatPackets"
+                    },
+                    {
+                        "sha":  "b2c69d2c42",
+                        "date":  "2018-08-24T10:28:31Z",
+                        "msg":  "update NPCPackets"
+                    },
+                    {
+                        "sha":  "d937394390",
+                        "date":  "2018-08-24T11:28:50Z",
+                        "msg":  "Merge pull request #3 from mdX7/update_to_current_tc"
+                    },
+                    {
+                        "sha":  "32ed977395",
+                        "date":  "2018-08-24T11:33:05Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/lyosky/WowPacketParser"
+                    },
+                    {
+                        "sha":  "db5df64d40",
+                        "date":  "2018-08-25T00:22:50Z",
+                        "msg":  "ConversationLineTemplate after TC updated"
+                    },
+                    {
+                        "sha":  "f9f45c621f",
+                        "date":  "2018-08-25T00:38:27Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "7c510550af",
+                        "date":  "2018-08-25T00:51:08Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "e8bb24997c",
+                        "date":  "2018-08-25T00:53:35Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "e8b4fe79fc",
+                        "date":  "2018-07-25T05:10:37Z",
+                        "msg":  "Initial BfA Support"
+                    },
+                    {
+                        "sha":  "679f0f17f2",
+                        "date":  "2018-07-25T22:50:15Z",
+                        "msg":  "Enable double Fallback"
+                    },
+                    {
+                        "sha":  "45462ef7bc",
+                        "date":  "2018-07-27T01:13:36Z",
+                        "msg":  "Make Fallback dynamic"
+                    },
+                    {
+                        "sha":  "25b48be6ae",
+                        "date":  "2018-07-27T05:00:59Z",
+                        "msg":  "Add first handler"
+                    },
+                    {
+                        "sha":  "b6588d8e51",
+                        "date":  "2018-07-27T05:22:22Z",
+                        "msg":  "Add V8_0_1_27178 Support"
+                    },
+                    {
+                        "sha":  "de435a8feb",
+                        "date":  "2018-08-04T22:30:14Z",
+                        "msg":  "Added build 8.0.1.27219"
+                    },
+                    {
+                        "sha":  "7fc0968813",
+                        "date":  "2018-08-05T17:18:55Z",
+                        "msg":  "Fixed structure for SMSG_ENUM_CHARACTERS_RESULT"
+                    },
+                    {
+                        "sha":  "dd8a1d3c39",
+                        "date":  "2018-08-06T01:09:26Z",
+                        "msg":  "Fixed structure for SMSG_SPELL_GO"
+                    },
+                    {
+                        "sha":  "3fccc8e604",
+                        "date":  "2018-08-06T01:18:07Z",
+                        "msg":  "Fixed structure for SMSG_SPELL_START"
+                    },
+                    {
+                        "sha":  "c274fdae07",
+                        "date":  "2018-08-06T14:06:30Z",
+                        "msg":  "fix signedness"
+                    },
+                    {
+                        "sha":  "1b6fd22f28",
+                        "date":  "2018-08-06T16:47:16Z",
+                        "msg":  "using signedness of client now"
+                    },
+                    {
+                        "sha":  "d17edad9ed",
+                        "date":  "2018-08-06T19:19:27Z",
+                        "msg":  "Fixed structure for SMSG_AURA_UPDATE"
+                    },
+                    {
+                        "sha":  "d4ae8a6286",
+                        "date":  "2018-08-06T19:34:15Z",
+                        "msg":  "Fixed structure for SMSG_SPELL_PERIODIC_AURA_LOG"
+                    },
+                    {
+                        "sha":  "817c648423",
+                        "date":  "2018-08-06T20:16:27Z",
+                        "msg":  "Fixed structure for SMSG_SPELL_NON_MELEE_DAMAGE_LOG"
+                    },
+                    {
+                        "sha":  "9d82c50820",
+                        "date":  "2018-08-06T22:13:40Z",
+                        "msg":  "Fixed structure of SMSG_QUERY_QUEST_INFO_RESPONSE"
+                    },
+                    {
+                        "sha":  "580334b88f",
+                        "date":  "2018-08-06T22:34:45Z",
+                        "msg":  "Fixed structure of SMSG_QUERY_QUEST_REWARD_RESPONSE"
+                    },
+                    {
+                        "sha":  "312775c8d8",
+                        "date":  "2018-08-06T23:48:28Z",
+                        "msg":  "Fixed structure for SMSG_QUERY_CREATURE_RESPONSE"
+                    },
+                    {
+                        "sha":  "41377b119e",
+                        "date":  "2018-08-07T23:43:29Z",
+                        "msg":  "Fixed structure of CMSG_QUEST_POI_QUERY"
+                    },
+                    {
+                        "sha":  "7274f85864",
+                        "date":  "2018-08-08T00:43:52Z",
+                        "msg":  "Fixed structure of SMSG_QUEST_POI_QUERY_RESPONSE"
+                    },
+                    {
+                        "sha":  "eec33a2e56",
+                        "date":  "2018-08-11T17:21:28Z",
+                        "msg":  "Added builds V8_0_1_27291, V8_0_1_27326"
+                    },
+                    {
+                        "sha":  "7bc73e5378",
+                        "date":  "2018-08-15T05:22:16Z",
+                        "msg":  "Added builds: V8_0_1_27355, V8_0_1_27356, V8_0_1_27366"
+                    },
+                    {
+                        "sha":  "58b8680447",
+                        "date":  "2018-08-19T20:27:20Z",
+                        "msg":  "Added build V8_0_1_27377"
+                    },
+                    {
+                        "sha":  "f4f6073c6f",
+                        "date":  "2018-08-19T22:43:31Z",
+                        "msg":  "fixed SMSG_ON_MONSTER_MOVE"
+                    },
+                    {
+                        "sha":  "6880993689",
+                        "date":  "2018-08-19T23:51:39Z",
+                        "msg":  "fixed SMSG_CHAT"
+                    },
+                    {
+                        "sha":  "4c11317879",
+                        "date":  "2018-08-20T00:29:13Z",
+                        "msg":  "Update SMSG_QUEST_GIVER_QUEST_DETAILS Parsing"
+                    },
+                    {
+                        "sha":  "7836429e38",
+                        "date":  "2018-08-20T01:51:37Z",
+                        "msg":  "fixed SMSG_PARTY_UPDATE"
+                    },
+                    {
+                        "sha":  "5b207276b5",
+                        "date":  "2018-08-20T02:25:53Z",
+                        "msg":  "More ReadQuestReward Namings"
+                    },
+                    {
+                        "sha":  "9c7d02b1ca",
+                        "date":  "2018-08-20T02:56:54Z",
+                        "msg":  "fixed SMSG_SPELL_HEAL_LOG"
+                    },
+                    {
+                        "sha":  "a17bad7503",
+                        "date":  "2018-08-20T03:47:58Z",
+                        "msg":  "Update SMSG_QUEST_SPAWN_TRACKING_UPDATE"
+                    },
+                    {
+                        "sha":  "489118ca42",
+                        "date":  "2018-08-20T05:31:36Z",
+                        "msg":  "Update SMSG_QUEST_GIVER_OFFER_REWARD_MESSAGE"
+                    },
+                    {
+                        "sha":  "5983657e70",
+                        "date":  "2018-08-20T07:53:06Z",
+                        "msg":  "Update SMSG_GET_ACCOUNT_CHARACTER_LIST_RESULT"
+                    },
+                    {
+                        "sha":  "234dfdf4ac",
+                        "date":  "2018-08-20T22:48:00Z",
+                        "msg":  "fix minor fail @ spellhandler"
+                    },
+                    {
+                        "sha":  "567d3fa090",
+                        "date":  "2018-08-21T00:44:06Z",
+                        "msg":  "Update SMSG_SPELL_ABSORB_LOG"
+                    },
+                    {
+                        "sha":  "f5bd211bb6",
+                        "date":  "2018-08-21T01:57:11Z",
+                        "msg":  "Update SMSG_ATTACKER_STATE_UPDATE"
+                    },
+                    {
+                        "sha":  "fb0305d978",
+                        "date":  "2018-08-21T02:08:55Z",
+                        "msg":  "Update SMSG_PLAY_SPELL_VISUAL"
+                    },
+                    {
+                        "sha":  "29def356cf",
+                        "date":  "2018-08-21T03:17:36Z",
+                        "msg":  "Update SMSG_PLAY_ORPHAN_SPELL_VISUAL"
+                    },
+                    {
+                        "sha":  "4bd08e8619",
+                        "date":  "2018-08-21T06:27:30Z",
+                        "msg":  "fixed SMSG_UPDATE_OBJECT"
+                    },
+                    {
+                        "sha":  "7b9a66abfe",
+                        "date":  "2018-08-21T06:36:14Z",
+                        "msg":  "fixed SMSG_QUERY_GAME_OBJECT_RESPONSE"
+                    },
+                    {
+                        "sha":  "41bec1f169",
+                        "date":  "2018-08-22T00:35:06Z",
+                        "msg":  "added backwards compatibility to objecttypes \u0026 updated them"
+                    },
+                    {
+                        "sha":  "a5638d29d5",
+                        "date":  "2018-08-22T12:52:45Z",
+                        "msg":  "added new updatefields to SMSG_UPDATE_OBJECT"
+                    },
+                    {
+                        "sha":  "d9a3656c6f",
+                        "date":  "2018-08-22T13:22:47Z",
+                        "msg":  "added build V8_0_1_27377:"
+                    },
+                    {
+                        "sha":  "5ca83ca434",
+                        "date":  "2018-08-22T13:39:30Z",
+                        "msg":  "implemented CMSG_TOGGLE_WARMODE"
+                    },
+                    {
+                        "sha":  "56cfe80257",
+                        "date":  "2018-08-22T14:19:39Z",
+                        "msg":  "fixed SMSG_FEATURE_SYSTEM_STATUS_GLUE_SCREEN"
+                    },
+                    {
+                        "sha":  "2b57dc7e70",
+                        "date":  "2018-08-23T02:22:01Z",
+                        "msg":  "implement SMSG_LIGHTNING_STORM_START, SMSG_LIGHTNING_STORM_CHANGE"
+                    },
+                    {
+                        "sha":  "1d4be8dcaf",
+                        "date":  "2018-08-23T06:07:11Z",
+                        "msg":  "fixed SMSG_INSPECT_RESULT"
+                    },
+                    {
+                        "sha":  "5e59babf22",
+                        "date":  "2018-08-25T20:02:57Z",
+                        "msg":  "Fix CMSG_SET_WAR_MODE"
+                    },
+                    {
+                        "sha":  "36836b072e",
+                        "date":  "2018-08-25T20:05:44Z",
+                        "msg":  "Update bfa project file"
+                    },
+                    {
+                        "sha":  "4cedff26f0",
+                        "date":  "2018-08-25T21:35:43Z",
+                        "msg":  "update NPCFlags"
+                    },
+                    {
+                        "sha":  "bce7822e23",
+                        "date":  "2018-08-25T21:51:27Z",
+                        "msg":  "Merge branch \u0027pr/5\u0027"
+                    },
+                    {
+                        "sha":  "1c1e6e35c7",
+                        "date":  "2018-08-25T21:57:29Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "0f98122409",
+                        "date":  "2018-08-25T23:55:02Z",
+                        "msg":  "fixed CMSG_AUTH_SESSION"
+                    },
+                    {
+                        "sha":  "9b95c38e88",
+                        "date":  "2018-08-26T14:10:43Z",
+                        "msg":  "Update CMSG_REQUEST_CHALLENGE_MODE_AFFIXES"
+                    },
+                    {
+                        "sha":  "bd66e96cba",
+                        "date":  "2018-08-26T14:24:39Z",
+                        "msg":  "Apply Traesh PR"
+                    },
+                    {
+                        "sha":  "40e4a2f07b",
+                        "date":  "2018-08-26T23:56:14Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "44f93bb05c",
+                        "date":  "2018-08-27T06:07:21Z",
+                        "msg":  "Update SMSG_UPDATE_EXPANSION_LEVEL"
+                    },
+                    {
+                        "sha":  "e31ac96063",
+                        "date":  "2018-08-27T10:10:28Z",
+                        "msg":  "temp fix creature_template modelids output nums"
+                    },
+                    {
+                        "sha":  "af15f1466b",
+                        "date":  "2018-08-27T14:20:53Z",
+                        "msg":  "WIP"
+                    },
+                    {
+                        "sha":  "8fa5893b03",
+                        "date":  "2018-08-27T17:37:57Z",
+                        "msg":  "Merge branch \u0027pr/6\u0027"
+                    },
+                    {
+                        "sha":  "0d7f00331e",
+                        "date":  "2018-08-27T17:49:42Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "42e618b2aa",
+                        "date":  "2018-07-25T05:10:37Z",
+                        "msg":  "Initial BfA Support"
+                    },
+                    {
+                        "sha":  "57732f3e70",
+                        "date":  "2018-07-25T22:50:15Z",
+                        "msg":  "Enable double Fallback"
+                    },
+                    {
+                        "sha":  "7d0de1e16e",
+                        "date":  "2018-07-27T01:13:36Z",
+                        "msg":  "Make Fallback dynamic"
+                    },
+                    {
+                        "sha":  "f4d74fd743",
+                        "date":  "2018-07-27T05:00:59Z",
+                        "msg":  "Add first handler"
+                    },
+                    {
+                        "sha":  "690ec9611e",
+                        "date":  "2018-07-27T05:22:22Z",
+                        "msg":  "Add V8_0_1_27178 Support"
+                    },
+                    {
+                        "sha":  "ef196eb720",
+                        "date":  "2018-08-04T22:30:14Z",
+                        "msg":  "Added build 8.0.1.27219"
+                    },
+                    {
+                        "sha":  "89d4e7816f",
+                        "date":  "2018-08-05T17:18:55Z",
+                        "msg":  "Fixed structure for SMSG_ENUM_CHARACTERS_RESULT"
+                    },
+                    {
+                        "sha":  "eb3852069c",
+                        "date":  "2018-08-06T01:09:26Z",
+                        "msg":  "Fixed structure for SMSG_SPELL_GO"
+                    },
+                    {
+                        "sha":  "06fc36edfc",
+                        "date":  "2018-08-06T01:18:07Z",
+                        "msg":  "Fixed structure for SMSG_SPELL_START"
+                    },
+                    {
+                        "sha":  "16db5b7815",
+                        "date":  "2018-08-06T14:06:30Z",
+                        "msg":  "fix signedness"
+                    },
+                    {
+                        "sha":  "0a769ad8e0",
+                        "date":  "2018-08-06T16:47:16Z",
+                        "msg":  "using signedness of client now"
+                    },
+                    {
+                        "sha":  "995bc52146",
+                        "date":  "2018-08-06T19:19:27Z",
+                        "msg":  "Fixed structure for SMSG_AURA_UPDATE"
+                    },
+                    {
+                        "sha":  "b630de74ed",
+                        "date":  "2018-08-06T19:34:15Z",
+                        "msg":  "Fixed structure for SMSG_SPELL_PERIODIC_AURA_LOG"
+                    },
+                    {
+                        "sha":  "9c3d96e6a9",
+                        "date":  "2018-08-06T20:16:27Z",
+                        "msg":  "Fixed structure for SMSG_SPELL_NON_MELEE_DAMAGE_LOG"
+                    },
+                    {
+                        "sha":  "37c9b00b17",
+                        "date":  "2018-08-06T22:13:40Z",
+                        "msg":  "Fixed structure of SMSG_QUERY_QUEST_INFO_RESPONSE"
+                    },
+                    {
+                        "sha":  "99df2361e6",
+                        "date":  "2018-08-06T22:34:45Z",
+                        "msg":  "Fixed structure of SMSG_QUERY_QUEST_REWARD_RESPONSE"
+                    },
+                    {
+                        "sha":  "323fa6c05c",
+                        "date":  "2018-08-06T23:48:28Z",
+                        "msg":  "Fixed structure for SMSG_QUERY_CREATURE_RESPONSE"
+                    },
+                    {
+                        "sha":  "e4aafd5b89",
+                        "date":  "2018-08-07T23:43:29Z",
+                        "msg":  "Fixed structure of CMSG_QUEST_POI_QUERY"
+                    },
+                    {
+                        "sha":  "e58b6b4021",
+                        "date":  "2018-08-08T00:43:52Z",
+                        "msg":  "Fixed structure of SMSG_QUEST_POI_QUERY_RESPONSE"
+                    },
+                    {
+                        "sha":  "cda11322fa",
+                        "date":  "2018-08-11T17:21:28Z",
+                        "msg":  "Added builds V8_0_1_27291, V8_0_1_27326"
+                    },
+                    {
+                        "sha":  "5cb3eed346",
+                        "date":  "2018-08-15T05:22:16Z",
+                        "msg":  "Added builds: V8_0_1_27355, V8_0_1_27356, V8_0_1_27366"
+                    },
+                    {
+                        "sha":  "d3d9599b6c",
+                        "date":  "2018-08-19T20:27:20Z",
+                        "msg":  "Added build V8_0_1_27377"
+                    },
+                    {
+                        "sha":  "b14e3c4434",
+                        "date":  "2018-08-19T22:43:31Z",
+                        "msg":  "fixed SMSG_ON_MONSTER_MOVE"
+                    },
+                    {
+                        "sha":  "d678c1c45c",
+                        "date":  "2018-08-19T23:51:39Z",
+                        "msg":  "fixed SMSG_CHAT"
+                    },
+                    {
+                        "sha":  "4d7e31383c",
+                        "date":  "2018-08-20T00:29:13Z",
+                        "msg":  "Update SMSG_QUEST_GIVER_QUEST_DETAILS Parsing"
+                    },
+                    {
+                        "sha":  "810d335065",
+                        "date":  "2018-08-20T01:51:37Z",
+                        "msg":  "fixed SMSG_PARTY_UPDATE"
+                    },
+                    {
+                        "sha":  "f542c1bce3",
+                        "date":  "2018-08-20T02:25:53Z",
+                        "msg":  "More ReadQuestReward Namings"
+                    },
+                    {
+                        "sha":  "25a53dd539",
+                        "date":  "2018-08-20T02:56:54Z",
+                        "msg":  "fixed SMSG_SPELL_HEAL_LOG"
+                    },
+                    {
+                        "sha":  "e6a10073c3",
+                        "date":  "2018-08-20T03:47:58Z",
+                        "msg":  "Update SMSG_QUEST_SPAWN_TRACKING_UPDATE"
+                    },
+                    {
+                        "sha":  "0150bcb8fe",
+                        "date":  "2018-08-20T05:31:36Z",
+                        "msg":  "Update SMSG_QUEST_GIVER_OFFER_REWARD_MESSAGE"
+                    },
+                    {
+                        "sha":  "30b9945b11",
+                        "date":  "2018-08-20T07:53:06Z",
+                        "msg":  "Update SMSG_GET_ACCOUNT_CHARACTER_LIST_RESULT"
+                    },
+                    {
+                        "sha":  "545ec7e7bf",
+                        "date":  "2018-08-20T22:48:00Z",
+                        "msg":  "fix minor fail @ spellhandler"
+                    },
+                    {
+                        "sha":  "dda9cae3f0",
+                        "date":  "2018-08-21T00:44:06Z",
+                        "msg":  "Update SMSG_SPELL_ABSORB_LOG"
+                    },
+                    {
+                        "sha":  "ca5c678d7c",
+                        "date":  "2018-08-21T01:57:11Z",
+                        "msg":  "Update SMSG_ATTACKER_STATE_UPDATE"
+                    },
+                    {
+                        "sha":  "425386957c",
+                        "date":  "2018-08-21T02:08:55Z",
+                        "msg":  "Update SMSG_PLAY_SPELL_VISUAL"
+                    },
+                    {
+                        "sha":  "e65d72c150",
+                        "date":  "2018-08-21T03:17:36Z",
+                        "msg":  "Update SMSG_PLAY_ORPHAN_SPELL_VISUAL"
+                    },
+                    {
+                        "sha":  "11d30d0c83",
+                        "date":  "2018-08-21T06:27:30Z",
+                        "msg":  "fixed SMSG_UPDATE_OBJECT"
+                    },
+                    {
+                        "sha":  "8a3f33801f",
+                        "date":  "2018-08-21T06:36:14Z",
+                        "msg":  "fixed SMSG_QUERY_GAME_OBJECT_RESPONSE"
+                    },
+                    {
+                        "sha":  "e194966e57",
+                        "date":  "2018-08-22T00:35:06Z",
+                        "msg":  "added backwards compatibility to objecttypes \u0026 updated them"
+                    },
+                    {
+                        "sha":  "2a330e6405",
+                        "date":  "2018-08-22T12:52:45Z",
+                        "msg":  "added new updatefields to SMSG_UPDATE_OBJECT"
+                    },
+                    {
+                        "sha":  "ae47d272e9",
+                        "date":  "2018-08-22T13:22:47Z",
+                        "msg":  "added build V8_0_1_27377:"
+                    },
+                    {
+                        "sha":  "6abfe44198",
+                        "date":  "2018-08-22T13:39:30Z",
+                        "msg":  "implemented CMSG_TOGGLE_WARMODE"
+                    },
+                    {
+                        "sha":  "5e8b3a2892",
+                        "date":  "2018-08-22T14:19:39Z",
+                        "msg":  "fixed SMSG_FEATURE_SYSTEM_STATUS_GLUE_SCREEN"
+                    },
+                    {
+                        "sha":  "f43a2d5224",
+                        "date":  "2018-08-23T02:22:01Z",
+                        "msg":  "implement SMSG_LIGHTNING_STORM_START, SMSG_LIGHTNING_STORM_CHANGE"
+                    },
+                    {
+                        "sha":  "da30717798",
+                        "date":  "2018-08-23T06:07:11Z",
+                        "msg":  "fixed SMSG_INSPECT_RESULT"
+                    },
+                    {
+                        "sha":  "8abf70434b",
+                        "date":  "2018-08-25T20:02:57Z",
+                        "msg":  "Fix CMSG_SET_WAR_MODE"
+                    },
+                    {
+                        "sha":  "7fb0e209a8",
+                        "date":  "2018-08-25T20:05:44Z",
+                        "msg":  "Update bfa project file"
+                    },
+                    {
+                        "sha":  "526519b777",
+                        "date":  "2018-08-25T23:55:02Z",
+                        "msg":  "fixed CMSG_AUTH_SESSION"
+                    },
+                    {
+                        "sha":  "89397b8cb6",
+                        "date":  "2018-08-26T14:10:43Z",
+                        "msg":  "Update CMSG_REQUEST_CHALLENGE_MODE_AFFIXES"
+                    },
+                    {
+                        "sha":  "98409dd153",
+                        "date":  "2018-08-26T14:24:39Z",
+                        "msg":  "Apply Traesh PR"
+                    },
+                    {
+                        "sha":  "8840a9fe23",
+                        "date":  "2018-08-27T06:07:21Z",
+                        "msg":  "Update SMSG_UPDATE_EXPANSION_LEVEL"
+                    },
+                    {
+                        "sha":  "6d6599acc9",
+                        "date":  "2018-08-28T05:23:17Z",
+                        "msg":  "Named Unk801 in SMSG_QUERY_PLAYER_NAME_RESPONSE, ReadCharactersData"
+                    },
+                    {
+                        "sha":  "37028f20ea",
+                        "date":  "2018-08-28T06:13:07Z",
+                        "msg":  "Fix SMSG_ADD_LOSS_OF_CONTROL"
+                    },
+                    {
+                        "sha":  "2f218d6d63",
+                        "date":  "2018-08-28T07:07:46Z",
+                        "msg":  "update updatefields"
+                    },
+                    {
+                        "sha":  "cbb2403857",
+                        "date":  "2018-08-28T07:11:45Z",
+                        "msg":  "Update SMSG_SPELL_DAMAGE_SHIELD"
+                    },
+                    {
+                        "sha":  "69f8f64bc2",
+                        "date":  "2018-08-28T08:51:42Z",
+                        "msg":  "Fix SMSG_GOSSIP_POI"
+                    },
+                    {
+                        "sha":  "cb7c1e9622",
+                        "date":  "2018-08-28T09:11:16Z",
+                        "msg":  "Compability with old POI comparion"
+                    },
+                    {
+                        "sha":  "52bc81c3d8",
+                        "date":  "2018-08-30T11:44:43Z",
+                        "msg":  "added build V8_0_1_27481"
+                    },
+                    {
+                        "sha":  "c9c09440e5",
+                        "date":  "2018-08-30T14:00:27Z",
+                        "msg":  "Added 8.0.1 server opcodes from my diff"
+                    },
+                    {
+                        "sha":  "aa8bbde612",
+                        "date":  "2018-08-30T18:07:00Z",
+                        "msg":  "fix SMSG_SPELL_HEAL_LOG"
+                    },
+                    {
+                        "sha":  "32832e079f",
+                        "date":  "2018-08-31T01:40:32Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "a2847d83a6",
+                        "date":  "2018-08-31T02:26:29Z",
+                        "msg":  "Merge branch \u0027bfa\u0027 of https://github.com/funjoker/WowPacketParser into pr/6"
+                    },
+                    {
+                        "sha":  "2189557404",
+                        "date":  "2018-08-31T02:29:08Z",
+                        "msg":  "Merge branch \u0027pr/6\u0027"
+                    },
+                    {
+                        "sha":  "8d8c7cd874",
+                        "date":  "2018-08-31T03:20:51Z",
+                        "msg":  "fix dynamicflags"
+                    },
+                    {
+                        "sha":  "e4fe403934",
+                        "date":  "2018-09-01T02:13:09Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "3911d4472c",
+                        "date":  "2018-09-01T02:30:44Z",
+                        "msg":  "make travel happy"
+                    },
+                    {
+                        "sha":  "20b2be53df",
+                        "date":  "2018-09-01T18:17:52Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "df9532f263",
+                        "date":  "2018-09-01T18:22:03Z",
+                        "msg":  "make travel happy"
+                    },
+                    {
+                        "sha":  "fa70f31295",
+                        "date":  "2018-09-03T01:18:12Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "08af157dab",
+                        "date":  "2018-09-06T02:44:47Z",
+                        "msg":  "CreatureTextLocale"
+                    },
+                    {
+                        "sha":  "3624fa7e0c",
+                        "date":  "2018-09-06T17:55:19Z",
+                        "msg":  "AddedInVersion 27547,27602"
+                    },
+                    {
+                        "sha":  "5b51e8fa80",
+                        "date":  "2018-09-10T07:03:48Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "341b85d192",
+                        "date":  "2018-09-13T13:53:55Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "06ba835454",
+                        "date":  "2018-09-27T07:00:10Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "0c38cb1aad",
+                        "date":  "2018-09-27T07:03:43Z",
+                        "msg":  "fix merge"
+                    },
+                    {
+                        "sha":  "17dbdb70e2",
+                        "date":  "2018-09-27T07:27:46Z",
+                        "msg":  "modify for Core/Maps: Replaced spawnmask with difficulty list"
+                    },
+                    {
+                        "sha":  "78b299d72a",
+                        "date":  "2018-09-28T01:10:02Z",
+                        "msg":  "Add quest_offer_reward_locale parsing"
+                    },
+                    {
+                        "sha":  "8ff6580cfd",
+                        "date":  "2018-09-28T02:28:41Z",
+                        "msg":  "Add quest_request_items_locale parsing"
+                    },
+                    {
+                        "sha":  "8908601a88",
+                        "date":  "2018-09-28T02:50:45Z",
+                        "msg":  "Add quest_greeting_locale parsing"
+                    },
+                    {
+                        "sha":  "d94f2f9fb2",
+                        "date":  "2018-09-28T02:54:03Z",
+                        "msg":  "greeting locale 2"
+                    },
+                    {
+                        "sha":  "fc21f881f9",
+                        "date":  "2018-09-28T04:08:13Z",
+                        "msg":  "Add page_text_locale parsing"
+                    },
+                    {
+                        "sha":  "04a3ec712c",
+                        "date":  "2018-09-28T05:52:37Z",
+                        "msg":  "Add GossipMenuOptions_locale parsing"
+                    },
+                    {
+                        "sha":  "bce41a9a10",
+                        "date":  "2018-10-01T02:40:02Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "77e7a5789f",
+                        "date":  "2018-10-01T04:41:17Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "4f43b6ccfa",
+                        "date":  "2018-10-01T04:44:39Z",
+                        "msg":  "delete dur using"
+                    },
+                    {
+                        "sha":  "1043a47787",
+                        "date":  "2018-11-06T03:47:59Z",
+                        "msg":  "add to version 28153"
+                    },
+                    {
+                        "sha":  "dda7204754",
+                        "date":  "2018-11-26T02:44:23Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "ce3d8b918e",
+                        "date":  "2018-12-20T04:01:31Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "571ea23898",
+                        "date":  "2018-12-20T07:43:55Z",
+                        "msg":  "wip01"
+                    },
+                    {
+                        "sha":  "fc0108d51f",
+                        "date":  "2018-12-30T08:30:19Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "af450d6a0e",
+                        "date":  "2019-01-22T15:49:11Z",
+                        "msg":  "810"
+                    },
+                    {
+                        "sha":  "d890c0d72c",
+                        "date":  "2019-01-22T18:44:36Z",
+                        "msg":  "810合并"
+                    },
+                    {
+                        "sha":  "70b5721a3f",
+                        "date":  "2019-01-22T18:53:54Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "c4021726b1",
+                        "date":  "2019-01-26T12:25:50Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "6ba4b20489",
+                        "date":  "2019-02-02T09:03:31Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "af226aafd5",
+                        "date":  "2019-02-15T03:42:16Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "d29bad7506",
+                        "date":  "2019-02-18T16:07:40Z",
+                        "msg":  "add WorldQuest sql out"
+                    },
+                    {
+                        "sha":  "50fd9b378a",
+                        "date":  "2019-02-18T22:47:30Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "729d47ad61",
+                        "date":  "2019-02-26T23:10:53Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "ad90f122a8",
+                        "date":  "2019-02-27T14:57:42Z",
+                        "msg":  "SMSG_SHOW_ADVENTURE_MAP"
+                    },
+                    {
+                        "sha":  "a8349fbec2",
+                        "date":  "2019-02-27T17:13:14Z",
+                        "msg":  "SMSG_GARRISON_FOLLOWER_CHANGED_STATUS,SMSG_GARRISON_REMOVE_FOLLOWER_FROM_BUILDING_RESULT"
+                    },
+                    {
+                        "sha":  "4905cae5da",
+                        "date":  "2019-03-01T19:56:59Z",
+                        "msg":  "SMSG_GARRISON_RESEARCH_TALENT"
+                    },
+                    {
+                        "sha":  "73b0d1fbc0",
+                        "date":  "2019-03-29T02:14:23Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "13a12a8ba5",
+                        "date":  "2019-04-04T04:29:48Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "86be0a701a",
+                        "date":  "2019-05-18T15:41:09Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "da656e5210",
+                        "date":  "2019-06-22T19:23:26Z",
+                        "msg":  "合并"
+                    },
+                    {
+                        "sha":  "be6f48ef42",
+                        "date":  "2019-06-22T21:06:36Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "60141e2aa9",
+                        "date":  "2019-06-22T21:23:01Z",
+                        "msg":  "fix compile"
+                    },
+                    {
+                        "sha":  "dd039b25ba",
+                        "date":  "2019-06-22T21:59:19Z",
+                        "msg":  "fix"
+                    },
+                    {
+                        "sha":  "00b4d81cdc",
+                        "date":  "2019-06-26T01:14:32Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "eb38d2eb55",
+                        "date":  "2019-06-26T01:15:24Z",
+                        "msg":  "quest item 810"
+                    },
+                    {
+                        "sha":  "6a0d330e98",
+                        "date":  "2019-06-28T15:24:03Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "cf197e8efe",
+                        "date":  "2019-06-30T10:21:39Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "66adf84b96",
+                        "date":  "2019-07-05T01:52:47Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "f98711334f",
+                        "date":  "2019-07-21T08:04:49Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "cfaf2dd408",
+                        "date":  "2019-07-24T07:12:21Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    },
+                    {
+                        "sha":  "e150ec7baa",
+                        "date":  "2019-08-04T21:50:54Z",
+                        "msg":  "Merge remote-tracking branch \u0027upstream/master\u0027"
+                    }
+                ]
+}

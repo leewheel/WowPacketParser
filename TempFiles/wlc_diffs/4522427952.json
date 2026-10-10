@@ -1,0 +1,113 @@
+{
+  "sha": "4522427952ac0de5cd0196348cc8e9fd7f591f17",
+  "node_id": "MDY6Q29tbWl0MzA1OTgyMTQxOjQ1MjI0Mjc5NTJhYzBkZTVjZDAxOTYzNDhjYzhlOWZkN2Y1OTFmMTc=",
+  "commit": {
+    "author": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2021-08-04T13:31:09Z"
+    },
+    "committer": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2021-08-04T13:31:09Z"
+    },
+    "message": "Fix SMSG_INSPECT_RESULT for 252",
+    "tree": {
+      "sha": "6c0bbf71fcbeb523179ffb5a0008219f2884b1e0",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/trees/6c0bbf71fcbeb523179ffb5a0008219f2884b1e0"
+    },
+    "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/commits/4522427952ac0de5cd0196348cc8e9fd7f591f17",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/4522427952ac0de5cd0196348cc8e9fd7f591f17",
+  "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/4522427952ac0de5cd0196348cc8e9fd7f591f17",
+  "comments_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/4522427952ac0de5cd0196348cc8e9fd7f591f17/comments",
+  "author": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2d9349c855f3849a35bc48f2cdb4a2c2bbfd33bb",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/2d9349c855f3849a35bc48f2cdb4a2c2bbfd33bb",
+      "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/2d9349c855f3849a35bc48f2cdb4a2c2bbfd33bb"
+    }
+  ],
+  "stats": {
+    "total": 152,
+    "additions": 152,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "e78423917e887aa87a88a481b764ec5e93ca4495",
+      "filename": "WowPacketParserModule.Substructures/ItemHandler.cs",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 0,
+      "changes": 37,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/4522427952ac0de5cd0196348cc8e9fd7f591f17/WowPacketParserModule.Substructures%2FItemHandler.cs",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/4522427952ac0de5cd0196348cc8e9fd7f591f17/WowPacketParserModule.Substructures%2FItemHandler.cs",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParserModule.Substructures%2FItemHandler.cs?ref=4522427952ac0de5cd0196348cc8e9fd7f591f17",
+      "patch": "@@ -108,8 +108,45 @@ public static ItemInstance ReadItemInstance901(Packet packet, params object[] in\n             return instance;\n         }\n \n+        public static ItemInstance ReadItemInstance251(Packet packet, params object[] indexes)\n+        {\n+            ItemInstance instance = new ItemInstance();\n+            instance.ItemID = packet.ReadInt32<ItemId>(\"ItemID\", indexes);\n+            instance.RandomPropertiesSeed = packet.ReadUInt32(\"RandomPropertiesSeed\", indexes);\n+            instance.RandomPropertiesID = packet.ReadUInt32(\"RandomPropertiesID\", indexes);\n+\n+            packet.ResetBitReader();\n+            var hasBonuses = packet.ReadBit(\"HasItemBonus\", indexes);\n+\n+            {\n+                packet.ResetBitReader();\n+                var modificationCount = packet.ReadBits(6);\n+                for (var j = 0u; j < modificationCount; ++j)\n+                {\n+                    var value = packet.ReadInt32();\n+                    ItemModifier mod = packet.ReadByteE<ItemModifier>();\n+                    packet.AddValue(mod.ToString(), value, indexes);\n+                    instance.ItemModifier[mod] = value;\n+                }\n+            }\n+\n+            if (hasBonuses)\n+            {\n+                instance.Context = packet.ReadByte(\"Context\", indexes);\n+\n+                var bonusCount = packet.ReadUInt32();\n+                instance.BonusListIDs = new uint[bonusCount];\n+                for (var j = 0; j < bonusCount; ++j)\n+                    instance.BonusListIDs[j] = packet.ReadUInt32(\"BonusListID\", indexes, j);\n+            }\n+\n+            return instance;\n+        }\n+\n         public static ItemInstance ReadItemInstance(Packet packet, params object[] indexes)\n         {\n+            if (ClientVersion.AddedInVersion(ClientVersionBuild.V2_5_1_38835) && ClientVersion.IsBurningCrusadeClassicVersionBuild(ClientVersion.Build))\n+                return ReadItemInstance251(packet, indexes);\n             if (ClientVersion.RemovedInVersion(ClientVersionBuild.V8_1_5_29683) || ClientVersion.IsClassicClientVersionBuild(ClientVersion.Build))\n                 return ReadItemInstance602(packet, indexes);\n             if (ClientVersion.AddedInVersion(ClientType.Shadowlands))"
+    },
+    {
+      "sha": "4a7168042926f58e066099cd79a90deb8aec304f",
+      "filename": "WowPacketParserModule.V2_5_1_38835/Parsers/CharacterHandler.cs",
+      "status": "modified",
+      "additions": 115,
+      "deletions": 0,
+      "changes": 115,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/4522427952ac0de5cd0196348cc8e9fd7f591f17/WowPacketParserModule.V2_5_1_38835%2FParsers%2FCharacterHandler.cs",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/4522427952ac0de5cd0196348cc8e9fd7f591f17/WowPacketParserModule.V2_5_1_38835%2FParsers%2FCharacterHandler.cs",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParserModule.V2_5_1_38835%2FParsers%2FCharacterHandler.cs?ref=4522427952ac0de5cd0196348cc8e9fd7f591f17",
+      "patch": "@@ -13,5 +13,120 @@ public static void HandlePlayerLogin(Packet packet)\n             packet.ReadSingle(\"FarClip\");\n             packet.ReadBit(\"UnkBit\");\n         }\n+\n+        public static void ReadAzeriteEssenceData(Packet packet, params object[] idx)\n+        {\n+            packet.ReadUInt32(\"Index\", idx);\n+            packet.ReadUInt32(\"AzeriteEssenceID\", idx);\n+            packet.ReadUInt32(\"Rank\", idx);\n+            packet.ResetBitReader();\n+            packet.ReadBit(\"SlotUnlocked\", idx);\n+        }\n+\n+        public static void ReadInspectItemData(Packet packet, params object[] idx)\n+        {\n+            packet.ReadPackedGuid128(\"CreatorGUID\", idx);\n+            packet.ReadByte(\"Index\", idx);\n+\n+            var azeritePowerCount = packet.ReadUInt32(\"AzeritePowersCount\", idx);\n+            var azeriteEssenceCount = packet.ReadUInt32();\n+\n+            for (int i = 0; i < azeritePowerCount; i++)\n+                packet.ReadInt32(\"AzeritePowerId\", idx, i);\n+\n+            Substructures.ItemHandler.ReadItemInstance(packet, idx, \"ItemInstance\");\n+\n+            packet.ResetBitReader();\n+            packet.ReadBit(\"Usable\", idx);\n+            var enchantsCount = packet.ReadBits(\"EnchantsCount\", 4, idx);\n+            var gemsCount = packet.ReadBits(\"GemsCount\", 2, idx);\n+\n+            for (int i = 0; i < azeriteEssenceCount; i++)\n+                ReadAzeriteEssenceData(packet, \"AzeriteEssence\", i);\n+\n+            for (int i = 0; i < enchantsCount; i++)\n+            {\n+                packet.ReadUInt32(\"Id\", idx, \"EnchantData\", i);\n+                packet.ReadByte(\"Index\", idx, \"EnchantData\", i);\n+            }\n+\n+            for (int i = 0; i < gemsCount; i++)\n+            {\n+                packet.ReadByte(\"Slot\", idx, \"GemData\", i);\n+                Substructures.ItemHandler.ReadItemInstance(packet, idx, \"GemData\", \"ItemInstance\", i);\n+            }\n+        }\n+\n+        public static void ReadPlayerModelDisplayInfo(Packet packet, params object[] idx)\n+        {\n+            packet.ReadPackedGuid128(\"InspecteeGUID\", idx);\n+            packet.ReadInt32(\"SpecializationID\", idx);\n+            var itemCount = packet.ReadUInt32();\n+\n+            packet.ResetBitReader();\n+            var nameLen = packet.ReadBits(6);\n+\n+            packet.ReadByteE<Gender>(\"GenderID\", idx);\n+            packet.ReadByteE<Race>(\"Race\", idx);\n+            packet.ReadByteE<Class>(\"ClassID\", idx);\n+            var customizationCount = packet.ReadUInt32();\n+            packet.ReadWoWString(\"Name\", nameLen, idx);\n+\n+            for (var i = 0; i < customizationCount; ++i)\n+                V9_0_1_36216.Parsers.CharacterHandler.ReadChrCustomizationChoice(packet, idx, \"Customizations\", i);\n+\n+            for (int i = 0; i < itemCount; i++)\n+                ReadInspectItemData(packet, idx, \"InspectItemData\", i);\n+        }\n+\n+        [Parser(Opcode.SMSG_INSPECT_RESULT)]\n+        public static void HandleInspectResult(Packet packet)\n+        {\n+            ReadPlayerModelDisplayInfo(packet, \"DisplayInfo\");\n+            var glyphCount = packet.ReadUInt32(\"GlyphsCount\");\n+            var talentCount = packet.ReadUInt32(\"TalentsCount\");\n+            packet.ReadInt32(\"ItemLevel\");\n+            packet.ReadByte(\"LifetimeMaxRank\");\n+            packet.ReadUInt16(\"TodayHK\");\n+            packet.ReadUInt16(\"YesterdayHK\");\n+            packet.ReadUInt32(\"LifetimeHK\");\n+            packet.ReadUInt32(\"HonorLevel\");\n+\n+            for (int i = 0; i < glyphCount; i++)\n+                packet.ReadUInt16(\"Glyphs\", i);\n+\n+            for (int i = 0; i < talentCount; i++)\n+                packet.ReadByte(\"Talents\", i);\n+\n+            packet.ResetBitReader();\n+            var hasGuildData = packet.ReadBit(\"HasGuildData\");\n+            var hasAzeriteLevel = packet.ReadBit(\"HasAzeriteLevel\");\n+\n+            for (int i = 0; i < 6; i++)\n+            {\n+                packet.ReadByte(\"Bracket\", i, \"PvpData\");\n+                packet.ReadInt32(\"Rating\", i, \"PvpData\");\n+                packet.ReadInt32(\"Rank\", i, \"PvpData\");\n+                packet.ReadInt32(\"WeeklyPlayed\", i, \"PvpData\");\n+                packet.ReadInt32(\"WeeklyWon\", i, \"PvpData\");\n+                packet.ReadInt32(\"SeasonPlayed\", i, \"PvpData\");\n+                packet.ReadInt32(\"SeasonWon\", i, \"PvpData\");\n+                packet.ReadInt32(\"WeeklyBestRating\", i, \"PvpData\");\n+                packet.ReadInt32(\"Unk710\", i, \"PvpData\");\n+                packet.ReadInt32(\"Unk801_1\", i, \"PvpData\");\n+                packet.ReadInt32(\"Unk252_1\", i, \"PvpData\");\n+                packet.ResetBitReader();\n+                packet.ReadBit(\"Unk801_2\", i, \"PvpData\");\n+            }\n+\n+            if (hasGuildData)\n+            {\n+                packet.ReadPackedGuid128(\"GuildGUID\");\n+                packet.ReadInt32(\"NumGuildMembers\");\n+                packet.ReadInt32(\"GuildAchievementPoints\");\n+            }\n+            if (hasAzeriteLevel)\n+                packet.ReadInt32(\"AzeriteLevel\");\n+        }\n     }\n }"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "sha": "278f243640b537434926eefbb52ce0a3f28eac17",
+  "node_id": "MDY6Q29tbWl0MzA1OTgyMTQxOjI3OGYyNDM2NDBiNTM3NDM0OTI2ZWVmYmI1MmNlMGEzZjI4ZWFjMTc=",
+  "commit": {
+    "author": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2021-07-31T12:47:40Z"
+    },
+    "committer": {
+      "name": "MaxtorCoder",
+      "email": "warsongkiller.s8@gmail.com",
+      "date": "2021-07-31T12:47:40Z"
+    },
+    "message": "Added 2.5.2 builds",
+    "tree": {
+      "sha": "87fff50ee57a25edff1fdf33eb776eef29a614b8",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/trees/87fff50ee57a25edff1fdf33eb776eef29a614b8"
+    },
+    "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/git/commits/278f243640b537434926eefbb52ce0a3f28eac17",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/278f243640b537434926eefbb52ce0a3f28eac17",
+  "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/278f243640b537434926eefbb52ce0a3f28eac17",
+  "comments_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/278f243640b537434926eefbb52ce0a3f28eac17/comments",
+  "author": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "MaxtorCoder",
+    "id": 17987686,
+    "node_id": "MDQ6VXNlcjE3OTg3Njg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17987686?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MaxtorCoder",
+    "html_url": "https://github.com/MaxtorCoder",
+    "followers_url": "https://api.github.com/users/MaxtorCoder/followers",
+    "following_url": "https://api.github.com/users/MaxtorCoder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MaxtorCoder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MaxtorCoder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MaxtorCoder/subscriptions",
+    "organizations_url": "https://api.github.com/users/MaxtorCoder/orgs",
+    "repos_url": "https://api.github.com/users/MaxtorCoder/repos",
+    "events_url": "https://api.github.com/users/MaxtorCoder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MaxtorCoder/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e72310e83ec544d3c07816c9935badadc4267719",
+      "url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/commits/e72310e83ec544d3c07816c9935badadc4267719",
+      "html_url": "https://github.com/WowLegacyCore/WowPacketParser/commit/e72310e83ec544d3c07816c9935badadc4267719"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 10,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "3c40c91f4a51c1d43f99607cf76f38c8b088b34d",
+      "filename": "WowPacketParser/Enums/ClientVersionBuild.cs",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/278f243640b537434926eefbb52ce0a3f28eac17/WowPacketParser%2FEnums%2FClientVersionBuild.cs",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/278f243640b537434926eefbb52ce0a3f28eac17/WowPacketParser%2FEnums%2FClientVersionBuild.cs",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParser%2FEnums%2FClientVersionBuild.cs?ref=278f243640b537434926eefbb52ce0a3f28eac17",
+      "patch": "@@ -400,6 +400,9 @@ public enum ClientVersionBuild\n         V2_5_1_39475  = 39475,\n         V2_5_1_39399  = 39399,\n \n+        V2_5_2_39570  = 39570,\n+        V2_5_2_39618  = 39618,\n+\n         // Battle.net - should probably not mix this but oh well\n         BattleNetV37165 = 37165,\n "
+    },
+    {
+      "sha": "b6b4908fd9c4816152803b2f48b193b74a6371db",
+      "filename": "WowPacketParser/Enums/Version/Opcodes.cs",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/278f243640b537434926eefbb52ce0a3f28eac17/WowPacketParser%2FEnums%2FVersion%2FOpcodes.cs",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/278f243640b537434926eefbb52ce0a3f28eac17/WowPacketParser%2FEnums%2FVersion%2FOpcodes.cs",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParser%2FEnums%2FVersion%2FOpcodes.cs?ref=278f243640b537434926eefbb52ce0a3f28eac17",
+      "patch": "@@ -531,6 +531,9 @@ public static ClientVersionBuild GetOpcodeDefiningBuild(ClientVersionBuild build\n                 case ClientVersionBuild.V2_5_1_39475:\n                 case ClientVersionBuild.V2_5_1_39399:\n                     return ClientVersionBuild.V2_5_1_38835;\n+                case ClientVersionBuild.V2_5_2_39570:\n+                case ClientVersionBuild.V2_5_2_39618:\n+                    return ClientVersionBuild.V2_5_2_39570;\n                 default:\n                     return ClientVersionBuild.V3_3_5a_12340;\n             }"
+    },
+    {
+      "sha": "5e334ae583c35d30a84b28ea74d51fcc91d3dc41",
+      "filename": "WowPacketParser/Misc/ClientVersion.cs",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/WowLegacyCore/WowPacketParser/blob/278f243640b537434926eefbb52ce0a3f28eac17/WowPacketParser%2FMisc%2FClientVersion.cs",
+      "raw_url": "https://github.com/WowLegacyCore/WowPacketParser/raw/278f243640b537434926eefbb52ce0a3f28eac17/WowPacketParser%2FMisc%2FClientVersion.cs",
+      "contents_url": "https://api.github.com/repos/WowLegacyCore/WowPacketParser/contents/WowPacketParser%2FMisc%2FClientVersion.cs?ref=278f243640b537434926eefbb52ce0a3f28eac17",
+      "patch": "@@ -776,6 +776,8 @@ public static ClientVersionBuild GetVersionDefiningBuild(ClientVersionBuild buil\n                 case ClientVersionBuild.V2_5_1_38835:\n                 case ClientVersionBuild.V2_5_1_39475:\n                 case ClientVersionBuild.V2_5_1_39399:\n+                case ClientVersionBuild.V2_5_2_39570:\n+                case ClientVersionBuild.V2_5_2_39618:\n                     return ClientVersionBuild.V2_5_1_38835;\n                 case ClientVersionBuild.BattleNetV37165:\n                     return ClientVersionBuild.BattleNetV37165;\n@@ -998,6 +1000,8 @@ public static bool IsBurningCrusadeClassicVersionBuild(ClientVersionBuild build)\n                 ClientVersionBuild.V2_5_1_38835 => true,\n                 ClientVersionBuild.V2_5_1_39475 => true,\n                 ClientVersionBuild.V2_5_1_39399 => true,\n+                ClientVersionBuild.V2_5_2_39570 => true,\n+                ClientVersionBuild.V2_5_2_39618 => true,\n                 _                               => false\n             };\n         }"
+    }
+  ]
+}

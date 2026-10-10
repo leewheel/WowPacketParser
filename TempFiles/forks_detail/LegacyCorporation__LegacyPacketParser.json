@@ -1,0 +1,35 @@
+﻿{
+    "full_name":  "LegacyCorporation/LegacyPacketParser",
+    "ahead_by":  4,
+    "behind_by":  6680,
+    "pushed_at":  "2012-01-25T16:09:49Z",
+    "description":  "Parsing tool written in C#",
+    "default_branch":  "master",
+    "branches":  [
+                     "gh-pages",
+                     "master"
+                 ],
+    "commit_count":  4,
+    "commits":  [
+                    {
+                        "sha":  "85f1ce95bc",
+                        "date":  "2012-01-20T02:06:25Z",
+                        "msg":  "Added 1 new opcode for gm ticket create."
+                    },
+                    {
+                        "sha":  "3c47c21f17",
+                        "date":  "2012-01-20T02:06:43Z",
+                        "msg":  "Merge branch \u0027master\u0027 of github.com:ProjectSkyfire/WowPacketParser"
+                    },
+                    {
+                        "sha":  "211c4a11ea",
+                        "date":  "2012-01-20T02:12:00Z",
+                        "msg":  "Merge branch \u0027master\u0027 of https://github.com/TrinityCore/WowPacketParser"
+                    },
+                    {
+                        "sha":  "28aff1d7d3",
+                        "date":  "2012-01-20T02:59:15Z",
+                        "msg":  "Added 5 new opcodes for 4.3.0 15050."
+                    }
+                ]
+}

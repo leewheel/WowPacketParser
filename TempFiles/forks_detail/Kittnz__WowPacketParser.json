@@ -1,0 +1,29 @@
+﻿{
+    "full_name":  "Kittnz/WowPacketParser",
+    "ahead_by":  1,
+    "behind_by":  2472,
+    "pushed_at":  "2024-08-29T19:41:17Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "3.4.old",
+                     "32421",
+                     "44834",
+                     "V7_2_0_23706",
+                     "WpAlpha",
+                     "classic_characters_parsing",
+                     "classic_guild_skills_account",
+                     "classic_guild",
+                     "hack",
+                     "master",
+                     "sniffstorage"
+                 ],
+    "commit_count":  1,
+    "commits":  [
+                    {
+                        "sha":  "9513cbb79c",
+                        "date":  "2017-03-06T18:55:50Z",
+                        "msg":  "build 23706"
+                    }
+                ]
+}

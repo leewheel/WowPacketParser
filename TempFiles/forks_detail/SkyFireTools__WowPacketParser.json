@@ -1,0 +1,43 @@
+﻿{
+    "full_name":  "SkyFireTools/WowPacketParser",
+    "ahead_by":  5,
+    "behind_by":  2784,
+    "pushed_at":  "2016-10-30T17:11:19Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "master",
+                     "multiple_sql",
+                     "splitLocale",
+                     "sql_rewrite"
+                 ],
+    "commit_count":  5,
+    "commits":  [
+                    {
+                        "sha":  "d3206148dc",
+                        "date":  "2016-10-30T16:15:38Z",
+                        "msg":  "Update CMSG for 18414 opcode parsing. These are consistent with SkyFire opcode names"
+                    },
+                    {
+                        "sha":  "6669b301f5",
+                        "date":  "2016-10-30T16:22:51Z",
+                        "msg":  "Cleanup my mess."
+                    },
+                    {
+                        "sha":  "3a64f13513",
+                        "date":  "2016-10-30T16:26:24Z",
+                        "msg":  "Remove my double defined opcodes."
+                    },
+                    {
+                        "sha":  "0028b7bc58",
+                        "date":  "2016-10-30T16:48:01Z",
+                        "msg":  "define the SMSG skyfire opcodes."
+                    },
+                    {
+                        "sha":  "2eaf05cb9b",
+                        "date":  "2016-10-30T17:08:49Z",
+                        "msg":  "Disabled Parsing CMSG_MAIL_QUERY_NEXT_TIME, CMSG_REQUEST_HOTFIX, CMSG_ROLE_POLL_BEGIN, MSG_ROLE_POLL_BEGIN, SMSG_SET_VEHICLE_REC_ID, SMSG_SPLINE_MOVE_COLLISION_DISABLE, SMSG_SPLINE_MOVE_COLLISION_ENABLE."
+                    }
+                ]
+}

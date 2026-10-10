@@ -1,0 +1,180 @@
+﻿{
+    "full_name":  "QAston/WowPacketParser",
+    "ahead_by":  33,
+    "behind_by":  5482,
+    "pushed_at":  "2013-07-18T13:04:31Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "processor",
+    "branches":  [
+                     "master",
+                     "processor"
+                 ],
+    "commit_count":  33,
+    "commits":  [
+                    {
+                        "sha":  "de54d1e8ae",
+                        "date":  "2013-02-16T14:54:52Z",
+                        "msg":  "Merge branch \u0027master\u0027 into processor"
+                    },
+                    {
+                        "sha":  "45f6d231b9",
+                        "date":  "2013-02-16T15:10:54Z",
+                        "msg":  "Revert \"Revert \"Merge branch \u0027qastonrebase\u0027\"\""
+                    },
+                    {
+                        "sha":  "576b7d9d09",
+                        "date":  "2013-02-16T15:13:43Z",
+                        "msg":  "Delete SettingsUI"
+                    },
+                    {
+                        "sha":  "723accfc13",
+                        "date":  "2013-02-16T23:12:20Z",
+                        "msg":  "Getting parser to compile - part 1"
+                    },
+                    {
+                        "sha":  "f81ea88478",
+                        "date":  "2013-02-17T12:05:06Z",
+                        "msg":  "Getting parser to compile - part 2"
+                    },
+                    {
+                        "sha":  "bf3da54232",
+                        "date":  "2013-02-17T16:12:43Z",
+                        "msg":  "Getting parser to compile - part 3"
+                    },
+                    {
+                        "sha":  "7996560cd7",
+                        "date":  "2013-02-17T18:44:49Z",
+                        "msg":  "Getting parser to compile - part 4"
+                    },
+                    {
+                        "sha":  "6d4fbb5e33",
+                        "date":  "2013-02-17T20:25:36Z",
+                        "msg":  "Getting parser to compile - part 4"
+                    },
+                    {
+                        "sha":  "edc88fcd3d",
+                        "date":  "2013-02-17T22:26:01Z",
+                        "msg":  "Getting parser to build - part 5 - builds!"
+                    },
+                    {
+                        "sha":  "32bb837783",
+                        "date":  "2013-02-18T09:16:54Z",
+                        "msg":  "Bugfixes part 1"
+                    },
+                    {
+                        "sha":  "95d7520ae5",
+                        "date":  "2013-02-18T10:44:12Z",
+                        "msg":  "Bugfixes - part 3"
+                    },
+                    {
+                        "sha":  "26eacdcb3e",
+                        "date":  "2013-02-18T13:12:04Z",
+                        "msg":  "Bugfixes - part 4"
+                    },
+                    {
+                        "sha":  "2c01e5ff49",
+                        "date":  "2013-02-18T16:04:15Z",
+                        "msg":  "Bugfixes - part5"
+                    },
+                    {
+                        "sha":  "fb09563716",
+                        "date":  "2013-02-19T13:01:02Z",
+                        "msg":  "Add file output config options."
+                    },
+                    {
+                        "sha":  "8aa6eee52c",
+                        "date":  "2013-02-19T13:29:26Z",
+                        "msg":  "Fix appending to output files."
+                    },
+                    {
+                        "sha":  "13287485b5",
+                        "date":  "2013-02-20T09:37:12Z",
+                        "msg":  "Add x86 configuration, fix sqlite linking, fix some packets, add hex output"
+                    },
+                    {
+                        "sha":  "0e6ecc8482",
+                        "date":  "2013-02-20T20:17:05Z",
+                        "msg":  "Add sqlite output to the dumper."
+                    },
+                    {
+                        "sha":  "601320a08c",
+                        "date":  "2013-02-21T08:29:40Z",
+                        "msg":  "Minor improvements"
+                    },
+                    {
+                        "sha":  "5a5be3a7f0",
+                        "date":  "2013-02-21T22:13:52Z",
+                        "msg":  "Improve internal object storage and beautify some output"
+                    },
+                    {
+                        "sha":  "e94160ad7b",
+                        "date":  "2013-02-22T14:05:32Z",
+                        "msg":  "Properly store auras for objects. Beautify unit_bytes output"
+                    },
+                    {
+                        "sha":  "bdf77d3bc0",
+                        "date":  "2013-02-22T16:51:21Z",
+                        "msg":  "More output tweaks about update fields"
+                    },
+                    {
+                        "sha":  "c09dd31493",
+                        "date":  "2013-02-23T08:47:43Z",
+                        "msg":  "Print update fields and auras into sqlite output"
+                    },
+                    {
+                        "sha":  "9472817fc3",
+                        "date":  "2013-02-23T10:05:24Z",
+                        "msg":  "Add config options to disable aura/flags output to sqlite"
+                    },
+                    {
+                        "sha":  "c23c351b58",
+                        "date":  "2013-02-23T11:09:32Z",
+                        "msg":  "Add unitFieldFlags1 and 2 to the sqlite output"
+                    },
+                    {
+                        "sha":  "50632fd5e8",
+                        "date":  "2013-03-03T12:21:33Z",
+                        "msg":  "Additional sqlite output corrections"
+                    },
+                    {
+                        "sha":  "f1476d61b8",
+                        "date":  "2013-03-03T12:33:06Z",
+                        "msg":  "Make spell aura/start/go/opcode sqlite output optional"
+                    },
+                    {
+                        "sha":  "275fbf213b",
+                        "date":  "2013-07-18T10:34:38Z",
+                        "msg":  "A couple of updates."
+                    },
+                    {
+                        "sha":  "77b0f5f889",
+                        "date":  "2013-07-18T11:08:19Z",
+                        "msg":  "Revert part of last commit and handle containers properly."
+                    },
+                    {
+                        "sha":  "ea8eb728d2",
+                        "date":  "2013-07-18T11:41:20Z",
+                        "msg":  "Better fix for container objects reading."
+                    },
+                    {
+                        "sha":  "29edc4bae6",
+                        "date":  "2013-07-18T11:52:46Z",
+                        "msg":  "fix cmsg_who"
+                    },
+                    {
+                        "sha":  "bd74a93fcf",
+                        "date":  "2013-07-18T12:15:57Z",
+                        "msg":  "Merge commit \u00273568a2787dc94b63894faa80a0025171985086cf\u0027 into processor"
+                    },
+                    {
+                        "sha":  "55978295e5",
+                        "date":  "2013-07-18T12:34:50Z",
+                        "msg":  "Compile fixes"
+                    },
+                    {
+                        "sha":  "1018a9e4df",
+                        "date":  "2013-07-18T12:53:57Z",
+                        "msg":  "Parser fixes."
+                    }
+                ]
+}

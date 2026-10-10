@@ -1,0 +1,937 @@
+============================================================
+FORK: aedansilver/WowPacketParser_2  | ahead=5 behind=5952 pushed=2012-07-27T23:20:52Z
+branches: master
+REAL(non-merge) commits: 3 / total 5
+  - [2012-07-07] Added 5 new opcodes related to movement and corrected one
+  - [2012-07-07] Added 6 more opcodes.
+  - [2012-07-08] Added a 5 more opcodes and correct 2.
+
+============================================================
+FORK: AHigi/WowPacketParser  | ahead=2 behind=502 pushed=2025-03-03T12:40:51Z
+branches: master
+REAL(non-merge) commits: 2 / total 2
+  - [2025-03-03] 11.1.0: ReadMythicPlusMember Race variable type update
+  - [2025-03-03] Update MythicPlusHandler.cs
+
+============================================================
+FORK: Altairfree/WowPacketParser  | ahead=3 behind=1606 pushed=2021-09-13T22:41:41Z
+branches: WpAlpha handlers_refactor master multiple_sql sanitizing splitLocale
+REAL(non-merge) commits: 3 / total 3
+  - [2021-09-12] Update GarrisonHandler.cs
+  - [2021-09-13] Update GarrisonHandler.cs
+  - [2021-09-13] Update GarrisonHandler.cs
+
+============================================================
+FORK: Ancient/WowPacketParser  | ahead=34 behind=5348 pushed=2014-04-23T08:37:26Z
+branches: master
+REAL(non-merge) commits: 32 / total 34
+  - [2013-11-14] Update WPP - To Parse Version 5.4.1.17538 Sniffs
+  - [2013-11-15] Added parsing of SMSG_GAMEOBJECT_QUERY_RESPONSE for 5.4.1
+  - [2013-11-15] Added parsing of SMSG_REALM_QUERY_RESPONSE for 5.4.1
+  - [2013-11-16] Added parsing of SMSG_AUTH_RESPONSE for 5.4.1
+  - [2013-12-02] Added parsing of SMSG_CREATURE_QUERY_RESPONSE for 5.4.1
+  - [2013-12-04] Added parsing of CMSG_BANKER_ACTIVATE, CMSG_GOSSIP_HELLO, SMSG_SHOW_BANK for 5.4.1
+  - [2013-12-04] Added parsing of SMSG_LOGIN_VERIFY_WORLD For 5.4.1
+  - [2013-12-04] Fixed Typo in CMSG_GOSSIP_HELLO StartBitStream
+  - [2013-12-09] Added parsing of SMSG_INITIAL_SPELLS
+  - [2013-12-11] Update WPP - To Parse Version 5.4.2.17658 Sniffs
+  - [2013-12-11] Added Opcodes and UpdateFields i forgot to add last commit
+  - [2013-12-11] Added Some CMSG Opcodes From 5.4.2 17658
+  - [2013-12-21] Core/Build: Updated Build To 5.4.2 17688
+  - [2013-12-23] Added Some Opcodes and SMSG_LOGIN_VERIFY_WORLD Structure
+  - [2013-12-27] Added Parsing of SMSG_UPDATE_OBJECT
+  - [2013-12-28] Updated SMSG_UPDATE_OBJECT, Added Parsing For hasAttackingTarget Block & hasGameObjectRotation Block
+  - [2013-12-28] Added Parsing of hasGameObjectPosition Block in SMSG_UPDATE_OBJECT
+  - [2013-12-28] Fixed Compile From Last Commit
+  - [2013-12-28] Added Parsing Of SMSG_UPDATE_OBJECT Living Block, Creature Spawns Parsing Now Correctly :)
+  - [2013-12-28] Added Parsing of SMSG_CREATURE_QUERY_RESPONSE and Added Opcodes
+  - [2013-12-28] Added Parsing SMSG_GAMEOBJECT_QUERY_RESPONSE 5.4.2
+  - [2013-12-28] Added Parsing of SMSG_INITIAL_SPELLS For 5.4.2
+  - [2013-12-30] Added parsing of SMSG_LIST_INVENTORY for 5.4.2.
+  - [2013-12-30] Added Parsing of SMSG_NPC_TEXT_UPDATE
+  - [2014-01-06] Added Parsing of CMSG_NPC_TEXT_QUERY
+  - [2014-01-09] Core/Misc: Fixed Correct ClientBuild DateTimes
+  - [2014-01-10] Small Change
+  - [2014-01-23] Core/Compile: Fixed Compile
+  - [2014-01-23] Core/Enums: Added SplineFlags For 542 And Fixed SMSG_UPDATE_OBJECT Now the Friendly spawns are also parsed :P
+  - [2014-04-01] Updating for V5_4_7_18019
+  - [2014-04-01] Fix Build
+  - [2014-04-23] Added Opcode for SMSG_QUEST_QUERY_RESPONSE
+
+============================================================
+FORK: AshamaneProject/WowPacketParser  | ahead=2 behind=2311 pushed=2018-01-04T19:51:36Z
+branches: WpAlpha conversation handlers_refactor master multiple_sql splitLocale
+REAL(non-merge) commits: 1 / total 2
+  - [2018-01-04] Temp Hackfixes
+
+============================================================
+FORK: belowzero/WowPacketParser  | ahead=38 behind=5348 pushed=2014-05-30T01:37:37Z
+branches: master
+REAL(non-merge) commits: 35 / total 38
+  - [2013-11-14] Update WPP - To Parse Version 5.4.1.17538 Sniffs
+  - [2013-11-15] Added parsing of SMSG_GAMEOBJECT_QUERY_RESPONSE for 5.4.1
+  - [2013-11-15] Added parsing of SMSG_REALM_QUERY_RESPONSE for 5.4.1
+  - [2013-11-16] Added parsing of SMSG_AUTH_RESPONSE for 5.4.1
+  - [2013-12-02] Added parsing of SMSG_CREATURE_QUERY_RESPONSE for 5.4.1
+  - [2013-12-04] Added parsing of CMSG_BANKER_ACTIVATE, CMSG_GOSSIP_HELLO, SMSG_SHOW_BANK for 5.4.1
+  - [2013-12-04] Added parsing of SMSG_LOGIN_VERIFY_WORLD For 5.4.1
+  - [2013-12-04] Fixed Typo in CMSG_GOSSIP_HELLO StartBitStream
+  - [2013-12-09] Added parsing of SMSG_INITIAL_SPELLS
+  - [2013-12-11] Update WPP - To Parse Version 5.4.2.17658 Sniffs
+  - [2013-12-11] Added Opcodes and UpdateFields i forgot to add last commit
+  - [2013-12-11] Added Some CMSG Opcodes From 5.4.2 17658
+  - [2013-12-21] Core/Build: Updated Build To 5.4.2 17688
+  - [2013-12-23] Added Some Opcodes and SMSG_LOGIN_VERIFY_WORLD Structure
+  - [2013-12-27] Added Parsing of SMSG_UPDATE_OBJECT
+  - [2013-12-28] Updated SMSG_UPDATE_OBJECT, Added Parsing For hasAttackingTarget Block & hasGameObjectRotation Block
+  - [2013-12-28] Added Parsing of hasGameObjectPosition Block in SMSG_UPDATE_OBJECT
+  - [2013-12-28] Fixed Compile From Last Commit
+  - [2013-12-28] Added Parsing Of SMSG_UPDATE_OBJECT Living Block, Creature Spawns Parsing Now Correctly :)
+  - [2013-12-28] Added Parsing of SMSG_CREATURE_QUERY_RESPONSE and Added Opcodes
+  - [2013-12-28] Added Parsing SMSG_GAMEOBJECT_QUERY_RESPONSE 5.4.2
+  - [2013-12-28] Added Parsing of SMSG_INITIAL_SPELLS For 5.4.2
+  - [2013-12-30] Added parsing of SMSG_LIST_INVENTORY for 5.4.2.
+  - [2013-12-30] Added Parsing of SMSG_NPC_TEXT_UPDATE
+  - [2014-01-06] Added Parsing of CMSG_NPC_TEXT_QUERY
+  - [2014-01-09] Core/Misc: Fixed Correct ClientBuild DateTimes
+  - [2014-01-09] Added some 5.4.2.17688 Opcodes
+  - [2014-01-10] Small Change
+  - [2014-01-23] Core/Compile: Fixed Compile
+  - [2014-01-23] Core/Enums: Added SplineFlags For 542 And Fixed SMSG_UPDATE_OBJECT Now the Friendly spawns are also parsed :P
+  - [2014-05-24] Core/Build: Updated Build To 5.4.8 18291
+  - [2014-05-24] Core/Parser: Updated Parser for SMSG_CREATURE_QUERY_RESPONSE
+  - [2014-05-25] Added Parsing of CMSG_AUCTION_HELLO & CMSG_GOSSIP_HELLO
+  - [2014-05-30] Added Parsing of CMSG_BANKER_ACTIVATE, SMSG_SHOW_BANK, CMSG_SET_SELECTION, SMSG_AUCTION_HELLO, SMSG_NEW_WORLD, SMSG_TRANSFER_PENDING
+  - [2014-05-30] Fixed Mistake in SMSG_AUCTION_HELLO Parse
+
+============================================================
+FORK: bozoweed/WowPacketParser  | ahead=2 behind=2539 pushed=2016-09-23T23:16:29Z
+branches: WpAlpha master multiple_sql splitLocale vincent_beta
+REAL(non-merge) commits: 0 / total 2
+
+============================================================
+FORK: BuloZB/WowPacketParser  | ahead=69 behind=11 pushed=2026-08-03T17:20:37Z
+branches: WpAlpha boost/activity-2026-04-07T17-03-58 boost/activity-2026-04-25T23-43-36 master whitesource/configure
+REAL(non-merge) commits: 0 / total 69
+
+============================================================
+FORK: chaodhib/WowPacketParser  | ahead=3 behind=2504 pushed=2016-12-22T22:43:16Z
+branches: WpAlpha fix_bidirectional fix_move_tele master minor_change multiple_sql splitLocale
+REAL(non-merge) commits: 3 / total 3
+  - [2016-12-20] add white lines between each individual packets contained in a SMSG_COMPRESSED_MOVES to facilitate external parsing tools
+  - [2016-12-20] Rename GUID to Guid to stay coherent across versions and help external parsing tools
+  - [2016-12-22] fix the parsing of MSG_MOVE_SET_COLLISION_HGT and MSG_MOVE_KNOCK_BACK
+
+============================================================
+FORK: ChipLeo/WowPacketParser  | ahead=839 behind=199 pushed=2025-11-16T21:48:09Z
+branches: master
+REAL(non-merge) commits: 458 / total 500
+  (showing first 70 of 458)
+  - [2014-02-22] Some initial work on 5.4.7.17930
+  - [2014-02-22] Added known opcodes for 5.4.7.17930. Fixed a double define.
+  - [2014-02-23] Some Additions
+  - [2014-02-23] More implementations
+  - [2014-02-23] Some more Opcodes.cs
+  - [2014-02-23] More Opcodes.cs 17930
+  - [2014-02-24] Fix cmsg_player_login
+  - [2014-02-24] Added more Opcodes.cs 17930
+  - [2014-02-26] More Opcodes.cs 17930
+  - [2014-02-28] Few more Opcodes.cs
+  - [2014-02-28] More Opcodes.cs 17930
+  - [2014-02-28] First part of additions and fixes to builds - enums connections and ClientBuild Autodetect implementation for new ones.
+  - [2014-02-28] Second part of fixes. The parser is now fixed and updated to 5.4.7 17956.
+  - [2014-03-02] Some more Opcodes.cs 17956
+  - [2014-03-02] Fixed a Derp.
+  - [2014-03-02] Updated implemented structures for 5.4.7 and added a few more. Fixes parsing for (so far) all client builds on the version.
+  - [2014-03-02] Implemented some more structures for 17956.
+  - [2014-03-02] Added a define to all implemented handlers to allow their "usage" on 17956 aswell. No more need to force the config ClientBuild option for it.
+  - [2014-03-03] Implemented some more handlers.
+  - [2014-03-03] Implemented a couple more structures and simplified the handlers where possible.
+  - [2014-03-03] Added a few more handlers and opcodes.
+  - [2014-03-03] Forgot something.
+  - [2014-03-03] Implemented more handlers.
+  - [2014-03-05] Implemented a few more handlers. Creature query parsing now working.
+  - [2014-03-05] A couple more structs added. GameObject query parsing now working.
+  - [2014-03-05] One more :)
+  - [2014-03-05] Updated the 5.3.0 16981 Module to 5.4.7 17956. Now we can move the handlers to it and use it.
+  - [2014-03-05] Moved all implemented 5.4.7 structures to the specific module.
+  - [2014-03-06] Fixed parsing errors on older 5.4.7 versions, everything ok now.
+  - [2014-03-06] Implemented parsing for SMSG_GOSSIP_MESSAGE.
+  - [2014-03-06] Initial, partial implementation for SMSG_DB_REPLY. This is based on older versions, and several corrections / additions will need to be made before it's fully working as intended.
+  - [2014-03-06] Fixed a Derp.
+  - [2014-03-06] Implemented SMSG_LOGIN_VERIFY_WORLD structure.
+  - [2014-03-10] Some stuff
+  - [2014-03-21] Some more shit
+  - [2014-03-22] More improvements
+  - [2014-03-25] Corrected Dynamic Flags and added an enum for current Map Difficulties.
+  - [2014-03-26] Updated Opcodes.cs.
+  - [2014-03-29] Updates SMSG_QUEST_QUERY_RESPONSE
+  - [2014-03-29] Updated the parser module for 17956 to 18019. Fixed the delegates for structs parsing on this version. Updated Opcodes.cs.
+  - [2014-03-29] Fixed Dynamic Fields definitions and a parsing.
+  - [2014-04-01] More updates to SMSG_QUEST_QUERY_RESPONSE
+  - [2014-04-25] Fixed some duplicates / bad values, thanks ChipLeo for noticing.
+  - [2014-05-05] Fixed Build :P
+  - [2014-06-06] Updated to 5.4.8
+  - [2014-06-07] Updated CMSG_AUTH_SESSION, SMSG_AUTH_RESPONSE.
+  - [2014-06-08] Added SMSG_MOTD, CMSG_UNK_1A87, SMSG_UNK_001F, SMSG_UNK_069B,
+  - [2014-06-08] Added CMSG_CANCEL_TRADE, CMSG_LOAD_SCREEN, CMSG_LOGOUT_REQUEST,
+  - [2014-06-08] Added CMSG_CREATURE_QUERY, CMSG_PLAYED_TIME
+  - [2014-06-08] Update opcodes for 5.4.7
+  - [2014-06-09] Update 5.4.7
+  - [2014-06-11] Fix SMSG_AUCTION_HELLO.
+  - [2014-06-20] Update to V5_4_8_18414
+  - [2014-07-01] Partial Implementation of UpdateHandler
+  - [2014-07-02] Updated CMSG_CHAR_ENUM, SMSG_SET_TIMEZONE_INFORMATION,
+  - [2014-07-05] Added MSG_MOVE_FALL_LAND, MSG_MOVE_HEARTBEAT, MSG_MOVE_JUMP,
+  - [2014-07-07] Update opcodes
+  - [2014-07-07] Update opcodes
+  - [2014-07-09] Updated ReadMovementUpdate. Added movement opcodes.
+  - [2014-07-10] Fix Xcoord for UpdateHandler
+  - [2014-07-10] Added CMSG_UNK_0249, SMSG_UNK_0063, SMSG_UNK_01E1, SMSG_UNK_0728,
+  - [2014-07-10] Added SMSG_UNK_05F3, SMSG_UNK_08B2.
+  - [2014-07-10] Added SMSG_UNK_16BF, SMSG_UNK_1D8E, SMSG_UNK_1DAB, SMSG_UNK_1F9F
+  - [2014-07-12] Added opcodes
+  - [2014-07-13] Update opcodes
+  - [2014-07-14] Added opcodes
+  - [2014-07-15] Fix for VS2010 Code Analysis bug
+  - [2014-07-15] Added CMSG_SETSHEATHED, CMSG_UNK_0068, SMSG_MESSAGECHAT,
+  - [2014-07-16] Added null opcodes. Updated CreateObject.
+  - [2014-07-18] Added some opcodes
+
+============================================================
+FORK: Christyan/WowPacketParser  | ahead=2 behind=660 pushed=2024-10-30T09:09:43Z
+branches: master
+REAL(non-merge) commits: 2 / total 2
+  - [2024-10-30] Fix reading BitVectors after 11.0.5 changes
+  - [2024-10-30] Fix typo
+
+============================================================
+FORK: CraftedRO/WowPacketParser  | ahead=1 behind=968 pushed=2025-10-30T18:57:10Z
+branches: master
+REAL(non-merge) commits: 1 / total 1
+  - [2023-12-13] update
+
+============================================================
+FORK: cyberium/WowPacketParser  | ahead=1 behind=1509 pushed=2026-05-24T07:08:35Z
+branches: WpAlpha handlers_refactor latest master multiple_sql splitLocale tobi
+REAL(non-merge) commits: 1 / total 1
+  - [2021-12-28] Tobi reclaimed change
+
+============================================================
+FORK: Daniel25/WowPacketParser  | ahead=3 behind=1712 pushed=2021-01-26T09:18:28Z
+branches: WpAlpha handlers_refactor master multiple_sql splitLocale
+REAL(non-merge) commits: 0 / total 3
+
+============================================================
+FORK: danlapps/WowPacketParser  | ahead=1 behind=3116 pushed=2015-02-23T01:03:04Z
+branches: WpAlpha master multiple_sql
+REAL(non-merge) commits: 1 / total 1
+  - [2015-02-23] Update some fields to be as Database
+
+============================================================
+FORK: DavuKnight/WowPacketParser  | ahead=6 behind=1310 pushed=2022-09-05T19:27:56Z
+branches: ExposeMovement master
+REAL(non-merge) commits: 5 / total 6
+  - [2022-09-04] WOTLK Classic released
+  - [2022-09-04] Added case in Opcodes.cs, UpdateFields.cs,
+  - [2022-09-05] Would be helpful. Currently have to call via reflection for my application.
+  - [2022-09-05] Undo Change
+  - [2022-09-05] Need access from external assembly
+
+============================================================
+FORK: DDuarte/WowPacketParser  | ahead=4 behind=2468 pushed=2017-03-26T23:59:09Z
+branches: WpAlpha handlers_refactor master multiple_sql splitLocale vincent_beta
+REAL(non-merge) commits: 4 / total 4
+  - [2017-03-26] Test coverity_scan
+  - [2017-03-26] Permissions
+  - [2017-03-26] Update travis.yml
+  - [2017-03-26] Update travis.yml
+
+============================================================
+FORK: dio85/WowPacketParser  | ahead=71 behind=10 pushed=2026-08-11T13:38:47Z
+branches: master
+REAL(non-merge) commits: 6 / total 71
+  - [2023-11-08] PARSER/ADD
+  - [2024-12-13] Update ChallengeModeHandler.cs
+  - [2024-12-25] fixed groupfinder and lfg for bfa
+  - [2025-11-04] Add parser for CMSG_SETUP_WARBAND_GROUPS opcode
+  - [2026-02-17] Add PerksProgram opcode and parsers
+  - [2026-03-05] CraftingOrder
+
+============================================================
+FORK: DrEhsan/WowPacketParser  | ahead=3 behind=2700 pushed=2016-07-27T10:08:41Z
+branches: WpAlpha master multiple_sql splitLocale
+REAL(non-merge) commits: 2 / total 3
+  - [2016-07-26] Update to 7.0.3
+  - [2016-07-27] Port Remaining packets from TC and change base for 7.x packets to 6.x
+
+============================================================
+FORK: dufernst/WowPacketParser  | ahead=1 behind=2955 pushed=2015-05-14T13:13:32Z
+branches: WpAlpha master multiple_sql
+REAL(non-merge) commits: 1 / total 1
+  - [2015-05-14] Add packet count information to analysis (and improve its memory usage.
+
+============================================================
+FORK: ennioVisco/WowPacketParser  | ahead=3 behind=2474 pushed=2017-03-11T19:33:30Z
+branches: WpAlpha master multiple_sql splitLocale vincent_beta xml-refactoring xml-refactoring-2
+REAL(non-merge) commits: 3 / total 3
+  - [2017-03-02] Update to abstract StringBuffer
+  - [2017-03-02] Preparation Commit for XML Support
+  - [2017-03-03] First XML implementation
+
+============================================================
+FORK: Epicurus4/WowPacketParser  | ahead=5 behind=3104 pushed=2015-02-28T16:49:29Z
+branches: WpAlpha master
+REAL(non-merge) commits: 1 / total 5
+  - [2015-02-28] More 6.1.0 Opcodes
+
+============================================================
+FORK: Fatliner/WowPacketParser  | ahead=1 behind=2023 pushed=2019-08-13T15:14:50Z
+branches: WpAlpha handlers_refactor master multiple_sql splitLocale
+REAL(non-merge) commits: 0 / total 1
+
+============================================================
+FORK: Gooyeth/WowPacketParser  | ahead=5 behind=2790 pushed=2015-10-20T03:51:43Z
+branches: WpAlpha master multiple_sql splitLocale
+REAL(non-merge) commits: 1 / total 5
+  - [2015-10-12] Resolve compilation in VS 2013
+
+============================================================
+FORK: Gultask/WowPacketParser  | ahead=6 behind=2 pushed=2026-08-22T02:32:13Z
+branches: master
+REAL(non-merge) commits: 0 / total 6
+
+============================================================
+FORK: HelloKitty/WowPacketParser  | ahead=1 behind=2287 pushed=2018-06-01T18:26:44Z
+branches: 1_12_1_updatepacket WpAlpha conversation handlers_refactor master multiple_sql splitLocale
+REAL(non-merge) commits: 1 / total 1
+  - [2018-05-31] Added NUnitTestAdapter for NUnit2 Test Running in VS
+
+============================================================
+FORK: hexenir/WowPacketParser  | ahead=2 behind=1164 pushed=2023-01-30T02:04:41Z
+branches: master
+REAL(non-merge) commits: 2 / total 2
+  - [2023-01-30] Live packet capture
+  - [2023-01-30] Index are 0 based.
+
+============================================================
+FORK: horn/WowPacketParser  | ahead=1 behind=2711 pushed=2016-04-07T11:44:59Z
+branches: master
+REAL(non-merge) commits: 1 / total 1
+  - [2016-04-07] Update ReadPetBattleEffectTarget to 6.2.4 21355
+
+============================================================
+FORK: imbavirus/WowPacketParser  | ahead=4 behind=2783 pushed=2015-11-14T11:17:58Z
+branches: WpAlpha locales master multiple_sql
+REAL(non-merge) commits: 0 / total 4
+
+============================================================
+FORK: jtongzhi/WowPacketParser  | ahead=3 behind=2706 pushed=2016-04-26T11:26:18Z
+branches: WpAlpha master multiple_sql splitLocale
+REAL(non-merge) commits: 0 / total 3
+
+============================================================
+FORK: killerwife/WowPacketParser  | ahead=1 behind=1348 pushed=2026-08-04T11:35:56Z
+branches: ForgottenBuild WpAlpha bug/BCCParsingObjectUpdate classicPorts conversation emoteFixup feature/CTBCMonsterMovement feature/CTBCNewVersion feature/CTBCVersion feature/ClassicTBCParsing feature/CustomFields feature/ExistingSpawns feature/ForgottenVersion13500 feature/NewClassicVersions feature/NewTBCVersion feature/SMSG_UPDATE_AURA_DURATION feature/SodVersions feature/SpeedDistanceCalc feature/V2_5_2_40892 feature/V3_4_3_51831 feature/V3_4_3_52237 feature/clsdump feature/coinz feature/1_14_4 feature/341 feature/343V1 feature/1143 feature/55639 fix/AllowRandomSpawnsId fix/ClassicTBCSQL fix/MissingVersion fix/MonsterMove fix/NegativeResist fix/SaveExistingOri fix/UpdateField fix/oldParsing fix/3_4_2_create handlers_refactor master multiple_sql newBuilds refactor sdfsdf shortType splitLocale tbcParsing ugly255 version/WotlkClassic46902 wip/StatsExtraction wip/1158 wppPorts
+REAL(non-merge) commits: 1 / total 1
+  - [2022-08-15] A very ported approach to 1.14.3
+
+============================================================
+FORK: Kittnz/WowPacketParser  | ahead=1 behind=2472 pushed=2024-08-29T19:41:17Z
+branches: 3.4.old 32421 44834 V7_2_0_23706 WpAlpha classic_characters_parsing classic_guild_skills_account classic_guild hack master sniffstorage
+REAL(non-merge) commits: 1 / total 1
+  - [2017-03-06] build 23706
+
+============================================================
+FORK: leewheel/WowPacketParser  | ahead=26 behind=0 pushed=2026-08-24T21:00:26Z
+branches: master
+REAL(non-merge) commits: 22 / total 26
+  - [2026-08-14] Add V3_8_0_69137 module (MoP Classic China)
+  - [2026-08-14] Refactor: V3_8_0_69137 完全独立现代模块（移除 V5_5_0/V5_5_3 依赖）
+  - [2026-08-14] Feat: 跳过VoidStorage误判段 + opcode覆盖层优化
+  - [2026-08-14] Feat: 打通移动段(0x5E0002/0x5E000E): 解析率65.6%
+  - [2026-08-14] Feat: 打通0x46018F(国服新增包), 解析率70.4%
+  - [2026-08-14] Feat: 批量映射全部S2C+部分C2S未识别包, 解析率75.1%
+  - [2026-08-14] Feat: 映射全部S2C+部分C2S, 解析率75.1%, skipped 2.3%
+  - [2026-08-14] Handle CN 3.80.2 packet format variations
+  - [2026-08-14] fix: 修复 Movement/Quest/Query 等handler尾部字节和包结构差异, 75.1% -> 88.5%
+  - [2026-08-15] Adjust parsers for CN 3.80.2 packet differences
+  - [2026-08-15] fix: 修复新抓包解析 86.7%->90.6%, 移除错误opcode映射, 修复Petition/LevelUp/Auction/Loot等handler
+  - [2026-08-15] docs: 更新 HANDOVER.md, 记录 90.6% 解析率和待解决问题
+  - [2026-08-15] Update UpdateFields.cs
+  - [2026-08-17] fix: 第三轮国服 3.80.2 解析修复, 88.6%->93.4%
+  - [2026-08-17] fix: QUERY_QUEST_INFO_RESPONSE 目标段结构修正, 任务包 100% 解析
+  - [2026-08-17] fix: SMSG_LOG_XP_GAIN 国服结构修正, 经验值恢复正常
+  - [2026-08-17] fix: 0x630027 确认为 SMSG_QUERY_PLAYER_NAMES_RESPONSE
+  - [2026-08-18] fix: 修正 C2S 任务 opcode 映射, 接取任务可识别
+  - [2026-08-18] Update HANDOVER.md
+  - [2026-08-20] All 3.8
+  - [2026-08-20] 3.4.5
+  - [2026-08-24] Update parsers for 3.4.5 (build 63697+)
+
+============================================================
+FORK: LegacyCorporation/LegacyPacketParser  | ahead=4 behind=6680 pushed=2012-01-25T16:09:49Z
+branches: gh-pages master
+REAL(non-merge) commits: 2 / total 4
+  - [2012-01-20] Added 1 new opcode for gm ticket create.
+  - [2012-01-20] Added 5 new opcodes for 4.3.0 15050.
+
+============================================================
+FORK: Legolast-Manu/WowPacketParser  | ahead=1 behind=1294 pushed=2022-09-10T00:57:08Z
+branches: WpAlpha handlers_refactor master multiple_sql sanitizing splitLocale
+REAL(non-merge) commits: 0 / total 1
+
+============================================================
+FORK: lineagedr/WowPacketParser  | ahead=2 behind=1034 pushed=2023-10-16T16:57:43Z
+branches: master
+REAL(non-merge) commits: 2 / total 2
+  - [2023-10-16] Fix SMSG_ENUM_CHARACTERS_RESULT for 3.4.3.
+  - [2023-10-16] Update
+
+============================================================
+FORK: lorac2k14/WowPacketParser  | ahead=4 behind=2506 pushed=2016-12-17T04:34:11Z
+branches: WpAlpha creature_txt_fix master multiple_sql splitLocale vincent_beta
+REAL(non-merge) commits: 3 / total 4
+  - [2016-12-11] Added support for build 7.1.0.23222
+  - [2016-12-11] Corrected code style
+  - [2016-12-12] Applied suggestion for creature text issue #278
+
+============================================================
+FORK: LuigiElleBalotta/WowPacketParser  | ahead=1 behind=2489 pushed=2017-11-09T10:12:06Z
+branches: WpAlpha master multiple_sql splitLocale vincent_beta
+REAL(non-merge) commits: 1 / total 1
+  - [2017-11-09] update super merge (#1)
+
+============================================================
+FORK: lyosky/WowPacketParser  | ahead=272 behind=2031 pushed=2019-08-06T05:00:30Z
+branches: WpAlpha conversation handlers_refactor master multiple_sql splitLocale
+REAL(non-merge) commits: 248 / total 272
+  (showing first 70 of 248)
+  - [2018-07-25] Initial BfA Support
+  - [2018-07-25] Enable double Fallback
+  - [2018-07-27] Make Fallback dynamic
+  - [2018-07-27] Add first handler
+  - [2018-07-27] Add V8_0_1_27178 Support
+  - [2018-08-04] Added build 8.0.1.27219
+  - [2018-08-05] Fixed structure for SMSG_ENUM_CHARACTERS_RESULT
+  - [2018-08-06] Fixed structure for SMSG_SPELL_GO
+  - [2018-08-06] Fixed structure for SMSG_SPELL_START
+  - [2018-08-06] fix signedness
+  - [2018-08-06] using signedness of client now
+  - [2018-08-06] Fixed structure for SMSG_AURA_UPDATE
+  - [2018-08-06] Fixed structure for SMSG_SPELL_PERIODIC_AURA_LOG
+  - [2018-08-06] Fixed structure for SMSG_SPELL_NON_MELEE_DAMAGE_LOG
+  - [2018-08-06] Fixed structure of SMSG_QUERY_QUEST_INFO_RESPONSE
+  - [2018-08-06] Fixed structure of SMSG_QUERY_QUEST_REWARD_RESPONSE
+  - [2018-08-06] Fixed structure for SMSG_QUERY_CREATURE_RESPONSE
+  - [2018-08-07] Fixed structure of CMSG_QUEST_POI_QUERY
+  - [2018-08-08] Fixed structure of SMSG_QUEST_POI_QUERY_RESPONSE
+  - [2018-08-11] Added builds V8_0_1_27291, V8_0_1_27326
+  - [2018-08-15] Added builds: V8_0_1_27355, V8_0_1_27356, V8_0_1_27366
+  - [2018-08-19] Added build V8_0_1_27377
+  - [2018-08-19] fixed SMSG_ON_MONSTER_MOVE
+  - [2018-08-19] fixed SMSG_CHAT
+  - [2018-08-20] Update SMSG_QUEST_GIVER_QUEST_DETAILS Parsing
+  - [2018-08-20] fixed SMSG_PARTY_UPDATE
+  - [2018-08-20] More ReadQuestReward Namings
+  - [2018-08-20] fixed SMSG_SPELL_HEAL_LOG
+  - [2018-08-20] Update SMSG_QUEST_SPAWN_TRACKING_UPDATE
+  - [2018-08-20] Update SMSG_QUEST_GIVER_OFFER_REWARD_MESSAGE
+  - [2018-08-20] Update SMSG_GET_ACCOUNT_CHARACTER_LIST_RESULT
+  - [2018-08-20] fix minor fail @ spellhandler
+  - [2018-08-21] Update SMSG_SPELL_ABSORB_LOG
+  - [2018-08-21] Update SMSG_ATTACKER_STATE_UPDATE
+  - [2018-08-21] Update SMSG_PLAY_SPELL_VISUAL
+  - [2018-08-21] Update SMSG_PLAY_ORPHAN_SPELL_VISUAL
+  - [2018-08-21] fixed SMSG_UPDATE_OBJECT
+  - [2018-08-21] fixed SMSG_QUERY_GAME_OBJECT_RESPONSE
+  - [2018-08-22] added backwards compatibility to objecttypes & updated them
+  - [2018-08-22] added new updatefields to SMSG_UPDATE_OBJECT
+  - [2018-08-22] added build V8_0_1_27377:
+  - [2018-08-22] implemented CMSG_TOGGLE_WARMODE
+  - [2018-08-22] fixed SMSG_FEATURE_SYSTEM_STATUS_GLUE_SCREEN
+  - [2018-08-23] implement SMSG_LIGHTNING_STORM_START, SMSG_LIGHTNING_STORM_CHANGE
+  - [2018-08-23] fixed SMSG_INSPECT_RESULT
+  - [2018-08-23] fixed SMSG_SOCKET_GEMS
+  - [2018-08-23] Updated SMSG_INSPECT_RESULT to current structure defined in TC
+  - [2018-08-23] Updated SMSG_GUILD_REWARD_LIST to current structure defined in TC
+  - [2018-08-23] Updated SMSG_SCENARIO_STATE struct to current structure defined in TC
+  - [2018-08-23] updated AchievementPackets
+  - [2018-08-23] updated WhoPackets
+  - [2018-08-23] Updated VoidStoragePackets
+  - [2018-08-23] updated VehiclePackets
+  - [2018-08-23] update TransmogrificationPackets
+  - [2018-08-23] update TradePackets
+  - [2018-08-23] update AreaTriggerPackets
+  - [2018-08-23] update ArtifactPackets
+  - [2018-08-23] update TokenPackets
+  - [2018-08-23] update TalentPackets
+  - [2018-08-23] update BattlefieldPackets
+  - [2018-08-23] update BattlegroundPackets
+  - [2018-08-23] update BattlenetPackets
+  - [2018-08-23] fixed CollectionPackets
+  - [2018-08-23] update ReferAFriendPackets
+  - [2018-08-23] update ReputationPackets
+  - [2018-08-23] buildfix
+  - [2018-08-23] Handle CMSG_START_CHALLENGE_MODE
+  - [2018-08-23] update SystemPackets
+  - [2018-08-23] update SocialPackets
+  - [2018-08-23] update SMSG_GARRISON_ADD_MISSION_RESULT
+
+============================================================
+FORK: maanuel/WowPacketParser  | ahead=2 behind=6686 pushed=2012-01-19T01:08:58Z
+branches: master
+REAL(non-merge) commits: 2 / total 2
+  - [2012-01-18] Implemented changes to output the needed data for the Sniff Viewer.
+  - [2012-01-19] Corrected some errors while uploading the file.
+
+============================================================
+FORK: Malylolek/WowPacketParser  | ahead=3 behind=2598 pushed=2016-08-19T23:52:28Z
+branches: WpAlpha master multiple_sql splitLocale
+REAL(non-merge) commits: 3 / total 3
+  - [2016-08-17] Added parsing build 7.0.3.22445
+  - [2016-08-18] Added parsing build 7.0.3.22451
+  - [2016-08-19] Added parsing build 7.0.3.22472
+
+============================================================
+FORK: mdX7/WowPacketParser  | ahead=1 behind=2280 pushed=2026-02-06T17:03:35Z
+branches: WpAlpha co2 conversation convo_actor_improvements creature_difficulty_nonwdb_fallback creature_template_resistance handlers_refactor master mdX7-patch-1 multiple_sql net7 overridephase player_classlevelstats quest_template_ScalingFactionGroup spelltotemhackery splitLocale uf_fix verifiedbuild_summary verifiedbuild
+REAL(non-merge) commits: 1 / total 1
+  - [2018-06-29] Add 7.3.5.26972 build
+
+============================================================
+FORK: Megosa/WowPacketParser  | ahead=51 behind=5348 pushed=2014-05-05T19:37:12Z
+branches: master
+REAL(non-merge) commits: 44 / total 51
+  - [2014-02-22] Some initial work on 5.4.7.17930
+  - [2014-02-22] Added known opcodes for 5.4.7.17930. Fixed a double define.
+  - [2014-02-23] Some Additions
+  - [2014-02-23] More implementations
+  - [2014-02-23] Some more Opcodes.cs
+  - [2014-02-23] More Opcodes.cs 17930
+  - [2014-02-24] Fix cmsg_player_login
+  - [2014-02-24] Added more Opcodes.cs 17930
+  - [2014-02-26] More Opcodes.cs 17930
+  - [2014-02-28] Few more Opcodes.cs
+  - [2014-02-28] More Opcodes.cs 17930
+  - [2014-02-28] First part of additions and fixes to builds - enums connections and ClientBuild Autodetect implementation for new ones.
+  - [2014-02-28] Second part of fixes. The parser is now fixed and updated to 5.4.7 17956.
+  - [2014-03-02] Some more Opcodes.cs 17956
+  - [2014-03-02] Fixed a Derp.
+  - [2014-03-02] Updated implemented structures for 5.4.7 and added a few more. Fixes parsing for (so far) all client builds on the version.
+  - [2014-03-02] Implemented some more structures for 17956.
+  - [2014-03-02] Added a define to all implemented handlers to allow their "usage" on 17956 aswell. No more need to force the config ClientBuild option for it.
+  - [2014-03-03] Implemented some more handlers.
+  - [2014-03-03] Implemented a couple more structures and simplified the handlers where possible.
+  - [2014-03-03] Added a few more handlers and opcodes.
+  - [2014-03-03] Forgot something.
+  - [2014-03-03] Implemented more handlers.
+  - [2014-03-05] Implemented a few more handlers. Creature query parsing now working.
+  - [2014-03-05] A couple more structs added. GameObject query parsing now working.
+  - [2014-03-05] One more :)
+  - [2014-03-05] Updated the 5.3.0 16981 Module to 5.4.7 17956. Now we can move the handlers to it and use it.
+  - [2014-03-05] Moved all implemented 5.4.7 structures to the specific module.
+  - [2014-03-06] Fixed parsing errors on older 5.4.7 versions, everything ok now.
+  - [2014-03-06] Implemented parsing for SMSG_GOSSIP_MESSAGE.
+  - [2014-03-06] Initial, partial implementation for SMSG_DB_REPLY. This is based on older versions, and several corrections / additions will need to be made before it's fully working as intended.
+  - [2014-03-06] Fixed a Derp.
+  - [2014-03-06] Implemented SMSG_LOGIN_VERIFY_WORLD structure.
+  - [2014-03-10] Some stuff
+  - [2014-03-21] Some more shit
+  - [2014-03-22] More improvements
+  - [2014-03-25] Corrected Dynamic Flags and added an enum for current Map Difficulties.
+  - [2014-03-26] Updated Opcodes.cs.
+  - [2014-03-29] Updates SMSG_QUEST_QUERY_RESPONSE
+  - [2014-03-29] Updated the parser module for 17956 to 18019. Fixed the delegates for structs parsing on this version. Updated Opcodes.cs.
+  - [2014-03-29] Fixed Dynamic Fields definitions and a parsing.
+  - [2014-04-01] More updates to SMSG_QUEST_QUERY_RESPONSE
+  - [2014-04-25] Fixed some duplicates / bad values, thanks ChipLeo for noticing.
+  - [2014-05-05] Fixed Build :P
+
+============================================================
+FORK: Mesielecat/WowPacketParser  | ahead=9 behind=1964 pushed=2023-04-04T14:41:21Z
+branches: AzeriteItem BattlegroundPackets Brawl CMSG_SET_ACHIEVEMENTS_HIDDEN Client_Type Crow_Control_Packet GarrisonPackets Island_Packets Player_Choice Recovery_Speed SMSG_GET_SHIPMENT_INFO_RESPONSE Trophy_Packet WpAlpha handlers_refactor lfg_list master multiple_sql splitLocale
+REAL(non-merge) commits: 8 / total 9
+  - [2020-01-31] Implement Playerchoice sql generation
+  - [2020-01-31] Fix player choice locale extraction
+  - [2020-01-31] Use Attribute of DBFieldName for extract correct data
+  - [2020-02-04] clean tabs
+  - [2020-02-04] Update structure until today
+  - [2020-02-04] Added index as primary key
+  - [2020-02-05] Fix tabs, add index as key, change flag for locale, split locale and template of playerchoice
+  - [2020-02-05] Fix wrong fieldname
+
+============================================================
+FORK: mikefernandz/WowPacketParser  | ahead=1 behind=1629 pushed=2021-08-05T03:49:01Z
+branches: WpAlpha handlers_refactor master multiple_sql sanitizing splitLocale
+REAL(non-merge) commits: 1 / total 1
+  - [2021-08-05] * Supports Build 39653
+
+============================================================
+FORK: moboqe/WowPacketParser  | ahead=1 behind=674 pushed=2024-10-11T10:40:35Z
+branches: master
+REAL(non-merge) commits: 1 / total 1
+  - [2024-10-11] Update README.md
+
+============================================================
+FORK: PavelDev/WowPacketParser  | ahead=33 behind=5348 pushed=2014-03-06T04:06:28Z
+branches: master
+REAL(non-merge) commits: 32 / total 33
+  - [2014-02-22] Some initial work on 5.4.7.17930
+  - [2014-02-22] Added known opcodes for 5.4.7.17930. Fixed a double define.
+  - [2014-02-23] Some Additions
+  - [2014-02-23] More implementations
+  - [2014-02-23] Some more Opcodes.cs
+  - [2014-02-23] More Opcodes.cs 17930
+  - [2014-02-24] Added more Opcodes.cs 17930
+  - [2014-02-26] More Opcodes.cs 17930
+  - [2014-02-28] Few more Opcodes.cs
+  - [2014-02-28] More Opcodes.cs 17930
+  - [2014-02-28] First part of additions and fixes to builds - enums connections and ClientBuild Autodetect implementation for new ones.
+  - [2014-02-28] Second part of fixes. The parser is now fixed and updated to 5.4.7 17956.
+  - [2014-03-02] Some more Opcodes.cs 17956
+  - [2014-03-02] Fixed a Derp.
+  - [2014-03-02] Updated implemented structures for 5.4.7 and added a few more. Fixes parsing for (so far) all client builds on the version.
+  - [2014-03-02] Implemented some more structures for 17956.
+  - [2014-03-02] Added a define to all implemented handlers to allow their "usage" on 17956 aswell. No more need to force the config ClientBuild option for it.
+  - [2014-03-03] Implemented some more handlers.
+  - [2014-03-03] Implemented a couple more structures and simplified the handlers where possible.
+  - [2014-03-03] Added a few more handlers and opcodes.
+  - [2014-03-03] Forgot something.
+  - [2014-03-03] Implemented more handlers.
+  - [2014-03-05] Implemented a few more handlers. Creature query parsing now working.
+  - [2014-03-05] A couple more structs added. GameObject query parsing now working.
+  - [2014-03-05] One more :)
+  - [2014-03-05] Updated the 5.3.0 16981 Module to 5.4.7 17956. Now we can move the handlers to it and use it.
+  - [2014-03-05] Moved all implemented 5.4.7 structures to the specific module.
+  - [2014-03-06] Fixed parsing errors on older 5.4.7 versions, everything ok now.
+  - [2014-03-06] Implemented parsing for SMSG_GOSSIP_MESSAGE.
+  - [2014-03-06] Initial, partial implementation for SMSG_DB_REPLY. This is based on older versions, and several corrections / additions will need to be made before it's fully working as intended.
+  - [2014-03-06] Fixed a Derp.
+  - [2014-03-06] Implemented SMSG_LOGIN_VERIFY_WORLD structure.
+
+============================================================
+FORK: PowerpuffIO/WowPacketParser  | ahead=13 behind=11 pushed=2026-07-27T19:56:39Z
+branches: WpAlpha handlers_refactor master multiple_sql sanitizing splitLocale
+REAL(non-merge) commits: 1 / total 13
+  - [2026-04-26] When building a project, we no longer get an error if the user Vandovs has a name in Cyrillic.
+
+============================================================
+FORK: QAston/WowPacketParser  | ahead=33 behind=5482 pushed=2013-07-18T13:04:31Z
+branches: master processor
+REAL(non-merge) commits: 30 / total 33
+  - [2013-02-16] Delete SettingsUI
+  - [2013-02-16] Getting parser to compile - part 1
+  - [2013-02-17] Getting parser to compile - part 2
+  - [2013-02-17] Getting parser to compile - part 3
+  - [2013-02-17] Getting parser to compile - part 4
+  - [2013-02-17] Getting parser to compile - part 4
+  - [2013-02-17] Getting parser to build - part 5 - builds!
+  - [2013-02-18] Bugfixes part 1
+  - [2013-02-18] Bugfixes - part 3
+  - [2013-02-18] Bugfixes - part 4
+  - [2013-02-18] Bugfixes - part5
+  - [2013-02-19] Add file output config options.
+  - [2013-02-19] Fix appending to output files.
+  - [2013-02-20] Add x86 configuration, fix sqlite linking, fix some packets, add hex output
+  - [2013-02-20] Add sqlite output to the dumper.
+  - [2013-02-21] Minor improvements
+  - [2013-02-21] Improve internal object storage and beautify some output
+  - [2013-02-22] Properly store auras for objects. Beautify unit_bytes output
+  - [2013-02-22] More output tweaks about update fields
+  - [2013-02-23] Print update fields and auras into sqlite output
+  - [2013-02-23] Add config options to disable aura/flags output to sqlite
+  - [2013-02-23] Add unitFieldFlags1 and 2 to the sqlite output
+  - [2013-03-03] Additional sqlite output corrections
+  - [2013-03-03] Make spell aura/start/go/opcode sqlite output optional
+  - [2013-07-18] A couple of updates.
+  - [2013-07-18] Revert part of last commit and handle containers properly.
+  - [2013-07-18] Better fix for container objects reading.
+  - [2013-07-18] fix cmsg_who
+  - [2013-07-18] Compile fixes
+  - [2013-07-18] Parser fixes.
+
+============================================================
+FORK: ratkosrb/WowPacketParser  | ahead=10 behind=1266 pushed=2026-04-17T12:06:56Z
+branches: WpAlpha cataclysm classic_backup classic_backup2 classic_backup3 classic_backup4 classic_backup5 classic_backup6 classic classicsom gossip gossipquest handlers_refactor invite master_backup master_backup2 master_backup3 master_backup4 master_backup5 master_update1 master_update2 master multiple_sql opcodes252 splitLocale uf254 update
+REAL(non-merge) commits: 0 / total 10
+
+============================================================
+FORK: RazorCore/WowPacketParser  | ahead=13 behind=5517 pushed=2013-03-03T12:43:25Z
+branches: RazorCore master
+REAL(non-merge) commits: 12 / total 13
+  - [2013-02-26] Added some 5.1 Handlers.
+  - [2013-02-26] Update README.md
+  - [2013-02-26] Added missing 5.1 PowerTypes.
+  - [2013-02-26] Added two more 5.1 Handler and updated one.
+  - [2013-02-27] Added one more 5.1 Handler.
+  - [2013-02-27] Fixed High GUID Type Output for 5.1
+  - [2013-02-27] Added more 5.1 Opcodes
+  - [2013-02-27] Updated 5.1 UpdateFields
+  - [2013-03-01] Corrected some Update Object values and fixed Unit Flag output
+  - [2013-03-01] Added more 5.1 Opcode values
+  - [2013-03-02] Updated TextEmote output
+  - [2013-03-03] Added more 5.1 Opcodes
+
+============================================================
+FORK: RioMcBoo/WowPacketParser  | ahead=28 behind=323 pushed=2025-10-10T15:58:55Z
+branches: FractalCore WpAlpha handlers_refactor master multiple_sql sanitizing splitLocale
+REAL(non-merge) commits: 28 / total 28
+  - [2024-05-06] Allow to create packet structures for a specific build version.
+  - [2024-05-06] Correction GuildBankRightsFlag enum
+  - [2024-05-07] Add some structures for 3.4.3.54261
+  - [2024-07-01] Fix SMSG_CALENDAR_SEND_CALENDAR (3.4.3.54261)
+  - [2024-07-02] Fix SMSG_CALENDAR_EVENT_UPDATED_ALERT (3.4.3.54261)
+  - [2024-11-21] SMSG_GUILD_BANK_QUERY_RESULTS
+  - [2025-02-10] Fix SMSG_CONVERT_RUNE (for wotlk_classic)
+  - [2025-03-21] Added SMSG_SHOW_TRADE_SKILL_RESPONSE for V3_4_1_48340
+  - [2025-04-26] wotlk_classic updates
+  - [2025-06-28] Merging with master
+  - [2025-06-29] Add build V3_4_4_61581
+  - [2025-06-28] Update wotlk classic CMSG_DF_JOIN field names
+  - [2025-06-28] Add wotlk_classic CMSG_DISCARDED_TIME_SYNC_ACKS
+  - [2025-06-28] Add 3.4.4 CMSG_DO_COUNTDOWN
+  - [2025-06-28] Replace wrong ReadGuid call in wotlk classic
+  - [2025-06-28] Update 3.4.4 CMSG_GUILD_DECLINE_INVITATION
+  - [2025-06-29] remove duplicate handler
+  - [2025-06-29] Update 3.4.4 CMSG_GUILD_SET_RANK_PERMISSIONS
+  - [2025-06-29] Add wotlk classic CMSG_LFG_LIST_APPLY_TO_GROUP
+  - [2025-06-29] Add 3.4.4 CMSG_LFG_LIST_INVITE_APPLICANT
+  - [2025-06-29] Add wotlk classic CMSG_LFG_LIST_INVITE_RESPONSE
+  - [2025-06-29] Add wotlk classic CMSG_LFG_LIST_LEAVE
+  - [2025-06-29] Add wotlk classic CMSG_LOG_STREAMING_ERROR
+  - [2025-06-29] Add 3.4.4 CMSG_MOVE_APPLY_INERTIA_ACK and update ReadMovementStats
+  - [2025-06-29] Update 3.4.4 CMSG_USE_ITEM
+  - [2025-06-29] Add wotlk classic CMSG_HOTFIX_REQUEST
+  - [2025-06-29] Add 3.4.4 SMSG_ATTACK_SWING_LANDED_LOG
+  - [2025-06-29] Use correct ReadAttackRoundInfo
+
+============================================================
+FORK: Sar777/WowPacketParser  | ahead=19 behind=2703 pushed=2016-06-05T11:54:20Z
+branches: WpAlpha fix-1 master multiple_sql splitLocale
+REAL(non-merge) commits: 5 / total 19
+  - [2015-07-06] My structures
+  - [2016-04-03] Fix output npc vendor items for 6.x
+  - [2016-04-03] Temp
+  - [2016-06-05] Implemented parsing animkit.
+  - [2016-06-05] Fix table name
+
+============================================================
+FORK: SkyFire/WowPacketParser  | ahead=42 behind=5348 pushed=2014-07-21T17:43:51Z
+branches: master
+REAL(non-merge) commits: 39 / total 42
+  - [2013-11-14] Update WPP - To Parse Version 5.4.1.17538 Sniffs
+  - [2013-11-15] Added parsing of SMSG_GAMEOBJECT_QUERY_RESPONSE for 5.4.1
+  - [2013-11-15] Added parsing of SMSG_REALM_QUERY_RESPONSE for 5.4.1
+  - [2013-11-16] Added parsing of SMSG_AUTH_RESPONSE for 5.4.1
+  - [2013-12-02] Added parsing of SMSG_CREATURE_QUERY_RESPONSE for 5.4.1
+  - [2013-12-04] Added parsing of CMSG_BANKER_ACTIVATE, CMSG_GOSSIP_HELLO, SMSG_SHOW_BANK for 5.4.1
+  - [2013-12-04] Added parsing of SMSG_LOGIN_VERIFY_WORLD For 5.4.1
+  - [2013-12-04] Fixed Typo in CMSG_GOSSIP_HELLO StartBitStream
+  - [2013-12-09] Added parsing of SMSG_INITIAL_SPELLS
+  - [2013-12-11] Update WPP - To Parse Version 5.4.2.17658 Sniffs
+  - [2013-12-11] Added Opcodes and UpdateFields i forgot to add last commit
+  - [2013-12-11] Added Some CMSG Opcodes From 5.4.2 17658
+  - [2013-12-21] Core/Build: Updated Build To 5.4.2 17688
+  - [2013-12-23] Added Some Opcodes and SMSG_LOGIN_VERIFY_WORLD Structure
+  - [2013-12-27] Added Parsing of SMSG_UPDATE_OBJECT
+  - [2013-12-28] Updated SMSG_UPDATE_OBJECT, Added Parsing For hasAttackingTarget Block & hasGameObjectRotation Block
+  - [2013-12-28] Added Parsing of hasGameObjectPosition Block in SMSG_UPDATE_OBJECT
+  - [2013-12-28] Fixed Compile From Last Commit
+  - [2013-12-28] Added Parsing Of SMSG_UPDATE_OBJECT Living Block, Creature Spawns Parsing Now Correctly :)
+  - [2013-12-28] Added Parsing of SMSG_CREATURE_QUERY_RESPONSE and Added Opcodes
+  - [2013-12-28] Added Parsing SMSG_GAMEOBJECT_QUERY_RESPONSE 5.4.2
+  - [2013-12-28] Added Parsing of SMSG_INITIAL_SPELLS For 5.4.2
+  - [2013-12-30] Added parsing of SMSG_LIST_INVENTORY for 5.4.2.
+  - [2013-12-30] Added Parsing of SMSG_NPC_TEXT_UPDATE
+  - [2014-01-06] Added Parsing of CMSG_NPC_TEXT_QUERY
+  - [2014-01-09] Core/Misc: Fixed Correct ClientBuild DateTimes
+  - [2014-01-09] Added some 5.4.2.17688 Opcodes
+  - [2014-01-10] Small Change
+  - [2014-01-23] Core/Compile: Fixed Compile
+  - [2014-01-23] Core/Enums: Added SplineFlags For 542 And Fixed SMSG_UPDATE_OBJECT Now the Friendly spawns are also parsed :P
+  - [2014-05-24] Core/Build: Updated Build To 5.4.8 18291
+  - [2014-05-24] Core/Parser: Updated Parser for SMSG_CREATURE_QUERY_RESPONSE
+  - [2014-05-25] Added Parsing of CMSG_AUCTION_HELLO & CMSG_GOSSIP_HELLO
+  - [2014-05-30] Added Parsing of CMSG_BANKER_ACTIVATE, SMSG_SHOW_BANK, CMSG_SET_SELECTION, SMSG_AUCTION_HELLO, SMSG_NEW_WORLD, SMSG_TRANSFER_PENDING
+  - [2014-05-30] Fixed Mistake in SMSG_AUCTION_HELLO Parse
+  - [2014-06-27] Core/Parser: Added Some Parsing of Opcodes
+  - [2014-07-16] Core/Output: Added MinDamage and MaxDamage SQL Parsing, Dont hate me for dat Formula ^^
+  - [2014-07-21] Core/Parse: SMSG_UPDATE_OBJECT Updated and Added Parsing of SMSG_DESTROY_OBJECT
+  - [2014-07-21] Core/Parser: Some More Implementation to SMSG_UPDATE_OBJECT, GameObject and Creature Spawns Parses Correctly Now.
+
+============================================================
+FORK: SkyFireArchives/WowPacketParser  | ahead=47 behind=5348 pushed=2014-07-23T15:10:42Z
+branches: master
+REAL(non-merge) commits: 44 / total 47
+  - [2013-11-14] Update WPP - To Parse Version 5.4.1.17538 Sniffs
+  - [2013-11-15] Added parsing of SMSG_GAMEOBJECT_QUERY_RESPONSE for 5.4.1
+  - [2013-11-15] Added parsing of SMSG_REALM_QUERY_RESPONSE for 5.4.1
+  - [2013-11-16] Added parsing of SMSG_AUTH_RESPONSE for 5.4.1
+  - [2013-12-02] Added parsing of SMSG_CREATURE_QUERY_RESPONSE for 5.4.1
+  - [2013-12-04] Added parsing of CMSG_BANKER_ACTIVATE, CMSG_GOSSIP_HELLO, SMSG_SHOW_BANK for 5.4.1
+  - [2013-12-04] Added parsing of SMSG_LOGIN_VERIFY_WORLD For 5.4.1
+  - [2013-12-04] Fixed Typo in CMSG_GOSSIP_HELLO StartBitStream
+  - [2013-12-09] Added parsing of SMSG_INITIAL_SPELLS
+  - [2013-12-11] Update WPP - To Parse Version 5.4.2.17658 Sniffs
+  - [2013-12-11] Added Opcodes and UpdateFields i forgot to add last commit
+  - [2013-12-11] Added Some CMSG Opcodes From 5.4.2 17658
+  - [2013-12-21] Core/Build: Updated Build To 5.4.2 17688
+  - [2013-12-23] Added Some Opcodes and SMSG_LOGIN_VERIFY_WORLD Structure
+  - [2013-12-27] Added Parsing of SMSG_UPDATE_OBJECT
+  - [2013-12-28] Updated SMSG_UPDATE_OBJECT, Added Parsing For hasAttackingTarget Block & hasGameObjectRotation Block
+  - [2013-12-28] Added Parsing of hasGameObjectPosition Block in SMSG_UPDATE_OBJECT
+  - [2013-12-28] Fixed Compile From Last Commit
+  - [2013-12-28] Added Parsing Of SMSG_UPDATE_OBJECT Living Block, Creature Spawns Parsing Now Correctly :)
+  - [2013-12-28] Added Parsing of SMSG_CREATURE_QUERY_RESPONSE and Added Opcodes
+  - [2013-12-28] Added Parsing SMSG_GAMEOBJECT_QUERY_RESPONSE 5.4.2
+  - [2013-12-28] Added Parsing of SMSG_INITIAL_SPELLS For 5.4.2
+  - [2013-12-30] Added parsing of SMSG_LIST_INVENTORY for 5.4.2.
+  - [2013-12-30] Added Parsing of SMSG_NPC_TEXT_UPDATE
+  - [2014-01-06] Added Parsing of CMSG_NPC_TEXT_QUERY
+  - [2014-01-09] Core/Misc: Fixed Correct ClientBuild DateTimes
+  - [2014-01-09] Added some 5.4.2.17688 Opcodes
+  - [2014-01-10] Small Change
+  - [2014-01-23] Core/Compile: Fixed Compile
+  - [2014-01-23] Core/Enums: Added SplineFlags For 542 And Fixed SMSG_UPDATE_OBJECT Now the Friendly spawns are also parsed :P
+  - [2014-05-24] Core/Build: Updated Build To 5.4.8 18291
+  - [2014-05-24] Core/Parser: Updated Parser for SMSG_CREATURE_QUERY_RESPONSE
+  - [2014-05-25] Added Parsing of CMSG_AUCTION_HELLO & CMSG_GOSSIP_HELLO
+  - [2014-05-30] Added Parsing of CMSG_BANKER_ACTIVATE, SMSG_SHOW_BANK, CMSG_SET_SELECTION, SMSG_AUCTION_HELLO, SMSG_NEW_WORLD, SMSG_TRANSFER_PENDING
+  - [2014-05-30] Fixed Mistake in SMSG_AUCTION_HELLO Parse
+  - [2014-06-27] Core/Parser: Added Some Parsing of Opcodes
+  - [2014-07-16] Core/Output: Added MinDamage and MaxDamage SQL Parsing, Dont hate me for dat Formula ^^
+  - [2014-07-21] Core/Parse: SMSG_UPDATE_OBJECT Updated and Added Parsing of SMSG_DESTROY_OBJECT
+  - [2014-07-21] Core/Parser: Some More Implementation to SMSG_UPDATE_OBJECT, GameObject and Creature Spawns Parses Correctly Now.
+  - [2014-07-22] Core/Parser: Added SMSG_GAMEOBJECT_QUERY_RESPONSE Parsing
+  - [2014-07-23] Updated a few opcodes fro 18414
+  - [2014-07-23] Added more opcodes.
+  - [2014-07-23] Added even more opcodes
+  - [2014-07-23] Update some more opcodes. Apply some stuff from ChipLeo's repository.
+
+============================================================
+FORK: SkyFireTools/WowPacketParser  | ahead=5 behind=2784 pushed=2016-10-30T17:11:19Z
+branches: WpAlpha master multiple_sql splitLocale sql_rewrite
+REAL(non-merge) commits: 5 / total 5
+  - [2016-10-30] Update CMSG for 18414 opcode parsing. These are consistent with SkyFire opcode names
+  - [2016-10-30] Cleanup my mess.
+  - [2016-10-30] Remove my double defined opcodes.
+  - [2016-10-30] define the SMSG skyfire opcodes.
+  - [2016-10-30] Disabled Parsing CMSG_MAIL_QUERY_NEXT_TIME, CMSG_REQUEST_HOTFIX, CMSG_ROLE_POLL_BEGIN, MSG_ROLE_POLL_BEGIN, SMSG_SET_VEHICLE_REC_ID, SMSG_SPLINE_MOVE_COLLISION_DISABLE, SMSG_SPLINE_MOVE_COLLISION_ENABLE.
+
+============================================================
+FORK: skypeak/WowPacketParser_SkyFire  | ahead=18 behind=6330 pushed=2012-05-27T15:01:45Z
+branches: master
+REAL(non-merge) commits: 3 / total 18
+  - [2012-05-06] Some output adjustments for SkyFire.
+  - [2012-05-06] Updated README.md
+  - [2012-05-27] Added 3 new 4.3.4 opcodes.
+
+============================================================
+FORK: stefanursu1234/WowPacketParser  | ahead=2 behind=4091 pushed=2014-10-29T20:58:18Z
+branches: WpAlpha master
+REAL(non-merge) commits: 2 / total 2
+  - [2014-10-29] Update README.md after fork
+  - [2014-10-29] Small change on readme(cosmetic)
+
+============================================================
+FORK: Subv/WowPacketParser  | ahead=36 behind=6986 pushed=2011-12-02T21:07:06Z
+branches: master
+REAL(non-merge) commits: 11 / total 36
+  - [2011-11-14] Enabled reading sniff files with spaces in the path
+  - [2011-11-15] Partial support for parsing gossip_menu_options, the idea is to generate data for this table automatically from the sniff.
+  - [2011-11-16] Renamed Gossip to GossipMenu and added a new field 'MenuId'
+  - [2011-11-18] Automatically parse gossip_menu and gossip_menu_option, now it automatically binds the gossip option with the next menu id
+  - [2011-11-18] Update README.md
+  - [2011-11-19] Added support for parsing Waypoints automatically, you still need to make a SAI script to trigger them.
+  - [2011-11-19] Missed this change
+  - [2011-11-20] Fixed SMSG_SET_PHASE_SHIFT for 4.2.2.14545 and 4.0.6.13623
+  - [2011-11-21] Updated some names from 'UnknownFlags' enum, changed the way SMSG_SET_PHASE_SHIFT is handled
+  - [2011-11-22] Merge, Changed the way we read bitstreamed GUIDs
+  - [2011-11-26] Fix build
+
+============================================================
+FORK: Supabad/WowPacketParser  | ahead=1 behind=7073 pushed=2011-11-20T23:46:18Z
+branches: master
+REAL(non-merge) commits: 1 / total 1
+  - [2011-11-20] some updates for 420
+
+============================================================
+FORK: The-Legion-Preservation-Project/WowPacketParser  | ahead=6 behind=364 pushed=2025-06-06T15:19:02Z
+branches: master
+REAL(non-merge) commits: 6 / total 6
+  - [2025-06-05] fix legion dbc; use legion dbc
+  - [2025-06-05] fix loading sql
+  - [2025-06-05] fix writing creature_template
+  - [2025-06-05] fix writing creature_template_addon
+  - [2025-06-05] fix creature_template_difficulty output
+  - [2025-06-06] add project for 7.3.5.26972 specific fixes
+
+============================================================
+FORK: TheSCREWEDSoftware/WowPacketParser  | ahead=12 behind=32 pushed=2026-05-28T10:33:23Z
+branches: 64857 67156 WpAlpha handlers_refactor master multiple_sql sanitizing splitLocale
+REAL(non-merge) commits: 1 / total 12
+  - [2025-08-30] Added build 1.15.7.62797
+
+============================================================
+FORK: Tremolo4/WowPacketParser  | ahead=6 behind=2317 pushed=2018-01-02T21:52:27Z
+branches: WpAlpha conversation handlers_refactor master multiple_sql splitLocale tbc
+REAL(non-merge) commits: 6 / total 6
+  - [2017-06-17] Add Opcode and UpdateField defines from cmangos-tbc for parsing TBC 2.4.3 sniffs
+  - [2017-06-17] WIP: Module for TBC. Nothing in it yet - Parsers will be there I guess ..
+  - [2017-11-01] 2.4.3 module: Fix output paths, add 2.4.3 SplineFlag and copy "default" MovementHandler
+  - [2017-11-01] 2.4.3 module: Make MovementHandler work
+  - [2017-11-02] 2.4.3 module: Make WowPacketParser reference "private" and sync some other things with 7.0.3 module
+  - [2017-12-21] Restore SMSG_UPDATE_OBJECT parsing + wip
+
+============================================================
+FORK: Vanheden/WowPacketParser  | ahead=1 behind=1068 pushed=2023-08-01T18:03:08Z
+branches: master
+REAL(non-merge) commits: 1 / total 1
+  - [2023-08-01] Added 3.4.2.50664
+
+============================================================
+FORK: wanglxi1/WowPacketParser  | ahead=1 behind=2782 pushed=2015-11-30T06:06:44Z
+branches: WpAlpha master multiple_sql splitLocale
+REAL(non-merge) commits: 0 / total 1
+
+============================================================
+FORK: WowLegacyCore/WowPacketParser  | ahead=19 behind=1420 pushed=2022-03-23T17:49:33Z
+branches: WpAlpha classic handlers_refactor master multiple_sql sanitizing splitLocale
+REAL(non-merge) commits: 15 / total 19
+  - [2021-06-06] Prepare BCC Build 2.5.1.38835
+  - [2021-07-24] Added 2.5.1.39399 CMSG Opcodes
+  - [2021-07-27] Add BurningCrusadeClassic for database output
+  - [2021-07-29] 2.5.1 builds and fix some packets
+  - [2021-07-31] Fix SMSG_QUERY_QUEST_INFO_RESPONSE and SMSG_SPELL_START
+  - [2021-07-31] Added 2.5.2 builds
+  - [2021-07-31] Added 2.5.2 opcodes
+  - [2021-07-31] Added 2.5.2 updatefields
+  - [2021-07-31] Add missing SMSG_ACCOUNT_HEIRLOOM_UPDATE
+  - [2021-08-02] Correct a lot of packets for 2.5.2
+  - [2021-08-04] Fix SMSG_INSPECT_RESULT for 252
+  - [2021-08-04] Fix issues that originated from last merge commit
+  - [2022-03-15] Use Switch Expression for BCC and Classic check method
+  - [2022-03-15] Add V2_5_4_42581 SMSG opcodes
+  - [2022-03-23] Fix parse for SMSG_AUCTION_OWNER_BID_NOTIFICATION for 2.5.3
+
+============================================================
+FORK: Zakamurite/WowPacketParser  | ahead=1 behind=6042 pushed=2012-08-05T11:03:52Z
+branches: attackingTargetGuid_fix auth master movement
+REAL(non-merge) commits: 1 / total 1
+  - [2012-07-25] CMSG_BATTLEFIELD_MGR_ENTRY_INVITE_RESPONSE
+
+============================================================
+FORK: zzlyns/WowPacketParser  | ahead=12 behind=83 pushed=2026-03-25T19:01:17Z
+branches: master
+REAL(non-merge) commits: 9 / total 12
+  - [2026-03-19] Update Mop Classic parser to 5.5.3 66382
+  - [2026-03-24] Update Mop Classic Parser to 5.5.3.66565
+  - [2026-03-24] Correct mismatch in opcode values
+  - [2026-03-19] Update Mop Classic parser to 5.5.3 66382
+  - [2026-03-24] Update Mop Classic Parser to 5.5.3.66565
+  - [2026-03-24] Correct mismatch in opcode values
+  - [2026-03-24] Remove comments
+  - [2026-03-25] Update gh-build.yml
+  - [2026-03-25] Update gh-build.yml
+

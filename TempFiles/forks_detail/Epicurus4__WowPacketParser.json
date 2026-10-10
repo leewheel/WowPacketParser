@@ -1,0 +1,40 @@
+﻿{
+    "full_name":  "Epicurus4/WowPacketParser",
+    "ahead_by":  5,
+    "behind_by":  3104,
+    "pushed_at":  "2015-02-28T16:49:29Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "WpAlpha",
+                     "master"
+                 ],
+    "commit_count":  5,
+    "commits":  [
+                    {
+                        "sha":  "07bb0def3a",
+                        "date":  "2015-01-24T22:37:50Z",
+                        "msg":  "Merge pull request #1 from TrinityCore/master"
+                    },
+                    {
+                        "sha":  "bccad82616",
+                        "date":  "2015-01-29T14:22:17Z",
+                        "msg":  "Merge pull request #2 from TrinityCore/master"
+                    },
+                    {
+                        "sha":  "1207a2f0a0",
+                        "date":  "2015-02-23T04:21:08Z",
+                        "msg":  "Merge pull request #3 from TrinityCore/master"
+                    },
+                    {
+                        "sha":  "13ebb33056",
+                        "date":  "2015-02-28T16:32:19Z",
+                        "msg":  "Merge pull request #4 from TrinityCore/master"
+                    },
+                    {
+                        "sha":  "d518187a00",
+                        "date":  "2015-02-28T16:49:11Z",
+                        "msg":  "More 6.1.0 Opcodes"
+                    }
+                ]
+}

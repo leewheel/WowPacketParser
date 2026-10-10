@@ -1,0 +1,45 @@
+﻿{
+    "full_name":  "DavuKnight/WowPacketParser",
+    "ahead_by":  6,
+    "behind_by":  1310,
+    "pushed_at":  "2022-09-05T19:27:56Z",
+    "description":  "World of Warcraft Packet Parser",
+    "default_branch":  "master",
+    "branches":  [
+                     "ExposeMovement",
+                     "master"
+                 ],
+    "commit_count":  6,
+    "commits":  [
+                    {
+                        "sha":  "bd2559f560",
+                        "date":  "2022-09-04T18:07:57Z",
+                        "msg":  "WOTLK Classic released"
+                    },
+                    {
+                        "sha":  "ca57591469",
+                        "date":  "2022-09-04T21:37:07Z",
+                        "msg":  "Added case in Opcodes.cs, UpdateFields.cs,"
+                    },
+                    {
+                        "sha":  "408c2bcd51",
+                        "date":  "2022-09-05T17:19:45Z",
+                        "msg":  "Would be helpful. Currently have to call via reflection for my application."
+                    },
+                    {
+                        "sha":  "7cf9560152",
+                        "date":  "2022-09-05T17:21:56Z",
+                        "msg":  "Merge branch \u0027TrinityCore:master\u0027 into master"
+                    },
+                    {
+                        "sha":  "3c7e3f7c44",
+                        "date":  "2022-09-05T17:25:08Z",
+                        "msg":  "Undo Change"
+                    },
+                    {
+                        "sha":  "19f58ea9de",
+                        "date":  "2022-09-05T17:28:14Z",
+                        "msg":  "Need access from external assembly"
+                    }
+                ]
+}
