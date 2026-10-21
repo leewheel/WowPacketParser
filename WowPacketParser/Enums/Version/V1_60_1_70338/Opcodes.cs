@@ -136,7 +136,7 @@ namespace WowPacketParser.Enums.Version.V1_60_1_70338
             { Opcode.CMSG_HOUSING_DECOR_SET_EDIT_MODE, 0x00330000 },
             { Opcode.CMSG_HOUSING_DECOR_PLACE, 0x00330001 },
             { Opcode.CMSG_HOUSING_DECOR_MOVE, 0x00330002 },
-            { Opcode.CMSG_HOUSING_DECOR_SET_PET, 0x00330003 },
+            { Opcode.CMSG_HOUSING_DECOR_SET_BATTLE_PET, 0x00330003 },
             { Opcode.CMSG_HOUSING_DECOR_REMOVE, 0x00330004 },
             { Opcode.CMSG_HOUSING_DECOR_LOCK, 0x00330005 },
             { Opcode.CMSG_HOUSING_DECOR_SET_DYE_SLOTS, 0x00330007 },
